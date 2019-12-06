@@ -400,6 +400,8 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p, body {
@@ -546,7 +548,7 @@ input[type="submit"] {
   line-height: 1;
   padding: .6em 1em .4em;
   text-transform: uppercase;
-  font-size: 34px;
+  font-size: 19px;
   font-weight: 500;
   padding: 10px 1em;
 }
@@ -1050,7 +1052,7 @@ section {
   color: #fff;
 }
 
-#above-fold button {
+#above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
   font-size: 34px;
 }
 
@@ -1072,8 +1074,12 @@ section {
 
 #customer-comments .comment:before {
   content: " ";
-  display: block;
+  display: inline-block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  width: 55px;
+  height: 55px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #customer-comments .comment:after {
@@ -1082,6 +1088,23 @@ section {
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+#customer-comments .flex-control-paging li a.flex-active {
+  background: #c05344;
+}
+
+#customer-comments .flex-control-paging li a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #c05344;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+#customer-comments .flex-control-nav li {
+  margin: 0 14px;
 }
 
 #callback-cta {
@@ -1100,14 +1123,15 @@ section {
   color: #fff;
 }
 
-#callback-cta button {
-  font-size: 19px;
+#quantitative-semiotics {
+  text-align: center;
 }
 
 #quantitative-semiotics h3 {
   font-size: 47px;
   font-weight: 500;
   color: #c05344;
+  line-height: 56px;
 }
 
 #quantitative-semiotics p {
@@ -1144,8 +1168,6 @@ section {
 #about .row {
   position: relative;
   overflow: visible;
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

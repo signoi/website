@@ -65,7 +65,7 @@ jQuery(window).load(function() {
 			<?php while( have_rows('comments') ): the_row(); 
 				$comment = get_sub_field('comment');
 				?>
-				<li class="comment"><?php echo $comment; ?></li>
+				<li><div class="comment"><?php echo $comment; ?></div></li>
 		<?php endwhile; ?>	
 		</ul></div>	
 		<?php endif; ?>

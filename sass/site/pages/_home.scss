@@ -14,7 +14,8 @@
         font-weight: $fontweight__regular;
         color: #fff;
     }
-    button {
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
         font-size: 34px;
     }
 }
@@ -33,14 +34,31 @@
     }
     .comment:before {
         content: " ";
-        display: block;
+        display: inline-block;
         background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+        width: 55px;
+        height: 55px;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
     .comment:after {
         content: " ";
         display: block;
         background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
         transform: rotate(180deg);
+    }
+    .flex-control-paging li a.flex-active {
+        background: $color__red;
+    }
+    .flex-control-paging li a {
+        box-shadow: none;
+        border: 1px solid $color__red;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+    }
+    .flex-control-nav li {
+        margin: 0 14px;
     }
 }
 
@@ -56,16 +74,15 @@
         font-weight: $fontweight__regular;
         color: #fff;
     }
-    button {
-        font-size: 19px;
-    }
 }
 
 #quantitative-semiotics {
+    text-align: center;
     h3 {
         font-size: 47px;
         font-weight: $fontweight__medium; 
         color: $color__red;
+        line-height: 56px;
     }
     p {
         font-size: 19px;
@@ -96,8 +113,6 @@ padding: 0;
     .row {
         position: relative;
         overflow: visible;
-        padding: 0;
-        margin: 0;
         display: flex;
     }
     .round-image {
