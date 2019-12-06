@@ -46,16 +46,29 @@ get_header();
 		while( have_rows('customer_comments') ): the_row(); 
 		$title = get_sub_field('section_title'); 
 ?>
+<script type="text/javascript">
+jQuery(window).load(function() {
+	    //slider for testimonials
+  jQuery('.flexslider.comments').flexslider({
+    animation: "slide",
+   slideshow: false,
+	  animationSpeed: 1000
+  });
+});
+</script>
 <section id="customer-comments">
 	<div class="row">
 		<div class="col full">
 		<h2><?php echo $title; ?></h2>
-		<?php if( have_rows('comments') ): 
-				while( have_rows('comments') ): the_row(); 
+		<?php if( have_rows('comments') ): ?>
+			<div class="flexslider comments"><ul class="slides">	
+			<?php while( have_rows('comments') ): the_row(); 
 				$comment = get_sub_field('comment');
 				?>
-				<div class="comment"><?php echo $comment; ?></div>
-		<?php endwhile; else : endif; ?>		
+				<li class="comment"><?php echo $comment; ?></li>
+		<?php endwhile; ?>	
+		</ul></div>	
+		<?php endif; ?>
 		</div>
 	</div>
 </section>
@@ -75,7 +88,7 @@ get_header();
 			<div class="phone-form">
 				<form>
 					<input type="text" placeholder="phone number" name="phonenumber">
-         			<input type="submit" value="send">
+         			<input type="submit" class="button grey" value="send">
       			</form>
 			</div>
 		</div>
@@ -140,8 +153,8 @@ get_header();
 		endif;
 
 ?>
-<section id="about">
-	<div class="row" style="background-color: <?php echo $backgroundcolor; ?>">
+<section id="about" style="background-color: <?php echo $backgroundcolor; ?>">
+	<div class="row">
 		<div class="col half">
 		<h2><?php echo $title; ?></h2>
 		<p><?php echo $copy; ?></p>

@@ -582,6 +582,12 @@ input[type="submit"]:focus {
   color: #566272;
 }
 
+.button.grey, button.grey, input[type="button"].grey, input[type="submit"].grey {
+  border-color: #566272;
+  background: #566272;
+  color: #fff;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1044,6 +1050,10 @@ section {
   color: #fff;
 }
 
+#above-fold button {
+  font-size: 34px;
+}
+
 #customer-comments {
   text-align: center;
 }
@@ -1090,6 +1100,10 @@ section {
   color: #fff;
 }
 
+#callback-cta button {
+  font-size: 19px;
+}
+
 #quantitative-semiotics h3 {
   font-size: 47px;
   font-weight: 500;
@@ -1104,6 +1118,15 @@ section {
 
 #quantitative-semiotics .col.half:first-child {
   border-right: 1px solid #c05344;
+}
+
+#quantitative-semiotics .col.half {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#about {
+  padding: 0;
 }
 
 #about h2 {
@@ -1121,12 +1144,22 @@ section {
 #about .row {
   position: relative;
   overflow: visible;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #about .round-image {
   position: absolute;
-  top: -50%;
+  top: -10%;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+#about button {
+  font-size: 19px;
 }
 
 /*--------------------------------------------------------------

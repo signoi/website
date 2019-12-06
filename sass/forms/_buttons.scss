@@ -34,3 +34,9 @@ input[type="submit"] {
 	background: $color__yellow;
 	color: $color__text-on-yellow;
 }
+
+.button.grey, button.grey, input[type="button"].grey, input[type="submit"].grey {
+	border-color: $color__grey;
+	background: $color__grey;
+	color: $color__text-on-grey;
+}

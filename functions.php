@@ -121,6 +121,7 @@ add_action( 'widgets_init', 'signoi_theme_widgets_init' );
  */
 function signoi_theme_scripts() {
 	wp_enqueue_style( 'signoi-theme-style', get_template_directory_uri() . '/sass/style.css');
+	wp_enqueue_style( 'flexslider-style', get_template_directory_uri() . '/sass/flexslider.css');
 
 	wp_enqueue_script( 'signoi-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
