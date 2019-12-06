@@ -690,12 +690,14 @@ a:hover, a:active {
   background: #fff;
   padding: 10px;
   border-top: 3px solid #566272;
-  margin-top: 5px;
+  margin-top: 27px;
+  width: 200px;
 }
 
 .main-navigation ul ul li {
   margin-bottom: 10px;
   display: block;
+  margin-right: 0;
 }
 
 .main-navigation ul ul li:last-child {
@@ -1086,6 +1088,45 @@ section {
   font-size: 19px;
   font-weight: 400;
   color: #fff;
+}
+
+#quantitative-semiotics h3 {
+  font-size: 47px;
+  font-weight: 500;
+  color: #c05344;
+}
+
+#quantitative-semiotics p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #566272;
+}
+
+#quantitative-semiotics .col.half:first-child {
+  border-right: 1px solid #c05344;
+}
+
+#about h2 {
+  font-size: 47px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#about p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#about .row {
+  position: relative;
+  overflow: visible;
+}
+
+#about .round-image {
+  position: absolute;
+  top: -50%;
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------

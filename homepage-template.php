@@ -135,20 +135,20 @@ get_header();
 			$alt = $image['alt'];
 		
 			// Thumbnail size attributes.
-			$size = 'large';
-			$fullimage = $image['sizes'][ $size ];
+			$size = 'square';
+			$imagesquare = $image['sizes'][ $size ];
 		endif;
 
 ?>
-<section id="about" style="background-color: <?php echo $backgroundcolor; ?>">
-	<div class="row">
+<section id="about">
+	<div class="row" style="background-color: <?php echo $backgroundcolor; ?>">
 		<div class="col half">
 		<h2><?php echo $title; ?></h2>
 		<p><?php echo $copy; ?></p>
 		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>
 		<div class="col half">
-		<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />
+		<div class="round-image"><img src="<?php echo esc_url($imagesquare); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		</div>
 	</div>
 </section>

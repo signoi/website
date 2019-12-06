@@ -54,3 +54,41 @@
         color: #fff;
     }
 }
+
+#quantitative-semiotics {
+    h3 {
+        font-size: 47px;
+        font-weight: $fontweight__medium; 
+        color: $color__red;
+    }
+    p {
+        font-size: 19px;
+        font-weight: $fontweight__regular;
+        color: $color__grey;
+    }
+    .col.half:first-child {
+        border-right: 1px solid $color__red
+    }
+}
+
+#about {
+    h2 {
+        font-size: 47px;
+        font-weight: $fontweight__medium;
+        color: #fff;
+    }
+    p {
+        font-size: 19px;
+        font-weight: $fontweight__regular;
+        color: #fff;
+    }
+    .row {
+        position: relative;
+        overflow: visible;
+    }
+    .round-image {
+        position: absolute;
+        top: -50%;
+        border-radius: 50%;
+    }
+}
