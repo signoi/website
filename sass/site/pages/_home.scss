@@ -41,13 +41,16 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
+    .comment {
+        display: inline-block;
+    }
     .comment:after {
         content: " ";
         display: block;
         background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
         transform: rotate(180deg);
     }
-    .flex-control-paging li a.flex-active {
+    .flex-control-paging li a.flex-active, .flex-control-paging li a:hover {
         background: $color__red;
     }
     .flex-control-paging li a {
@@ -57,6 +60,11 @@
         width: 20px;
         height: 20px;
     }
+
+    .flex-direction-nav {
+        display: none;
+    }
+    
     .flex-control-nav li {
         margin: 0 14px;
     }
@@ -83,11 +91,15 @@
         font-weight: $fontweight__medium; 
         color: $color__red;
         line-height: 56px;
+        max-width: 373px;
+    margin: auto;
     }
     p {
         font-size: 19px;
         font-weight: $fontweight__regular;
         color: $color__grey;
+        max-width: 373px;
+    margin: auto;
     }
     .col.half:first-child {
         border-right: 1px solid $color__red
