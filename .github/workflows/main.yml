@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+    - master
+name: Publish Website
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: signoi.com
+        FTP_USERNAME: signoi-github@signoi.com
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        ARGS: --delete
+        # --delete arg will delete files on the server if you've deleted them in git
