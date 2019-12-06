@@ -1,0 +1,36 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-radius: 0;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: $fontweight__medium;
+	padding: 10px 1em;
+
+	&:hover {
+		border-color: $color__red;
+		background-color: $color__red;
+		color: $color__text-on-red;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+.button.red, button.red, input[type="button"].red, input[type="submit"].red {
+	border-color: $color__red;
+	background: $color__red;
+	color: $color__text-on-red;
+}
+
+.button.yellow, button.yellow, input[type="button"].yellow, input[type="submit"].yellow {
+	border-color: $color__yellow;
+	background: $color__red;
+	color: $color__text-on-yellow;
+}

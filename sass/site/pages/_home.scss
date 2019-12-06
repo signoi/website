@@ -1,0 +1,28 @@
+#above-fold {
+    height: calc(100vh - 104px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        font-size: 60px;
+        font-weight: $fontweight__bold;
+        color: #fff;
+    }
+    p {
+        font-size: 22px;
+        font-weight: $fontweight__regular;
+    }
+}
+
+#callback-cta {
+    text-align: center;
+    h2 {
+        font-size: 47px;
+        font-weight: $fontweight__medium;
+        color: #fff;
+    }
+    p {
+        font-size: 19px;
+        font-weight: $fontweight__regular;
+    }
+}

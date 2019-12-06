@@ -1,0 +1,64 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--main site structure--*/
+
+section {
+	padding: 80px 0;
+}
+
+.row {
+	width: 90%;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+	display: flex;
+}
+
+.col {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+}
+
+@media (min-width: 601px) {
+	.col {
+		.full {
+			width: 100%;
+		}
+		.half {
+			width: 50%;
+		}
+		.third {
+			width: 33.33333333%;
+		}
+		.quarter {
+			width: 25%;
+		}
+		.fifth {
+			width: 20%;
+		}
+	}
+}
