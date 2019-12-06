@@ -1,5 +1,6 @@
 .main-navigation {
-    float: none;
+	float: none;
+	display: inline-block;
     align-self: flex-end;
     margin-left: auto;
     margin-right: 0;
@@ -12,7 +13,6 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -20,11 +20,18 @@
 			top: 100%;
 			left: -999em;
 			z-index: 99999;
-			.submenu {
-				background: #fff;
-    			padding: 10px;
-    			border-top: 3px solid $color__grey;
-			}
+			background: #fff;
+			padding: 10px;
+			border-top: 3px solid $color__grey;
+			margin-top: 5px;
+				li {
+					margin-bottom: 10px;
+					display: block;
+				}
+				li:last-child {
+					margin-bottom: 0;
+				}
+		}
 			ul {
 				left: -999em;
 				top: 0;
@@ -34,6 +41,7 @@
 					float: none;
 					position: relative;
 					display: inline-block;
+					margin-right: 15px;
 				
 				&:hover > ul,
 				&.focus > ul {
@@ -41,7 +49,11 @@
 				}
 			}
 
-			a {
+			li:last-child {
+				margin-right: 0;
+			}
+
+			a, a:visited {
 			color: $color__grey;
 			}
 
@@ -54,21 +66,17 @@
 			a.focus {
 				color: $color__red;
 			}
+			li:hover > ul,
+			li.focus > ul {
+				left: auto;
+			}
 		}
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
 
 	li {
-		float: none;
-		position: relative;
-		display: inline-block;
-
 		&:hover > a,
 		&.focus > a {
+			color: $color__red;
 		}
 	}
 
@@ -81,6 +89,7 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		color: $color__red;
 	}
 }
 

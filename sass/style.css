@@ -578,7 +578,7 @@ input[type="submit"]:focus {
 
 .button.yellow, button.yellow, input[type="button"].yellow, input[type="submit"].yellow {
   border-color: #e9c659;
-  background: #c05344;
+  background: #e9c659;
   color: #566272;
 }
 
@@ -662,6 +662,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .main-navigation {
   float: none;
+  display: inline-block;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-left: auto;
@@ -686,41 +687,53 @@ a:hover, a:active {
   top: 100%;
   left: -999em;
   z-index: 99999;
-}
-
-.main-navigation ul ul .submenu {
   background: #fff;
   padding: 10px;
   border-top: 3px solid #566272;
+  margin-top: 5px;
 }
 
-.main-navigation ul ul ul {
+.main-navigation ul ul li {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.main-navigation ul ul li:last-child {
+  margin-bottom: 0;
+}
+
+.main-navigation ul ul {
   left: -999em;
   top: 0;
 }
 
-.main-navigation ul ul li {
+.main-navigation ul li {
   float: none;
   position: relative;
   display: inline-block;
+  margin-right: 15px;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
   left: 100%;
 }
 
-.main-navigation ul ul a {
+.main-navigation ul li:last-child {
+  margin-right: 0;
+}
+
+.main-navigation ul a, .main-navigation ul a:visited {
   color: #566272;
 }
 
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
+.main-navigation ul :hover > a,
+.main-navigation ul .focus > a {
   color: #c05344;
 }
 
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
+.main-navigation ul a:hover,
+.main-navigation ul a.focus {
   color: #c05344;
 }
 
@@ -729,15 +742,21 @@ a:hover, a:active {
   left: auto;
 }
 
-.main-navigation li {
-  float: none;
-  position: relative;
-  display: inline-block;
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+  color: #c05344;
 }
 
 .main-navigation a {
   display: block;
   text-decoration: none;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+  color: #c05344;
 }
 
 /* Small menu. */
@@ -780,17 +799,15 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-#masthead {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #masthead .inner {
+  width: 90%;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .site-branding {
@@ -1016,11 +1033,43 @@ section {
   font-size: 60px;
   font-weight: 700;
   color: #fff;
+  line-height: 1.1em;
 }
 
 #above-fold p {
   font-size: 22px;
   font-weight: 400;
+  color: #fff;
+}
+
+#customer-comments {
+  text-align: center;
+}
+
+#customer-comments h2 {
+  color: #c05344;
+  font-size: 47px;
+  font-weight: 500;
+}
+
+#customer-comments p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #566272;
+}
+
+#customer-comments .comment:before {
+  content: " ";
+  display: block;
+  background: url(wp-content/uploads/2019/12/Signoi-quote-marks.svg);
+}
+
+#customer-comments .comment:after {
+  content: " ";
+  display: block;
+  background: url(wp-content/uploads/2019/12/Signoi-quote-marks.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #callback-cta {
@@ -1036,6 +1085,7 @@ section {
 #callback-cta p {
   font-size: 19px;
   font-weight: 400;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------

@@ -94,7 +94,7 @@ get_header();
 			$alt = $image['alt'];
 		
 			// Thumbnail size attributes.
-			$size = 'full';
+			$size = 'large';
 			$fullimage = $image['sizes'][ $size ];
 		endif;
 

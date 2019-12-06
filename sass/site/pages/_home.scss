@@ -7,10 +7,37 @@
         font-size: 60px;
         font-weight: $fontweight__bold;
         color: #fff;
+        line-height: 1.1em;
     }
     p {
         font-size: 22px;
         font-weight: $fontweight__regular;
+        color: #fff;
+    }
+}
+
+#customer-comments {
+    text-align: center;
+    h2 {
+        color: $color__red;
+        font-size: 47px;
+        font-weight: $fontweight__medium;
+    }
+    p {
+        font-size: 19px;
+        font-weight: $fontweight__regular;
+        color: $color__grey;
+    }
+    .comment:before {
+        content: " ";
+        display: block;
+        background: url(wp-content/uploads/2019/12/Signoi-quote-marks.svg);
+    }
+    .comment:after {
+        content: " ";
+        display: block;
+        background: url(wp-content/uploads/2019/12/Signoi-quote-marks.svg);
+        transform: rotate(180deg);
     }
 }
 
@@ -24,5 +51,6 @@
     p {
         font-size: 19px;
         font-weight: $fontweight__regular;
+        color: #fff;
     }
 }
