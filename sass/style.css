@@ -1073,13 +1073,13 @@ section {
 #customer-comments .comment:before {
   content: " ";
   display: block;
-  background: url(wp-content/uploads/2019/12/Signoi-quote-marks.svg);
+  background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
 }
 
 #customer-comments .comment:after {
   content: " ";
   display: block;
-  background: url(wp-content/uploads/2019/12/Signoi-quote-marks.svg);
+  background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
