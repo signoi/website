@@ -60,6 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, options);
+  var elem = document.querySelector('.carousel');
+  var instance = M.Carousel.getInstance(elem);
+  instance.set(<?php echo $c ?>);
 
 })
  jQuery(document).ready(function(){
