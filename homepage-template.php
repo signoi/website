@@ -50,8 +50,10 @@ get_header();
 <script type="text/javascript">
  jQuery(document).ready(function(){
     jQuery('.carousel.usecases').carousel({
-		indicators: true,
+		indicators: false,
 		duration: 300,
+		numVisible: 3,
+		dist: -80
 	});
 	jQuery('#carousel-next').on('touchstart', function (e) {
     e.preventDefault();
