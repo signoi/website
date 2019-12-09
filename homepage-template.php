@@ -85,6 +85,11 @@ if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
 		<div class="col full"><h2>Use Cases</h2>
+		</div>	
+
+	</div>
+	<div class="row">
+		<div class="col full"> <div class="carousel usecases">
 		<div class="usecases-menu">
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
@@ -98,11 +103,6 @@ if ( $arr_posts->have_posts() ) : ?>
 					<a class="usecase" href="#<?php echo $slug; ?>" onclick="instance.set(3);"><?php the_title(); ?></a>
 			<?php endwhile; ?>
 		</div>
-		</div>	
-
-	</div>
-	<div class="row">
-		<div class="col full"> <div class="carousel usecases">
         <div class="carousel-fixed-item center pagination">
             <a class="slide-prev">Prev</a>
             <a class="slide-next">Next</a>
