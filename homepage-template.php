@@ -54,7 +54,7 @@ get_header();
 		duration: 300,
 		numVisible: 3,
 		dist: -80,
-		shift: -200,
+		shift: -250,
 		padding: 20
 	});
 	jQuery('.slide-prev').click(function (e) {
@@ -79,7 +79,17 @@ $arr_posts = new WP_Query( $args );
 if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
-		<div class="col full"><h2>Use Cases</h2></div>	
+		<div class="col full"><h2>Use Cases</h2>
+		<div class="usecases-menu">
+			<?php while ( $arr_posts->have_posts() ) : 
+					$arr_posts->the_post();
+					$slug = get_post_field( 'post_name', get_post() );
+					?>
+					<a class="usecase" href="<?php echo $slug; ?>"><?php the_title(); ?></a>
+			<?php endwhile; ?>
+		</div>
+		</div>	
+
 	</div>
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
