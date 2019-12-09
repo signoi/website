@@ -75,12 +75,12 @@ if ( $arr_posts->have_posts() ) : ?>
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 	$slug = get_post_field( 'post_name', get_post() );
 ?>
-<a class="carousel-item" href="<?php echo $slug; ?>">
-	<h4><?php the_title(); ?></h4>
-	<?php the_excerpt(); ?> 
-	<div class="report-featured-image"><img src="<?php echo $image[0]?>"></div>
-	<button class="button red" onclick="window.location.href = '<?php the_permalink(); ?>';">Read More</button>
-</a>
+		<div class="carousel-item" id="<?php echo $slug; ?>">
+			<h4><?php the_title(); ?></h4>
+			<?php the_excerpt(); ?> 
+			<div class="report-featured-image"><img src="<?php echo $image[0]?>"></div>
+			<button class="button red" onclick="window.location.href = '<?php the_permalink(); ?>';">Read More</button>
+		</div>
 	<?php endwhile; ?>
 	</div></div>
 	</div>
