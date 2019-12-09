@@ -6,8 +6,15 @@
     margin-right: 0;
     margin-top: auto;
     margin-bottom: auto;
-    width: auto;
-
+	width: auto;
+	font-weight: 700;
+	font-size: 15px;
+	.current_page_item a:after {
+		background: #566272;
+    height: 1px;
+    display: block;
+    content: " ";
+	}
 	ul {
 		display: none;
 		list-style: none;

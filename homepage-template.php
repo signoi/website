@@ -47,12 +47,44 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
-
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery('.carousel').carousel();
+  });
+</script>
+<?php
+$args = array(
+    'post_type' => 'use-case',
+    'post_status' => 'publish',
+);
+$arr_posts = new WP_Query( $args );
+ 
+if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
-		<div class="col full"></div>
+		<div class="col full"> <div class="carousel">
+		<?php
+    while ( $arr_posts->have_posts() ) :
+        $arr_posts->the_post();
+	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+	$thumb_id = get_post_thumbnail_id();
+	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+	$slug = get_post_field( 'post_name', get_post() );
+?>
+<a class="carousel-item" href="<?php echo $slug; ?>">
+	<h4><?php the_title(); ?></h4>
+	<?php the_excerpt(); ?> 
+	<div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>);"></div>
+	<button class="button red" onclick="window.location.href = '<?php the_permalink(); ?>';">Read More</button>
+</a>
+	<?php endwhile; ?>
+	</div></div>
 	</div>
 </section>
+<?php 
+endif;
+wp_reset_postdata();
+?>
 <?php if( have_rows('customer_comments') ): 
 		while( have_rows('customer_comments') ): the_row(); 
 		$title = get_sub_field('section_title'); 
