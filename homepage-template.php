@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var elem = document.querySelector('#organisation-culture');
   var instance = M.Carousel.getInstance(elem);
    instance.set(1);
-    var elem = document.querySelector('#cultural-intelligence');
-  var instance = M.Carousel.getInstance(elem);
+    var elem2 = document.querySelector('#cultural-intelligence');
+  var instance2 = M.Carousel.getInstance(elem2);
    instance.set(2);
-   var elem = document.querySelector('#innovation');
-  var instance = M.Carousel.getInstance(elem);
+   var elem3 = document.querySelector('#innovation');
+  var instance3 = M.Carousel.getInstance(elem3);
    instance.set(3);
 
 })
