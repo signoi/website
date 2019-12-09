@@ -53,16 +53,16 @@ get_header();
 		indicators: true,
 		duration: 300,
 	});
-	$('#carousel-next').on('touchstart', function (e) {
+	jQuery('#carousel-next').on('touchstart', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    $('#carouselFirst').carousel('next');
+	jQuery('#carouselFirst').carousel('next');
 });
 
-$('#carousel-prev').on('touchstart', function (e) {
+jQuery('#carousel-prev').on('touchstart', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    $('#carouselFirst').carousel('prev');
+	jQuery('#carouselFirst').carousel('prev');
 });
   });
 </script>
