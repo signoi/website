@@ -1404,22 +1404,49 @@ section {
 }
 
 #use-cases .usecases-menu {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#use-cases .usecases-menu ul {
+  list-style: none;
+}
+
+#use-cases .usecases-menu li {
+  text-align: center;
+  max-width: 150px;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #e9c659;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #use-cases .usecases-menu a {
   text-decoration: none;
   color: #fff;
-  padding: 0 20px;
-  max-width: 150px;
+  margin: auto;
+  display: block;
+  padding: 0 15px;
+  margin: auto 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 100%;
-  margin: auto;
 }
 
 #use-cases .usecases-menu a.active {

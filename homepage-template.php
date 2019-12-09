@@ -58,11 +58,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		shift: -500,
 		padding: 20 
   };
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, options);
-  var elem = document.querySelector('.carousel');
+
+  var elem = document.querySelector('#organisation-culture');
   var instance = M.Carousel.getInstance(elem);
-  instance.set(<?php echo $c ?>);
+   instance.set(1);
+    var elem = document.querySelector('#cultural-intelligence');
+  var instance = M.Carousel.getInstance(elem);
+   instance.set(2);
+   var elem = document.querySelector('#innovation');
+  var instance = M.Carousel.getInstance(elem);
+   instance.set(3);
 
 })
  jQuery(document).ready(function(){
@@ -76,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.stopPropagation();
 		jQuery('.carousel.usecases').carousel('next')
 	});
-	jQuery('usecases-menu li a').on("click", function() {
-		jQuery('usecases-menu li a.active').not(this).removeClass('active');
+	jQuery('.usecases-menu li a').on("click", function() {
+		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
    }); 
 
@@ -106,7 +111,7 @@ if ( $arr_posts->have_posts() ) :
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
 					?>
-					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" href="#<?php echo $slug; ?>" onclick="instance.set(<?php echo $c ?>);"><?php the_title(); ?></a></li>
+					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
 			</ul>
         <div class="carousel-fixed-item center pagination">
@@ -121,7 +126,7 @@ if ( $arr_posts->have_posts() ) :
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 	$slug = get_post_field( 'post_name', get_post() );
 ?>
-		<div class="carousel-item" id="<?php echo $slug; ?>">
+		<div class="carousel-item">
 			<h4><?php the_title(); ?></h4>
 			<?php the_excerpt(); ?> 
 			<div class="report-featured-image"><img src="<?php echo $image[0]?>"></div>
