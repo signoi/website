@@ -51,9 +51,19 @@ get_header();
  jQuery(document).ready(function(){
     jQuery('.carousel.usecases').carousel({
 		indicators: true,
-		duration: 1000,
-		numVisible: 3
+		duration: 300,
 	});
+	$('#carousel-next').on('touchstart', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('#carouselFirst').carousel('next');
+});
+
+$('#carousel-prev').on('touchstart', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('#carouselFirst').carousel('prev');
+});
   });
 </script>
 <?php
@@ -67,6 +77,10 @@ if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
+		<div class="carousel-fixed-item center clearfix">
+          <a id="carousel-prev" class="movePrevCarousel left">go left</a>
+          <a id="carousel-next" class="moveNextCarousel right">go right</a>
+        </div>
 		<?php
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
