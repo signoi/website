@@ -180,7 +180,7 @@ jQuery(window).load(function() {
 
 <script type="text/javascript">
 jQuery(window).load(function() {
-	    //slider for testimonials
+	    //slider for reports
   jQuery('.flexslider.reports').flexslider({
     animation: "slide",
    slideshow: false,
@@ -208,10 +208,10 @@ if ( $arr_posts->have_posts() ) : ?>
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 ?>
 				<li><div class="report">
-					<div class="col half"><div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>"></div></div>
+					<div class="col half"><div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>);"></div></div>
 					<div class="col half">
 						<h4><?php the_title(); ?></h4>
-						<p><?php the_excerpt(); ?></p>
+						<?php the_excerpt(); ?>
 					</div>
 				</div></li>
 
