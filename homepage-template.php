@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		shift: -500,
 		padding: 20 
   };
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, options);
 
   var elem = document.querySelector('#organisation-culture');
   var instance = M.Carousel.getInstance(elem);
