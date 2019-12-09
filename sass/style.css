@@ -1037,6 +1037,8 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #above-fold h2 {
@@ -1044,6 +1046,11 @@ section {
   font-weight: 700;
   color: #fff;
   line-height: 1.1em;
+}
+
+#above-fold .col.full {
+  max-width: 700px;
+  margin: auto;
 }
 
 #above-fold p {
@@ -1054,6 +1061,19 @@ section {
 
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
   font-size: 34px;
+}
+
+#above-fold .background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#above-fold .row {
+  margin-top: 0;
 }
 
 #customer-comments {
@@ -1072,7 +1092,7 @@ section {
   color: #566272;
 }
 
-#customer-comments .comment:before {
+#customer-comments .quote-before {
   content: " ";
   display: inline-block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
@@ -1083,10 +1103,12 @@ section {
 }
 
 #customer-comments .comment {
-  display: inline-block;
+  display: inline;
+  max-width: 570px;
+  margin: auto;
 }
 
-#customer-comments .comment:after {
+#customer-comments .quote-after {
   content: " ";
   display: inline-block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
@@ -1121,6 +1143,7 @@ section {
 
 #callback-cta {
   text-align: center;
+  padding: 40px 0;
 }
 
 #callback-cta h2 {
@@ -1133,6 +1156,42 @@ section {
   font-size: 19px;
   font-weight: 400;
   color: #fff;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+}
+
+#callback-cta input[type="text"] {
+  padding: 10px 1em;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1;
+}
+
+#callback-cta input[type="text"]::-webkit-input-placeholder {
+  color: #bbc0c6;
+}
+
+#callback-cta input[type="text"]:-ms-input-placeholder {
+  color: #bbc0c6;
+}
+
+#callback-cta input[type="text"]::-ms-input-placeholder {
+  color: #bbc0c6;
+}
+
+#callback-cta input[type="text"]::placeholder {
+  color: #bbc0c6;
+}
+
+#callback-cta input[type="submit"] {
+  height: 43px;
+  margin-left: -5px;
+}
+
+#callback-cta .phone-form {
+  margin-bottom: 10px;
 }
 
 #quantitative-semiotics {
@@ -1172,6 +1231,8 @@ section {
 
 #about {
   padding: 0;
+  margin-top: 160px;
+  margin-bottom: 160px;
 }
 
 #about h2 {
@@ -1192,13 +1253,19 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 80px 0;
 }
 
 #about .round-image {
   position: absolute;
-  top: -10%;
   border-radius: 50%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  width: 800px;
+  top: -20%;
 }
 
 #about button {

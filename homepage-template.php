@@ -28,7 +28,7 @@ get_header();
 
 			// Image variables.
 			$url = $image['url'];
-			$title = $image['title'];
+			$imagetitle = $image['title'];
 			$alt = $image['alt'];
 		
 			// Thumbnail size attributes.
@@ -37,7 +37,7 @@ get_header();
 		endif;
 ?>		
 <section id="above-fold" style="background-color: <?php echo $backgroundcolor; ?>;">
-<div class="background-image"  style="background-image: url(<?php echo $url; ?>);"></div>
+<div class="background-image"  style="background-image: url(<?php echo esc_url($fullimage); ?>);"></div>
 	<div class="row">
 		<div class="col full">
 		<h2><?php echo $title; ?></h2>	
@@ -76,7 +76,7 @@ jQuery(window).load(function() {
 			<?php while( have_rows('comments') ): the_row(); 
 				$comment = get_sub_field('comment');
 				?>
-				<li><div class="comment"><?php echo $comment; ?></div></li>
+				<li><div class="quote-before"></div><div class="comment"><?php echo $comment; ?></div><div class="quote-after"></div></li>
 		<?php endwhile; ?>	
 		</ul></div>	
 		<?php endif; ?>
