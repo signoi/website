@@ -49,7 +49,6 @@ get_header();
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init({
 		numVisible: 5,
 		indicators: true
