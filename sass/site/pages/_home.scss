@@ -46,8 +46,12 @@
     }
     .comment:after {
         content: " ";
-        display: block;
+        display: inline-block;
         background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+        width: 55px;
+        height: 55px;
+        background-position: center center;
+        background-repeat: no-repeat;
         transform: rotate(180deg);
     }
     .flex-control-paging li a.flex-active, .flex-control-paging li a:hover {

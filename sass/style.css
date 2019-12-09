@@ -1088,8 +1088,12 @@ section {
 
 #customer-comments .comment:after {
   content: " ";
-  display: block;
+  display: inline-block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  width: 55px;
+  height: 55px;
+  background-position: center center;
+  background-repeat: no-repeat;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

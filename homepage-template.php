@@ -22,11 +22,22 @@ get_header();
 		$copy = get_sub_field('section_copy'); 
 		$cta = get_sub_field('cta_text'); 
 		$link = get_sub_field('cta_link'); 
-		$backgroundimage = get_sub_field('background_image'); 
+		$image = get_sub_field('background_image'); 
 		$backgroundcolor = get_sub_field('background_colour'); 
+		if( $image ):
+
+			// Image variables.
+			$url = $image['url'];
+			$title = $image['title'];
+			$alt = $image['alt'];
+		
+			// Thumbnail size attributes.
+			$size = 'large';
+			$fullimage = $image['sizes'][ $size ];
+		endif;
 ?>		
 <section id="above-fold" style="background-color: <?php echo $backgroundcolor; ?>;">
-<div class="background-image"  style="background-image: url(<?php echo esc_url($backgroundimage['url']); ?>);"></div>
+<div class="background-image"  style="background-image: url(<?php echo $url; ?>);"></div>
 	<div class="row">
 		<div class="col full">
 		<h2><?php echo $title; ?></h2>	
