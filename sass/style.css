@@ -1395,6 +1395,13 @@ section {
   background: #566273;
 }
 
+#use-cases h2 {
+  color: #fff;
+  font-size: 47px;
+  font-weight: 500;
+  margin-bottom: .7em;
+}
+
 /*--carousel CSS for materialise slider--*/
 .carousel {
   overflow: hidden;
@@ -1407,6 +1414,16 @@ section {
   transform-style: preserve-3d;
   -webkit-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
+}
+
+.carousel .carousel-item h4, .carousel .carousel-item p, .carousel .carousel-item .report-featured-image, .carousel .carousel-item button {
+  opacity: 0;
+}
+
+.carousel .carousel-item.active h4, .carousel .carousel-item.active p, .carousel .carousel-item.active .report-featured-image, .carousel .carousel-item.active button {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease .3s;
+  transition: opacity 0.2s ease .3s;
 }
 
 .carousel .report-featured-image {
@@ -1427,17 +1444,27 @@ section {
 .carousel .pagination .slide-next {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  right: 0;
+  right: 30px;
   height: 32px;
   width: 32px;
   position: absolute;
+  background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
 }
 
 .carousel .pagination .slide-prev {
-  left: 0;
+  left: 30px;
   height: 32px;
   width: 32px;
   position: absolute;
+  background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
 }
 
 .carousel .carousel-item {

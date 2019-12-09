@@ -284,6 +284,13 @@ margin: 80px 0 160px 0;
 
 #use-cases {
     background: #566273;
+
+    h2 {
+        color: $color__text-on-grey;
+        font-size: 47px;
+        font-weight: 500;
+        margin-bottom: .7em;
+    }
 }
 
 /*--carousel CSS for materialise slider--*/
@@ -302,7 +309,17 @@ margin: 80px 0 160px 0;
   }
   
   .carousel {
-
+.carousel-item {
+    h4, p, .report-featured-image, button {
+        opacity: 0;
+    }
+}
+.carousel-item.active {
+    h4, p, .report-featured-image, button {
+        opacity: 1;
+        transition: opacity 0.2s ease .3s;
+    }
+}
         .report-featured-image {
             max-width: 400px;
             margin: auto;
@@ -318,16 +335,27 @@ margin: 80px 0 160px 0;
             
             .slide-next {
                 transform: rotate(180deg);
-                right: 0;
+                right: 30px;
                 height: 32px;
                 width: 32px;
                 position: absolute;
+                background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg);
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                font-size: 0;
+
             }
             .slide-prev {
-                left: 0;
+                left: 30px;
                 height: 32px;
                 width: 32px;
                 position: absolute;
+                background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg);
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                font-size: 0;
             }
         }
   

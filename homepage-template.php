@@ -54,8 +54,8 @@ get_header();
 		duration: 300,
 		numVisible: 3,
 		dist: -80,
-		shift: -150,
-		padding: 0
+		shift: -200,
+		padding: 20
 	});
 	jQuery('.slide-prev').click(function (e) {
             e.preventDefault();
@@ -84,8 +84,8 @@ if ( $arr_posts->have_posts() ) : ?>
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
         <div class="carousel-fixed-item center pagination">
-            <a class="slide-prev">Prev <img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg"></a>
-            <a class="slide-next">Next <img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg"></a>
+            <a class="slide-prev">Prev</a>
+            <a class="slide-next">Next</a>
         </div>
 		<?php
     while ( $arr_posts->have_posts() ) :
