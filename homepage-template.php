@@ -178,11 +178,50 @@ jQuery(window).load(function() {
 </section>
 <?php endwhile; else : endif; ?>
 
+<script type="text/javascript">
+jQuery(window).load(function() {
+	    //slider for testimonials
+  jQuery('.flexslider.reports').flexslider({
+    animation: "slide",
+   slideshow: false,
+	  animationSpeed: 1000
+  });
+});
+</script>
 <section id="reports">
-<?php $args = array(
-    'id' => '2517'
+<div class="row">
+<?php
+$args = array(
+    'post_type' => 'report',
+    'post_status' => 'publish',
+    'posts_per_page' => 4,
 );
-echo render_view( $args ); ?>
+$arr_posts = new WP_Query( $args );
+ 
+if ( $arr_posts->have_posts() ) :
+ 
+    while ( $arr_posts->have_posts() ) :
+        $arr_posts->the_post();
+	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+	$thumb_id = get_post_thumbnail_id();
+	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+
+?>
+<div class="flexslider reports"><ul class="slides">	
+				<li><div class="report">
+					<div class="col half"><div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>"></div></div>
+					<div class="col half">
+						<h4><?php the_title(); ?></h4>
+						<p><?php the_excerpt(); ?></p>
+					</div>
+				</div></li>
+</ul></div>	
+<?php
+    endwhile;
+endif;
+wp_reset_postdata();
+?>
+</div>
 </section>
 
 		</main><!-- #main -->
