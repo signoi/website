@@ -68,7 +68,7 @@
     .comment {
         display: block;
         max-width: 633px;
-        margin: auto;
+        margin: 0;
         text-align: left;
         padding: 0 30px;
     }
@@ -82,6 +82,9 @@
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         margin-right: auto;
+    }
+    .flex-viewport {
+        margin-bottom: 30px;
     }
     .flex-control-paging li a.flex-active, .flex-control-paging li a:hover {
         background: $color__red;
@@ -102,7 +105,7 @@
         margin: 0 14px;
     }
     .flexslider .slides > li {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
     }
 }

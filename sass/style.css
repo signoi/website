@@ -1112,7 +1112,7 @@ section {
 #customer-comments .comment {
   display: block;
   max-width: 633px;
-  margin: auto;
+  margin: 0;
   text-align: left;
   padding: 0 30px;
 }
@@ -1127,6 +1127,10 @@ section {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-right: auto;
+}
+
+#customer-comments .flex-viewport {
+  margin-bottom: 30px;
 }
 
 #customer-comments .flex-control-paging li a.flex-active, #customer-comments .flex-control-paging li a:hover {
@@ -1151,9 +1155,9 @@ section {
 }
 
 #customer-comments .flexslider .slides > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
