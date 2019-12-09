@@ -198,7 +198,7 @@ $arr_posts = new WP_Query( $args );
  
 if ( $arr_posts->have_posts() ) : ?>
 <section id="reports">
-<div class="row">
+<div class="row"><div class="col full">
  <div class="flexslider reports"><ul class="slides">	
 	 <?php
     while ( $arr_posts->have_posts() ) :
@@ -207,7 +207,7 @@ if ( $arr_posts->have_posts() ) : ?>
 	$thumb_id = get_post_thumbnail_id();
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 ?>
-				<li><div class="report">
+				<li><div class="report row">
 					<div class="col half"><div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>);"></div></div>
 					<div class="col half">
 						<h4><?php the_title(); ?></h4>
@@ -218,7 +218,7 @@ if ( $arr_posts->have_posts() ) : ?>
 <?php
 	endwhile; ?>
 </ul></div>	
-</div>
+</div></div>
 </section>
 <?php 
 endif;
