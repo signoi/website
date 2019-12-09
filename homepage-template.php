@@ -100,14 +100,14 @@ if ( $arr_posts->have_posts() ) :
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
 			<div class="background-slide"></div> <!-- ugh but I can't work out how to hide the back slides otherwise because I had to use !important to override the opacity -->
-		<div class="usecases-menu">
+		<ul class="usecases-menu">
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
 					?>
-					<a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" href="#<?php echo $slug; ?>" onclick="instance.set(<?php echo $c ?>);"><?php the_title(); ?></a>
+					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" href="#<?php echo $slug; ?>" onclick="instance.set(<?php echo $c ?>);"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
-		</div>
+			</ul>
         <div class="carousel-fixed-item center pagination">
             <a class="slide-prev">Prev</a>
             <a class="slide-next">Next</a>
