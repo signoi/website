@@ -78,7 +78,7 @@ if ( $arr_posts->have_posts() ) : ?>
 <a class="carousel-item" href="<?php echo $slug; ?>">
 	<h4><?php the_title(); ?></h4>
 	<?php the_excerpt(); ?> 
-	<div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>);"></div>
+	<div class="report-featured-image"><img src="<?php echo $image[0]?>"></div>
 	<button class="button red" onclick="window.location.href = '<?php the_permalink(); ?>';">Read More</button>
 </a>
 	<?php endwhile; ?>
