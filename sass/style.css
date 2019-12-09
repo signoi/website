@@ -1391,6 +1391,10 @@ section {
   bottom: -60px;
 }
 
+#use-cases {
+  background: #566273;
+}
+
 /*--carousel CSS for materialise slider--*/
 .carousel {
   overflow: hidden;
@@ -1407,14 +1411,33 @@ section {
 
 .carousel .report-featured-image {
   max-width: 400px;
+  margin: auto;
 }
 
-.carousel .carousel-fixed-item {
+.carousel .pagination {
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   z-index: 1;
+  height: 32px;
+  margin-top: -16px;
+}
+
+.carousel .pagination .slide-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 0;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+}
+
+.carousel .pagination .slide-prev {
+  left: 0;
+  height: 32px;
+  width: 32px;
+  position: absolute;
 }
 
 .carousel .carousel-item {
@@ -1427,6 +1450,7 @@ section {
   text-align: center;
   background: #fff;
   padding: 30px;
+  opacity: 1 !important;
 }
 
 .carousel .carousel-item h4 {
@@ -1440,6 +1464,9 @@ section {
   font-size: 16px;
   line-height: 22px;
   color: #566272;
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel .carousel-item.active {

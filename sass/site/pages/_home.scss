@@ -282,7 +282,12 @@ margin: 80px 0 160px 0;
     }
 }
 
+#use-cases {
+    background: #566273;
+}
+
 /*--carousel CSS for materialise slider--*/
+
 .carousel {
     overflow: hidden;
     position: relative;
@@ -300,13 +305,30 @@ margin: 80px 0 160px 0;
 
         .report-featured-image {
             max-width: 400px;
+            margin: auto;
         }
-        .carousel-fixed-item {
+        .pagination {
             position: absolute;
             left: 0;
             right: 0;
             top: 50%;
             z-index: 1;
+            height: 32px;
+            margin-top: -16px;
+            
+            .slide-next {
+                transform: rotate(180deg);
+                right: 0;
+                height: 32px;
+                width: 32px;
+                position: absolute;
+            }
+            .slide-prev {
+                left: 0;
+                height: 32px;
+                width: 32px;
+                position: absolute;
+            }
         }
   
         .carousel-item {
@@ -319,6 +341,7 @@ margin: 80px 0 160px 0;
             text-align: center;
             background: #fff;
             padding: 30px;
+            opacity: 1 !important;
         }
   
         .carousel-item h4 {
@@ -332,6 +355,9 @@ margin: 80px 0 160px 0;
             font-size: 16px;
             line-height: 22px;
             color: $color__grey;
+            max-width: 575px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .carousel-item.active {
             box-shadow: 0 0 8px rgba(29,29,27,0.75);

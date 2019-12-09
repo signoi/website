@@ -53,7 +53,9 @@ get_header();
 		indicators: false,
 		duration: 300,
 		numVisible: 3,
-		dist: -350
+		dist: -80,
+		shift: -150,
+		padding: 0
 	});
 	jQuery('.slide-prev').click(function (e) {
             e.preventDefault();
@@ -77,10 +79,13 @@ $arr_posts = new WP_Query( $args );
 if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
+		<div class="col full"><h2>Use Cases</h2></div>	
+	</div>
+	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
-        <div class="carousel-fixed-item center">
-            <a class="btn waves-effect white grey-text darken-text-2 slide-prev">Prev</a>
-            <a class="btn waves-effect white grey-text darken-text-2 slide-next">Next</a>
+        <div class="carousel-fixed-item center pagination">
+            <a class="slide-prev">Prev <img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg"></a>
+            <a class="slide-next">Next <img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg"></a>
         </div>
 		<?php
     while ( $arr_posts->have_posts() ) :
