@@ -188,8 +188,6 @@ jQuery(window).load(function() {
   });
 });
 </script>
-<section id="reports">
-<div class="row">
 <?php
 $args = array(
     'post_type' => 'report',
@@ -198,16 +196,17 @@ $args = array(
 );
 $arr_posts = new WP_Query( $args );
  
-if ( $arr_posts->have_posts() ) :
- 
+if ( $arr_posts->have_posts() ) : ?>
+<section id="reports">
+<div class="row">
+ <div class="flexslider reports"><ul class="slides">	
+	 <?php
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
 	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
 	$thumb_id = get_post_thumbnail_id();
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
-
 ?>
-<div class="flexslider reports"><ul class="slides">	
 				<li><div class="report">
 					<div class="col half"><div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>"></div></div>
 					<div class="col half">
@@ -215,14 +214,17 @@ if ( $arr_posts->have_posts() ) :
 						<p><?php the_excerpt(); ?></p>
 					</div>
 				</div></li>
-</ul></div>	
+
 <?php
-    endwhile;
+	endwhile; ?>
+</ul></div>	
+</div>
+</section>
+<?php 
 endif;
 wp_reset_postdata();
 ?>
-</div>
-</section>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
