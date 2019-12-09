@@ -48,10 +48,11 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    var instances = M.Carousel.init({
-		numVisible: 5,
-		indicators: true
+ jQuery(document).ready(function(){
+    jQuery('.carousel.usecases').carousel({
+		indicators: true,
+		duration: 1000,
+		numVisible: 3
 	});
   });
 </script>
@@ -65,7 +66,7 @@ $arr_posts = new WP_Query( $args );
 if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
-		<div class="col full"> <div class="carousel">
+		<div class="col full"> <div class="carousel usecases">
 		<?php
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
