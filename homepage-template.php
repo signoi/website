@@ -76,10 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.stopPropagation();
 		jQuery('.carousel.usecases').carousel('next')
 	});
-	jQuery('a.usecase').click(function () { 
-		jQuery(a.usecase).removeClass('active');
-		jQuery(this).toggleClass('active')
-	});
+
+		jQuery('.usecases-menu li a').on("click", function() {
+       var isActive = jQuery((this).is('.active');
+       jQuery(('.usecases-menu li a').removeClass('active');
+       jQuery((this).toggleClass('active', !isActive);
+   });  
+
   });
 </script>
 <?php
