@@ -68,20 +68,19 @@ get_header();
 		jQuery('.carousel.usecases').carousel('next')
 	});
 	jQuery('a.usecase').click(function () { 
-		jQuery('a.usecase').toggleClass('active')
+		jQuery(this).toggleClass('active')
 	});
   });
 </script>
 <?php
-	$c = 0;
-	$class = '';
 $args = array(
     'post_type' => 'use-case',
 	'post_status' => 'publish',
 );
 $arr_posts = new WP_Query( $args );
  
-if ( $arr_posts->have_posts() ) : ?>
+if ( $arr_posts->have_posts() ) : 
+	$post = $posts[0]; $c=0; ?>
 <section id="use-cases">
 	<div class="row">
 		<div class="col full"><h2>Use Cases</h2>
@@ -94,13 +93,8 @@ if ( $arr_posts->have_posts() ) : ?>
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
-					$c++;
-					if ( $c == 1 )
-					$class = ' active';
-				 else
-					$class='';
 					?>
-					<a class="usecase" href="#<?php echo $slug; ?>" onclick="instance.set(3);"><?php the_title(); ?></a>
+					<a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" href="#<?php echo $slug; ?>" onclick="instance.set(<?php $c++; ?>);"><?php the_title(); ?></a>
 			<?php endwhile; ?>
 		</div>
         <div class="carousel-fixed-item center pagination">
