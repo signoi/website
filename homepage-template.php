@@ -53,8 +53,8 @@ get_header();
 		indicators: false,
 		duration: 300,
 		numVisible: 3,
-		dist: -200,
-		shift: -400,
+		dist: -100,
+		shift: -500,
 		padding: 20
 	});
 	jQuery('.slide-prev').click(function (e) {
@@ -68,6 +68,7 @@ get_header();
 		jQuery('.carousel.usecases').carousel('next')
 	});
 	jQuery('a.usecase').click(function () { 
+		jQuery(a.usecase).removeClass('active');
 		jQuery(this).toggleClass('active')
 	});
   });
@@ -94,7 +95,7 @@ if ( $arr_posts->have_posts() ) :
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
 					?>
-					<a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" href="#<?php echo $slug; ?>" onclick="instance.set(<?php $c++; ?>);"><?php the_title(); ?></a>
+					<a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" href="#<?php echo $slug; ?>" onclick="instance.set(<?php echo $c ?>);"><?php the_title(); ?></a>
 			<?php endwhile; ?>
 		</div>
         <div class="carousel-fixed-item center pagination">
