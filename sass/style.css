@@ -1259,7 +1259,7 @@ section {
 #about {
   padding: 0;
   margin-top: 160px;
-  margin-bottom: 160px;
+  margin-bottom: 240px;
 }
 
 #about h2 {
@@ -1302,12 +1302,20 @@ section {
 #reports {
   background: #e9c659;
   padding: 0;
-  margin: 80px 0;
+  margin: 80px 0 160px 0;
+}
+
+#reports .flexslider.reports {
+  padding: 40px 0;
+  margin: 0;
+  background: #e9c659;
+  border: none;
 }
 
 #reports .flexslider.reports h4 {
   font-size: 47px;
   color: #c05344;
+  margin-bottom: 20px;
 }
 
 #reports .flexslider.reports p {
@@ -1323,12 +1331,20 @@ section {
   position: relative;
 }
 
+#reports .flexslider.reports li .row {
+  width: 100%;
+}
+
 #reports .flexslider.reports .report-featured-image {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+#reports .flexslider.reports .col.half:last-child {
+  padding: 40px 15px;
 }
 
 #reports .flexslider.reports .flex-control-paging li a.flex-active, #reports .flexslider.reports .flex-control-paging li a:hover {
@@ -1350,6 +1366,16 @@ section {
 
 #reports .flexslider.reports .flex-control-nav li {
   margin: 0 14px;
+}
+
+#reports .flexslider.reports .flexslider {
+  margin: 0;
+  background: #e9c659;
+  border: none;
+}
+
+#reports .flexslider.reports .flex-control-nav {
+  bottom: -60px;
 }
 
 /*--------------------------------------------------------------
