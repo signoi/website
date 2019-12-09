@@ -310,6 +310,9 @@ margin: 80px 0 160px 0;
             border-right: 1px solid  $color__yellow;
             flex-direction: column;
         }
+        li:last-child {
+            border-right: 0;
+        }
         a {
             text-decoration: none;
             color: $color__text-on-grey;
@@ -376,10 +379,14 @@ margin: 80px 0 160px 0;
             z-index: 1;
             height: 32px;
             margin-top: -16px;
+            width: 90%;
+            margin-left: auto;
+            max-width: 950px;
+            margin-right: auto;
             
             .slide-next {
                 transform: rotate(180deg);
-                right: 30px;
+                right: 0;
                 height: 32px;
                 width: 32px;
                 position: absolute;
@@ -391,7 +398,7 @@ margin: 80px 0 160px 0;
 
             }
             .slide-prev {
-                left: 30px;
+                left: 0;
                 height: 32px;
                 width: 32px;
                 position: absolute;

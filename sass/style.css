@@ -1437,6 +1437,10 @@ section {
           flex-direction: column;
 }
 
+#use-cases .usecases-menu li:last-child {
+  border-right: 0;
+}
+
 #use-cases .usecases-menu a {
   text-decoration: none;
   color: #fff;
@@ -1501,12 +1505,16 @@ section {
   z-index: 1;
   height: 32px;
   margin-top: -16px;
+  width: 90%;
+  margin-left: auto;
+  max-width: 950px;
+  margin-right: auto;
 }
 
 .carousel .pagination .slide-next {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  right: 30px;
+  right: 0;
   height: 32px;
   width: 32px;
   position: absolute;
@@ -1518,7 +1526,7 @@ section {
 }
 
 .carousel .pagination .slide-prev {
-  left: 30px;
+  left: 0;
   height: 32px;
   width: 32px;
   position: absolute;
