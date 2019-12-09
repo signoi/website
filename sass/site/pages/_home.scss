@@ -292,6 +292,18 @@ margin: 80px 0 160px 0;
         margin-bottom: .7em;
         text-align: center;
     }
+    .usecases-menu {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $color__text-on-grey;
+        }
+        a.active {
+            color: $color__yellow;
+        }
+    }
+    
 }
 
 /*--carousel CSS for materialise slider--*/

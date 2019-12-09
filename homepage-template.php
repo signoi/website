@@ -54,7 +54,7 @@ get_header();
 		duration: 300,
 		numVisible: 3,
 		dist: -80,
-		shift: -250,
+		shift: -550,
 		padding: 20
 	});
 	jQuery('.slide-prev').click(function (e) {
@@ -62,17 +62,22 @@ get_header();
             e.stopPropagation();
             jQuery('.carousel.usecases').carousel('prev')
         });
-        jQuery('.slide-next').click(function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            jQuery('.carousel.usecases').carousel('next')
-        });
+	jQuery('.slide-next').click(function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		jQuery('.carousel.usecases').carousel('next')
+	});
+	jQuery('a.usecase').click(function () { 
+		jQuery('a.usecase').toggleClass('active')
+	});
   });
 </script>
 <?php
+	$c = 0;
+	$class = '';
 $args = array(
     'post_type' => 'use-case',
-    'post_status' => 'publish',
+	'post_status' => 'publish',
 );
 $arr_posts = new WP_Query( $args );
  
@@ -84,8 +89,13 @@ if ( $arr_posts->have_posts() ) : ?>
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
+					$c++;
+					if ( $c == 1 )
+					$class = ' active';
+				 else
+					$class='';
 					?>
-					<a class="usecase" href="<?php echo $slug; ?>"><?php the_title(); ?></a>
+					<a class="usecase" href="#<?php echo $slug; ?>" onclick="instance.set(3);"><?php the_title(); ?></a>
 			<?php endwhile; ?>
 		</div>
 		</div>	

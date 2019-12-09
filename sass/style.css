@@ -1403,6 +1403,19 @@ section {
   text-align: center;
 }
 
+#use-cases .usecases-menu {
+  text-align: center;
+}
+
+#use-cases .usecases-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#use-cases .usecases-menu a.active {
+  color: #e9c659;
+}
+
 /*--carousel CSS for materialise slider--*/
 .carousel {
   overflow: hidden;
