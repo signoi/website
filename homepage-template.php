@@ -179,9 +179,10 @@ jQuery(window).load(function() {
 <?php endwhile; else : endif; ?>
 
 <section id="reports">
-	<div class="row">
-		<div class="col full"></div>
-	</div>
+<?php $args = array(
+    'id' => '2517'
+);
+echo render_view( $args ); ?>
 </section>
 
 		</main><!-- #main -->
