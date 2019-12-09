@@ -10,15 +10,17 @@
         font-weight: $fontweight__bold;
         color: #fff;
         line-height: 1.1em;
-    }
-    .col.full {
-        max-width: 700px;
+        max-width: 740px;
         margin: auto;
     }
     p {
         font-size: 22px;
         font-weight: $fontweight__regular;
         color: #fff;
+        max-width: 580px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -43,35 +45,43 @@
         color: $color__red;
         font-size: 47px;
         font-weight: $fontweight__medium;
+        margin-bottom: .7em;
     }
     p {
         font-size: 19px;
         font-weight: $fontweight__regular;
         color: $color__grey;
+        margin-top: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
     }
     .quote-before {
         content: " ";
-        display: inline-block;
+        display: block;
         background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
         width: 55px;
-        height: 55px;
-        background-position: center center;
+        background-position: center top;
         background-repeat: no-repeat;
+        margin-left: auto;
     }
     .comment {
-        display: inline;
-        max-width: 570px;
+        display: block;
+        max-width: 633px;
         margin: auto;
+        text-align: left;
+        padding: 0 30px;
     }
     .quote-after {
         content: " ";
-        display: inline-block;
+        display: block;
         background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
         width: 55px;
-        height: 55px;
-        background-position: center center;
         background-repeat: no-repeat;
+        background-position: center top;
+        -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+        margin-right: auto;
     }
     .flex-control-paging li a.flex-active, .flex-control-paging li a:hover {
         background: $color__red;
@@ -90,6 +100,10 @@
     
     .flex-control-nav li {
         margin: 0 14px;
+    }
+    .flexslider .slides > li {
+        display: flex;
+        flex-direction: row;
     }
 }
 

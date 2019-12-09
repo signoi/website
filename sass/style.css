@@ -1046,10 +1046,7 @@ section {
   font-weight: 700;
   color: #fff;
   line-height: 1.1em;
-}
-
-#above-fold .col.full {
-  max-width: 700px;
+  max-width: 740px;
   margin: auto;
 }
 
@@ -1057,6 +1054,10 @@ section {
   font-size: 22px;
   font-weight: 400;
   color: #fff;
+  max-width: 580px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
@@ -1084,40 +1085,48 @@ section {
   color: #c05344;
   font-size: 47px;
   font-weight: 500;
+  margin-bottom: .7em;
 }
 
 #customer-comments p {
   font-size: 19px;
   font-weight: 400;
   color: #566272;
+  margin-top: 0;
+}
+
+#customer-comments p:last-child {
+  margin-bottom: 0;
 }
 
 #customer-comments .quote-before {
   content: " ";
-  display: inline-block;
+  display: block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
   width: 55px;
-  height: 55px;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
+  margin-left: auto;
 }
 
 #customer-comments .comment {
-  display: inline;
-  max-width: 570px;
+  display: block;
+  max-width: 633px;
   margin: auto;
+  text-align: left;
+  padding: 0 30px;
 }
 
 #customer-comments .quote-after {
   content: " ";
-  display: inline-block;
+  display: block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
   width: 55px;
-  height: 55px;
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center top;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: auto;
 }
 
 #customer-comments .flex-control-paging li a.flex-active, #customer-comments .flex-control-paging li a:hover {
@@ -1139,6 +1148,16 @@ section {
 
 #customer-comments .flex-control-nav li {
   margin: 0 14px;
+}
+
+#customer-comments .flexslider .slides > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #callback-cta {

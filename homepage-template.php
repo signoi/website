@@ -37,7 +37,7 @@ get_header();
 		endif;
 ?>		
 <section id="above-fold" style="background-color: <?php echo $backgroundcolor; ?>;">
-<div class="background-image"  style="background-image: url(<?php echo esc_url($fullimage); ?>);"></div>
+<div class="background-image"  style="background-image: url(<?php echo esc_url($fullimage); ?>);"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 	<div class="row">
 		<div class="col full">
 		<h2><?php echo $title; ?></h2>	
