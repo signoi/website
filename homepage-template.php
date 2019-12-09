@@ -48,15 +48,21 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
- jQuery(document).ready(function(){
-    jQuery('.carousel.usecases').carousel({
-		indicators: false,
+document.addEventListener('DOMContentLoaded', function() {
+  //Carousel initialization
+  var options = {
+	indicators: false,
 		duration: 300,
 		numVisible: 3,
 		dist: -100,
 		shift: -500,
-		padding: 20
-	});
+		padding: 20 
+  };
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, options);
+
+})
+ jQuery(document).ready(function(){
 	jQuery('.slide-prev').click(function (e) {
             e.preventDefault();
             e.stopPropagation();
@@ -90,6 +96,7 @@ if ( $arr_posts->have_posts() ) :
 	</div>
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
+			<div class="background-slide"></div> <!-- ugh but I can't work out how to hide the back slides otherwise because I had to use !important to override the opacity -->
 		<div class="usecases-menu">
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
