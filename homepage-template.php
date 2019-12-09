@@ -48,8 +48,9 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
-  jQuery(document).ready(function(){
-    jQuery('.carousel').carousel();
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
   });
 </script>
 <?php
