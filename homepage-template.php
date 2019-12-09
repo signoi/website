@@ -53,19 +53,18 @@ get_header();
 		indicators: false,
 		duration: 300,
 		numVisible: 3,
-		dist: -80
+		dist: -350
 	});
-	jQuery('#carousel-next').on('touchstart', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-	jQuery('#carouselFirst').carousel('next');
-});
-
-jQuery('#carousel-prev').on('touchstart', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-	jQuery('#carouselFirst').carousel('prev');
-});
+	jQuery('.slide-prev').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            jQuery('.carousel.usecases').carousel('prev')
+        });
+        jQuery('.slide-next').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            jQuery('.carousel.usecases').carousel('next')
+        });
   });
 </script>
 <?php
@@ -79,9 +78,9 @@ if ( $arr_posts->have_posts() ) : ?>
 <section id="use-cases">
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
-		<div class="carousel-fixed-item center clearfix">
-          <a id="carousel-prev" class="movePrevCarousel left">go left</a>
-          <a id="carousel-next" class="moveNextCarousel right">go right</a>
+        <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2 slide-prev">Prev</a>
+            <a class="btn waves-effect white grey-text darken-text-2 slide-next">Next</a>
         </div>
 		<?php
     while ( $arr_posts->have_posts() ) :
