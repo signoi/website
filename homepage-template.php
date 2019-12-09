@@ -53,8 +53,8 @@ get_header();
 		indicators: false,
 		duration: 300,
 		numVisible: 3,
-		dist: -80,
-		shift: -550,
+		dist: -200,
+		shift: -400,
 		padding: 20
 	});
 	jQuery('.slide-prev').click(function (e) {
