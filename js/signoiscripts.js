@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
          navbar = jQuery('.site-header');
   
      jQuery(window).scroll(function () {
-        var a = $(window).scrollTop();
+        var a = jQuery(window).scrollTop();
         var b = navbar.height();
        
         currentScrollTop = a;
