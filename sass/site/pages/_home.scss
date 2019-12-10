@@ -534,6 +534,6 @@ section.start {
     }
     .col.half:first-child:after {
         max-height: 1000px;
-        transition: max-height 1s ease 1.3s both;
+        transform: max-height 1s ease 1.3s both;
     }
 }

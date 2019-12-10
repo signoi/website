@@ -1826,8 +1826,8 @@ section.start .report-featured-image {
 
 #quantitative-semiotics.start .col.half:first-child:after {
   max-height: 1000px;
-  -webkit-transition: max-height 1s ease 1.3s both;
-  transition: max-height 1s ease 1.3s both;
+  -webkit-transform: max-height 1s ease 1.3s both;
+          transform: max-height 1s ease 1.3s both;
 }
 
 /*--------------------------------------------------------------
