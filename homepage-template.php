@@ -73,12 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.stopPropagation();
 		jQuery('.carousel.usecases').carousel('next')
 	});
+	
 	jQuery('.usecases-menu li a').on("click", function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
 		var elem = document.querySelector('.carousel');
 		var instance = M.Carousel.getInstance(elem);
-		var move_to = <?php echo $c ?>;
+		var move_to = jQuery(this).data("slidenumber")
 		instance.set(move_to);
    }); 
    
@@ -107,7 +108,7 @@ if ( $arr_posts->have_posts() ) :
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
 					?>
-					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
+					<li data-slidenumber="<?php echo $c ?>"><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
 
 			</ul>
