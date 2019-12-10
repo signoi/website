@@ -15,6 +15,11 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="row"></div class="col full">
+		<div class="footer-socials">
+			<a target="_blank" href="https://twitter.com/hellosignoi"><i class="fab fa-twitter"></i></a>
+			<a target="_blank" href="https://www.instagram.com/hellosignoi/"><i class="fab fa-instagram"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/company/signoi/"><i class="fab fa-linkedin"></i></a>
+		</div>
 			<nav class="footermenu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-menu' ) ); ?></nav>
 				<div class="site-info">
 				(c) 2019 Signoi Ltd. Registered office: 20-22 Wenlock Road, London, N1 7GU, Company number: 10978985
