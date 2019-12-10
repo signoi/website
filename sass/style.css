@@ -562,6 +562,24 @@ table {
   }
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes rise {
   0% {
     -webkit-transform: translateY(100%);
@@ -1286,7 +1304,7 @@ section {
 #customer-comments .quote-after {
   content: " ";
   display: block;
-  background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  background: url(http://new.signoi.com/wp-content/uploads/2019/12/quote-right.svg);
   width: 55px;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1424,7 +1442,8 @@ section {
 }
 
 #quantitative-semiotics .col.half:first-child:after {
-  height: 0;
+  height: 100%;
+  max-height: 0;
   width: 1px;
   content: " ";
   position: absolute;
@@ -1761,24 +1780,14 @@ section {
 }
 
 /*--animations--*/
-section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .round-image, section .report-featured-image {
+section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .round-image, section .quote-before, section .quote-after, section .report-featured-image {
   visibility: hidden;
 }
 
-section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .report-featured-image {
+section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .quote-before, section.start .quote-after, section.start .report-featured-image {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
   visibility: visible;
-}
-
-section.start .quote-before {
-  -webkit-animation: fade-in-left 1s ease both;
-          animation: fade-in-left 1s ease both;
-}
-
-section.start .quote-after {
-  -webkit-animation: fade-in-right 1s ease both;
-          animation: fade-in-right 1s ease both;
 }
 
 section.start .round-image {
@@ -1791,6 +1800,11 @@ section.start .report-featured-image {
           animation-delay: .3s;
 }
 
+#about.start img {
+  -webkit-animation: rise 1s ease both;
+          animation: rise 1s ease both;
+}
+
 #quantitative-semiotics .col.half {
   visibility: hidden;
 }
@@ -1801,22 +1815,21 @@ section.start .report-featured-image {
           animation: none;
 }
 
-#quantitative-semiotics.start .col.half:first-child {
-  visibility: visible;
-  -webkit-animation: fade-in-left 1s ease .3s both;
-          animation: fade-in-left 1s ease .3s both;
-}
-
-#quantitative-semiotics.start .col-half:last-child {
+#quantitative-semiotics.start .col.half {
   visibility: visible;
   -webkit-animation: fade-in-right 1s ease .3s both;
           animation: fade-in-right 1s ease .3s both;
 }
 
+#quantitative-semiotics.start .col.half:first-child {
+  -webkit-animation: fade-in-left 1s ease .3s both;
+          animation: fade-in-left 1s ease .3s both;
+}
+
 #quantitative-semiotics.start .col.half:first-child:after {
-  height: 100%;
-  -webkit-transition: height 1s ease 1.3s both;
-  transition: height 1s ease 1.3s both;
+  max-height: 1000px;
+  -webkit-transition: max-height 1s ease 1.3s both;
+  transition: max-height 1s ease 1.3s both;
 }
 
 /*--------------------------------------------------------------
