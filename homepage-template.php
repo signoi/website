@@ -79,7 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			var instance = M.Carousel.getInstance(elem);
 			var move_to = jQuery(this).data("slidenumber");
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
-		jQuery(this).toggleClass('active').instance.set(move_to);
+		jQuery(this).toggleClass('active');
+		instance.set(move_to);
    }); 
    
   });
