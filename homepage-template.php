@@ -76,6 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	jQuery('.usecases-menu li a').on("click", function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
+		var elem = document.querySelector('.carousel');
+        var instance = M.Carousel.getInstance(elem);
+		instance.set(<?php echo $c ?>);
    }); 
    
   });
@@ -104,8 +107,7 @@ if ( $arr_posts->have_posts() ) :
 					$slug = get_post_field( 'post_name', get_post() );
 					$posttitle = the_title();
 					?>
-					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
-					<script type="text/javascript"> jQuery(document).ready(function(){ jQuery('.indicator-item').innerHTML="<?php echo $posttitle; ?>";   });</script>
+					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>" onclick="instance.set(<?php echo $c ?>);"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
 
 			</ul>
