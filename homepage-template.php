@@ -51,7 +51,7 @@ get_header();
 document.addEventListener('DOMContentLoaded', function() {
   //Carousel initialization
   var options = {
-	indicators: false,
+	indicators: true,
 		duration: 300,
 		numVisible: 3,
 		dist: -100,
@@ -60,16 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, options);
-
-  var elem = document.querySelector('#organisation-culture');
-  var instance = M.Carousel.getInstance(elem);
-   instance.set(1);
-    var elem2 = document.querySelector('#cultural-intelligence');
-  var instance2 = M.Carousel.getInstance(elem2);
-   instance.set(2);
-   var elem3 = document.querySelector('#innovation');
-  var instance3 = M.Carousel.getInstance(elem3);
-   instance.set(3);
 
 })
  jQuery(document).ready(function(){
@@ -87,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
    }); 
+   
 
   });
 </script>
