@@ -15,6 +15,11 @@
     display: block;
     content: " ";
 	}
+	.usecase-menu-item a:after {
+		content: "\f078";
+		font-family: 'FontAwesome';
+		margin-left: 5px;
+	}
 	ul {
 		display: none;
 		list-style: none;
@@ -29,9 +34,9 @@
 			margin-top: 27px;
 			display: flex;
 			flex-wrap: wrap;
-			width: 414px;
-			right: -120%;
-			padding: 0;
+			width: 400px;
+			right: -165px;
+			padding: 15px;
 				li {
 					display: block;
 					margin-right: 0;
@@ -39,11 +44,15 @@
 					margin: 15px;
 					padding: 20px;
 					text-align: center;
+					width: calc(50% - 30px);
 
 					a:before {
 						content: url(http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-icon-01.svg);
 						display: block;
 						margin-bottom: 10px;
+					}
+					a:after {
+						content: " ";
 					}
 				}
 

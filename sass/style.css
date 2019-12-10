@@ -850,6 +850,12 @@ a:hover, a:active {
   content: " ";
 }
 
+.main-navigation .usecase-menu-item a:after {
+  content: "\f078";
+  font-family: 'FontAwesome';
+  margin-left: 5px;
+}
+
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -870,9 +876,9 @@ a:hover, a:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 414px;
-  right: -120%;
-  padding: 0;
+  width: 400px;
+  right: -165px;
+  padding: 15px;
 }
 
 .main-navigation ul ul li {
@@ -882,12 +888,17 @@ a:hover, a:active {
   margin: 15px;
   padding: 20px;
   text-align: center;
+  width: calc(50% - 30px);
 }
 
 .main-navigation ul ul li a:before {
   content: url(http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-icon-01.svg);
   display: block;
   margin-bottom: 10px;
+}
+
+.main-navigation ul ul li a:after {
+  content: " ";
 }
 
 .main-navigation ul ul {
