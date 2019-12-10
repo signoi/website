@@ -41,14 +41,14 @@ jQuery(document).ready(function () {
                 jQuery(this.element).addClass('start');
         }, {
             //Set the offset
-            offset: '70%'
+            offset: '90%'
         });
+        var inview = new Waypoint.Inview({
+          element: jQuery('section')[0],
+          enter: function(direction) {
+            jQuery(this.element).addClass('animate');
+          }
+        })
     });
 
 
-    var inview = new Waypoint.Inview({
-      element: jQuery('section')[0],
-      enter: function(direction) {
-        jQuery(this.element).addClass('animate');
-      }
-    })
