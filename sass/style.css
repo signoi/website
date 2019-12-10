@@ -1719,8 +1719,8 @@ section h2, section h3, section h4, section p, section button, section .flexslid
 }
 
 section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img {
-  -webkit-animation: fade-in-bottom 1s ease;
-          animation: fade-in-bottom 1s ease;
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
   visibility: visible;
 }
 

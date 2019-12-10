@@ -466,7 +466,7 @@ section {
 } 
 section.start {
     h2, h3, h4, p, button, .flexslider.comments, form, img {
-        animation: fade-in-bottom 1s ease;
+        animation: fade-in-bottom 1s ease both;
         visibility: visible;
     }
 }
