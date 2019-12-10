@@ -105,8 +105,9 @@ if ( $arr_posts->have_posts() ) :
 					$posttitle = the_title();
 					?>
 					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
+					<script type="text/javascript"> jQuery(document).ready(function(){ jQuery('.indicator-item').innerHTML="<?php echo $posttitle; ?>";   });</script>
 			<?php endwhile; ?>
-			<script type="text/javascript"> jQuery(document).ready(function(){ jQuery('.indicator-item').innerHTML="<?php echo $posttitle; ?>";   });</script>
+
 			</ul>
         <div class="carousel-fixed-item center pagination">
             <a class="slide-prev">Prev</a>
