@@ -533,7 +533,6 @@ section.start {
         animation: fade-in-left 1s ease .3s both;
     }
     .col.half:first-child:after {
-        max-height: 1000px;
-        transform: max-height 1s ease 1.3s both;
+        animation: increase-height 1s ease 1.3s both;
     }
 }
