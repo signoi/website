@@ -73,14 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.stopPropagation();
 		jQuery('.carousel.usecases').carousel('next')
 	});
-	  // getting slide number attribute
-  	var elem = document.querySelector('.carousel');
-	var instance = M.Carousel.getInstance(elem);
-	var move_to = jQuery('.usecases-menu li a').data("slidenumber");
 	jQuery('.usecases-menu li a').on("click", function() {
+			  // getting slide number attribute
+			var elem = document.querySelector('.carousel');
+			var instance = M.Carousel.getInstance(elem);
+			var move_to = jQuery('.usecases-menu li a').data("slidenumber");
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
-		jQuery(this).toggleClass('active');
-		jQuery(this).instance.set(move_to);
+		jQuery(this).toggleClass('active').instance.set(move_to);
    }); 
    
   });
