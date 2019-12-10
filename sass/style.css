@@ -898,7 +898,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul li a:after {
-  content: " ";
+  display: none;
 }
 
 .main-navigation ul ul {
