@@ -61,10 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, options);
 
-  // getting slide number attribute
-  	var elem = document.querySelector('.carousel');
-	var instance = M.Carousel.getInstance(elem);
-	var move_to = jQuery('.usecases-menu li a').data("slidenumber");
 })
  jQuery(document).ready(function(){
 	jQuery('.slide-prev').click(function (e) {
@@ -77,10 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.stopPropagation();
 		jQuery('.carousel.usecases').carousel('next')
 	});
-	
+	  // getting slide number attribute
+  	var elem = document.querySelector('.carousel');
+	var instance = M.Carousel.getInstance(elem);
+	var move_to = jQuery('.usecases-menu li a').data("slidenumber");
 	jQuery('.usecases-menu li a').on("click", function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
+		jQuery(this).instance.set(move_to);
    }); 
    
   });
@@ -108,11 +108,7 @@ if ( $arr_posts->have_posts() ) :
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
 					?>
-<<<<<<< HEAD
-					<li onclick="instance.set(move_to);"><a data-slidenumber="<?php echo $c ?>" class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
-=======
-					<li><a data-slidenumber="<?php echo ++$c ?>" class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
->>>>>>> parent of c6fb322... use cases slider menu
+					<li><a data-slidenumber="<?php echo $c ?>" class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
 
 			</ul>
