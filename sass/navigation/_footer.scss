@@ -3,5 +3,27 @@
     padding: 80px 0;
         .site-info {
             color: $color__lightgrey;
+            font-size: .8rem;
+        }
+        .footer-menu {
+            .sub-menu {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid #7a7c84;
+                border-top: none;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                margin-bottom: 10px;
+                
+                a {
+                    text-decoration: none;
+                    
+                }
+            }
+
         }
 }

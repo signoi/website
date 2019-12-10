@@ -14,10 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-	<nav class="footermenu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-menu' ) ); ?></nav>
-		<div class="site-info">
-		(c) 2019 Signoi Ltd. Registered office: 20-22 Wenlock Road, London, N1 7GU, Company number: 10978985
-		</div><!-- .site-info -->
+		<div class="row"></div class="col full">
+			<nav class="footermenu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-menu' ) ); ?></nav>
+				<div class="site-info">
+				(c) 2019 Signoi Ltd. Registered office: 20-22 Wenlock Road, London, N1 7GU, Company number: 10978985
+				</div><!-- .site-info -->
+		</div></div><!-- .row and column-->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
