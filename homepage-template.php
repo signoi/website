@@ -105,9 +105,8 @@ if ( $arr_posts->have_posts() ) :
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
-					$posttitle = the_title();
 					?>
-					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>" onclick="instance.set(<?php echo $c ?>);"><?php the_title(); ?></a></li>
+					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
 
 			</ul>
