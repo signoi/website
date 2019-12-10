@@ -1798,7 +1798,7 @@ section.start .report-featured-image {
           animation-delay: .3s;
 }
 
-#about.start img {
+#above-fold.start img {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
 }
