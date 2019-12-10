@@ -40,6 +40,28 @@
         margin-top: 0;
         z-index: 1;
     }
+    h2, p, button {
+        opacity: 0;
+    }
+}
+
+#above-fold.start {
+    .background-image {
+        animation: rise .4s ease;
+    }
+    h2, p, button {
+        animation: fade-in-bottom .2s ease;
+        opacity: 1;
+    }
+    h2 {
+        animation-delay: .2s;
+    }
+    p {
+        animation-delay: .4s;
+    }
+    button {
+        animation-delay: .6s;
+    }
 }
 
 #customer-comments {
