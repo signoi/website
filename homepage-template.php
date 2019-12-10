@@ -51,7 +51,7 @@ get_header();
 document.addEventListener('DOMContentLoaded', function() {
   //Carousel initialization
   var options = {
-	indicators: true,
+	indicators: false,
 		duration: 300,
 		numVisible: 3,
 		dist: -100,
