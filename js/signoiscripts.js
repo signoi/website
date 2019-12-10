@@ -43,6 +43,12 @@ jQuery(document).ready(function () {
             //Set the offset
             offset: '90%'
         });
+        var semioticswaypoint = jQuery('#quantitative-semiotics .row').waypoint(function() {
+              jQuery(this.element).addClass('start');
+      }, {
+          //Set the offset
+          offset: '90%'
+      });
     });
 
 

@@ -1831,18 +1831,18 @@ section.start .report-featured-image {
           animation: none;
 }
 
-#quantitative-semiotics.start .col.half {
+#quantitative-semiotics .row.start .col.half {
   opacity: 1;
   -webkit-animation: fade-in-right 1s ease .3s both;
           animation: fade-in-right 1s ease .3s both;
 }
 
-#quantitative-semiotics.start .col.half:first-child {
+#quantitative-semiotics .row.start .col.half:first-child {
   -webkit-animation: fade-in-left 1s ease .3s both;
           animation: fade-in-left 1s ease .3s both;
 }
 
-#quantitative-semiotics.start .col.half:first-child:after {
+#quantitative-semiotics .row.start .col.half:first-child:after {
   -webkit-animation: increase-height 1s ease 1.3s both;
           animation: increase-height 1s ease 1.3s both;
 }
