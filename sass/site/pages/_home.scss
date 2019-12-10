@@ -1,5 +1,5 @@
 #above-fold {
-    height: calc(100vh - 104px);
+    min-height: calc(100vh - 104px);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -47,6 +47,9 @@
         margin-top: 0;
         z-index: 1;
         height: 100%;
+    }
+    img {
+        margin-bottom: -50%;
     }
 }
 
