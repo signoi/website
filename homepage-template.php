@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			  // getting slide number attribute
 			var elem = document.querySelector('.carousel');
 			var instance = M.Carousel.getInstance(elem);
-			var move_to = jQuery('.usecases-menu li a').data("slidenumber");
+			var move_to = jQuery(this).data("slidenumber");
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active').instance.set(move_to);
    }); 
