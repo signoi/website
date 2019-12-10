@@ -173,3 +173,32 @@ function wpshout_custom_sizes( $sizes ) {
         'square' => __( 'Square' ),
     ) );
 }
+
+/*--footer menu--*/
+function register_footer_menu() {
+	register_nav_menu('footer-menu',__( 'Footer Menu' ));
+  }
+  add_action( 'init', 'register_footer_menu' );
+  
+
+/*--hide subcategories in category widget except one specific one--*/
+function exclude_widget_subcategories($args){
+	$all_categories = get_all_category_ids();
+	
+	$exclude_categories = array();
+	
+	foreach($all_categories as $category_id){
+		$category = get_category($category_id);
+	
+	if($category_id!=1373) {
+		if($category->parent!=0){
+			$exclude_categories[] = $category_id;
+		}
+	}
+	}
+	$exclude = implode(",",$exclude_categories); // The IDs of the excluding categories
+	$args["exclude"] = $exclude;
+	return $args;
+	}
+	add_filter("widget_categories_args","exclude_widget_subcategories");
+	  

@@ -14,18 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+	<nav class="footermenu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-menu' ) ); ?></nav>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'signoi-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'signoi-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'signoi-theme' ), 'signoi-theme', '<a href="http://makeaspectacle.co.uk">Make a Spectacle</a>' );
-				?>
+		(c) 2019 Signoi Ltd. Registered office: 20-22 Wenlock Road, London, N1 7GU, Company number: 10978985
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
