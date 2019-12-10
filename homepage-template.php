@@ -37,12 +37,13 @@ get_header();
 		endif;
 ?>		
 <section id="above-fold" style="background-color: <?php echo $backgroundcolor; ?>;">
-<div class="background-image"  style="background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-03.svg);"></div>
+<!--  <div class="background-image"  style="background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-03.svg);"></div> -->
 	<div class="row">
 		<div class="col full">
 		<h2><?php echo $title; ?></h2>	
 		<p><?php echo $copy; ?></p>
 		<button class="button yellow" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
+		<img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-03.svg">
 		</div>
 	</div>
 </section>
