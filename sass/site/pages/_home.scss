@@ -516,7 +516,7 @@ section.start {
 
 #quantitative-semiotics  {
     .col.half {
-    visibility: hidden;
+    opacity: 0;
     }
     h3, p {
         visibility: visible;
@@ -526,7 +526,7 @@ section.start {
 
 #quantitative-semiotics.start {
     .col.half {
-        visibility: visible;  
+        opacity: 1;
         animation: fade-in-right 1s ease .3s both;
     }
     .col.half:first-child {
