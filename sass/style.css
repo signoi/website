@@ -1186,6 +1186,8 @@ section {
   line-height: 1.1em;
   max-width: 740px;
   margin: auto;
+  -webkit-animation: fade-in-bottom .4s ease;
+          animation: fade-in-bottom .4s ease;
 }
 
 #above-fold p {
@@ -1196,10 +1198,14 @@ section {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  -webkit-animation: fade-in-bottom .4s ease .2s;
+          animation: fade-in-bottom .4s ease .2s;
 }
 
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
   font-size: 34px;
+  -webkit-animation: fade-in-bottom .4s ease .4s;
+          animation: fade-in-bottom .4s ease .4s;
 }
 
 #above-fold .background-image {
@@ -1211,6 +1217,8 @@ section {
   background-repeat: no-repeat;
   z-index: 0;
   background-size: 1200px;
+  -webkit-animation: rise .4s ease;
+          animation: rise .4s ease;
 }
 
 #above-fold .row {
@@ -1220,32 +1228,6 @@ section {
 
 #above-fold h2, #above-fold p, #above-fold button {
   opacity: 0;
-}
-
-#above-fold.start .background-image {
-  -webkit-animation: rise .4s ease;
-          animation: rise .4s ease;
-}
-
-#above-fold.start h2, #above-fold.start p, #above-fold.start button {
-  -webkit-animation: fade-in-bottom .2s ease;
-          animation: fade-in-bottom .2s ease;
-  opacity: 1;
-}
-
-#above-fold.start h2 {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-#above-fold.start p {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
-#above-fold.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
 #customer-comments {

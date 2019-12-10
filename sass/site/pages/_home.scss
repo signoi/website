@@ -12,6 +12,7 @@
         line-height: 1.1em;
         max-width: 740px;
         margin: auto;
+        animation: fade-in-bottom .4s ease;
     }
     p {
         font-size: 22px;
@@ -21,10 +22,12 @@
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
+        animation: fade-in-bottom .4s ease .2s;
     }
 
     button, input[type="button"], input[type="reset"], input[type="submit"] {
         font-size: 34px;
+        animation: fade-in-bottom .4s ease .4s;
     }
     .background-image {
         position: absolute;
@@ -35,6 +38,7 @@
         background-repeat: no-repeat;
         z-index: 0;
     background-size: 1200px;
+    animation: rise .4s ease;
     }
     .row {
         margin-top: 0;
@@ -42,25 +46,6 @@
     }
     h2, p, button {
         opacity: 0;
-    }
-}
-
-#above-fold.start {
-    .background-image {
-        animation: rise .4s ease;
-    }
-    h2, p, button {
-        animation: fade-in-bottom .2s ease;
-        opacity: 1;
-    }
-    h2 {
-        animation-delay: .2s;
-    }
-    p {
-        animation-delay: .4s;
-    }
-    button {
-        animation-delay: .6s;
     }
 }
 
