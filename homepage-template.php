@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
    }); 
-   
+   document.getElementByClass(indicator-item).innerHTML="<?php the_title(); ?>";
 
   });
 </script>
