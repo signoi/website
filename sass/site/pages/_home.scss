@@ -44,9 +44,6 @@
         margin-top: 0;
         z-index: 1;
     }
-    h2, p, button {
-        opacity: 0;
-    }
 }
 
 #customer-comments {
@@ -461,3 +458,16 @@ margin: 80px 0 160px 0;
     pointer-events: none;
   }
   
+/*--animations--*/ 
+
+section {
+    h2, h3, h4, p, button, .flexslider.comments, form, img {
+        visibility: hidden;
+    }
+} 
+section.start {
+    h2, h3, h4, p, button, .flexslider.comments, form, img {
+        animation: fade-in-bottom 0.4s ease;
+        visibility: visible;
+    }
+}

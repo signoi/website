@@ -1226,10 +1226,6 @@ section {
   z-index: 1;
 }
 
-#above-fold h2, #above-fold p, #above-fold button {
-  opacity: 0;
-}
-
 #customer-comments {
   text-align: center;
 }
@@ -1716,6 +1712,17 @@ section {
 .carousel.scrolling .carousel-item .materialboxed,
 .carousel .carousel-item:not(.active) .materialboxed {
   pointer-events: none;
+}
+
+/*--animations--*/
+section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img {
+  visibility: hidden;
+}
+
+section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img {
+  -webkit-animation: fade-in-bottom 0.4s ease;
+          animation: fade-in-bottom 0.4s ease;
+  visibility: visible;
 }
 
 /*--------------------------------------------------------------
