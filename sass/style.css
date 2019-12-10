@@ -1179,6 +1179,10 @@ section {
   overflow: hidden;
 }
 
+#above-fold .col.full {
+  position: relative;
+}
+
 #above-fold h2 {
   font-size: 60px;
   font-weight: 700;
@@ -1196,9 +1200,10 @@ section {
   color: #fff;
   max-width: 580px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
+  margin-bottom: 30px;
 }
 
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
@@ -1223,6 +1228,7 @@ section {
 #above-fold .row {
   margin-top: 0;
   z-index: 1;
+  height: 100%;
 }
 
 #customer-comments {
@@ -1256,6 +1262,8 @@ section {
   background-repeat: no-repeat;
   margin-left: auto;
   background-size: contain;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 #customer-comments .comment {
@@ -1264,6 +1272,11 @@ section {
   margin: 0;
   text-align: left;
   padding: 0 30px;
+}
+
+#customer-comments .comment p {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 #customer-comments .quote-after {
@@ -1277,6 +1290,8 @@ section {
   transform: rotate(180deg);
   margin-right: auto;
   background-size: contain;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
 #customer-comments .flex-viewport {
@@ -1331,6 +1346,13 @@ section {
   color: #fff;
   margin-top: .5em;
   margin-bottom: 1.5em;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+#callback-cta form {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 #callback-cta input[type="text"] {
@@ -1394,7 +1416,17 @@ section {
 }
 
 #quantitative-semiotics .col.half:first-child {
-  border-right: 1px solid #c05344;
+  position: relative;
+}
+
+#quantitative-semiotics .col.half:first-child:after {
+  height: 0;
+  width: 1px;
+  content: " ";
+  position: absolute;
+  background: #c05344;
+  right: 0;
+  top: 0;
 }
 
 #quantitative-semiotics .col.half {
@@ -1412,12 +1444,16 @@ section {
   font-size: 47px;
   font-weight: 500;
   color: #fff;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 #about p {
   font-size: 19px;
   font-weight: 400;
   color: #fff;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 #about .row {
@@ -1443,6 +1479,13 @@ section {
 
 #about button {
   font-size: 19px;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+#about .round-image img {
+  -webkit-animation: none;
+          animation: none;
 }
 
 #reports {
@@ -1714,14 +1757,52 @@ section {
 }
 
 /*--animations--*/
-section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .round-image {
+section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .round-image, section .quote-before, section .quote-after, section .report-featured-image {
   visibility: hidden;
 }
 
-section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .round-image {
+section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .quote-before, section.start .quote-after, section.start .report-featured-image {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
   visibility: visible;
+}
+
+section.start .round-image {
+  -webkit-animation: fade-in-right 1s ease both;
+          animation: fade-in-right 1s ease both;
+}
+
+section.start .report-featured-image {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+#quantitative-semiotics .col.half {
+  visibility: hidden;
+}
+
+#quantitative-semiotics h3, #quantitative-semiotics p {
+  visibility: visible;
+  -webkit-animation: none;
+          animation: none;
+}
+
+#quantitative-semiotics.start .col.half:first-child {
+  visibility: visible;
+  -webkit-animation: fade-in-left 1s ease .3s both;
+          animation: fade-in-left 1s ease .3s both;
+}
+
+#quantitative-semiotics.start .col-half:last-child {
+  visibility: visible;
+  -webkit-animation: fade-in-right 1s ease .3s both;
+          animation: fade-in-right 1s ease .3s both;
+}
+
+#quantitative-semiotics.start .col.half:first-child:after {
+  height: 100%;
+  -webkit-transition: height 1s ease 1.3s both;
+  transition: height 1s ease 1.3s both;
 }
 
 /*--------------------------------------------------------------
