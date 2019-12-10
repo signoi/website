@@ -77,8 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
    }); 
-   document.getElementByClass(indicator-item).innerHTML="<?php the_title(); ?>";
-
+   document.getElementByClass('.indicator-item').innerHTML="<?php echo $posttitle; ?>";
   });
 </script>
 <?php
@@ -103,6 +102,7 @@ if ( $arr_posts->have_posts() ) :
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
+					$posttitle = the_title();
 					?>
 					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
 			<?php endwhile; ?>
