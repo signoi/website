@@ -1028,11 +1028,30 @@ a:hover, a:active {
 #colophon {
   background: #566272;
   padding: 80px 0;
+  text-align: center;
 }
 
 #colophon .site-info {
   color: #bbc0c6;
   font-size: .8rem;
+}
+
+#colophon .footer-socials a {
+  color: #fff;
+  font-size: 25px;
+  margin: 7.5px;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+#colophon .footer-socials a:hover {
+  color: #e9c659;
+}
+
+#colophon .footer-menu #menu-primary {
+  padding: 0;
+  margin: 0;
+  margin: 30px auto;
 }
 
 #colophon .footer-menu .sub-menu {
@@ -1052,6 +1071,13 @@ a:hover, a:active {
 
 #colophon .footer-menu li a {
   text-decoration: none;
+  color: #fff;
+}
+
+#colophon .footer-menu li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
 }
 
 /*--------------------------------------------------------------

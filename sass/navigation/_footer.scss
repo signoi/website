@@ -1,11 +1,28 @@
 #colophon {
     background: $color__grey;
     padding: 80px 0;
+    text-align: center;
         .site-info {
             color: $color__lightgrey;
             font-size: .8rem;
         }
+        .footer-socials {
+            a {
+                color: #fff;
+                font-size: 25px;
+                margin: 7.5px;
+                transition: color .2s ease;
+            }
+            a:hover {
+                color: $color__yellow;
+            }
+        }
         .footer-menu {
+            #menu-primary {
+                padding: 0;
+                margin: 0;
+                margin: 30px auto;
+            }
             .sub-menu {
                 display: none;
             }
@@ -21,8 +38,13 @@
                 
                 a {
                     text-decoration: none;
-                    
+                    color: #fff;
                 }
+            }
+            li:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                border-right: none;
             }
 
         }
