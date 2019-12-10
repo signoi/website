@@ -12,7 +12,7 @@
         line-height: 1.1em;
         max-width: 740px;
         margin: auto;
-        animation: fade-in-bottom .4s ease;
+        animation-delay: .3s;
     }
     p {
         font-size: 22px;
@@ -21,13 +21,12 @@
         max-width: 580px;
         margin: auto;
         margin-top: 50px;
-        margin-bottom: 50px;
-        animation: fade-in-bottom .4s ease .2s;
+        animation-delay: .6s;
     }
 
     button, input[type="button"], input[type="reset"], input[type="submit"] {
         font-size: 34px;
-        animation: fade-in-bottom .4s ease .4s;
+        animation-delay: .9s;
     }
     .background-image {
         position: absolute;
@@ -38,7 +37,7 @@
         background-repeat: no-repeat;
         z-index: 0;
     background-size: 1200px;
-    animation: rise .4s ease;
+    animation: rise 1s ease;
     }
     .row {
         margin-top: 0;
@@ -467,7 +466,7 @@ section {
 } 
 section.start {
     h2, h3, h4, p, button, .flexslider.comments, form, img {
-        animation: fade-in-bottom 0.4s ease;
+        animation: fade-in-bottom 1s ease;
         visibility: visible;
     }
 }

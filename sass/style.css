@@ -1186,8 +1186,8 @@ section {
   line-height: 1.1em;
   max-width: 740px;
   margin: auto;
-  -webkit-animation: fade-in-bottom .4s ease;
-          animation: fade-in-bottom .4s ease;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 #above-fold p {
@@ -1197,15 +1197,14 @@ section {
   max-width: 580px;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
-  -webkit-animation: fade-in-bottom .4s ease .2s;
-          animation: fade-in-bottom .4s ease .2s;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
   font-size: 34px;
-  -webkit-animation: fade-in-bottom .4s ease .4s;
-          animation: fade-in-bottom .4s ease .4s;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
 #above-fold .background-image {
@@ -1217,8 +1216,8 @@ section {
   background-repeat: no-repeat;
   z-index: 0;
   background-size: 1200px;
-  -webkit-animation: rise .4s ease;
-          animation: rise .4s ease;
+  -webkit-animation: rise 1s ease;
+          animation: rise 1s ease;
 }
 
 #above-fold .row {
@@ -1720,8 +1719,8 @@ section h2, section h3, section h4, section p, section button, section .flexslid
 }
 
 section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img {
-  -webkit-animation: fade-in-bottom 0.4s ease;
-          animation: fade-in-bottom 0.4s ease;
+  -webkit-animation: fade-in-bottom 1s ease;
+          animation: fade-in-bottom 1s ease;
   visibility: visible;
 }
 

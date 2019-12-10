@@ -44,3 +44,11 @@ jQuery(document).ready(function () {
             offset: '70%'
         });
     });
+
+
+    var inview = new Waypoint.Inview({
+      element: jQuery('section')[0],
+      enter: function(direction) {
+        jQuery(this.element).addClass('animate');
+      }
+    })
