@@ -77,8 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
 		jQuery(this).toggleClass('active');
 		var elem = document.querySelector('.carousel');
-        var instance = M.Carousel.getInstance(elem);
-		instance.set(<?php echo $c ?>);
+		var instance = M.Carousel.getInstance(elem);
+		var move_to = <?php echo $c ?>;
+		instance.set(move_to);
    }); 
    
   });
