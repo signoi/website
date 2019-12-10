@@ -21,25 +21,32 @@
 		margin: 0;
 		padding-left: 0;
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			box-shadow: 7px 7px 5px rgba(28,28,27,0.45);
 			position: absolute;
 			top: 100%;
-			left: -999em;
 			z-index: 99999;
 			background: #fff;
-			padding: 10px;
-			border-top: 3px solid $color__grey;
 			margin-top: 27px;
-			width: 200px;
+			display: flex;
+			flex-wrap: wrap;
+			width: 414px;
+			right: -120%;
+			padding: 0;
 				li {
-					margin-bottom: 10px;
 					display: block;
 					margin-right: 0;
+					background: #ececef;
+					margin: 15px;
+					padding: 20px;
+					text-align: center;
+
+					a:before {
+						content: url(http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-icon-01.svg);
+						display: block;
+						margin-bottom: 10px;
+					}
 				}
-				li:last-child {
-					margin-bottom: 0;
-				}
+
 		}
 			ul {
 				left: -999em;

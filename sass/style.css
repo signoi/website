@@ -858,28 +858,36 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
+  -webkit-box-shadow: 7px 7px 5px rgba(28, 28, 27, 0.45);
+          box-shadow: 7px 7px 5px rgba(28, 28, 27, 0.45);
   position: absolute;
   top: 100%;
-  left: -999em;
   z-index: 99999;
   background: #fff;
-  padding: 10px;
-  border-top: 3px solid #566272;
   margin-top: 27px;
-  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 414px;
+  right: -120%;
+  padding: 0;
 }
 
 .main-navigation ul ul li {
-  margin-bottom: 10px;
   display: block;
   margin-right: 0;
+  background: #ececef;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
 }
 
-.main-navigation ul ul li:last-child {
-  margin-bottom: 0;
+.main-navigation ul ul li a:before {
+  content: url(http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-icon-01.svg);
+  display: block;
+  margin-bottom: 10px;
 }
 
 .main-navigation ul ul {
