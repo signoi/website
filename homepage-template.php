@@ -50,7 +50,7 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <script type="module">
-	import { Carousel3d, Slide } from '/wp-content/themes/signoi-theme/js/vue-carousel-3d';
+	import { Carousel3d, Slide } from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/src/';
     export default {
       components: {
         Carousel3d,
