@@ -1,7 +1,7 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"], .button {
 	border: 1px solid;
 	border-radius: 0;
 	line-height: 1;
@@ -9,11 +9,13 @@ input[type="submit"] {
 	font-size: 19px;
 	font-weight: $fontweight__medium;
 	padding: 10px 2em;
+	transition: all 0.3s ease;
 
 	&:hover {
 		border-color: $color__red;
 		background-color: $color__red;
 		color: $color__text-on-red;
+		padding: 10px 2.5em;
 	}
 
 	&:active,
@@ -26,16 +28,31 @@ input[type="submit"] {
 	border-color: $color__red;
 	background: $color__red;
 	color: $color__text-on-red;
+	&:hover { 
+		border-color: $color__red;
+		background: $color__text-on-red;
+		color: $color__red;
+	}
 }
 
 .button.yellow, button.yellow, input[type="button"].yellow, input[type="submit"].yellow {
 	border-color: $color__yellow;
 	background: $color__yellow;
 	color: $color__text-on-yellow;
+	&:hover { 
+		border-color: $color__yellow;
+		background: $color__text-on-yellow;
+		color: $color__yellow;
+	}
 }
 
 .button.grey, button.grey, input[type="button"].grey, input[type="submit"].grey {
 	border-color: $color__grey;
 	background: $color__grey;
 	color: $color__text-on-grey;
+	&:hover { 
+		border-color: $color__grey;
+		background: $color__text-on-grey;
+		color: $color__grey;
+	}
 }
