@@ -76,10 +76,6 @@ get_header();
     // [false|milliseconds]
     // If a positive number, Flipster will automatically advance to next item after that number of milliseconds
 
-    pauseOnHover: true,
-    // [true|false]
-    // If true, autoplay advancement will pause when Flipster is hovered
-
     style: 'flat',
     // [coverflow|carousel|flat|...]
     // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
@@ -101,7 +97,7 @@ get_header();
     // [true|false]
     // Enable mousewheel/trackpad navigation; up/left = previous, down/right = next
 
-    touch: true,
+    touch: false,
     // [true|false]
     // Enable swipe navigation for touch devices
 

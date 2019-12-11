@@ -1737,7 +1737,7 @@ a:hover, a:active {
   text-align: center;
 }
 
-#use-cases .usecases-menu {
+#use-cases .usecases-menu, #use-cases .flipster__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1753,11 +1753,11 @@ a:hover, a:active {
           justify-content: center;
 }
 
-#use-cases .usecases-menu ul {
+#use-cases .usecases-menu ul, #use-cases .flipster__nav ul {
   list-style: none;
 }
 
-#use-cases .usecases-menu li {
+#use-cases .usecases-menu li, #use-cases .flipster__nav li {
   text-align: center;
   max-width: 150px;
   vertical-align: middle;
@@ -1771,11 +1771,11 @@ a:hover, a:active {
           flex-direction: column;
 }
 
-#use-cases .usecases-menu li:last-child {
+#use-cases .usecases-menu li:last-child, #use-cases .flipster__nav li:last-child {
   border-right: 0;
 }
 
-#use-cases .usecases-menu a {
+#use-cases .usecases-menu a, #use-cases .flipster__nav a {
   text-decoration: none;
   color: #fff;
   margin: auto;
@@ -1787,24 +1787,15 @@ a:hover, a:active {
       align-self: center;
 }
 
-#use-cases .usecases-menu a.active {
+#use-cases .usecases-menu a.active, #use-cases .flipster__nav a.active {
   color: #e9c659;
 }
 
-/*--carousel CSS for materialise slider--*/
-.carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 800px;
-  -webkit-perspective: 500px;
-  perspective: 500px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
+#use-cases .flipster__container {
+  margin: 0;
 }
 
+/*--carousel CSS for materialise slider--*/
 .carousel .background-slide {
   content: " ";
   position: absolute;
