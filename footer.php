@@ -29,9 +29,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/materialize.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flexslider-min.js"></script> <!-- customer comment and report sliders on homepage -->
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/materialize.min.js"></script> <!-- use cases slider -->
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.waypoints.js"></script>
-<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script>
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> <!-- not currently using -->
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/vue-carousel-3d.min.js"></script>
 </body>
 </html>
