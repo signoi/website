@@ -2028,15 +2028,16 @@ section.start .report-featured-image {
     margin-bottom: -200px;
     margin-top: 30px;
   }
-  #about .col-half {
+  #about .col.half {
     text-align: center;
   }
   #about {
     margin-bottom: 240px;
+    margin-top: 0;
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 450px) {
   #about .round-image {
     height: 100%;
     width: 100%;
@@ -2052,6 +2053,22 @@ section.start .report-featured-image {
   }
   .row {
     width: 95%;
+    padding: 0;
+  }
+  #customer-comments .quote-after, #customer-comments .quote-before {
+    display: none;
+  }
+  #use-cases h2, #customer-comments h2, #callback-cta h2, #quantitative-semiotics h3, #about h2, #reports .flexslider.reports h4 {
+    font-size: 35px;
+  }
+  #above-fold h2 {
+    font-size: 40px;
+  }
+  #quantitative-semiotics .col.full {
+    padding-bottom: 0;
+  }
+  #quantitative-semiotics .col.full img {
+    max-width: 200px;
   }
 }
 

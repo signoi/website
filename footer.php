@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="row"></div class="col full">
+		<div class="row"><div class="col full">
 		<div class="footer-socials">
 			<a target="_blank" href="https://twitter.com/hellosignoi"><i class="fab fa-twitter"></i></a>
 			<a target="_blank" href="https://www.instagram.com/hellosignoi/"><i class="fab fa-instagram"></i></a>
