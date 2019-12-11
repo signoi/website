@@ -362,9 +362,13 @@ margin: 80px 0 160px 0;
             margin: auto 0;
             align-self: center;
         }
-        .flipster__nav__item--current {
+        a:hover {
+            color: $color__yellow;   
+        }
+        .flipster__nav__item--current a {
             color: $color__yellow;
         }
+        
         
 
     }
@@ -397,7 +401,7 @@ margin: 80px 0 160px 0;
         }
         .flipster__item--past-1, .flipster__item--future-1 {
             opacity: 1;
-            visibility: visibile;
+            visibility: visible;
         }
         .flipster__button:hover, .flipster__button:focus {
             opacity: 1;
@@ -411,6 +415,17 @@ margin: 80px 0 160px 0;
             background: #fff;
             padding: 30px 50px;
             max-width: 100%;
+        }
+        .flipster__button--prev {
+            left: 10%;
+        }
+        .flipster__button--next {
+            right: 10%;
+        }
+        .flipster__button {
+            margin-top: 15px;
+            font-size: 16px;
+            opacity: 1;
         }
     }
 }

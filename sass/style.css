@@ -1790,7 +1790,11 @@ a:hover, a:active {
       align-self: center;
 }
 
-#use-cases .flipster__nav .flipster__nav__item--current {
+#use-cases .flipster__nav a:hover {
+  color: #e9c659;
+}
+
+#use-cases .flipster__nav .flipster__nav__item--current a {
   color: #e9c659;
 }
 
@@ -1829,7 +1833,7 @@ a:hover, a:active {
 
 #use-cases .flipster .flipster__item--past-1, #use-cases .flipster .flipster__item--future-1 {
   opacity: 1;
-  visibility: visibile;
+  visibility: visible;
 }
 
 #use-cases .flipster .flipster__button:hover, #use-cases .flipster .flipster__button:focus {
@@ -1845,6 +1849,20 @@ a:hover, a:active {
   background: #fff;
   padding: 30px 50px;
   max-width: 100%;
+}
+
+#use-cases .flipster .flipster__button--prev {
+  left: 10%;
+}
+
+#use-cases .flipster .flipster__button--next {
+  right: 10%;
+}
+
+#use-cases .flipster .flipster__button {
+  margin-top: 15px;
+  font-size: 16px;
+  opacity: 1;
 }
 
 /*--animations--*/
