@@ -49,16 +49,6 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
-<script type="module">
-	import { Carousel3d } from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/src/Carousel3d.vue';
-	import { Slide } from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/src/Slide.vue';
-    export default {
-      components: {
-        Carousel3d,
-        Slide
-      }
-    };
-</script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
 new Vue({
