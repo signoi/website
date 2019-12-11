@@ -325,7 +325,7 @@ if ( $arr_posts->have_posts() ) : ?>
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 ?>
 				<li><div class="report row">
-					<div class="col half"><div class="report-featured-image" style="background-image: url(<?php echo $image[0]?>);"></div></div>
+					<div class="col half"><div class="report-featured-image"> <img src="<?php echo $image[0]?>);"></div></div>
 					<div class="col half">
 						<h4><?php the_title(); ?></h4>
 						<?php the_excerpt(); ?>
