@@ -33,5 +33,6 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/materialize.min.js"></script> <!-- use cases slider -->
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.waypoints.js"></script>
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> <!-- not currently using -->
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flipster.min.js"></script>
 </body>
 </html>
