@@ -81,7 +81,7 @@ get_header();
     // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
     // Create your own theme in CSS and use this setting to have Flipster add the custom class
 
-    spacing: -0.9,
+    spacing: -0.75,
     // [number]
     // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
 
@@ -115,7 +115,7 @@ get_header();
     // [text|html]
     // Changes the text for the Previous button
 
-    buttonNext: '<img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg">',
+    buttonNext: '<img src="http://new.signoi.com/wp-content/uploads/2019/12/pagination-arrow-right.svg">',
     // [text|html]
     // Changes the text for the Next button
 
@@ -143,7 +143,6 @@ if ( $arr_posts->have_posts() ) :
 	</div>
 	<div class="row">
 		<div class="col full"> <div class="carousel usecases">
-			<div class="background-slide"></div> <!-- ugh but I can't work out how to hide the back slides otherwise because I had to use !important to override the opacity -->
 		<div class="flipster"><ul>
 		<?php
     while ( $arr_posts->have_posts() ) :

@@ -1727,6 +1727,8 @@ a:hover, a:active {
 
 #use-cases {
   background: #566273;
+  position: relative;
+  overflow: hidden;
 }
 
 #use-cases h2 {
@@ -1792,11 +1794,6 @@ a:hover, a:active {
   color: #e9c659;
 }
 
-#use-cases .carousel.usecases {
-  position: relative;
-  overflow: hidden;
-}
-
 #use-cases .flipster .report-featured-image {
   max-width: 400px;
   margin: auto;
@@ -1824,7 +1821,15 @@ a:hover, a:active {
 }
 
 #use-cases .flipster .flipster__item--past, #use-cases .flipster .flipster__item--future {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+#use-cases .flipster .flipster__item--past-1, #use-cases .flipster .flipster__item--future-1 {
   opacity: 1;
+  visibility: visibile;
 }
 
 #use-cases .flipster .flipster__button:hover, #use-cases .flipster .flipster__button:focus {
@@ -1838,20 +1843,8 @@ a:hover, a:active {
 #use-cases .flipster .flipster__item__content {
   text-align: center;
   background: #fff;
-  padding: 30px;
+  padding: 30px 50px;
   max-width: 100%;
-}
-
-/*--carousel CSS for materialise slider--*/
-.carousel .background-slide {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #566273;
-  z-index: -1;
 }
 
 /*--animations--*/
