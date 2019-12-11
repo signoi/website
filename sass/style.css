@@ -1257,9 +1257,6 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .col {
@@ -1268,7 +1265,7 @@ section {
   width: 100%;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 768px) {
   .col .full {
     width: 100%;
   }
@@ -1283,6 +1280,20 @@ section {
   }
   .col .fifth {
     width: 20%;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .row {
+    display: block;
+  }
+  .col {
+    width: 100%;
   }
 }
 
