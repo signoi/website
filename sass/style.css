@@ -1812,57 +1812,10 @@ a:hover, a:active {
   margin: auto;
 }
 
-.carousel .pagination {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  z-index: 1;
-  height: 32px;
-  margin-top: -16px;
-  width: 90%;
-  margin-left: auto;
-  max-width: 950px;
-  margin-right: auto;
-}
-
-.carousel .pagination .slide-next {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  right: 0;
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 0;
-}
-
-.carousel .pagination .slide-prev {
-  left: 0;
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 0;
-}
-
 .carousel .carousel-item {
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
   text-align: center;
   background: #fff;
   padding: 30px;
-  opacity: 1 !important;
 }
 
 .carousel .carousel-item h4 {
@@ -1888,11 +1841,6 @@ a:hover, a:active {
 
 .carousel .carousel-item > img {
   width: 100%;
-}
-
-.carousel.scrolling .carousel-item .materialboxed,
-.carousel .carousel-item:not(.active) .materialboxed {
-  pointer-events: none;
 }
 
 /*--animations--*/
