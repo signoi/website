@@ -162,6 +162,9 @@
     input[type="submit"] {
         height: 43px;
         margin-left: -5px;
+        &:hover { 
+            padding: 10px 2em;
+        }
     }
     .phone-form {
         margin-bottom: 10px;
@@ -390,17 +393,7 @@ margin: 80px 0 160px 0;
         background: #566273;
         z-index: -1;
       }
-.carousel-item {
-    h4, p, .report-featured-image, button {
-        opacity: 0;
-    }
-}
-.carousel-item.active {
-    h4, p, .report-featured-image, button {
-        opacity: 1;
-        transition: opacity 0.2s ease .3s;
-    }
-}
+
         .report-featured-image {
             max-width: 400px;
             margin: auto;
@@ -490,15 +483,10 @@ margin: 80px 0 160px 0;
   
 /*--animations--*/ 
 
-section {
-    h2, h3, h4, p, button, .flexslider.comments, form, img, .round-image, .quote-before, .quote-after, .report-featured-image {
-        visibility: hidden;
-    }
-} 
+
 section.start {
     h2, h3, h4, p, button, .flexslider.comments, form, img, .quote-before, .quote-after, .report-featured-image {
         animation: fade-in-bottom 1s ease both;
-        visibility: visible;
     }
     .round-image {
         animation: fade-in-right 1s ease both;
@@ -515,18 +503,13 @@ section.start {
 }
 
 #quantitative-semiotics  {
-    .col.half {
-    opacity: 0;
-    }
     h3, p {
-        visibility: visible;
         animation: none;
     }
 }
 
 #quantitative-semiotics .row.start {
     .col.half {
-        opacity: 1;
         animation: fade-in-right 1s ease .3s both;
     }
     .col.half:first-child {

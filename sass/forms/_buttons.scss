@@ -15,7 +15,7 @@ input[type="submit"], .button {
 		border-color: $color__red;
 		background-color: $color__red;
 		color: $color__text-on-red;
-		padding: 10px 2.5em;
+		padding: 10px 2.3em;
 	}
 
 	&:active,
@@ -23,6 +23,8 @@ input[type="submit"], .button {
 		border-color: $color__border-button-focus;
 	}
 }
+
+
 
 .button.red, button.red, input[type="button"].red, input[type="submit"].red {
 	border-color: $color__red;

@@ -727,7 +727,7 @@ input[type="submit"]:hover, .button:hover {
   border-color: #c05344;
   background-color: #c05344;
   color: #fff;
-  padding: 10px 2.5em;
+  padding: 10px 2.3em;
 }
 
 button:active, button:focus,
@@ -1525,6 +1525,10 @@ section {
   margin-left: -5px;
 }
 
+#callback-cta input[type="submit"]:hover {
+  padding: 10px 2em;
+}
+
 #callback-cta .phone-form {
   margin-bottom: 10px;
 }
@@ -1799,16 +1803,6 @@ section {
   z-index: -1;
 }
 
-.carousel .carousel-item h4, .carousel .carousel-item p, .carousel .carousel-item .report-featured-image, .carousel .carousel-item button {
-  opacity: 0;
-}
-
-.carousel .carousel-item.active h4, .carousel .carousel-item.active p, .carousel .carousel-item.active .report-featured-image, .carousel .carousel-item.active button {
-  opacity: 1;
-  -webkit-transition: opacity 0.2s ease .3s;
-  transition: opacity 0.2s ease .3s;
-}
-
 .carousel .report-featured-image {
   max-width: 400px;
   margin: auto;
@@ -1898,14 +1892,9 @@ section {
 }
 
 /*--animations--*/
-section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .round-image, section .quote-before, section .quote-after, section .report-featured-image {
-  visibility: hidden;
-}
-
 section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .quote-before, section.start .quote-after, section.start .report-featured-image {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
-  visibility: visible;
 }
 
 section.start .round-image {
@@ -1923,18 +1912,12 @@ section.start .report-featured-image {
           animation: rise 1s ease both;
 }
 
-#quantitative-semiotics .col.half {
-  opacity: 0;
-}
-
 #quantitative-semiotics h3, #quantitative-semiotics p {
-  visibility: visible;
   -webkit-animation: none;
           animation: none;
 }
 
 #quantitative-semiotics .row.start .col.half {
-  opacity: 1;
   -webkit-animation: fade-in-right 1s ease .3s both;
           animation: fade-in-right 1s ease .3s both;
 }
