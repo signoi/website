@@ -35,7 +35,7 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> <!-- not currently using -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script type="module">
-import Vue from 'vue';
+import Vue from 'https://cdn.jsdelivr.net/npm/vue';
 import Carousel3d from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/src/index.js';
 
 Vue.use(Carousel3d);
