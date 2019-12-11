@@ -49,6 +49,15 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
+<script type="module">
+	import { Carousel3d, Slide } from 'vue-carousel-3d';
+    export default {
+      components: {
+        Carousel3d,
+        Slide
+      }
+    };
+</script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
 new Vue({
