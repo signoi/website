@@ -51,7 +51,6 @@ get_header();
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-	import { Carousel3d, Slide } from 'vue-carousel-3d';
 new Vue({
   el: '#usecases-carousel',
   data: {
