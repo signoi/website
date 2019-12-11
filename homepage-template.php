@@ -49,6 +49,18 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
+<script type="module">
+import { Carousel3d, Slide } from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/dist/vue-carousel-3d.min.js';
+export default {
+  ...
+  components: {
+    Carousel3d,
+    Slide
+  }
+  ...
+};
+Vue.use(Carousel3d);
+</script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
 new Vue({

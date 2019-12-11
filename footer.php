@@ -41,5 +41,6 @@ import Carousel3d from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/dist/
 
 Vue.use(Carousel3d);
 </script>
+
 </body>
 </html>
