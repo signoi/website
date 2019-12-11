@@ -376,6 +376,8 @@ margin: 80px 0 160px 0;
 
   
   .carousel {
+    position: relative;
+    overflow: hidden;
       .background-slide {
         content: " ";
         position: absolute;
@@ -396,6 +398,7 @@ margin: 80px 0 160px 0;
             text-align: center;
             background: #fff;
             padding: 30px;
+            max-width: 100%;
         }
   
         .carousel-item h4 {
