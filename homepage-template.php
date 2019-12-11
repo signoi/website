@@ -50,7 +50,7 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <script type="module">
-	import { Carousel3d, Slide } from 'vue-carousel-3d';
+	import { Carousel3d, Slide } from 'https://npmjs.com/package/vue-carousel-3d';
     export default {
       components: {
         Carousel3d,
