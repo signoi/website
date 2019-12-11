@@ -386,7 +386,7 @@ margin: 80px 0 160px 0;
             margin-left: auto;
             margin-right: auto;
         }
-        .flipster__item--current {
+        .flipster__item--current .flipster__item__content {
             box-shadow: 0 0 8px rgba(29,29,27,0.75);
           }
           .flipster--flat .flipster__item--past, .flipster--flat .flipster__item--future {
@@ -400,6 +400,12 @@ margin: 80px 0 160px 0;
             background: none;
             color: inherit;
         }
+        .flipster__item__content {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            max-width: 100%;
+        }
     }
 }
 
@@ -407,8 +413,6 @@ margin: 80px 0 160px 0;
 
   
   .carousel {
-    position: relative;
-    overflow: hidden;
       .background-slide {
         content: " ";
         position: absolute;
@@ -419,23 +423,6 @@ margin: 80px 0 160px 0;
         background: #566273;
         z-index: -1;
       }
-
-
-  
-        .carousel-item {
-            text-align: center;
-            background: #fff;
-            padding: 30px;
-            max-width: 100%;
-        }
-  
-        .carousel-item 
-  
-
-          
-            .carousel-item > img {
-            width: 100%;
-          }
     }
 
   

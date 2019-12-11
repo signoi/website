@@ -1813,7 +1813,7 @@ a:hover, a:active {
   margin-right: auto;
 }
 
-#use-cases .flipster .flipster__item--current {
+#use-cases .flipster .flipster__item--current .flipster__item__content {
   -webkit-box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
           box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
 }
@@ -1832,12 +1832,14 @@ a:hover, a:active {
   color: inherit;
 }
 
-/*--carousel CSS for materialise slider--*/
-.carousel {
-  position: relative;
-  overflow: hidden;
+#use-cases .flipster .flipster__item__content {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  max-width: 100%;
 }
 
+/*--carousel CSS for materialise slider--*/
 .carousel .background-slide {
   content: " ";
   position: absolute;
@@ -1847,18 +1849,6 @@ a:hover, a:active {
   height: 100%;
   background: #566273;
   z-index: -1;
-}
-
-.carousel .carousel-item {
-  text-align: center;
-  background: #fff;
-  padding: 30px;
-  max-width: 100%;
-}
-
-.carousel .carousel-item
-.carousel-item > img {
-  width: 100%;
 }
 
 /*--animations--*/
