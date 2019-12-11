@@ -219,10 +219,13 @@ jQuery(window).load(function() {
 				while( have_rows('section_blurbs') ): the_row(); 
 				$title = get_sub_field('blurb_title');
 				$copy = get_sub_field('blurb_copy');
+				$cta = get_sub_field('cta_text'); 
+				$link = get_sub_field('cta_link'); 
 				?>
 		<div class="col half">
 			<h3><?php echo $title; ?></h3>
 			<p><?php echo $copy; ?></p>
+			<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>
 		<?php endwhile; else : endif; ?>
 	</div>
