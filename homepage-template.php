@@ -81,7 +81,7 @@ get_header();
     // Adds a class (e.g. flipster--coverflow) to the flipster element to switch between display styles
     // Create your own theme in CSS and use this setting to have Flipster add the custom class
 
-    spacing: -0.6,
+    spacing: -0.9,
     // [number]
     // Space between items relative to each item's width. 0 for no spacing, negative values to overlap
 
@@ -106,16 +106,16 @@ get_header();
     // If not false, Flipster will build an unordered list of the items
     // Values true or 'before' will insert the navigation before the items, 'after' will append the navigation after the items
 
-    buttons: true,
+    buttons: custom,
     // [true|false|'custom']
     // If true, Flipster will insert Previous / Next buttons with SVG arrows
     // If 'custom', Flipster will not insert the arrows and will instead use the values of `buttonPrev` and `buttonNext`
 
-    buttonPrev: 'Previous',
+    buttonPrev: '<img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg">',
     // [text|html]
     // Changes the text for the Previous button
 
-    buttonNext: 'Next',
+    buttonNext: '<img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg">',
     // [text|html]
     // Changes the text for the Next button
 

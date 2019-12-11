@@ -1737,7 +1737,7 @@ a:hover, a:active {
   text-align: center;
 }
 
-#use-cases .usecases-menu, #use-cases .flipster__nav {
+#use-cases .flipster__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1751,13 +1751,14 @@ a:hover, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 30px;
 }
 
-#use-cases .usecases-menu ul, #use-cases .flipster__nav ul {
+#use-cases .flipster__nav ul {
   list-style: none;
 }
 
-#use-cases .usecases-menu li, #use-cases .flipster__nav li {
+#use-cases .flipster__nav li {
   text-align: center;
   max-width: 150px;
   vertical-align: middle;
@@ -1771,11 +1772,11 @@ a:hover, a:active {
           flex-direction: column;
 }
 
-#use-cases .usecases-menu li:last-child, #use-cases .flipster__nav li:last-child {
+#use-cases .flipster__nav li:last-child {
   border-right: 0;
 }
 
-#use-cases .usecases-menu a, #use-cases .flipster__nav a {
+#use-cases .flipster__nav a {
   text-decoration: none;
   color: #fff;
   margin: auto;
@@ -1787,12 +1788,48 @@ a:hover, a:active {
       align-self: center;
 }
 
-#use-cases .usecases-menu a.active, #use-cases .flipster__nav a.active {
+#use-cases .flipster__nav .flipster__nav__item--current {
   color: #e9c659;
 }
 
-#use-cases .flipster__container {
-  margin: 0;
+#use-cases .flipster .report-featured-image {
+  max-width: 400px;
+  margin: auto;
+}
+
+#use-cases .flipster h4 {
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #c05344;
+}
+
+#use-cases .flipster p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #566272;
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#use-cases .flipster .flipster__item--current {
+  -webkit-box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
+          box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
+}
+
+#use-cases .flipster .flipster--flat .flipster__item--past, #use-cases .flipster .flipster--flat .flipster__item--future {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#use-cases .flipster .flipster__button:hover, #use-cases .flipster .flipster__button:focus {
+  opacity: 1;
+  border: none;
+  padding: inherit;
+  background: none;
+  color: inherit;
 }
 
 /*--carousel CSS for materialise slider--*/
@@ -1812,11 +1849,6 @@ a:hover, a:active {
   z-index: -1;
 }
 
-.carousel .report-featured-image {
-  max-width: 400px;
-  margin: auto;
-}
-
 .carousel .carousel-item {
   text-align: center;
   background: #fff;
@@ -1824,28 +1856,8 @@ a:hover, a:active {
   max-width: 100%;
 }
 
-.carousel .carousel-item h4 {
-  font-size: 29px;
-  font-weight: 400;
-  line-height: 50px;
-  color: #c05344;
-}
-
-.carousel .carousel-item p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #566272;
-  max-width: 575px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.carousel .carousel-item.active {
-  -webkit-box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
-          box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
-}
-
-.carousel .carousel-item > img {
+.carousel .carousel-item
+.carousel-item > img {
   width: 100%;
 }
 

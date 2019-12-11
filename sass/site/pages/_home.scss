@@ -330,13 +330,14 @@ margin: 80px 0 160px 0;
         margin-bottom: .7em;
         text-align: center;
     }
-    .usecases-menu, .flipster__nav {
+   .flipster__nav {
         display: flex;
         margin: 0;
         padding: 0;
         text-align: center;
         flex-direction: row;
         justify-content: center;
+        margin-bottom: 30px;
         ul {
             list-style: none;
         }
@@ -360,16 +361,46 @@ margin: 80px 0 160px 0;
             margin: auto 0;
             align-self: center;
         }
-        a.active {
+        .flipster__nav__item--current {
             color: $color__yellow;
         }
         
 
     }
-    .flipster__container {
-        margin: 0;
+    .flipster {
+        .report-featured-image {
+            max-width: 400px;
+            margin: auto;
+        }
+        h4 {
+            font-size: 29px;
+            font-weight: $fontweight__regular;
+            line-height: 50px;
+            color: $color__red;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: $color__grey;
+            max-width: 575px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .flipster__item--current {
+            box-shadow: 0 0 8px rgba(29,29,27,0.75);
+          }
+          .flipster--flat .flipster__item--past, .flipster--flat .flipster__item--future {
+            opacity: 1;
+            transform: scale(0.8);
+        }
+        .flipster__button:hover, .flipster__button:focus {
+            opacity: 1;
+            border: none;
+            padding: inherit;
+            background: none;
+            color: inherit;
+        }
     }
-    
 }
 
 /*--carousel CSS for materialise slider--*/
@@ -389,10 +420,7 @@ margin: 80px 0 160px 0;
         z-index: -1;
       }
 
-        .report-featured-image {
-            max-width: 400px;
-            margin: auto;
-        }
+
   
         .carousel-item {
             text-align: center;
@@ -401,24 +429,9 @@ margin: 80px 0 160px 0;
             max-width: 100%;
         }
   
-        .carousel-item h4 {
-            font-size: 29px;
-            font-weight: $fontweight__regular;
-            line-height: 50px;
-            color: $color__red;
-        }
+        .carousel-item 
   
-        .carousel-item p {
-            font-size: 16px;
-            line-height: 22px;
-            color: $color__grey;
-            max-width: 575px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .carousel-item.active {
-            box-shadow: 0 0 8px rgba(29,29,27,0.75);
-          }
+
           
             .carousel-item > img {
             width: 100%;
