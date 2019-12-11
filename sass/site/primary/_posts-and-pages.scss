@@ -42,22 +42,20 @@
 }
 
 @media (min-width: 768px) {
-	.col {
-		.full {
+	.col.full {
 			width: 100%;
 		}
-		.half {
-			width: 50%;
-		}
-		.third {
-			width: 33.33333333%;
-		}
-		.quarter {
-			width: 25%;
-		}
-		.fifth {
-			width: 20%;
-		}
+	.col.half {
+		width: 50%;
+	}
+	.col.third {
+		width: 33.33333333%;
+	}
+	.col.quarter {
+		width: 25%;
+	}
+	.col.fifth {
+		width: 20%;
 	}
 	.row {
 		display: flex;

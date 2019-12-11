@@ -1261,19 +1261,19 @@ a:hover, a:active {
 }
 
 @media (min-width: 768px) {
-  .col .full {
+  .col.full {
     width: 100%;
   }
-  .col .half {
+  .col.half {
     width: 50%;
   }
-  .col .third {
+  .col.third {
     width: 33.33333333%;
   }
-  .col .quarter {
+  .col.quarter {
     width: 25%;
   }
-  .col .fifth {
+  .col.fifth {
     width: 20%;
   }
   .row {
