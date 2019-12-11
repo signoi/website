@@ -1565,6 +1565,7 @@ a:hover, a:active {
   color: #566272;
   max-width: 373px;
   margin: auto;
+  margin-bottom: 1.5em;
 }
 
 #quantitative-semiotics .col.full {
