@@ -50,42 +50,20 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function() {
-  //Carousel initialization
-  var options = {
-	indicators: false,
-		duration: 300,
-		numVisible: 3,
-		dist: -100,
-		shift: -500,
-		padding: 20 
-  };
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, options);
-
+new Vue({
+  el: '#usecases-carousel',
+  data: {
+  },
+  components: {
+    'carousel-3d': Carousel3d.Carousel3d,
+    'slide': Carousel3d.Slide
+  },
+  methods: {
+    goToSlide(index) {
+      this.$refs.mycarousel.goSlide(index)
+    }
+  }
 })
- jQuery(document).ready(function(){
-	jQuery('.slide-prev').click(function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            jQuery('.carousel.usecases').carousel('prev')
-        });
-	jQuery('.slide-next').click(function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-		jQuery('.carousel.usecases').carousel('next')
-	});
-	jQuery('.usecases-menu li a').on("click", function() {
-			  // getting slide number attribute
-			var elem = document.querySelector('.carousel');
-			var instance = M.Carousel.getInstance(elem);
-			var move_to = jQuery(this).data("slidenumber");
-		jQuery('.usecases-menu li a.active').not(this).removeClass('active');
-		jQuery(this).toggleClass('active');
-		instance.set(move_to);
-   }); 
-   
-  });
 </script>
 <?php
 $args = array(
@@ -103,9 +81,10 @@ if ( $arr_posts->have_posts() ) :
 
 	</div>
 	<div class="row">
-		<div class="col full"> <div class="carousel usecases">
+		<div class="col full"> <div id="usecases-carousel">
+  
 			<div class="background-slide"></div> <!-- ugh but I can't work out how to hide the back slides otherwise because I had to use !important to override the opacity -->
-		<ul class="usecases-menu">
+			
 			<?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$slug = get_post_field( 'post_name', get_post() );
@@ -114,10 +93,7 @@ if ( $arr_posts->have_posts() ) :
 			<?php endwhile; ?>
 
 			</ul>
-        <div class="carousel-fixed-item center pagination">
-            <a class="slide-prev">Prev</a>
-            <a class="slide-next">Next</a>
-        </div>
+			<carousel-3d :controls-visible="true" :count="slides.length" ref="mycarousel" :perspective="0" :space="120" :display="3" :scaling="300">
 		<?php
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
@@ -126,13 +102,14 @@ if ( $arr_posts->have_posts() ) :
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 	$slug = get_post_field( 'post_name', get_post() );
 ?>
-		<div class="carousel-item">
+		<slide v-for="(slide, i) in slides" :index="i">
 			<h4><?php the_title(); ?></h4>
 			<?php the_excerpt(); ?> 
 			<div class="report-featured-image"><img src="<?php echo $image[0]?>"></div>
 			<button class="button red" onclick="window.location.href = '<?php the_permalink(); ?>';">Read More</button>
-		</div>
+	</slide>
 	<?php endwhile; ?>
+	</carousel-3d>
 	</div></div>
 	</div>
 </section>
