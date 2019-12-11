@@ -53,8 +53,8 @@ input[type="submit"], .button {
 	background: $color__grey;
 	color: $color__text-on-grey;
 	&:hover { 
-		border-color: $color__grey;
-		background: $color__text-on-grey;
+		border-color: $color__lightgrey;
+		background: $color__lightgrey;
 		color: $color__grey;
 	}
 }

@@ -771,8 +771,8 @@ input[type="submit"]:focus, .button:active, .button:focus {
 }
 
 .button.grey:hover, button.grey:hover, input[type="button"].grey:hover, input[type="submit"].grey:hover {
-  border-color: #566272;
-  background: #fff;
+  border-color: #bbc0c6;
+  background: #bbc0c6;
   color: #566272;
 }
 
