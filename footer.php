@@ -34,6 +34,5 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.waypoints.js"></script>
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> <!-- not currently using -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/vue-carousel-3d.min.js"></script>
 </body>
 </html>
