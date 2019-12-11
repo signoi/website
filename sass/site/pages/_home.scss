@@ -367,6 +367,10 @@ margin: 80px 0 160px 0;
         
 
     }
+    .carousel.usecases {
+        position: relative;
+        overflow: hidden;
+    }
     .flipster {
         .report-featured-image {
             max-width: 400px;
@@ -389,9 +393,9 @@ margin: 80px 0 160px 0;
         .flipster__item--current .flipster__item__content {
             box-shadow: 0 0 8px rgba(29,29,27,0.75);
           }
-          .flipster--flat .flipster__item--past, .flipster--flat .flipster__item--future {
+          .flipster__item--past, .flipster__item--future {
             opacity: 1;
-            transform: scale(0.8);
+          
         }
         .flipster__button:hover, .flipster__button:focus {
             opacity: 1;

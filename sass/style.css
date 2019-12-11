@@ -1792,6 +1792,11 @@ a:hover, a:active {
   color: #e9c659;
 }
 
+#use-cases .carousel.usecases {
+  position: relative;
+  overflow: hidden;
+}
+
 #use-cases .flipster .report-featured-image {
   max-width: 400px;
   margin: auto;
@@ -1818,10 +1823,8 @@ a:hover, a:active {
           box-shadow: 0 0 8px rgba(29, 29, 27, 0.75);
 }
 
-#use-cases .flipster .flipster--flat .flipster__item--past, #use-cases .flipster .flipster--flat .flipster__item--future {
+#use-cases .flipster .flipster__item--past, #use-cases .flipster .flipster__item--future {
   opacity: 1;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
 }
 
 #use-cases .flipster .flipster__button:hover, #use-cases .flipster .flipster__button:focus {
