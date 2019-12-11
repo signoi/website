@@ -34,9 +34,10 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.waypoints.js"></script>
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> <!-- not currently using -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/vue-carousel-3d/dist/vue-carousel-3d.min.js"></script>
 <script type="module">
 import Vue from 'https://cdn.jsdelivr.net/npm/vue';
-import Carousel3d from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/src/index.js';
+import Carousel3d from '/wp-content/themes/signoi-theme/js/vue-carousel-3d/dist/vue-carousel-3d.min.js';
 
 Vue.use(Carousel3d);
 </script>
