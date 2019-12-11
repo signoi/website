@@ -519,3 +519,23 @@ section.start {
         animation: increase-height 1s ease 1.3s both;
     }
 }
+
+@media (max-width: 767.99px) {
+    #above-fold h2 {
+        font-size: 45px;
+    }
+    #above-fold p {
+        font-size: 18px;
+    }
+
+    #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
+        font-size: 28px;
+    }
+    #use-cases h2, #customer-comments h2, #callback-cta h2, #quantitative-semiotics h3, #about h2 {
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+    #customer-comments p, #callback-cta p, #quantitative-semiotics p, #about p, #reports .flexslider.reports h4, #reports .flexslider.reports p {
+        font-size: 16px;
+    }
+}
