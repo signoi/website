@@ -28,10 +28,6 @@
 	overflow: hidden;
 }
 
-section {
-	padding: 80px 0;
-}
-
 .row {
 	width: 90%;
 	max-width: 1200px;
@@ -43,7 +39,6 @@ section {
 .col {
 	padding-left: 15px;
 	padding-right: 15px;
-	width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -67,6 +62,9 @@ section {
 	.row {
 		display: flex;
 	}
+	section {
+		padding: 80px 0;
+	}
 }
 
 @media (max-width: 767.99px) {
@@ -75,5 +73,8 @@ section {
 	}
 	.col {
 		width: 100%;
+	}
+	section {
+		padding: 40px 0;
 	}
 }

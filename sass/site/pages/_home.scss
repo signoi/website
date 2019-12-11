@@ -535,7 +535,48 @@ section.start {
         font-size: 40px;
         line-height: 1.2em;
     }
-    #customer-comments p, #callback-cta p, #quantitative-semiotics p, #about p, #reports .flexslider.reports h4, #reports .flexslider.reports p {
+    #customer-comments p, #callback-cta p, #quantitative-semiotics p, #about p, #reports .flexslider.reports p {
         font-size: 16px;
+    }
+    #quantitative-semiotics .col.half:first-child:after {
+        width: 100%;
+        max-width: 100%;
+        height: 1px;
+        bottom: 0;
+        animation: none;
+    }
+    #quantitative-semiotics .row.start .col.half:first-child:after {
+        animation: none;
+    }
+    #quantitative-semiotics .col.half {
+        padding: 30px;
+    }
+    #quantitative-semiotics .row.start .col.half, #quantitative-semiotics .row.start .col.half:first-child {
+        animation: fade-in-bottom 1s ease both;
+    }
+    #about {
+        margin-top: 40px;
+        margin-bottom: 120px;
+    }
+    #about .row {
+        padding: 40px 0;
+    }
+    #about .round-image {
+        height: 650px;
+        width: 650px;
+        top: 50%;
+        margin-top: -325px;
+    }
+    #reports .flexslider.reports .report-featured-image {
+        height: 300px;
+    }
+    #quantitative-semiotics .col.full {
+        padding-bottom: 30px;
+    }
+    #customer-comments .quote-after, #customer-comments .quote-before {
+        width: 50px;
+    }
+    #customer-comments .comment {
+        padding: 0px 20px;
     }
 }
