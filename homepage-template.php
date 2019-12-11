@@ -51,7 +51,7 @@ get_header();
 <?php endwhile; else : endif; ?>
 <script type="text/javascript">
  jQuery(document).ready(function(){
-	$('.flipster').flipster({
+	jQuery('.flipster').flipster({
     itemContainer: 'ul',
     // [string|object]
     // Selector for the container of the flippin' items.
