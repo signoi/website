@@ -606,10 +606,12 @@ table {
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
+    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -617,10 +619,12 @@ table {
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
+    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -1469,10 +1473,30 @@ a:hover, a:active {
   }
 }
 
-@media (max-width: 936px) {
+@media (max-width: 969px) {
   .background-shape {
-    width: 95vw;
-    height: 95vw;
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    margin: auto;
+    margin-left: -450px;
+    max-width: none;
+    max-width: none;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .background-shape {
+    top: 0;
+    margin-top: -350px;
+  }
+}
+
+@media (max-width: 550px) {
+  .background-shape {
+    top: 0;
+    margin-top: -200px;
   }
 }
 
@@ -2153,6 +2177,164 @@ section.start .report-featured-image {
   #quantitative-semiotics .col.full img {
     max-width: 200px;
   }
+}
+
+/*--------------------------------------------------------------
+## Blogpage
+--------------------------------------------------------------*/
+.mailing-list-trigger.fixed {
+  position: fixed;
+  left: -50px;
+  top: 186.5px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background: #efc73e;
+  padding: 10px 15px;
+  border-radius: 0 0 5px 5px;
+  color: #546274;
+  font-size: 1.2rem;
+  letter-spacing: .2px;
+}
+
+.mailing-list-trigger.fixed .mailing-list-text {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.mailing-list-trigger.fixed .far {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*--blog page header area--*/
+.blog-page-header-area {
+  background: #f4f4f7;
+  margin-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.blog-header-inner, .blog-post-area, .mailing-list-inner {
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.blog-header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-page-header-area .blog-search, .blog-page-header-area .blog-categories {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.blog-page-header-area .widget {
+  padding-bottom: 0;
+}
+
+.entry-content h2.widgettitle, .entry-content h2.widget-title {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #768190;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h2.widgettitle:after {
+  content: " ";
+  display: block;
+  width: 30px;
+  margin-top: 8px;
+  height: 2px;
+  background: #c9c7d8;
+}
+
+#categories-2 li.cat-item {
+  padding: 5px 10px;
+  border: 1px solid #c9c7d8;
+  display: inline-block;
+  line-height: 1.2rem;
+  font-size: .7rem;
+  letter-spacing: .1px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#categories-2 li.cat-item a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #9795a2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/*--blog page footer area--*/
+.mailing-list-sign-up.blog-footer {
+  background: #f4f4f7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+
+.mailing-list-sign-up.blog-footer .mailing-list-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.mailing-list-sign-up.blog-footer .mailing-list-icon {
+  width: 75px;
+}
+
+.mailing-list-sign-up.blog-footer .mailing-list-text {
+  color: #3f4a57;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.mailing-list-sign-up.blog-footer .mailing-list-trigger {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto;
+  margin-right: 0;
+}
+
+.mailing-list-sign-up.blog-footer .mailing-list-button {
+  border: 2px solid #cf4b3d;
+  padding: 10px 25px;
+  height: auto;
+  display: block;
+  margin-left: 40px;
+  color: #cf4b3d;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: 800;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  min-width: 175px;
+  text-align: center;
+}
+
+.featured .blog-title, .blog-title {
+  color: #546274;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.blog-meta {
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------

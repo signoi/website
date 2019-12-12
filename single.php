@@ -9,9 +9,9 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<section>
+	<div id="primary" class="content-area row">
+		<main id="main" class="site-main col">
 
 		<?php
 		while ( have_posts() ) :

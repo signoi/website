@@ -116,11 +116,31 @@
 	}
 }
 
-@media (max-width: 936px) {
+@media (max-width: 969px) {
 	.background-shape {
-		    width: 95vw;
-    height: 95vw;
+        height: 900px;
+        width: 900px;
+        position: absolute;
+        left: 50%;
+        margin: auto;
+        margin-left: -450px;
+    max-width: none;
+    max-width: none;
 	}
+}
+
+@media (max-width: 767.99px) {
+    .background-shape { 
+        top: 0;
+        margin-top: -350px;
+    }
+}
+
+@media (max-width: 550px) {
+    .background-shape { 
+        top: 0;
+        margin-top: -200px;
+    }
 }
 
 #customer-comments {
