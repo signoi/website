@@ -11,21 +11,18 @@ jQuery(window).load(function() {
             //check the direction
                 //add the class to start the animation
                 jQuery(this.element).addClass('start');
-                console.log('section reached');
         }, {
             //Set the offset
             offset: '90%'
         });
         var semioticswaypoint = jQuery('#quantitative-semiotics .row').waypoint(function() {
               jQuery(this.element).addClass('start');
-              console.log('QS row reached');
       }, {
           //Set the offset
           offset: 'bottom-in-view'
       });
       var callbackwaypoint = jQuery('#callback-cta .row').waypoint(function() {
         jQuery(this.element).addClass('start');
-        console.log('CTA row reached');
 }, {
     //Set the offset
     offset: 'bottom-in-view'
