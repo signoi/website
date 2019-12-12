@@ -64,6 +64,65 @@
     }
 }
 
+/*--alternative homepage--*/
+.page-id-2489 .background-shape {
+	display: none;
+}
+
+.page-id-2521 {
+     #above-fold {
+	background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/barth-bailey-5_bAKRGvkq8-unsplash-scaled.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#above-fold img {
+	display: none;
+}
+
+#above-fold button {
+	border-color: #c05344;
+    background: #c05344;
+    color: #fff;
+}
+
+.background-shape {
+	width: 100%;
+	height: 100%;
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.background-shape:after {
+	width: 90vw;
+	height: 90vw;
+	max-width: 1080px;
+	max-height: 1080px;
+	margin: auto;
+	content: " ";
+	display: block;
+	    margin-top: -33%;
+	border-radius: 50%;
+	background: rgba(86, 98, 114, .8);
+}
+}
+
+@media (min-width: 1400px) {
+	.background-shape:after {
+		margin-top: -28%;
+	}
+}
+
+@media (max-width: 936px) {
+	.background-shape {
+		    width: 95vw;
+    height: 95vw;
+	}
+}
+
 #customer-comments {
     text-align: center;
     h2 {
