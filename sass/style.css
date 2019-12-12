@@ -833,6 +833,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: #c05344;
+  text-decoration: none;
 }
 
 a:visited {
@@ -841,6 +842,9 @@ a:visited {
 
 a:hover, a:focus, a:active {
   color: #c05344;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #c05344;
+          text-decoration-color: #c05344;
 }
 
 a:focus {

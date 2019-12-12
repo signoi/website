@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: FullWidth Template
+ * Template Name: Page without Sidebar
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<section>
+<section class="no-sidebar">
 	<div id="primary" class="content-area full-width row">
 		<main id="main" class="site-main col full">
 
