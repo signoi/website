@@ -354,7 +354,7 @@ padding: 0;
 margin: 80px 0 160px 0;
 
     .flexslider.reports {
-        padding: 40px 0;
+        padding: 0;
         margin: 0;
         background: #e9c659;
         border: none;
@@ -372,6 +372,9 @@ margin: 80px 0 160px 0;
         }
         .col.half {
             position: relative;
+            align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
         }
         li .row {
             width: 100%;
