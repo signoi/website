@@ -7,31 +7,6 @@ jQuery(document).ready(function () {
     });
 
   });
-  
-  //add class to header when scrolling up
-  
-  jQuery(document).ready(function () {
-    
-    'use strict';
-    
-     var c, currentScrollTop = 0,
-         navbar = jQuery('.site-header');
-  
-     jQuery(window).scroll(function () {
-        var a = jQuery(window).scrollTop();
-        var b = navbar.height();
-       
-        currentScrollTop = a;
-       
-        if (c < currentScrollTop && a > b + b) {
-          navbar.addClass("scrollUp");
-        } else if (c > currentScrollTop && !(a <= b)) {
-          navbar.removeClass("scrollUp");
-        }
-        c = currentScrollTop;
-    });
-    
-  });
 
     jQuery(document).ready(function(){
         //set a waypoint for all the page parts on the page
