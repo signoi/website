@@ -1327,10 +1327,21 @@ a:hover, a:active {
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
 #above-fold .col.full {
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  min-height: calc(100vh - 104px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #above-fold h2 {
@@ -1342,6 +1353,10 @@ a:hover, a:active {
   margin: auto;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 80px;
+  margin-bottom: 0;
 }
 
 #above-fold p {
@@ -1349,40 +1364,46 @@ a:hover, a:active {
   font-weight: 400;
   color: #fff;
   max-width: 580px;
-  margin: auto;
-  margin-top: 30px;
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
-  font-size: 34px;
+  font-size: 30px;
+  padding: 10px 1em;
   -webkit-animation-delay: .9s;
           animation-delay: .9s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+  margin-top: 30px;
 }
 
-#above-fold .background-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: -55%;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 0;
-  background-size: 1200px;
-  -webkit-animation: rise 1s ease both;
-          animation: rise 1s ease both;
+#above-fold .button:hover {
+  padding: 10px 1.3em;
 }
 
 #above-fold .row {
   margin-top: 0;
   z-index: 1;
   height: 100%;
+  margin-bottom: 0;
+  min-height: calc(100vh - 104px);
 }
 
 #above-fold img {
-  margin-bottom: -50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto;
+  margin-bottom: 0;
+  max-height: 36vh;
 }
 
 #customer-comments {
@@ -1391,7 +1412,7 @@ a:hover, a:active {
 
 #customer-comments h2 {
   color: #c05344;
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 500;
   margin-bottom: .7em;
 }
@@ -1487,7 +1508,7 @@ a:hover, a:active {
 }
 
 #callback-cta h2 {
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 500;
   color: #fff;
 }
@@ -1549,8 +1570,12 @@ a:hover, a:active {
   text-align: center;
 }
 
+#quantitative-semiotics .col.full img {
+  max-width: 200px;
+}
+
 #quantitative-semiotics h3 {
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 500;
   color: #c05344;
   line-height: 56px;
@@ -1599,7 +1624,7 @@ a:hover, a:active {
 }
 
 #about h2 {
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 500;
   color: #fff;
   -webkit-animation-delay: .3s;
@@ -1630,9 +1655,10 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 800px;
-  width: 800px;
-  top: -20%;
+  height: 700px;
+  width: 700px;
+  top: 50%;
+  margin-top: -350px;
 }
 
 #about button {
@@ -1660,7 +1686,7 @@ a:hover, a:active {
 }
 
 #reports .flexslider.reports h4 {
-  font-size: 47px;
+  font-size: 40px;
   color: #c05344;
   margin-bottom: 20px;
 }
@@ -1733,7 +1759,7 @@ a:hover, a:active {
 
 #use-cases h2 {
   color: #fff;
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 500;
   margin-bottom: .7em;
   text-align: center;
@@ -1852,11 +1878,13 @@ a:hover, a:active {
 }
 
 #use-cases .flipster .flipster__button--prev {
-  left: 10%;
+  left: 15%;
+  margin: 0;
 }
 
 #use-cases .flipster .flipster__button--next {
-  right: 10%;
+  right: 15%;
+  margin: 0;
 }
 
 #use-cases .flipster .flipster__button {
@@ -1865,7 +1893,15 @@ a:hover, a:active {
   opacity: 1;
 }
 
+#use-cases .flipster .flipster__item {
+  max-width: 100%;
+}
+
 /*--animations--*/
+section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .quote-before, section .quote-after, section .report-featured-image, section .round-image {
+  opacity: 0;
+}
+
 section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .quote-before, section.start .quote-after, section.start .report-featured-image {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
@@ -1889,6 +1925,11 @@ section.start .report-featured-image {
 #quantitative-semiotics h3, #quantitative-semiotics p {
   -webkit-animation: none;
           animation: none;
+  opacity: 1;
+}
+
+#quantitative-semiotics .col.half {
+  opacity: 0;
 }
 
 #quantitative-semiotics .row.start .col.half {
@@ -1904,6 +1945,16 @@ section.start .report-featured-image {
 #quantitative-semiotics .row.start .col.half:first-child:after {
   -webkit-animation: increase-height 1s ease 1.3s both;
           animation: increase-height 1s ease 1.3s both;
+}
+
+#callback-cta.start h2, #callback-cta.start p, #callback-cta.start form {
+  -webkit-animation: none;
+          animation: none;
+}
+
+#callback-cta .row.start h2, #callback-cta .row.start p, #callback-cta .row.start form {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
 }
 
 @media (max-width: 767.99px) {

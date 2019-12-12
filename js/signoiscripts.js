@@ -47,6 +47,12 @@ jQuery(document).ready(function () {
               jQuery(this.element).addClass('start');
       }, {
           //Set the offset
-          offset: '90%'
+          offset: 'bottom-in-view'
       });
+      var callbackwaypoint = jQuery('#callback-cta .row').waypoint(function() {
+        jQuery(this.element).addClass('start');
+}, {
+    //Set the offset
+    offset: 'bottom-in-view'
+});
     });

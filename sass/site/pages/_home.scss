@@ -5,8 +5,14 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    padding: 0;
     .col.full {
         position: relative;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        min-height: calc(100vh - 104px);
+        flex-direction: column;
     }
     h2 {
         font-size: 60px;
@@ -16,40 +22,45 @@
         max-width: 740px;
         margin: auto;
         animation-delay: .3s;
+        align-self: flex-start;
+        margin-top: 80px;
+        margin-bottom: 0;
     }
     p {
         font-size: 22px;
         font-weight: $fontweight__regular;
         color: #fff;
         max-width: 580px;
+        animation-delay: .6s;
+        align-self: center;
         margin: auto;
         margin-top: 30px;
-        animation-delay: .6s;
         margin-bottom: 30px;
     }
 
     button, input[type="button"], input[type="reset"], input[type="submit"] {
-        font-size: 34px;
+        font-size: 30px;
+    padding: 10px 1em;
         animation-delay: .9s;
+        align-self: center;
+        margin: auto;
+        margin-top: 30px;
     }
-    .background-image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        bottom: -55%;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: 0;
-    background-size: 1200px;
-    animation: rise 1s ease both;
+    .button:hover {
+        padding: 10px 1.3em;
     }
     .row {
         margin-top: 0;
         z-index: 1;
         height: 100%;
+        margin-bottom: 0;
+        min-height: calc(100vh - 104px);
     }
     img {
-        margin-bottom: -50%;
+        align-self: flex-end;
+        margin: auto;
+        margin-bottom: 0;
+        max-height: 36vh;
     }
 }
 
@@ -57,7 +68,7 @@
     text-align: center;
     h2 {
         color: $color__red;
-        font-size: 47px;
+        font-size: 45px;
         font-weight: $fontweight__medium;
         margin-bottom: .7em;
     }
@@ -133,7 +144,7 @@
     text-align: center;
     padding: 40px 0;
     h2 {
-        font-size: 47px;
+        font-size: 45px;
         font-weight: $fontweight__medium;
         color: #fff;
     }
@@ -173,8 +184,11 @@
 
 #quantitative-semiotics {
     text-align: center;
+    .col.full img {
+        max-width: 200px;
+    }
     h3 {
-        font-size: 47px;
+        font-size: 45px;
         font-weight: $fontweight__medium; 
         color: $color__red;
         line-height: 56px;
@@ -217,7 +231,7 @@ padding: 0;
 margin-top: 160px;
 margin-bottom: 240px;
     h2 {
-        font-size: 47px;
+        font-size: 45px;
         font-weight: $fontweight__medium;
         color: #fff;
         animation-delay: .3s;
@@ -239,9 +253,10 @@ margin-bottom: 240px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
-    height: 800px;
-    width: 800px;
-    top: -20%;
+    height: 700px;
+    width: 700px;
+    top: 50%;
+    margin-top: -350px;
     }
     button {
         font-size: 19px;
@@ -264,7 +279,7 @@ margin: 80px 0 160px 0;
         background: #e9c659;
         border: none;
         h4 {
-            font-size: 47px;
+            font-size: 40px;
             color: #c05344;
             margin-bottom: 20px;
         }
@@ -326,7 +341,7 @@ margin: 80px 0 160px 0;
     overflow: hidden;
     h2 {
         color: $color__text-on-grey;
-        font-size: 47px;
+        font-size: 45px;
         font-weight: 500;
         margin-bottom: .7em;
         text-align: center;
@@ -417,15 +432,20 @@ margin: 80px 0 160px 0;
             max-width: 100%;
         }
         .flipster__button--prev {
-            left: 10%;
+            left: 15%;
+            margin: 0;
         }
         .flipster__button--next {
-            right: 10%;
+            right: 15%;
+            margin: 0;
         }
         .flipster__button {
             margin-top: 15px;
             font-size: 16px;
             opacity: 1;
+        }
+        .flipster__item {
+            max-width: 100%;
         }
     }
 }
@@ -433,6 +453,11 @@ margin: 80px 0 160px 0;
   
 /*--animations--*/ 
 
+section {
+    h2, h3, h4, p, button, .flexslider.comments, form, img, .quote-before, .quote-after, .report-featured-image, .round-image  {
+        opacity: 0;
+    }   
+}
 
 section.start {
     h2, h3, h4, p, button, .flexslider.comments, form, img, .quote-before, .quote-after, .report-featured-image {
@@ -455,6 +480,10 @@ section.start {
 #quantitative-semiotics  {
     h3, p {
         animation: none;
+        opacity: 1;
+    }
+    .col.half {
+        opacity: 0;
     }
 }
 
@@ -467,6 +496,18 @@ section.start {
     }
     .col.half:first-child:after {
         animation: increase-height 1s ease 1.3s both;
+    }
+}
+
+#callback-cta.start {
+    h2, p, form {
+        animation: none;
+    }
+}
+
+#callback-cta .row.start {
+    h2, p, form {
+        animation: fade-in-bottom 1s ease both;
     }
 }
 

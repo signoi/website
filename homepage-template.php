@@ -44,7 +44,7 @@ get_header();
 		<h2><?php echo $title; ?></h2>	
 		<p><?php echo $copy; ?></p>
 		<button class="button yellow" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
-		<img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-03.svg">
+		<img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg">
 		</div>
 	</div>
 </section>
@@ -152,7 +152,7 @@ if ( $arr_posts->have_posts() ) :
 	$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 	$slug = get_post_field( 'post_name', get_post() );
 ?>
-		<li data-flip-title="<?php the_title(); ?>" class="carousel-item">
+		<li data-flip-title="<?php the_title(); ?>">
 			<h4><?php the_title(); ?></h4>
 			<?php the_excerpt(); ?> 
 			<div class="report-featured-image"><img src="<?php echo $image[0]?>"></div>
