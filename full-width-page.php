@@ -14,9 +14,9 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area full-width">
-		<main id="main" class="site-main">
+<section>
+	<div id="primary" class="content-area full-width row">
+		<main id="main" class="site-main col full">
 
 		<?php
 		while ( have_posts() ) :
@@ -34,6 +34,6 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</section>
 <?php
 get_footer();
