@@ -2377,6 +2377,12 @@ h2.widgettitle:after {
   font-weight: 500;
 }
 
+.blog-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
