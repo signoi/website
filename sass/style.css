@@ -2903,6 +2903,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   border-left: 4px solid #cf4b3d;
 }
 
+.featured .blog-excerpt p {
+  margin-top: 0;
+}
+
 .page-id-1440 ul, .archive ul, .search ul {
   margin-bottom: 0;
 }
