@@ -1698,6 +1698,7 @@ a:hover, a:active {
   text-align: center;
   font-size: 19px;
   line-height: 1;
+  background: #fff;
 }
 
 #callback-cta input[type="text"]::-webkit-input-placeholder {
@@ -1799,7 +1800,7 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 #about .round-image {
@@ -1809,10 +1810,11 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 700px;
-  width: 700px;
+  height: 600px;
+  width: 600px;
   top: 50%;
-  margin-top: -350px;
+  margin-top: -300px;
+  margin-left: 20px;
 }
 
 #about button {
@@ -2083,20 +2085,6 @@ section.start .report-featured-image {
   opacity: 1;
 }
 
-#quantitative-semiotics .col.half {
-  opacity: 0;
-}
-
-#quantitative-semiotics .row.start .col.half {
-  -webkit-animation: fade-in-right 1s ease .3s both;
-          animation: fade-in-right 1s ease .3s both;
-}
-
-#quantitative-semiotics .row.start .col.half:first-child {
-  -webkit-animation: fade-in-left 1s ease .3s both;
-          animation: fade-in-left 1s ease .3s both;
-}
-
 #quantitative-semiotics .row.start .col.half:first-child:after {
   -webkit-animation: increase-height 1s ease 1.3s both;
           animation: increase-height 1s ease 1.3s both;
@@ -2151,10 +2139,10 @@ section.start .report-featured-image {
     padding: 40px 0;
   }
   #about .round-image {
-    height: 650px;
-    width: 650px;
+    height: 550px;
+    width: 550px;
     top: 50%;
-    margin-top: -325px;
+    margin-top: -275px;
   }
   #reports .flexslider.reports .report-featured-image {
     height: 300px;
@@ -2316,6 +2304,8 @@ section.start .report-featured-image {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 10px 1em;
+  font-size: 16px;
+  height: 41px;
 }
 
 .blog-search input.search-field {
@@ -2329,6 +2319,7 @@ section.start .report-featured-image {
   font-weight: 500;
   padding: 10px 1em;
   min-width: 65%;
+  background: rgba(255, 255, 255, 0);
 }
 
 .blog-search input.search-submit:hover {
@@ -2925,8 +2916,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   padding-bottom: 0;
 }
 
-.entry-content h2.widgettitle,
-.entry-content h2.widget-title {
+.entry-content .widgettitle,
+.entry-content .widget-title {
   font-size: 1.2rem;
   line-height: 1.3rem;
   color: #768190;
@@ -2934,7 +2925,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   font-weight: 600;
 }
 
-h2.widgettitle:after {
+.widgettitle:after {
   content: " ";
   display: block;
   width: 30px;
@@ -3484,7 +3475,7 @@ h2.widgettitle:after {
     text-align: center;
   }
   .mailing-list-sign-up.blog-footer .mailing-list-icon {
-    width: 75px;
+    width: 50px;
     margin: auto;
     margin-bottom: 10px;
   }
