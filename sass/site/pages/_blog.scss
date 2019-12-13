@@ -662,15 +662,15 @@ color: #cf4b3d;
         padding-bottom: 0;
     }
     
-    .entry-content h2.widgettitle, 
-    .entry-content h2.widget-title  {
+    .entry-content .widgettitle, 
+    .entry-content .widget-title  {
         font-size: 1.2rem;
         line-height: 1.3rem;
         color: #768190;
         margin-bottom: 15px;
     font-weight: 600;
     }
-    h2.widgettitle:after {
+    .widgettitle:after {
         content: " ";
         display: block;
         width: 30px;

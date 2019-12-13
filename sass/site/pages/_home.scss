@@ -315,17 +315,18 @@ margin-top: 115px;
         position: relative;
         overflow: visible;
         display: flex;
-        padding: 80px 0;
+        padding: 60px 0;
     }
     .round-image {
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     top: 50%;
-    margin-top: -350px;
+    margin-top: -300px;
+    margin-left: 20px;
     }
     button {
         font-size: 19px;
@@ -617,10 +618,10 @@ section.start {
         padding: 40px 0;
     }
     #about .round-image {
-        height: 650px;
-        width: 650px;
+        height: 550px;
+        width: 550px;
         top: 50%;
-        margin-top: -325px;
+        margin-top: -275px;
     }
     #reports .flexslider.reports .report-featured-image {
         height: 300px;
