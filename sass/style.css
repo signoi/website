@@ -3091,25 +3091,6 @@ h2.widgettitle:after {
   color: #76818F;
 }
 
-.views-template-new-article-template- .entry-hero {
-  display: none;
-}
-
-.views-template-new-article-template- #secondary.widget-area {
-  display: none;
-  width: 0;
-}
-
-.views-template-new-article-template- #primary {
-  width: 100%;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.views-template-new-article-template- .entry-footer {
-  display: none;
-}
-
 .views-template-new-article-template- .hentry {
   padding-top: 0;
   padding-bottom: 0;
