@@ -75,6 +75,8 @@ display: none;
     color: #566272;
     transition: all 0.3s ease;
     padding: 10px 1em;
+    font-size: 16px;
+    height: 41px;
 }
 
 .blog-search input.search-field {
@@ -88,6 +90,8 @@ display: none;
     font-weight: 500;
     padding: 10px 1em;
     min-width: 65%;
+    background: rgba(255,255,255,0);
+}
 }
 
 .blog-search input.search-submit:hover {
@@ -110,10 +114,15 @@ display: none;
     transition: all 0.2s ease-in-out;
 }
 
+.category-area {
+    font-family: 'Lato', sans-serif;
+}
+
 .blog-categories li.cat-item a {
     box-shadow: none;
     color: #9795a2;
     transition: all 0.2s ease-in-out;
+    font-family: Lato, sans-serif;
 }
 
 .blog-categories li.cat-item:hover {
@@ -135,11 +144,10 @@ display: none;
 .mailing-list-sign-up.blog-footer .mailing-list-inner {
     display: flex;
     padding: 20px;
-    max-width: 900px;
 }
 
 .mailing-list-sign-up.blog-footer .mailing-list-icon {
-    width: 75px;
+    width: 55px;
 }
 
 .mailing-list-sign-up.blog-footer .mailing-list-text {
@@ -412,6 +420,7 @@ color: #cf4b3d;
       margin-top: auto;
   display: flex;
     color: #9795a2;
+    font-family: 'Lato',sans-serif;
 }
 
 .blog-author, .blog-date {
@@ -610,6 +619,7 @@ color: #cf4b3d;
     .mailing-list-sign-up.blog-footer .mailing-list-text {
         color: #3f4a57;
             font-weight: 700;
+            font-size: 18px;
     }
     
     .page-id-1440 .blog-page-header-area  .search-form {

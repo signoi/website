@@ -10,7 +10,8 @@
 get_header();
 ?>
 <section>
-	<div id="primary" class="content-area row">
+	<div class="row">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main col">
 
 		<?php
@@ -35,13 +36,15 @@ get_header();
 <?php
 get_sidebar();
 ?>
+</div>
+</section>
 <section class="mailing-list-sign-up blog-footer">
 <div class="row mailing-list-inner">
 <div class="col full">
 <div class="mailing-list-icon"><img class="alignnone wp-image-1640" src="http://new.signoi.com/wp-content/uploads/2019/10/signoi-logo-01-150x150.png" alt="" width="55" height="55" srcset="http://new.signoi.com/wp-content/uploads/2019/10/signoi-logo-01-150x150.png 150w, http://new.signoi.com/wp-content/uploads/2019/10/signoi-logo-01.png 300w" sizes="(max-width: 55px) 100vw, 55px"></div>
 <div class="mailing-list-text">Subscribe to our newsletter and get all this great content sent directly to your inbox.</div>
 <div class="mailing-list-trigger pum-trigger" style="cursor: pointer;">
-<div class="mailing-list-button">Sign Me Up</div>
+<div class="button red">Sign Me Up</div>
 </div>
 </div>
 </div>

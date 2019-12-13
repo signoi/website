@@ -2352,12 +2352,17 @@ section.start .report-featured-image {
   transition: all 0.2s ease-in-out;
 }
 
+.category-area {
+  font-family: 'Lato', sans-serif;
+}
+
 .blog-categories li.cat-item a {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #9795a2;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  font-family: Lato, sans-serif;
 }
 
 .blog-categories li.cat-item:hover {
@@ -2382,11 +2387,10 @@ section.start .report-featured-image {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  max-width: 900px;
 }
 
 .mailing-list-sign-up.blog-footer .mailing-list-icon {
-  width: 75px;
+  width: 55px;
 }
 
 .mailing-list-sign-up.blog-footer .mailing-list-text {
@@ -2679,6 +2683,7 @@ blockquote p {
   display: -ms-flexbox;
   display: flex;
   color: #9795a2;
+  font-family: 'Lato',sans-serif;
 }
 
 .blog-author, .blog-date {
@@ -2878,6 +2883,7 @@ blockquote p {
 .mailing-list-sign-up.blog-footer .mailing-list-text {
   color: #3f4a57;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .page-id-1440 .blog-page-header-area .search-form {
