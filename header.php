@@ -19,6 +19,7 @@
 
 	<?php wp_head(); ?>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
