@@ -1,5 +1,17 @@
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
+	font-family: $font__main;
+	font-weight: $fontweight__regular;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+		font-size: 17px;
+}
+
+body {
+	font-family: $font__main;
+	font-weight: $fontweight__regular;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 dfn, cite, em, i {
@@ -42,4 +54,10 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+@media (max-width: 767.99px) {
+	p {
+		font-size: 16px;
+	}
 }

@@ -7,13 +7,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
 }
 
-p, body {
-	font-family: $font__main;
-	font-weight: $fontweight__regular;
-	-moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
 h1 {
 font-weight: $fontweight__bold;
 }
@@ -21,4 +14,66 @@ font-weight: $fontweight__bold;
 h2, h3, h4, h5, h6 {
 	font-weight: $fontweight__medium;
 }
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 38px;
+}
+
+h4 {
+	font-size: 34px;
+}
+
+h5 {
+	font-size: 32px;
+}
+
+h6 {
+	font-size: 28px;
+}
 	
+
+@media (max-width: 767.99px) {
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 35px;
+	}
+	
+	h4 {
+		font-size: 32px;
+	}
+	
+	h5 {
+		font-size: 28px;
+	}
+	
+	h6 {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 450px) {
+	h2 {
+		font-size: 35px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	
+	h4 {
+		font-size: 28px;
+	}
+	
+	h5 {
+		font-size: 25px;
+	}
+	
+	h6 {
+		font-size: 22px;
+	} 
+}

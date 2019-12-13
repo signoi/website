@@ -122,7 +122,7 @@ wp_reset_postdata();
 <section id="callback-cta" style="background-color: <?php echo $backgroundcolor; ?>;">
 	<div class="row">
 		<div class="col full">
-			<h2><?php echo $title; ?></h2>	
+			<h3><?php echo $title; ?></h3>	
 			<p><?php echo $copy; ?></p>
 			<div class="phone-form">
 				<form>
@@ -164,7 +164,7 @@ wp_reset_postdata();
 				$link = get_sub_field('cta_link'); 
 				?>
 		<div class="col half">
-			<h3><?php echo $title; ?></h3>
+			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
 			<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>

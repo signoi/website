@@ -406,13 +406,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
 }
 
-p, body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-
 h1 {
   font-weight: 700;
 }
@@ -421,8 +414,76 @@ h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 34px;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 28px;
+}
+
+@media (max-width: 767.99px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 28px;
+  }
+  h6 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  h6 {
+    font-size: 22px;
+  }
+}
+
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 dfn, cite, em, i {
@@ -467,6 +528,12 @@ mark, ins {
 
 big {
   font-size: 125%;
+}
+
+@media (max-width: 767.99px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1378,7 +1445,6 @@ a:hover, a:active {
 
 #above-fold p {
   font-size: 22px;
-  font-weight: 400;
   color: #fff;
   max-width: 580px;
   -webkit-animation-delay: .6s;
@@ -1506,14 +1572,10 @@ a:hover, a:active {
 
 #customer-comments h2 {
   color: #c05344;
-  font-size: 45px;
-  font-weight: 500;
   margin-bottom: .7em;
 }
 
 #customer-comments p {
-  font-size: 19px;
-  font-weight: 400;
   color: #566272;
   margin-top: 0;
 }
@@ -1526,7 +1588,7 @@ a:hover, a:active {
   content: " ";
   display: block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
-  width: 55px;
+  width: 50px;
   background-position: center top;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -1552,7 +1614,7 @@ a:hover, a:active {
   content: " ";
   display: block;
   background: url(http://new.signoi.com/wp-content/uploads/2019/12/quote-right.svg);
-  width: 55px;
+  width: 50px;
   background-repeat: no-repeat;
   background-position: center bottom;
   margin-right: auto;
@@ -1602,14 +1664,10 @@ a:hover, a:active {
 }
 
 #callback-cta h2 {
-  font-size: 45px;
-  font-weight: 500;
   color: #fff;
 }
 
 #callback-cta p {
-  font-size: 19px;
-  font-weight: 400;
   color: #fff;
   margin-top: .5em;
   margin-bottom: 1.5em;
@@ -1669,18 +1727,13 @@ a:hover, a:active {
 }
 
 #quantitative-semiotics h3 {
-  font-size: 45px;
-  font-weight: 500;
   color: #c05344;
-  line-height: 56px;
   max-width: 373px;
   margin: auto;
   margin-bottom: 20px;
 }
 
 #quantitative-semiotics p {
-  font-size: 19px;
-  font-weight: 400;
   color: #566272;
   max-width: 373px;
   margin: auto;
@@ -1718,16 +1771,12 @@ a:hover, a:active {
 }
 
 #about h2 {
-  font-size: 45px;
-  font-weight: 500;
   color: #fff;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
 
 #about p {
-  font-size: 19px;
-  font-weight: 400;
   color: #fff;
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
@@ -1781,7 +1830,6 @@ a:hover, a:active {
 }
 
 #reports .flexslider.reports h4 {
-  font-size: 40px;
   color: #c05344;
   margin-bottom: 20px;
 }
@@ -1805,14 +1853,6 @@ a:hover, a:active {
 
 #reports .flexslider.reports li .row {
   width: 100%;
-}
-
-#reports .flexslider.reports .report-featured-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #reports .flexslider.reports .col.half:last-child {
@@ -1858,8 +1898,6 @@ a:hover, a:active {
 
 #use-cases h2 {
   color: #fff;
-  font-size: 45px;
-  font-weight: 500;
   margin-bottom: .7em;
   text-align: center;
 }
@@ -2066,13 +2104,6 @@ section.start .report-featured-image {
   #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
     font-size: 28px;
   }
-  #use-cases h2, #customer-comments h2, #callback-cta h2, #quantitative-semiotics h3, #about h2, #reports .flexslider.reports h4 {
-    font-size: 40px;
-    line-height: 1.2em;
-  }
-  #customer-comments p, #callback-cta p, #quantitative-semiotics p, #about p, #reports .flexslider.reports p {
-    font-size: 16px;
-  }
   #quantitative-semiotics .col.half:first-child:after {
     width: 100%;
     max-width: 100%;
@@ -2169,9 +2200,6 @@ section.start .report-featured-image {
   }
   #customer-comments .quote-after, #customer-comments .quote-before {
     display: none;
-  }
-  #use-cases h2, #customer-comments h2, #callback-cta h2, #quantitative-semiotics h3, #about h2, #reports .flexslider.reports h4 {
-    font-size: 35px;
   }
   #above-fold h2 {
     font-size: 40px;
