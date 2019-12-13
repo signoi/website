@@ -35,11 +35,7 @@ display: none;
     padding-top: 0;
     padding-bottom: 0;
 }
-.blog-header-inner, .blog-post-area, .mailing-list-inner {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+
 .blog-header-inner {
     display: flex;
 }
@@ -78,6 +74,7 @@ display: none;
     background: #bbc0c6;
     color: #566272;
     transition: all 0.3s ease;
+    padding: 10px 1em;
 }
 
 .blog-search input.search-field {
@@ -90,7 +87,7 @@ display: none;
     font-size: 15px;
     font-weight: 500;
     padding: 10px 1em;
-    width: 65%;
+    min-width: 65%;
 }
 
 .blog-search input.search-submit:hover {

@@ -2273,12 +2273,6 @@ section.start .report-featured-image {
   padding-bottom: 0;
 }
 
-.blog-header-inner, .blog-post-area, .mailing-list-inner {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
 .blog-header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2321,6 +2315,7 @@ section.start .report-featured-image {
   color: #566272;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  padding: 10px 1em;
 }
 
 .blog-search input.search-field {
@@ -2333,7 +2328,7 @@ section.start .report-featured-image {
   font-size: 15px;
   font-weight: 500;
   padding: 10px 1em;
-  width: 65%;
+  min-width: 65%;
 }
 
 .blog-search input.search-submit:hover {
