@@ -1726,7 +1726,7 @@ a:hover, a:active {
   max-width: 150px;
 }
 
-#quantitative-semiotics h2 {
+#quantitative-semiotics h2, #quantitative-semiotics h3 {
   color: #c05344;
   max-width: 373px;
   margin: auto;
