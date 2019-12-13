@@ -244,6 +244,7 @@
         text-align: center;
         font-size: 19px;
         line-height: 1;
+        background: #fff;
     }
     input[type="text"]::placeholder {
         color: $color__lightgrey;
@@ -552,18 +553,9 @@ section.start {
         animation: none;
         opacity: 1;
     }
-    .col.half {
-        opacity: 0;
-    }
 }
 
 #quantitative-semiotics .row.start {
-    .col.half {
-        animation: fade-in-right 1s ease .3s both;
-    }
-    .col.half:first-child {
-        animation: fade-in-left 1s ease .3s both;
-    }
     .col.half:first-child:after {
         animation: increase-height 1s ease 1.3s both;
     }
