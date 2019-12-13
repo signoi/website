@@ -217,7 +217,7 @@
 #callback-cta {
     text-align: center;
     padding: 40px 0;
-    h2 {
+    h3 {
         color: #fff;
     }
     p {
@@ -255,13 +255,13 @@
 #quantitative-semiotics {
     text-align: center;
     .col.full img {
-        max-width: 200px;
+        max-width: 150px;
     }
-    h3 {
+    h2 {
         color: $color__red;
         max-width: 373px;
     margin: auto;
-    margin-bottom: 20px; 
+    margin-bottom: .3em;
     }
     p {
         color: $color__grey;
@@ -270,7 +270,7 @@
     margin-bottom: 1.5em;
     }
     .col.full {
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     .col.half:first-child {
         position: relative;
@@ -293,8 +293,8 @@
 
 #about  {
 padding: 0;
-margin-top: 160px;
-margin-bottom: 240px;
+margin-top: 115px;
+    margin-bottom: 200px;
     h2 {
         color: #fff;
         animation-delay: .3s;
@@ -322,6 +322,7 @@ margin-bottom: 240px;
     button {
         font-size: 19px;
         animation-delay: .9s;
+        margin-top: 15px;
     }
     .round-image img {
         animation: none;
@@ -340,6 +341,11 @@ margin: 80px 0 160px 0;
         margin: 0;
         background: #e9c659;
         border: none;
+        .report-featured-image img {
+            max-height: 300px;
+            width: auto;
+            margin: auto;
+        }
         h4 {
             color: #c05344;
             margin-bottom: 20px;

@@ -1663,7 +1663,7 @@ a:hover, a:active {
   padding: 40px 0;
 }
 
-#callback-cta h2 {
+#callback-cta h3 {
   color: #fff;
 }
 
@@ -1723,14 +1723,14 @@ a:hover, a:active {
 }
 
 #quantitative-semiotics .col.full img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
-#quantitative-semiotics h3 {
+#quantitative-semiotics h2 {
   color: #c05344;
   max-width: 373px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: .3em;
 }
 
 #quantitative-semiotics p {
@@ -1741,7 +1741,7 @@ a:hover, a:active {
 }
 
 #quantitative-semiotics .col.full {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 #quantitative-semiotics .col.half:first-child {
@@ -1766,8 +1766,8 @@ a:hover, a:active {
 
 #about {
   padding: 0;
-  margin-top: 160px;
-  margin-bottom: 240px;
+  margin-top: 115px;
+  margin-bottom: 200px;
 }
 
 #about h2 {
@@ -1808,6 +1808,7 @@ a:hover, a:active {
   font-size: 19px;
   -webkit-animation-delay: .9s;
           animation-delay: .9s;
+  margin-top: 15px;
 }
 
 #about .round-image img {
@@ -1827,6 +1828,12 @@ a:hover, a:active {
   margin: 0;
   background: #e9c659;
   border: none;
+}
+
+#reports .flexslider.reports .report-featured-image img {
+  max-height: 300px;
+  width: auto;
+  margin: auto;
 }
 
 #reports .flexslider.reports h4 {
