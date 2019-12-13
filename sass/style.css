@@ -1501,6 +1501,14 @@ a:hover, a:active {
   background-size: cover;
 }
 
+.page-id-2521 #above-fold .col.full {
+  padding: 80px 0;
+}
+
+.page-id-2521 #above-fold h2 {
+  margin-top: 0;
+}
+
 .page-id-2521 #above-fold img {
   display: none;
 }
@@ -1556,6 +1564,9 @@ a:hover, a:active {
   .background-shape {
     top: 0;
     margin-top: -350px;
+  }
+  .page-id-2521 #above-fold .col.full {
+    padding: 40px 0;
   }
 }
 

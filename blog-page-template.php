@@ -19,8 +19,16 @@ get_header();
 <i class="far fa-envelope"></i></div>
 <section class="blog-page-header-area">
 <div class="row blog-header-inner">
-<div class="col half blog-search">[widget id=”jetpack-search-filters-2″]</div>
-<div class="col half blog-categories">[widget id=”categories-2″]</div>
+<div class="col half blog-search"><?php if( is_active_sidebar( 'blog-search' ) ) : ?>
+	<aside class="blog-search">
+		<?php dynamic_sidebar( 'blog-search' ); ?>
+	</aside>
+<?php endif; ?></div>
+<div class="col half blog-categories"><?php if( is_active_sidebar( 'blog-categories' ) ) : ?>
+	<aside class="blog-categories">
+		<?php dynamic_sidebar( 'blog-categories' ); ?>
+	</aside>
+<?php endif; ?></div>
 </div>
 </section>
 <section class="no-sidebar">
