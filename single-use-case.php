@@ -19,11 +19,12 @@ get_header();
 ?>		
 <section id="above-fold" class="use-case">
 	<div class="row">
-		<div class="col full">
+		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
-		<p><?php echo $copy; ?></p>
-		<button class="button yellow" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
+		<div class="intro-copy"><?php echo $copy; ?></div>
+		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>
+		<div class="col third"><img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
@@ -79,14 +80,6 @@ wp_reset_postdata();
 				endif;
 				if( get_row_index() % 2 == 0 ){
 				?>
-			<div class="row">
-		<div class="col half">
-			<h3><?php echo $title; ?></h3>
-			<p><?php echo $copy; ?></p>
-		</div>
-		<div class="col half"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-			</div>
-			<?php } else { ?>
 				<div class="row">
 				<div class="col half"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half">
@@ -94,6 +87,14 @@ wp_reset_postdata();
 			<p><?php echo $copy; ?></p>
 		</div>
 			</div>
+			<?php } else { ?>
+			<div class="row">
+		<div class="col half">
+			<h2><?php echo $title; ?></h2>
+			<p><?php echo $copy; ?></p>
+		</div>
+		<div class="col half"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+			</div>			
 		<?php } endwhile; else : endif; ?>
 </section>
 <?php endwhile; else : endif; ?>
@@ -103,7 +104,7 @@ wp_reset_postdata();
 		$title = get_sub_field('section_title'); 
 		$copy = get_sub_field('section_copy'); 
 ?>
-<section id="subscribe-cta">
+<section id="callback-cta">
 	<div class="row">
 		<div class="col full">
 			<h3><?php echo $title; ?></h3>	
@@ -131,7 +132,7 @@ if ( $arr_posts->have_posts() ) :
 	$post = $posts[0]; $c=0; ?>
 <section id="recent-posts">
 <div class="row">
-	<h2>Read our latest content...</h2>
+	<div class="col full"><h2>Read our latest content...</h2></div>
 <?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );

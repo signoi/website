@@ -415,11 +415,11 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 38px;
+  font-size: 37px;
 }
 
 h4 {
@@ -436,7 +436,7 @@ h6 {
 
 @media (max-width: 767.99px) {
   h2 {
-    font-size: 40px;
+    font-size: 38px;
   }
   h3 {
     font-size: 35px;
@@ -3621,6 +3621,106 @@ section.widget {
 /*--------------------------------------------------------------
 ## Use Cases
 --------------------------------------------------------------*/
+.single-use-case #above-fold {
+  background: #566272;
+  text-align: left;
+}
+
+.single-use-case #above-fold h1 {
+  color: #fff;
+  margin-top: auto;
+  font-size: 60px;
+}
+
+.single-use-case #above-fold p {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.single-use-case #above-fold .col.twothird {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.single-use-case #above-fold .intro-copy {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.single-use-case #above-fold .button {
+  margin-left: 0;
+}
+
+.single-use-case #use-cases-menu {
+  background: #e9c659;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.single-use-case #use-cases-menu h2 {
+  color: #c05344;
+}
+
+.single-use-case #use-cases-menu .usecases-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.single-use-case #use-cases-menu .usecases-menu li {
+  text-align: center;
+  max-width: 150px;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #c05344;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.single-use-case #use-cases-menu .usecases-menu li a {
+  color: #566272;
+}
+
+.single-use-case #use-cases-menu .usecases-menu li a.active {
+  color: #c05344;
+}
+
+.single-use-case #use-cases-menu #use-case-content {
+  padding: 50px 0;
+}
+
+.single-use-case #use-cases-menu #use-case-content .row {
+  padding: 30px 15px;
+}
+
+.single-use-case #use-cases-menu #use-case-content h2 {
+  color: #c05344;
+  line-height: 1.2em;
+}
+
+.single-use-case #use-cases-menu #use-case-content p {
+  font-size: 19px;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
