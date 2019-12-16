@@ -24,39 +24,39 @@
             margin-left: 0;
         }
     }
-#use-cases-menu {
-    background: $color__yellow;
-    padding: 20px 0;
-    text-align: center;
-    h2 {
-        color: $color__red;
-    }
-    .usecases-menu {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
+    #use-cases-menu {
+        background: $color__yellow;
+        padding: 20px 0;
         text-align: center;
-        flex-direction: row;
-        margin-bottom: 30px;
-        li {
-            text-align: center;
-            max-width: 150px;
-            vertical-align: middle;
-            display: -webkit-box;
-            display: -ms-flexbox;
+        h2 {
+            color: $color__red;
+        }
+        .usecases-menu {
+            list-style: none;
             display: flex;
-            border-right: 1px solid $color__red;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            
-            a {
-                color: $color__grey;
-            }
-            a.active {
-                color: $color__red;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            flex-direction: row;
+            margin-bottom: 30px;
+            li {
+                text-align: center;
+                max-width: 150px;
+                vertical-align: middle;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                border-right: 1px solid $color__red;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;            
+                a {
+                    color: $color__grey;
+                }
+                a.active {
+                    color: $color__red;
+                }
             }
         }
     }
@@ -73,6 +73,7 @@
             font-size: 19px;
         }
     }
-}
-
+    #callback-cta {
+        background: $color__red;
+    }
 }

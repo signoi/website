@@ -3704,21 +3704,25 @@ section.widget {
   color: #c05344;
 }
 
-.single-use-case #use-cases-menu #use-case-content {
+.single-use-case #use-case-content {
   padding: 50px 0;
 }
 
-.single-use-case #use-cases-menu #use-case-content .row {
+.single-use-case #use-case-content .row {
   padding: 30px 15px;
 }
 
-.single-use-case #use-cases-menu #use-case-content h2 {
+.single-use-case #use-case-content h2 {
   color: #c05344;
   line-height: 1.2em;
 }
 
-.single-use-case #use-cases-menu #use-case-content p {
+.single-use-case #use-case-content p {
   font-size: 19px;
+}
+
+.single-use-case #callback-cta {
+  background: #c05344;
 }
 
 /*--------------------------------------------------------------
