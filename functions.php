@@ -183,6 +183,12 @@ function register_footer_menu() {
   }
   add_action( 'init', 'register_footer_menu' );
   
+ /*--use cases menu--*/ 
+
+ function register_usecases_menu() {
+	register_nav_menu('usecases-menu',__( 'Use Cases Menu' ));
+  }
+  add_action( 'init', 'register_usecases_menu' );
 
 /*--hide subcategories in category widget except one specific one--*/
 function exclude_widget_subcategories($args){

@@ -28,35 +28,15 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
-<?php
-$args = array(
-    'post_type' => 'use-case',
-	'post_status' => 'publish',
-);
-$arr_posts = new WP_Query( $args );
- 
-if ( $arr_posts->have_posts() ) : 
-	$post = $posts[0]; $c=0; ?>
+
 <section id="use-cases-menu">
 	<div class="row">
 		<div class="col full">
 		<h2>Use Cases</h2>
-		<ul class="usecases-menu">
-			<?php while ( $arr_posts->have_posts() ) : 
-					$arr_posts->the_post();
-					$slug = get_post_field( 'post_name', get_post() );
-					?>
-					<li><a class="usecase post<?php $c++; if($c == 1) { echo ' active'; } ?>" id="<?php echo $slug; ?>"><?php the_title(); ?></a></li>
-			<?php endwhile; ?>
-
-			</ul>
+		<nav class="footermenu"><?php wp_nav_menu( array( 'theme_location' => 'usecases-menu', 'container_class' => 'usecases-menu' ) ); ?></nav>
 		</div>
 		</div>	
 </section>
-<?php 
-endif;
-wp_reset_postdata();
-?>
 <?php if( have_rows('main_content') ): 
 		while( have_rows('main_content') ): the_row(); 
 ?>
@@ -133,6 +113,8 @@ if ( $arr_posts->have_posts() ) :
 <section id="recent-posts">
 <div class="row">
 	<div class="col full"><h2>Read our latest content...</h2></div>
+</div>
+<div class="row">
 <?php while ( $arr_posts->have_posts() ) : 
 					$arr_posts->the_post();
 					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog' );
