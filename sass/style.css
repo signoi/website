@@ -824,6 +824,14 @@ input[type="submit"]:focus, .button:active, .button:focus {
   color: #c05344;
 }
 
+.button.red:hover a, button.red:hover a, input[type="button"].red:hover a, input[type="submit"].red:hover a {
+  color: #c05344;
+}
+
+.button.red a, button.red a, input[type="button"].red a, input[type="submit"].red a {
+  color: #fff;
+}
+
 .button.yellow, button.yellow, input[type="button"].yellow, input[type="submit"].yellow {
   border-color: #e9c659;
   background: #e9c659;
@@ -836,6 +844,14 @@ input[type="submit"]:focus, .button:active, .button:focus {
   color: #e9c659;
 }
 
+.button.yellow:hover a, button.yellow:hover a, input[type="button"].yellow:hover a, input[type="submit"].yellow:hover a {
+  color: #e9c659;
+}
+
+.button.yellow a, button.yellow a, input[type="button"].yellow a, input[type="submit"].yellow a {
+  color: #566272;
+}
+
 .button.grey, button.grey, input[type="button"].grey, input[type="submit"].grey {
   border-color: #566272;
   background: #566272;
@@ -846,6 +862,14 @@ input[type="submit"]:focus, .button:active, .button:focus {
   border-color: #bbc0c6;
   background: #bbc0c6;
   color: #566272;
+}
+
+.button.grey:hover a, button.grey:hover a, input[type="button"].grey:hover a, input[type="submit"].grey:hover a {
+  color: #566272;
+}
+
+.button.grey a, button.grey a, input[type="button"].grey a, input[type="submit"].grey a {
+  color: #fff;
 }
 
 input[type="text"],
@@ -1397,6 +1421,19 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Page styling
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## General Page Styling
+--------------------------------------------------------------*/
+/*--animations--*/
+.page-template section h2, .page-template section h3, .page-template section h4, .page-template section p, .page-template section button, .page-template section form, .page-template section img {
+  opacity: 0;
+}
+
+.page-template section.start h2, .page-template section.start h3, .page-template section.start h4, .page-template section.start p, .page-template section.start button, .page-template section.start form, .page-template section.start img {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
 /*--------------------------------------------------------------
 ## Homepage
 --------------------------------------------------------------*/
@@ -2056,21 +2093,21 @@ a:hover, a:active {
 }
 
 /*--animations--*/
-section h2, section h3, section h4, section p, section button, section .flexslider.comments, section form, section img, section .quote-before, section .quote-after, section .report-featured-image, section .round-image {
+.page-template section .flexslider.comments, .page-template section .quote-before, .page-template section .quote-after, .page-template section .report-featured-image, .page-template section .round-image {
   opacity: 0;
 }
 
-section.start h2, section.start h3, section.start h4, section.start p, section.start button, section.start .flexslider.comments, section.start form, section.start img, section.start .quote-before, section.start .quote-after, section.start .report-featured-image {
+.page-template section.start .flexslider.comments, .page-template section.start .quote-before, .page-template section.start .quote-after, .page-template section.start .report-featured-image {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
 
-section.start .round-image {
+.page-template section.start .round-image {
   -webkit-animation: fade-in-right 1s ease both;
           animation: fade-in-right 1s ease both;
 }
 
-section.start .report-featured-image {
+.page-template section.start .report-featured-image {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
@@ -2254,6 +2291,29 @@ section.start .report-featured-image {
   padding: 0;
 }
 
+/*--search form--*/
+.is-form-style-1.is-form-id-2572 .is-search-input:focus, .is-form-style-1.is-form-id-2572 .is-search-input:hover, .is-form-style-1.is-form-id-2572 .is-search-input, .is-form-style-2.is-form-id-2572 .is-search-input:focus, .is-form-style-2.is-form-id-2572 .is-search-input:hover, .is-form-style-2.is-form-id-2572 .is-search-input, .is-form-style-3.is-form-id-2572 .is-search-input:focus, .is-form-style-3.is-form-id-2572 .is-search-input:hover, .is-form-style-3.is-form-id-2572 .is-search-input, .is-form-id-2572 .is-search-input:focus, .is-form-id-2572 .is-search-input:hover, .is-form-id-2572 .is-search-input {
+  background: rgba(0, 0, 0, 0);
+}
+
+.is-search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.is-search-form label, .is-search-form input[type="text"] {
+  width: 100%;
+}
+
+.is-form-style button.is-search-submit {
+  border: 1px solid #cf4b3d;
+}
+
+.is-search-icon svg path {
+  fill: #fff;
+}
+
 /*--blog page header area--*/
 .blog-page-header-area {
   background: #f4f4f7;
@@ -2398,10 +2458,15 @@ section.start .report-featured-image {
   margin: auto;
   margin-right: 0;
   min-width: 200px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.mailing-list-sign-up.blog-footer .mailing-list-trigger:hover {
-  min-width: 210px;
+.mailing-list-sign-up.blog-footer .mailing-list-trigger button {
+  padding: 10px 2em;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .featured .blog-title, .blog-title {
@@ -2719,6 +2784,14 @@ blockquote p {
 }
 
 /*--new blog--*/
+h3.demo-heading {
+  color: #e9c659;
+}
+
+.book-demo .button {
+  display: inline-block;
+}
+
 .views-template-new-article-template- .entry-footer {
   display: none;
 }
@@ -2827,6 +2900,10 @@ blockquote p {
   margin-bottom: 40px;
 }
 
+.post-sidebar button {
+  text-align: center;
+}
+
 .mailing-list-sign-up.blog-footer .mailing-list-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2925,7 +3002,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   font-weight: 600;
 }
 
-.widgettitle:after {
+.widgettitle:after, .widget-title:after {
   content: " ";
   display: block;
   width: 30px;
@@ -3045,32 +3122,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   -webkit-box-shadow: 0 3px 5px #bbc0c7;
           box-shadow: 0 3px 5px #bbc0c7;
   text-align: center;
-}
-
-.book-demo-text {
-  font-weight: 700;
-  display: block;
-}
-
-.book-demo-button a {
-  color: #efc73e;
-  border: 2px solid #efc73e;
-  display: block;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  font-weight: 800;
-  letter-spacing: .05rem;
-  text-transform: uppercase;
-  min-width: 140px;
-  text-align: center;
-  padding: 10px 25px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.book-demo-button a:hover {
-  background: #efc73e;
-  color: #76818F;
+  margin-top: 30px;
 }
 
 .views-template-new-article-template- .hentry {
@@ -3086,13 +3138,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   margin-bottom: 0;
 }
 
+.views-template-new-article-template- .entry-content {
+  margin-top: 0;
+}
+
 .views-template-new-article-template- .post-area {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 3em;
-  max-width: 1200px;
+  padding-top: 0;
   margin: auto;
 }
 
@@ -3253,20 +3308,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 
 .views-template-new-article-template- .sticky-social {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 10%;
-  flex: 0 0 10%;
-  max-width: 10%;
-  padding: 20px;
-}
-
-.views-template-new-article-template- .post-sidebar {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding: 20px;
-  margin-left: 0;
-  padding-top: 0;
+  -ms-flex: 0 0 50px;
+      flex: 0 0 50px;
+  max-width: 50px;
+  padding: 0;
+  min-width: 50px;
 }
 
 .views-template-new-article-template- .search-form {
@@ -3311,6 +3357,10 @@ section.widget {
   padding: 0;
 }
 
+.widget_categories ul {
+  margin: 0;
+}
+
 .widget_categories li.cat-item {
   padding: 5px 10px;
   border: 1px solid #c9c7d8;
@@ -3341,6 +3391,7 @@ section.widget {
 .widget_categories li.cat-item:hover a,
 .widget_categories li.cat-item a:hover {
   color: #546274;
+  text-decoration: none;
 }
 
 .widget_categories li.cat-item:hover {
@@ -3388,10 +3439,11 @@ section.widget {
   }
   .views-template-new-article-template- .sticky-social {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 5%;
-    flex: 0 0 5%;
-    max-width: 5%;
+    -ms-flex: 0 0 50px;
+        flex: 0 0 50px;
+    max-width: 50px;
     padding: 0;
+    min-width: 50px;
   }
   .views-template-new-article-template- .post-content {
     padding: 20px;

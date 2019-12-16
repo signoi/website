@@ -524,14 +524,14 @@ margin: 80px 0 160px 0;
   
 /*--animations--*/ 
 
-section {
-    h2, h3, h4, p, button, .flexslider.comments, form, img, .quote-before, .quote-after, .report-featured-image, .round-image  {
+.page-template section {
+    .flexslider.comments,  .quote-before, .quote-after, .report-featured-image, .round-image  {
         opacity: 0;
     }   
 }
 
-section.start {
-    h2, h3, h4, p, button, .flexslider.comments, form, img, .quote-before, .quote-after, .report-featured-image {
+.page-template section.start {
+   .flexslider.comments, .quote-before, .quote-after, .report-featured-image {
         animation: fade-in-bottom 1s ease both;
     }
     .round-image {

@@ -34,6 +34,12 @@ input[type="submit"], .button {
 		border-color: $color__red;
 		background: $color__text-on-red;
 		color: $color__red;
+		a {
+			color: $color__red;	
+		}
+	}
+	a {
+		color: $color__text-on-red;	
 	}
 }
 
@@ -45,6 +51,12 @@ input[type="submit"], .button {
 		border-color: $color__yellow;
 		background: $color__text-on-yellow;
 		color: $color__yellow;
+		a {
+			color: $color__yellow;	
+		}
+	}
+	a {
+		color: $color__text-on-yellow;	
 	}
 }
 
@@ -56,5 +68,11 @@ input[type="submit"], .button {
 		border-color: $color__lightgrey;
 		background: $color__lightgrey;
 		color: $color__grey;
+		a {
+			color: $color__grey;	
+		}
+	}
+	a {
+		color: $color__text-on-grey;	
 	}
 }
