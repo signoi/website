@@ -3624,6 +3624,11 @@ section.widget {
 .single-use-case #above-fold {
   background: #566272;
   text-align: left;
+  min-height: 0;
+}
+
+.single-use-case #above-fold .row {
+  min-height: 0;
 }
 
 .single-use-case #above-fold h1 {
@@ -3646,6 +3651,24 @@ section.widget {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 80px 15px;
+}
+
+.single-use-case #above-fold .col.third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single-use-case #above-fold .col.third img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto;
+  margin-bottom: 0;
+  max-height: none;
+  max-width: none;
+  width: 175%;
+  margin-left: -25%;
 }
 
 .single-use-case #above-fold .intro-copy {
@@ -3668,32 +3691,20 @@ section.widget {
 }
 
 .single-use-case #use-cases-menu ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
   padding: 0;
-  text-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 30px;
+  margin: 0;
+  margin: 30px auto;
 }
 
 .single-use-case #use-cases-menu ul li {
-  text-align: center;
-  max-width: 150px;
-  vertical-align: middle;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  margin-right: 15px;
+  padding-right: 15px;
   border-right: 1px solid #c05344;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  border-top: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .single-use-case #use-cases-menu ul li a {
@@ -3702,6 +3713,21 @@ section.widget {
 
 .single-use-case #use-cases-menu ul li a.active {
   color: #c05344;
+}
+
+.single-use-case #use-cases-menu ul li .current-menu-item a {
+  color: #c05344;
+}
+
+.single-use-case #use-cases-menu ul li li:hover a, .single-use-case #use-cases-menu ul li li a:hover {
+  text-decoration: none;
+  color: #c05344;
+}
+
+.single-use-case #use-cases-menu ul li li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .single-use-case #use-case-content {

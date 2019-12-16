@@ -61,7 +61,7 @@ get_header();
 				if( get_row_index() % 2 == 0 ){
 				?>
 				<div class="row even">
-				<div class="col half"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+				<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half">
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
@@ -73,7 +73,7 @@ get_header();
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
 		</div>
-		<div class="col half"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 			</div>			
 		<?php } endwhile; else : endif; ?>
 </section>
