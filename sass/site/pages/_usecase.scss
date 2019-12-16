@@ -67,18 +67,18 @@
                 a.active {
                     color: $color__red;
                 }
-                .current-menu-item a {
-                    color: $color__red;
-                }
-                li:hover a, li a:hover {
-                    text-decoration: none;
-                    color: $color__red;
-                }
-                li:last-child {
-                    border-right: none;
-                    margin-right: 0;
-                    padding-right: 0;
-                }
+            }
+            .current-menu-item a {
+                color: $color__red;
+            }
+            li:hover a, li a:hover {
+                text-decoration: none;
+                color: $color__red;
+            }
+            li:last-child {
+                border-right: none;
+                margin-right: 0;
+                padding-right: 0;
             }
         }
     }
