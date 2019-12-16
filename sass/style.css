@@ -3667,7 +3667,7 @@ section.widget {
   color: #c05344;
 }
 
-.single-use-case #use-cases-menu .usecases-menu {
+.single-use-case #use-cases-menu ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3682,7 +3682,7 @@ section.widget {
   margin-bottom: 30px;
 }
 
-.single-use-case #use-cases-menu .usecases-menu li {
+.single-use-case #use-cases-menu ul li {
   text-align: center;
   max-width: 150px;
   vertical-align: middle;
@@ -3696,11 +3696,11 @@ section.widget {
   flex-direction: column;
 }
 
-.single-use-case #use-cases-menu .usecases-menu li a {
+.single-use-case #use-cases-menu ul li a {
   color: #566272;
 }
 
-.single-use-case #use-cases-menu .usecases-menu li a.active {
+.single-use-case #use-cases-menu ul li a.active {
   color: #c05344;
 }
 
