@@ -10,21 +10,29 @@ input[type="submit"], .button {
 	font-weight: $fontweight__medium;
 	padding: 10px 2em;
 	transition: all 0.3s ease;
-
+ a {
+	text-decoration: none;
+ }
 	&:hover {
 		border-color: $color__red;
 		background-color: $color__red;
 		color: $color__text-on-red;
 		padding: 10px 2.3em;
+
+		a {
+			text-decoration: none;
+		}
 	}
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
+
+		a {
+			text-decoration: none;
+		}
 	}
 }
-
-
 
 .button.red, button.red, input[type="button"].red, input[type="submit"].red {
 	border-color: $color__red;

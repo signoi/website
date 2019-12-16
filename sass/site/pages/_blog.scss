@@ -37,6 +37,9 @@ display: none;
     label, input[type="text"] {
         width: 100%;
     }
+    .is-search-icon {
+        border: none;
+    }
 }
 
 .is-form-style button.is-search-submit {
@@ -498,7 +501,7 @@ color: #cf4b3d;
 
 /*--new blog--*/
 
-h3.demo-heading {
+.views-template-new-article-template- h3.demo-heading {
     color: $color__yellow;
 }
 
@@ -645,6 +648,7 @@ h3.demo-heading {
         align-self: flex-end;
         margin: auto;
         margin-right: 0;
+        text-align: center;
     }
     
     .mailing-list-sign-up.blog-footer .mailing-list-text {
@@ -667,9 +671,9 @@ h3.demo-heading {
         padding-bottom: 0;
     }
     
-    .blog-header-inner, .blog-post-area, .mailing-list-inner {
+    .blog-header-inner, .mailing-list-inner {
         width: 90%;
-        max-width: 1080px;
+        max-width: 1200px;
         margin: auto;
     }
     

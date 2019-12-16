@@ -792,6 +792,13 @@ input[type="submit"], .button {
   transition: all 0.3s ease;
 }
 
+button a,
+input[type="button"] a,
+input[type="reset"] a,
+input[type="submit"] a, .button a {
+  text-decoration: none;
+}
+
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -802,6 +809,13 @@ input[type="submit"]:hover, .button:hover {
   padding: 10px 2.3em;
 }
 
+button:hover a,
+input[type="button"]:hover a,
+input[type="reset"]:hover a,
+input[type="submit"]:hover a, .button:hover a {
+  text-decoration: none;
+}
+
 button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -810,6 +824,16 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus, .button:active, .button:focus {
   border-color: #e9c659;
+}
+
+button:active a, button:focus a,
+input[type="button"]:active a,
+input[type="button"]:focus a,
+input[type="reset"]:active a,
+input[type="reset"]:focus a,
+input[type="submit"]:active a,
+input[type="submit"]:focus a, .button:active a, .button:focus a {
+  text-decoration: none;
 }
 
 .button.red, button.red, input[type="button"].red, input[type="submit"].red {
@@ -2306,6 +2330,10 @@ a:hover, a:active {
   width: 100%;
 }
 
+.is-search-form .is-search-icon {
+  border: none;
+}
+
 .is-form-style button.is-search-submit {
   border: 1px solid #cf4b3d;
 }
@@ -2788,7 +2816,7 @@ blockquote p {
 }
 
 /*--new blog--*/
-h3.demo-heading {
+.views-template-new-article-template- h3.demo-heading {
   color: #e9c659;
 }
 
@@ -2941,6 +2969,7 @@ h3.demo-heading {
       align-self: flex-end;
   margin: auto;
   margin-right: 0;
+  text-align: center;
 }
 
 .mailing-list-sign-up.blog-footer .mailing-list-text {
@@ -2963,9 +2992,9 @@ h3.demo-heading {
   padding-bottom: 0;
 }
 
-.blog-header-inner, .blog-post-area, .mailing-list-inner {
+.blog-header-inner, .mailing-list-inner {
   width: 90%;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: auto;
 }
 
