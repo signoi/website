@@ -11,8 +11,8 @@ get_header();
 ?>
 <section>
 	<div class="row">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main col">
+	<div id="primary" class="content-area  col threequarter">
+		<main id="main" class="site-main  col">
 
 		<?php
 		while ( have_posts() ) :
