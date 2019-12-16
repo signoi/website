@@ -60,15 +60,15 @@ get_header();
 				endif;
 				if( get_row_index() % 2 == 0 ){
 				?>
-				<div class="row">
+				<div class="row even">
 				<div class="col half"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half">
-			<h3><?php echo $title; ?></h3>
+			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
 		</div>
 			</div>
 			<?php } else { ?>
-			<div class="row">
+			<div class="row odd">
 		<div class="col half">
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
