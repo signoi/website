@@ -18,6 +18,13 @@
             margin: 0;
             margin-bottom: 1em;
         }
+        .row.blurbs {
+            h3 {
+                font-size: 22px;
+                color: #fff;
+                font-weight: $fontweight__bold;
+            }
+        }
     }
 
         #use-cases {

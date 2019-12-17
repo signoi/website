@@ -1386,28 +1386,52 @@ a:hover, a:active {
 
 @media (min-width: 768px) {
   .col.full {
-    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
   .col.half {
-    width: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
   }
   .col.third {
-    width: 33.33333333%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333333%;
+            flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
   .col.quarter {
-    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
   }
   .col.fifth {
-    width: 20%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%;
   }
   .col.eighty {
-    width: 80%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    max-width: 80%;
   }
   .col.twothird {
-    width: 66.666666666%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666666666;
+            flex: 0 0 66.666666666;
+    max-width: 66.666666666%;
   }
   .col.threequarter {
-    width: 75%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
   }
   .row {
     display: -webkit-box;
@@ -1425,6 +1449,10 @@ a:hover, a:active {
   }
   .col {
     width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
   section {
     padding: 40px 0;
@@ -3806,6 +3834,12 @@ section.widget {
   max-width: none;
   margin: 0;
   margin-bottom: 1em;
+}
+
+.page-template-brands-agencies-page #above-fold .row.blurbs h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .page-template-brands-agencies-page #use-cases {
