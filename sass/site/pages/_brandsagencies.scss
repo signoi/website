@@ -35,9 +35,8 @@
                 margin-left: 0;
             }
             p {
-                align-self: flex-end;
-                margin-top: auto;
-                margin-bottom: 0;
+                align-self: center;
+                margin-bottom: auto;
                 margin-left: 0;
                 font-size: 19px;
             }
@@ -71,9 +70,9 @@
                     line-height: 2em;
                     color: $color__red;
                 }
-                h3 {
-                    color: $color__red;
-                }
+            }
+            h3 {
+                color: $color__red;
             }
             .row.intro {
                 margin-bottom: 30px;
