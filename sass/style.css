@@ -1449,11 +1449,11 @@ a:hover, a:active {
 ## General Page Styling
 --------------------------------------------------------------*/
 /*--animations--*/
-.page-template section h2, .page-template section h3, .page-template section h4, .page-template section p, .page-template section button, .page-template section form, .page-template section img {
+.page-template section h2, .page-template section h3, .page-template section h4, .page-template section p, .page-template section button, .page-template section form, .page-template section img, .single-use-case section h2, .single-use-case section h3, .single-use-case section h4, .single-use-case section p, .single-use-case section button, .single-use-case section form, .single-use-case section img {
   opacity: 0;
 }
 
-.page-template section.start h2, .page-template section.start h3, .page-template section.start h4, .page-template section.start p, .page-template section.start button, .page-template section.start form, .page-template section.start img {
+.page-template section.start h2, .page-template section.start h3, .page-template section.start h4, .page-template section.start p, .page-template section.start button, .page-template section.start form, .page-template section.start img, .single-use-case section.start h2, .single-use-case section.start h3, .single-use-case section.start h4, .single-use-case section.start p, .single-use-case section.start button, .single-use-case section.start form, .single-use-case section.start img {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -3635,6 +3635,7 @@ section.widget {
   color: #fff;
   margin-top: auto;
   font-size: 60px;
+  margin-bottom: 30px;
 }
 
 .single-use-case #above-fold p {
