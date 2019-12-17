@@ -34,5 +34,6 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.waypoints.js"></script>
 <!-- not  <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> currently using -->
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flipster.min.js"></script> <!-- use cases slider --> 
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery-ui.min.js"></script> <!-- vertical tabs --> 
 </body>
 </html>
