@@ -120,4 +120,8 @@ jQuery('.flipster').flipster({
          slideshow: false,
           animationSpeed: 1000
         });
+
+        jQuery('#tabs')
+        .tabs()
+        .addClass('ui-tabs-vertical ui-helper-clearfix');     
 });

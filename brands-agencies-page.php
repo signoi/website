@@ -101,6 +101,8 @@ wp_reset_postdata();
 		<div class="col full">
 			<div class="header-with-image"><img class="inline logo" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-02.svg"><h2>Case Studies</h2></div>
 		</div>
+	</div>
+	<div class="row">
 		<?php if( have_rows('case_studies') ): 		
 		?>		
 		<div class="col full case-study-tabs">
