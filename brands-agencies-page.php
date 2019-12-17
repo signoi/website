@@ -120,6 +120,7 @@ wp_reset_postdata();
 			$copy = get_sub_field('copy'); 		
 		?>	
 			<div class="tab" id="slide-<?php echo get_row_index(); ?>">
+			<h3><?php echo $title ?></h3>
 			<?php echo $copy ?>
 			</div>
 		<?php endwhile; ?>
