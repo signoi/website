@@ -21,13 +21,13 @@ get_header();
 		$copy = get_sub_field('intro_copy'); 
 ?>		
 <section id="above-fold">
-	<div class="row">
+	<div class="row intro">
 		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
 		<p><?php echo $copy; ?></p>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row blurbs">
 	<?php if( have_rows('section_blurbs') ): 
 		while( have_rows('section_blurbs') ): the_row(); 
 		$blurbtitle = get_sub_field('blurb_title');
@@ -97,12 +97,12 @@ wp_reset_postdata();
 ?>
 
 <section id="case-studies">
-	<div class="row">
+	<div class="row intro">
 		<div class="col full">
 			<div class="header-with-image"><img class="inline logo" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-02.svg"><h2>Case Studies</h2></div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row tabs">
 		<?php if( have_rows('case_studies') ): 		
 		?>		
 		<div class="col full case-study-tabs">
