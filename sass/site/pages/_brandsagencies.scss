@@ -23,7 +23,31 @@
                 font-size: 22px;
                 color: #fff;
                 font-weight: $fontweight__bold;
+                margin-bottom: 15px;
+                align-self: flex-start;
+                margin-top: 0;
+                margin-left: 0;
             }
+            img {
+                margin-bottom: 15px;
+                align-self: flex-start;
+                margin-top: 0;
+                margin-left: 0;
+            }
+            p {
+                align-self: flex-end;
+                margin-top: auto;
+                margin-bottom: 0;
+                margin-left: 0;
+                font-size: 19px;
+            }
+            .col.quarter {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .row.intro {
+            margin-bottom: 30px;
         }
     }
 
@@ -47,7 +71,56 @@
                     line-height: 2em;
                     color: $color__red;
                 }
+                h3 {
+                    color: $color__red;
+                }
             }
+            .row.intro {
+                margin-bottom: 30px;
+            }
+            .row.tabs {
+                padding-top: 30px;
+            }
+            #tabs {
+                display: flex;
+            }
+            .ui-tabs .ui-tabs-nav {
+                flex: 0 0 33.33333333%;
+                max-width: 0 0 33.33333333%; 
+                padding: 0;
+                border-right: 2px solid $color__grey;    
 
+                li {
+                    width: 100%;
+                    padding: 15px;
+                    margin: 0;
+                    transition: all 0.3s ease;
+                    font-size: 25px;
+
+                    a {
+                        color: $color__grey;
+                    }
+                }
+                li.ui-tabs-active {
+                    padding-bottom: 15px;
+                    margin: 0;
+                    background: $color__grey;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            .ui-tabs .ui-tabs-panel {
+                padding: 0 30px;
+            }
+            .tab-content-area {
+                flex: 0 0 66.66666666%;
+                max-width: 66.66666666%;
+            }
+            .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+                padding: 0;
+
+            }
         }
 }
