@@ -28,11 +28,11 @@ get_header();
 		</div>
 	</div>
 	<div class="row">
-	<?php if( have_rows('blurbs') ): 
-		while( have_rows('blurbs') ): the_row(); 
+	<?php if( have_rows('section_blurbs') ): 
+		while( have_rows('section_blurbs') ): the_row(); 
 		$blurbtitle = get_sub_field('blurb_title');
 		$blurbcopy = get_sub_field('blurb_copy');
-		$image = get_sub_field('blurb_image'); 
+		$image = get_sub_field('blurb_icon'); 
 		if( $image ):
 
 			// Image variables.
