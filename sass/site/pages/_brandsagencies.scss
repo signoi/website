@@ -1,0 +1,45 @@
+.page-template-brands-agencies-page {
+    #above-fold {
+        background: $color__grey;
+        text-align: left;
+        min-height: 0;
+        padding: 80px 0;
+        .row {
+            min-height: 0;
+        }
+        h1 {
+            color: #fff;
+            margin-top: auto;
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+        p {
+            max-width: none;
+            margin: 0;
+            margin-bottom: 1em;
+        }
+
+        #use-cases {
+            background: $color__red;
+        }
+
+        #case-studies {
+            .header-with-image {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                h2, img {
+                    display: inline-block;
+                }
+                img {
+                    margin-right: 30px;
+                }
+                h2 {
+                    vertical-align: middle;
+                    line-height: 2em;
+                    color: $color__red;
+                }
+            }
+
+        }
+}

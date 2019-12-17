@@ -99,7 +99,7 @@ wp_reset_postdata();
 <section id="case-studies">
 	<div class="row">
 		<div class="col full">
-			<img class="inline logo" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-02.svg"><h2>Case Studies</h2>
+			<div class="header-with-image"><img class="inline logo" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-02.svg"><h2>Case Studies</h2></div>
 		</div>
 	</div>
 </section>
