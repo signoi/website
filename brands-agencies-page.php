@@ -115,6 +115,7 @@ wp_reset_postdata();
 			<li><a href="#slide-<?php echo get_row_index(); ?>"><?php echo $title ?></a></li>
 		<?php endwhile; ?>
 			</ul>
+			<div class="tab-content-area">
 		<?php while( have_rows('case_studies') ): the_row(); 
 			$title = get_sub_field('title'); 
 			$copy = get_sub_field('copy'); 		
@@ -124,6 +125,7 @@ wp_reset_postdata();
 			<?php echo $copy ?>
 			</div>
 		<?php endwhile; ?>
+			</div>
 		</div>
 		</div>
 		<?php endif; ?>
