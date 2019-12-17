@@ -3784,6 +3784,58 @@ section.widget {
 /*--------------------------------------------------------------
 ## Signoi for Brands / Agencies page
 --------------------------------------------------------------*/
+.page-template-brands-agencies-page #above-fold {
+  background: #566272;
+  text-align: left;
+  min-height: 0;
+  padding: 80px 0;
+}
+
+.page-template-brands-agencies-page #above-fold .row {
+  min-height: 0;
+}
+
+.page-template-brands-agencies-page #above-fold h1 {
+  color: #fff;
+  margin-top: auto;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.page-template-brands-agencies-page #above-fold p {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.page-template-brands-agencies-page #use-cases {
+  background: #c05344;
+}
+
+.page-template-brands-agencies-page #case-studies .header-with-image {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-template-brands-agencies-page #case-studies .header-with-image h2, .page-template-brands-agencies-page #case-studies .header-with-image img {
+  display: inline-block;
+}
+
+.page-template-brands-agencies-page #case-studies .header-with-image img {
+  margin-right: 30px;
+}
+
+.page-template-brands-agencies-page #case-studies .header-with-image h2 {
+  vertical-align: middle;
+  line-height: 2em;
+  color: #c05344;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
