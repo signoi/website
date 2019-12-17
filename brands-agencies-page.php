@@ -101,6 +101,29 @@ wp_reset_postdata();
 		<div class="col full">
 			<div class="header-with-image"><img class="inline logo" src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-02.svg"><h2>Case Studies</h2></div>
 		</div>
+		<?php if( have_rows('case_studies') ): 		
+		?>		
+		<div class="col full case-study-tabs">
+		<div id="tabs">
+		<ul>
+		<?php while( have_rows('case_studies') ): the_row(); 
+				$title = get_sub_field('title'); 
+				$copy = get_sub_field('copy'); 		
+		?>	
+			<li><a href="slide-<?php echo get_row_index(); ?>"><?php echo $title ?></a></li>
+		<?php endwhile; ?>
+			</ul>
+		<?php while( have_rows('case_studies') ): the_row(); 
+			$title = get_sub_field('title'); 
+			$copy = get_sub_field('copy'); 		
+		?>	
+			<div class="tab" id="slide-<?php echo get_row_index(); ?>">
+			<?php echo $copy ?>
+			</div>
+		<?php endwhile; ?>
+		</div>
+		</div>
+		<?php endif; ?>
 	</div>
 </section>
 
