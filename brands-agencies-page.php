@@ -112,7 +112,7 @@ wp_reset_postdata();
 				$title = get_sub_field('title'); 
 				$copy = get_sub_field('copy'); 		
 		?>	
-			<li><a href="slide-<?php echo get_row_index(); ?>"><?php echo $title ?></a></li>
+			<li><a href="#slide-<?php echo get_row_index(); ?>"><?php echo $title ?></a></li>
 		<?php endwhile; ?>
 			</ul>
 		<?php while( have_rows('case_studies') ): the_row(); 
