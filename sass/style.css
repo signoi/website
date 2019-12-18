@@ -4039,6 +4039,14 @@ section.widget {
 
 .page-template-about-page #team .team-member {
   border: 0.66px solid #566272;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .page-template-about-page #team .team-member .team-image {
@@ -4057,6 +4065,7 @@ section.widget {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .page-template-about-page #team .team-member .team-info h4 {

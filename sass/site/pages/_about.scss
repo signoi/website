@@ -45,6 +45,9 @@
     }
     .team-member {
         border: .66px solid $color__grey; 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         .team-image {
             display: flex;
         }
@@ -53,6 +56,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
+            height: 100%;
             h4 {
                 font-size: 25px;
                 color: $color__red; 
