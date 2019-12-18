@@ -31,7 +31,7 @@
             margin-bottom: 30px;
         }
         .job-info {
-            padding: 15px;
+            padding: 30px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -39,10 +39,15 @@
             height: 100%;
             h4 {
                 font-size: 25px;
-                color: $color__red; 
+                color: $color__grey; 
+                margin-bottom: 15px;
             }
             p {
                 font-size: 14px;
+                margin-top: 0;
+            }
+            p:last-child {
+                margin-bottom: 0;
             }
             a {
                 align-self: flex-end;

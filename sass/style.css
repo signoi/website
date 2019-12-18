@@ -4141,7 +4141,7 @@ section.widget {
 }
 
 .page-template-careers-page #positions .job-info {
-  padding: 15px;
+  padding: 30px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4156,11 +4156,17 @@ section.widget {
 
 .page-template-careers-page #positions .job-info h4 {
   font-size: 25px;
-  color: #c05344;
+  color: #566272;
+  margin-bottom: 15px;
 }
 
 .page-template-careers-page #positions .job-info p {
   font-size: 14px;
+  margin-top: 0;
+}
+
+.page-template-careers-page #positions .job-info p:last-child {
+  margin-bottom: 0;
 }
 
 .page-template-careers-page #positions .job-info a {
