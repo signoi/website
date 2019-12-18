@@ -33,13 +33,30 @@
             font-size: 16px;
             font-weight: $fontweight__medium;
             font-family: $font__main;
+            margin-bottom: 10px;
         }
         h2 {
             margin-bottom: 30px;
+            line-height: 48px;
+            font-weight: $fontweight__bold
         }
         p {
             margin-top: 0;
             font-size: 19px;
+        }
+        .col.platform-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .image-col {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
         }
     }
     #callback-cta {

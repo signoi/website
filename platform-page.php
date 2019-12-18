@@ -50,7 +50,7 @@ $subtitle = get_sub_field('subheading');
 ?>	
 <section class="platform-section">
 <div class="row odd">
-		<div class="col half">
+		<div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
 			<h2><?php echo $title; ?></h2>
 			<?php echo $copy; ?>
