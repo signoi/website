@@ -57,6 +57,7 @@ get_header();
 		<div class="round-image"><img src="<?php echo esc_url($imagesquare); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		</div>
 	</div>
+</section>
 	<?php endwhile; else : endif; ?>
 
 <?php if( have_rows('team_members') ): 	?>	
