@@ -14,7 +14,7 @@ get_header();
 		<main id="main" class="site-main">
 		<?php if( have_rows('above_fold') ): 
 		while( have_rows('above_fold') ): the_row(); 
-		$copy = get_sub_field('intro_copy'); 
+		$copy = get_sub_field('section_copy'); 
 		$cta = get_sub_field('cta_text'); 
 		$link = get_sub_field('cta_link'); 
 ?>		
@@ -67,7 +67,7 @@ get_header();
 				$name = get_sub_field('name'); 
 				$job = get_sub_field('job_title'); 
 				$email = get_sub_field('email_address'); 
-				$image = get_sub_field('section_image'); 
+				$image = get_sub_field('image'); 
 
 				if( $image ):
 		
@@ -87,7 +87,7 @@ get_header();
 					<div class="team-info">
 						<h4><?php echo $name; ?></h4>
 						<p><?php echo $job; ?></p>
-						<a href="mailto:<?php echo $email; ?>"><?php echo $name; ?></a>
+						<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 					</div>
 				</div>
 			</div>
