@@ -4272,7 +4272,6 @@ section.widget {
 .page-template-platform-page #above-fold {
   background: #566272;
   text-align: left;
-  min-height: 0;
   padding: 80px 0;
 }
 
