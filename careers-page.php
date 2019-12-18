@@ -29,6 +29,7 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <?php if( have_rows('positions') ): 
+		$category = get_sub_field('job_category'); 
 ?>
 <section id="positions">
 	<div class="row jobs-menu">
@@ -39,23 +40,22 @@ get_header();
 			'hide_empty' => true, //can be 1, '1' too
 		)
 	); 
-	if ( ! empty( $terms ) && is_array( $terms ) ) {
 		// Run a loop and print them all
 		foreach ( $terms as $term ) { ?>
 			<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
 				<?php echo $term->name; ?>
 			</a><?php
 		}
-	} 
 	?>
 	</div>
 	<div class="row jobs">
-		<?php while( have_rows('positions') ): the_row(); 
+	<?php while( have_rows('positions') ): the_row(); 
 		$title = get_sub_field('job_title'); 
 		$location = get_sub_field('location'); 
 		$hours = get_sub_field('hours'); 
 		$email = get_sub_field('email_address'); 
-		?>	
+
+		?>
 			<div class="col quarter">
 				<div class="job-info">
 						<h4><?php echo $title; ?></h4>
@@ -65,8 +65,9 @@ get_header();
 
 				</div>
 			</div>
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 	</div>
+
 </section>
 <?php endif; ?>
 
