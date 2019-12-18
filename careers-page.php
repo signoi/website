@@ -36,8 +36,19 @@ get_header();
             'taxonomy' => 'job-category', //empty string(''), false, 0 don't work, and return empty array
             'orderby' => 'name',
             'order' => 'ASC',
-            'hide_empty' => true, //can be 1, '1' too
-    ); ?>
+			'hide_empty' => true, //can be 1, '1' too
+	); 
+	foreach( $terms as $term ) {
+		$category_link = sprintf( 
+			'<a href="%1$s" alt="%2$s">%3$s</a>',
+			esc_url( get_category_link( $term->term_id ) ),
+			esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $term->name ) ),
+			esc_html( $term->name )
+		);
+		 
+		echo '<p>' . sprintf( esc_html__( 'Category: %s', 'textdomain' ), $category_link ) . '</p> ';
+	} 
+	?>
 	</div>
 	<div class="row jobs">
 		<?php while( have_rows('positions') ): the_row(); 
