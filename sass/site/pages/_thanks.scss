@@ -1,0 +1,51 @@
+.page-template-thankyou-page {
+    #above-fold { 
+        background: $color__vlightgrey;
+        text-align: left;
+        min-height: 0;
+        padding: 80px 0;
+        .row {
+            min-height: 0;
+        }
+        .col {
+            text-align: left;
+        }
+        h1 {
+            color: $color__red;
+            margin-top: auto;
+            font-size: 60px;
+            margin-bottom: 30px;
+            line-height: 72px;
+        }
+        p {
+            max-width: none;
+            margin: 0;
+            margin-bottom: 1em;
+            color: $color__grey;
+        }
+    }
+    #report-overview {
+        background: $color__yellow;
+        padding: 40px 0;
+        .report-content {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            button {
+                width: auto;
+                margin-right: auto;
+            }
+            h2 {
+                color: $color__red;
+            }
+            p {
+                margin-top: 0;
+            }
+        }
+        .report-image {
+            text-align: center;
+        }
+}
+}

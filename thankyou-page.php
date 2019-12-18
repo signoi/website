@@ -47,12 +47,12 @@ $copy = get_sub_field('section_copy');
 ?>	
 <section id="report-overview">
 	<div class="row">
-		<div class="col half">
+		<div class="col half report-content">
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
 			<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>
-		<div class="col half">
+		<div class="col half report-image">
 		<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />
 		</div>
 	</div>
@@ -60,15 +60,16 @@ $copy = get_sub_field('section_copy');
 <?php endwhile; else : endif; ?>
 <?php if( have_rows('report_detail') ): 
 		while( have_rows('report_detail') ): the_row(); 
-		$learn = get_sub_field('what_youll_learn'); 
-		$audience = get_sub_field('who_report_for'); 
+		$lefttitle = get_sub_field('left_column_heading'); 
+		$righttitle = get_sub_field('right_column_heading'); 
+
 ?>	
 <section id="report-detail">
 	<div class="row">
 		<div class="col half">
 			<ul>
-			<?php if( have_rows('what_youll_learn') ): 
-		while( have_rows('what_youll_learn') ): the_row(); 
+			<?php if( have_rows('left_column_list') ): 
+		while( have_rows('left_column_list') ): the_row(); 
 		$item = get_sub_field('item'); 
 			?>
 			<li><?php echo $item; ?></li>
@@ -77,8 +78,8 @@ $copy = get_sub_field('section_copy');
 		</div>
 		<div class="col half">
 			<ul>
-			<?php if( have_rows('who_report_for') ): 
-		while( have_rows('who_report_for') ): the_row(); 
+			<?php if( have_rows('right_column_list') ): 
+		while( have_rows('right_column_list') ): the_row(); 
 		$item = get_sub_field('item'); 
 			?>
 			<li><?php echo $item; ?></li>
