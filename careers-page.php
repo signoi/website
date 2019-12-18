@@ -29,24 +29,18 @@ get_header();
 </section>
 <?php endwhile; else : endif; ?>
 <?php if( have_rows('positions') ): 
-		$category = get_sub_field('job_category'); 
 ?>
 <section id="positions">
 	<div class="row jobs-menu">
-		<?php $terms = get_terms( array (
-            'taxonomy' => 'job-category', //empty string(''), false, 0 don't work, and return empty array
-            'orderby' => 'name',
-            'order' => 'ASC',
-			'hide_empty' => true, //can be 1, '1' too
-		)
-	); 
-		// Run a loop and print them all
-		foreach ( $terms as $term ) { ?>
-			<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
-				<?php echo $term->name; ?>
-			</a><?php
-		}
-	?>
+	<?php 
+$terms = get_field('job_category');
+if( $terms ): ?>
+    <ul>
+    <?php foreach( $terms as $term ): ?>
+        <a href="<?php echo esc_url( get_term_link( $term ) ); ?>">View all '<?php echo esc_html( $term->name ); ?>' posts</a>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
 	</div>
 	<div class="row jobs">
 	<?php while( have_rows('positions') ): the_row(); 
