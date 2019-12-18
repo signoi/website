@@ -59,6 +59,7 @@ $subtitle = get_sub_field('subheading');
 			</div>	
 </section>
 <?php endwhile; else : endif; ?>
+<?php endwhile; else : endif; ?>
 <?php if( have_rows('cta_section') ): 
 		while( have_rows('cta_section') ): the_row(); 
 		$title = get_sub_field('section_title'); 
