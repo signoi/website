@@ -67,6 +67,7 @@ $copy = get_sub_field('section_copy');
 <section id="report-detail">
 	<div class="row">
 		<div class="col half">
+			<h2><?php echo $lefttitle; ?></h2>
 			<ul>
 			<?php if( have_rows('left_column_list') ): 
 		while( have_rows('left_column_list') ): the_row(); 
@@ -77,6 +78,7 @@ $copy = get_sub_field('section_copy');
 			</ul>
 		</div>
 		<div class="col half">
+		<h2><?php echo $righttitle; ?></h2>
 			<ul>
 			<?php if( have_rows('right_column_list') ): 
 		while( have_rows('right_column_list') ): the_row(); 
