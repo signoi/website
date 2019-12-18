@@ -22,7 +22,7 @@ get_header();
 	<div class="row intro">
 		<div class="col half">
 		<h1><?php the_title(); ?></h1>	
-		<?php echo $copy; ?>
+		<p><?php echo $copy; ?></p>
 		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>
 	</div>
@@ -39,13 +39,12 @@ get_header();
 		$email = get_sub_field('contact'); 
 		?>	
 			<div class="col quarter">
-				<div class="team-member">
-					<div class="team-info">
+				<div class="job-info">
 						<h4><?php echo $title; ?></h4>
 						<p><?php echo $location; ?></p>
 						<p><?php echo $hours; ?></p>
 						<p>email <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
-					</div>
+
 				</div>
 			</div>
 		<?php endwhile; ?>
