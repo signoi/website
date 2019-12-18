@@ -32,21 +32,20 @@ get_header();
 ?>
 <section id="positions">
 	<div class="row jobs-menu">
-		<?php $get_terms = array (
+		<?php $terms = get_terms( array (
             'taxonomy' => 'job-category', //empty string(''), false, 0 don't work, and return empty array
             'orderby' => 'name',
             'order' => 'ASC',
 			'hide_empty' => true, //can be 1, '1' too
+		)
 	); 
-	foreach( $terms as $term ) {
-		$category_link = sprintf( 
-			'<a href="%1$s" alt="%2$s">%3$s</a>',
-			esc_url( get_category_link( $term->term_id ) ),
-			esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $term->name ) ),
-			esc_html( $term->name )
-		);
-		 
-		echo '<p>' . sprintf( esc_html__( 'Category: %s', 'textdomain' ), $category_link ) . '</p> ';
+	if ( ! empty( $terms ) && is_array( $terms ) ) {
+		// Run a loop and print them all
+		foreach ( $terms as $term ) { ?>
+			<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
+				<?php echo $term->name; ?>
+			</a><?php
+		}
 	} 
 	?>
 	</div>
@@ -55,7 +54,7 @@ get_header();
 		$title = get_sub_field('job_title'); 
 		$location = get_sub_field('location'); 
 		$hours = get_sub_field('hours'); 
-		$email = get_sub_field('contact'); 
+		$email = get_sub_field('email_address'); 
 		?>	
 			<div class="col quarter">
 				<div class="job-info">
