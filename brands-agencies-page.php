@@ -46,9 +46,11 @@ get_header();
 		endif;
 		?>
 		<div class="col quarter">
-		<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
-		<h3><?php echo $blurbtitle; ?></h3>
-		<p><?php echo $blurbcopy; ?></p>	
+			<div class="blurb-inner">
+				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
+				<h3><?php echo $blurbtitle; ?></h3>
+				<p><?php echo $blurbcopy; ?></p>	
+			</div>
 		</div>
 		<?php endwhile; else : endif; ?>
 	</div>

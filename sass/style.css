@@ -3845,6 +3845,7 @@ section.widget {
       align-self: flex-start;
   margin-top: 0;
   margin-left: 0;
+  width: 100%;
 }
 
 .page-template-brands-agencies-page #above-fold .row.blurbs img {
@@ -3862,6 +3863,7 @@ section.widget {
   margin-bottom: auto;
   margin-left: 0;
   font-size: 19px;
+  width: 100%;
 }
 
 .page-template-brands-agencies-page #above-fold .row.blurbs .col.quarter {
