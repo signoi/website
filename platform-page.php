@@ -63,6 +63,8 @@ $subtitle = get_sub_field('subheading');
 		while( have_rows('cta_section') ): the_row(); 
 		$title = get_sub_field('section_title'); 
 		$copy = get_sub_field('section_copy'); 
+		$cta = get_sub_field('cta_text'); 
+		$link = get_sub_field('cta_link'); 
 ?>
 <section id="callback-cta">
 	<div class="row">
