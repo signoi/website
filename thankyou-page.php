@@ -59,7 +59,7 @@ $copy = get_sub_field('section_copy');
 </section>
 <?php endwhile; else : endif; ?>
 <?php if( have_rows('report_detail') ): 
-		while( have_rows('report') ): the_row(); 
+		while( have_rows('report_detail') ): the_row(); 
 		$learn = get_sub_field('what_youll_learn'); 
 		$audience = get_sub_field('who_report_for'); 
 ?>	
@@ -71,7 +71,7 @@ $copy = get_sub_field('section_copy');
 		while( have_rows('what_youll_learn') ): the_row(); 
 		$item = get_sub_field('item'); 
 			?>
-			<li><?php echo $link; ?></li>
+			<li><?php echo $item; ?></li>
 			<?php endwhile; else : endif; ?>
 			</ul>
 		</div>
@@ -81,7 +81,7 @@ $copy = get_sub_field('section_copy');
 		while( have_rows('who_report_for') ): the_row(); 
 		$item = get_sub_field('item'); 
 			?>
-			<li><?php echo $link; ?></li>
+			<li><?php echo $item; ?></li>
 			<?php endwhile; else : endif; ?>
 			</ul>
 		</div>
