@@ -169,13 +169,15 @@ add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
 	add_image_size( 'square', 800, 800, true ); // (cropped)
 	add_image_size( 'blog', 400, 284, true ); // (cropped)
+	add_image_size( 'square-small', 300, 300, true ); // (cropped)
 }
 
 add_filter( 'signoi-images', 'wpshout_custom_sizes' );
 function wpshout_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
 		'square' => __( 'Square' ),
-		'square' => __( 'Blog' ),
+		'blog' => __( 'Blog' ),
+		'square-small' => __( 'Square Small' ),
     ) );
 }
 
