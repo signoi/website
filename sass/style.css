@@ -4024,6 +4024,10 @@ section.widget {
   color: #566272;
 }
 
+.page-template-about-page #team {
+  padding-top: 0;
+}
+
 .page-template-about-page #team .row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -4035,6 +4039,12 @@ section.widget {
 
 .page-template-about-page #team .team-member {
   border: 0.66px solid #566272;
+}
+
+.page-template-about-page #team .team-member .team-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-template-about-page #team .team-member .team-info {
@@ -4061,8 +4071,9 @@ section.widget {
 .page-template-about-page #team .team-member .team-info a {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 0;
-  margin-top: auto;
+  margin: auto;
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 .page-template-about-page #callback-cta {
