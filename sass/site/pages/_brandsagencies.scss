@@ -46,6 +46,12 @@
                 display: flex;
                 flex-direction: column;
             }
+            .blurb-inner {
+                background: rgba(255,255,255,0.05);
+                text-align: center;
+                height: 100%;
+                padding: 15px;
+            }
         }
         .row.intro {
             margin-bottom: 30px;

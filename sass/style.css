@@ -3876,6 +3876,13 @@ section.widget {
           flex-direction: column;
 }
 
+.page-template-brands-agencies-page #above-fold .row.blurbs .blurb-inner {
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  height: 100%;
+  padding: 15px;
+}
+
 .page-template-brands-agencies-page #above-fold .row.intro {
   margin-bottom: 30px;
 }
