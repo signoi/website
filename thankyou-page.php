@@ -73,7 +73,7 @@ $copy = get_sub_field('section_copy');
 		while( have_rows('left_column_list') ): the_row(); 
 		$item = get_sub_field('item'); 
 			?>
-			<li><?php echo $item; ?></li>
+			<li><span><?php echo $item; ?></span></li>
 			<?php endwhile; else : endif; ?>
 			</ul>
 		</div>
@@ -84,7 +84,7 @@ $copy = get_sub_field('section_copy');
 		while( have_rows('right_column_list') ): the_row(); 
 		$item = get_sub_field('item'); 
 			?>
-			<li><?php echo $item; ?></li>
+			<li><span><?php echo $item; ?></span></li>
 			<?php endwhile; else : endif; ?>
 			</ul>
 		</div>

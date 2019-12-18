@@ -4245,6 +4245,24 @@ section.widget {
   text-align: center;
 }
 
+.page-template-thankyou-page #report-detail h2 {
+  color: #c05344;
+  margin-bottom: 30px;
+}
+
+.page-template-thankyou-page #report-detail ul {
+  list-style-image: url("http://new.signoi.com/wp-content/uploads/2019/12/lightbulb-01-1.svg");
+  font-size: 19px;
+}
+
+.page-template-thankyou-page #report-detail ul li {
+  margin-bottom: 1em;
+}
+
+.page-template-thankyou-page #report-detail ul li span {
+  vertical-align: middle;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

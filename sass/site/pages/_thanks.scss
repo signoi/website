@@ -48,4 +48,20 @@
             text-align: center;
         }
 }
+    #report-detail {
+        h2 {
+            color:  $color__red;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-image: url('http://new.signoi.com/wp-content/uploads/2019/12/lightbulb-01-1.svg');
+            font-size: 19px;
+            li {
+                margin-bottom: 1em;
+                span {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
 }
