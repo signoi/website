@@ -4065,7 +4065,9 @@ section.widget {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .page-template-about-page #team .team-member .team-info h4 {

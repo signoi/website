@@ -28,66 +28,23 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
-<?php if( have_rows('meet_our_team') ): 
-		while( have_rows('meet_our_team') ): the_row(); 
-		$title = get_sub_field('section_title'); 
-		$copy = get_sub_field('section_copy'); 
-		$image = get_sub_field('section_image'); 
-
-		if( $image ):
-
-			// Image variables.
-			$url = $image['url'];
-			$imagetitle = $image['title'];
-			$alt = $image['alt'];
-		
-			// Thumbnail size attributes.
-			$size = 'square';
-			$imagesquare = $image['sizes'][ $size ];
-		endif;
-
+<?php if( have_rows('positions') ): 
 ?>
-<section id="about">
-	<div class="row">
-		<div class="col half">
-		<h2><?php echo $title; ?></h2>
-		<?php echo $copy; ?>
-		</div>
-		<div class="col half">
-		<div class="round-image"><img src="<?php echo esc_url($imagesquare); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-		</div>
-	</div>
-</section>
-	<?php endwhile; else : endif; ?>
-
-<?php if( have_rows('team_members') ): 	?>	
-<section id="team">
-	<div class="row team-members">
-		<?php while( have_rows('team_members') ): the_row(); 
-				$name = get_sub_field('name'); 
-				$job = get_sub_field('job_title'); 
-				$email = get_sub_field('email_address'); 
-				$image = get_sub_field('image'); 
-
-				if( $image ):
-		
-					// Image variables.
-					$url = $image['url'];
-					$imagetitle = $image['title'];
-					$alt = $image['alt'];
-				
-					// Thumbnail size attributes.
-					$size = 'square-small';
-					$imagesquare = $image['sizes'][ $size ];
-				endif;	
+<section id="positions">
+	<div class="row jobs">
+		<?php while( have_rows('positions') ): the_row(); 
+		$title = get_sub_field('job_title'); 
+		$location = get_sub_field('location'); 
+		$hours = get_sub_field('hours'); 
+		$email = get_sub_field('contact'); 
 		?>	
 			<div class="col quarter">
 				<div class="team-member">
-					<div class="team-image"><img src="<?php echo esc_url($imagesquare); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 					<div class="team-info">
-						<h4><?php echo $name; ?></h4>
-						<p><?php echo $job; ?></p>
-						<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+						<h4><?php echo $title; ?></h4>
+						<p><?php echo $location; ?></p>
+						<p><?php echo $hours; ?></p>
+						<p>email <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
 					</div>
 				</div>
 			</div>
@@ -95,16 +52,6 @@ get_header();
 	</div>
 </section>
 <?php endif; ?>
-
-<section id="callback-cta">
-	<div class="row">
-		<div class="col full">
-			<h3>Careers</h3>	
-			<p>We are always looking for new members of our team.</p>
-			<button class="button red" onclick="window.location.href = '/careers';">Browse our current positions</button>
-		</div>
-	</div>
-</section>	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
