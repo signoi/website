@@ -22,7 +22,7 @@ get_header();
 	<div class="row intro">
 		<div class="col eighty">
 		<h1><?php the_title(); ?></h1>	
-		<p><?php echo $copy; ?></p>
+		<?php echo $copy; ?>
 		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
 		</div>
 	</div>
@@ -51,7 +51,7 @@ get_header();
 	<div class="row">
 		<div class="col half">
 		<h2><?php echo $title; ?></h2>
-		<p><?php echo $copy; ?></p>
+		<?php echo $copy; ?>
 		</div>
 		<div class="col half">
 		<div class="round-image"><img src="<?php echo esc_url($imagesquare); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
