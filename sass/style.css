@@ -4102,6 +4102,75 @@ section.widget {
 /*--------------------------------------------------------------
 ##  Careers Page
 --------------------------------------------------------------*/
+.page-template-careers-page #above-fold {
+  background: #e9c659;
+  text-align: left;
+  min-height: 0;
+  padding: 80px 0;
+}
+
+.page-template-careers-page #above-fold .row {
+  min-height: 0;
+}
+
+.page-template-careers-page #above-fold .col {
+  text-align: left;
+}
+
+.page-template-careers-page #above-fold h1 {
+  color: #566272;
+  margin-top: auto;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.page-template-careers-page #above-fold p {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #566272;
+}
+
+.page-template-careers-page #positions .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-template-careers-page #positions .col.quarter {
+  margin-bottom: 30px;
+}
+
+.page-template-careers-page #positions .job-info {
+  padding: 15px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.66px solid #566272;
+  height: 100%;
+}
+
+.page-template-careers-page #positions .job-info h4 {
+  font-size: 25px;
+  color: #c05344;
+}
+
+.page-template-careers-page #positions .job-info p {
+  font-size: 14px;
+}
+
+.page-template-careers-page #positions .job-info a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
