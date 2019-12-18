@@ -60,7 +60,9 @@
             li {
                 margin-bottom: 1em;
                 span {
-                    vertical-align: middle;
+                    vertical-align: top;
+                    margin-top: -8px;
+                    display: inline-block;
                 }
             }
         }

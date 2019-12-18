@@ -4261,7 +4261,9 @@ section.widget {
 }
 
 .page-template-thankyou-page #report-detail ul li span {
-  vertical-align: middle;
+  vertical-align: top;
+  margin-top: -8px;
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------
