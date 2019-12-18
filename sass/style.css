@@ -4267,6 +4267,74 @@ section.widget {
 }
 
 /*--------------------------------------------------------------
+##  Platform page
+--------------------------------------------------------------*/
+.page-template-platform-page #above-fold {
+  background: #566272;
+  text-align: left;
+  min-height: 0;
+  padding: 80px 0;
+}
+
+.page-template-platform-page #above-fold .row {
+  min-height: 0;
+}
+
+.page-template-platform-page #above-fold .col {
+  text-align: left;
+}
+
+.page-template-platform-page #above-fold h1 {
+  color: #fff;
+  margin-top: auto;
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 72px;
+}
+
+.page-template-platform-page #above-fold p, .page-template-platform-page #above-fold .subtitle {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.page-template-platform-page .platform-section {
+  background: #566272;
+}
+
+.page-template-platform-page .platform-section h2, .page-template-platform-page .platform-section p, .page-template-platform-page .platform-section p.subtitle {
+  color: #fff;
+}
+
+.page-template-platform-page .platform-section .subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-template-platform-page .platform-section h2 {
+  margin-bottom: 30px;
+}
+
+.page-template-platform-page .platform-section p {
+  margin-top: 0;
+  font-size: 19px;
+}
+
+.page-template-platform-page #callback-cta {
+  background: #fff;
+}
+
+.page-template-platform-page #callback-cta h3 {
+  color: #c05344;
+}
+
+.page-template-platform-page #callback-cta p {
+  color: #566272;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */

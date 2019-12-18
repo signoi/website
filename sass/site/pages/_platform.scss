@@ -1,0 +1,54 @@
+.page-template-platform-page {
+    #above-fold { 
+        background: $color__grey;
+        text-align: left;
+        min-height: 0;
+        padding: 80px 0;
+        .row {
+            min-height: 0;
+        }
+        .col {
+            text-align: left;
+        }
+        h1 {
+            color: #fff;
+            margin-top: auto;
+            font-size: 60px;
+            margin-bottom: 30px;
+            line-height: 72px;
+        }
+        p, .subtitle {
+            max-width: none;
+            margin: 0;
+            margin-bottom: 1em;
+            color: #fff;
+        }
+    }
+    .platform-section {
+        background: $color__grey;
+        h2, p, p.subtitle {
+            color: #fff;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: $fontweight__medium;
+            font-family: $font__main;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-top: 0;
+            font-size: 19px;
+        }
+    }
+    #callback-cta {
+    background: #fff;
+    h3 {
+        color:  $color__red;
+    }
+    p {
+       color: $color__grey;
+    }
+    }
+}
