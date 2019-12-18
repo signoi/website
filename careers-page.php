@@ -31,6 +31,14 @@ get_header();
 <?php if( have_rows('positions') ): 
 ?>
 <section id="positions">
+	<div class="row jobs-menu">
+		<?php $get_terms = array (
+            'taxonomy' => 'job-category', //empty string(''), false, 0 don't work, and return empty array
+            'orderby' => 'name',
+            'order' => 'ASC',
+            'hide_empty' => true, //can be 1, '1' too
+    ); ?>
+	</div>
 	<div class="row jobs">
 		<?php while( have_rows('positions') ): the_row(); 
 		$title = get_sub_field('job_title'); 
