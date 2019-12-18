@@ -3981,6 +3981,103 @@ section.widget {
 }
 
 /*--------------------------------------------------------------
+##  About Page
+--------------------------------------------------------------*/
+.page-template-about-page #above-fold {
+  background: #e9c659;
+  text-align: left;
+  min-height: 0;
+  padding: 80px 0;
+}
+
+.page-template-about-page #above-fold .row {
+  min-height: 0;
+}
+
+.page-template-about-page #above-fold .col {
+  text-align: left;
+}
+
+.page-template-about-page #above-fold h1 {
+  color: #c05344;
+  margin-top: auto;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.page-template-about-page #above-fold p {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #566272;
+}
+
+.page-template-about-page #about {
+  background: #ececec;
+}
+
+.page-template-about-page #about h2 {
+  color: #c05344;
+}
+
+.page-template-about-page #about p {
+  color: #566272;
+}
+
+.page-template-about-page #team .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-template-about-page #team .col.quarter {
+  margin-bottom: 30px;
+}
+
+.page-template-about-page #team .team-member {
+  border: 0.66px solid #566272;
+}
+
+.page-template-about-page #team .team-member .team-info {
+  padding: 15px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-template-about-page #team .team-member .team-info h4 {
+  font-size: 25px;
+  color: #c05344;
+}
+
+.page-template-about-page #team .team-member .team-info p {
+  font-size: 14px;
+}
+
+.page-template-about-page #team .team-member .team-info a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0;
+  margin-top: auto;
+}
+
+.page-template-about-page #callback-cta {
+  background: #ececec;
+}
+
+.page-template-about-page #callback-cta h3 {
+  color: #c05344;
+}
+
+.page-template-about-page #callback-cta p {
+  color: #566272;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
