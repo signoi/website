@@ -32,7 +32,7 @@ get_header();
 ?>
 <section id="positions">
 	<div class="row jobs-menu">
-	<?php 
+	<?php while( have_rows('positions') ): the_row(); 
 $terms = get_field('job_category');
 if( $terms ): ?>
     <ul>
@@ -41,6 +41,7 @@ if( $terms ): ?>
     <?php endforeach; ?>
     </ul>
 <?php endif; ?>
+<?php endwhile; ?>
 	</div>
 	<div class="row jobs">
 	<?php while( have_rows('positions') ): the_row(); 
