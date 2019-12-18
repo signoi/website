@@ -28,23 +28,21 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
-<?php if( have_rows('positions') ): 
-?>
+
 <section id="positions">
 	<div class="row jobs-menu">
-	<?php while( have_rows('positions') ): the_row(); 
+	<?php if( have_rows('positions') ): while( have_rows('positions') ): the_row(); 
 $terms = get_field('job_category');
-if( $terms ): ?>
+ ?>
     <ul>
-    <?php foreach( $terms as $term ): ?>
-        <a href="<?php echo esc_url( get_term_link( $term ) ); ?>">View all '<?php echo esc_html( $term->name ); ?>' posts</a>
-    <?php endforeach; ?>
+    <?php if( $terms ): foreach( $terms as $term ): ?>
+        <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>">View all '<?php echo esc_html( $term->name ); ?>' posts</a></li>
+    <?php endforeach; else : endif; ?>
     </ul>
-<?php endif; ?>
-<?php endwhile; ?>
+<?php endwhile; else : endif; ?>
 	</div>
 	<div class="row jobs">
-	<?php while( have_rows('positions') ): the_row(); 
+	<?php if( have_rows('positions') ): while( have_rows('positions') ): the_row(); 
 		$title = get_sub_field('job_title'); 
 		$location = get_sub_field('location'); 
 		$hours = get_sub_field('hours'); 
