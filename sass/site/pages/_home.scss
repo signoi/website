@@ -427,17 +427,20 @@ margin: 80px 0 160px 0;
         max-width: 900px;
         margin: auto;
         margin-bottom: 30px;
+        flex-wrap: wrap;
         ul {
             list-style: none;
+            
         }
         li {
             text-align: center;
-            
+            min-width: 125px;
             vertical-align: middle;
             display: flex;
             border-right: 1px solid  $color__yellow;
             flex-direction: column;
             margin: 0;
+            margin-bottom: 15px;
             flex: 1;
         }
         li:last-child {

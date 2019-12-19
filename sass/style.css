@@ -2029,6 +2029,8 @@ a:hover, a:active {
   max-width: 900px;
   margin: auto;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #use-cases .flipster__nav ul {
@@ -2037,6 +2039,7 @@ a:hover, a:active {
 
 #use-cases .flipster__nav li {
   text-align: center;
+  min-width: 125px;
   vertical-align: middle;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2047,6 +2050,7 @@ a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
+  margin-bottom: 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
