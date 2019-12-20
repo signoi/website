@@ -3861,7 +3861,10 @@ section.widget {
 
 .single-use-case .use-case-content.even .signoi-logo-background {
   position: absolute;
-  right: -300px;
+  right: -25%;
+  opacity: 10%;
+  z-index: 0;
+  top: 15%;
 }
 
 .single-use-case #callback-cta {
