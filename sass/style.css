@@ -3768,18 +3768,40 @@ section.widget {
   padding-right: 0;
 }
 
+.single-use-case .use-case-content .col {
+  opacity: 0;
+}
+
+.single-use-case .use-case-content .row.odd h2, .single-use-case .use-case-content .row.odd p {
+  max-width: 450px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.single-use-case .use-case-content .row.even h2, .single-use-case .use-case-content .row.even p {
+  max-width: 450px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .single-use-case .use-case-content h2 {
   color: #c05344;
   line-height: 1.2em;
   font-size: 32px;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .single-use-case .use-case-content p {
   font-size: 19px;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .single-use-case .use-case-content .image-col img {
   margin: auto;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .single-use-case .use-case-content .image-col {
@@ -3788,7 +3810,7 @@ section.widget {
   display: flex;
 }
 
-.single-use-case .use-case-content .col-half {
+.single-use-case .use-case-content .text-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3798,6 +3820,30 @@ section.widget {
           flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.single-use-case .use-case-content.start .row.odd .text-col {
+  -webkit-animation: fade-in-left 0.4s ease;
+          animation: fade-in-left 0.4s ease;
+}
+
+.single-use-case .use-case-content.start .row.odd .image-col {
+  -webkit-animation: fade-in 0.4s ease 0.3s;
+          animation: fade-in 0.4s ease 0.3s;
+}
+
+.single-use-case .use-case-content.start .row.even .text-col {
+  -webkit-animation: fade-in-right 0.4s ease 0.3s;
+          animation: fade-in-right 0.4s ease 0.3s;
+}
+
+.single-use-case .use-case-content.start .row.even .image-col {
+  -webkit-animation: fade-in 0.4s ease;
+          animation: fade-in 0.4s ease;
+}
+
+.single-use-case .use-case-content.even {
+  background: #ececec;
 }
 
 .single-use-case #callback-cta {
