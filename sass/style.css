@@ -3823,23 +3823,23 @@ section.widget {
 }
 
 .single-use-case .use-case-content.start .row.odd .text-col {
-  -webkit-animation: fade-in-left 0.4s ease;
-          animation: fade-in-left 0.4s ease;
+  -webkit-animation: fade-in-left 0.4s ease both;
+          animation: fade-in-left 0.4s ease both;
 }
 
 .single-use-case .use-case-content.start .row.odd .image-col {
-  -webkit-animation: fade-in 0.4s ease 0.3s;
-          animation: fade-in 0.4s ease 0.3s;
+  -webkit-animation: fade-in 0.4s ease both 0.3s;
+          animation: fade-in 0.4s ease both 0.3s;
 }
 
 .single-use-case .use-case-content.start .row.even .text-col {
-  -webkit-animation: fade-in-right 0.4s ease 0.3s;
-          animation: fade-in-right 0.4s ease 0.3s;
+  -webkit-animation: fade-in-right 0.4s ease both 0.3s;
+          animation: fade-in-right 0.4s ease both 0.3s;
 }
 
 .single-use-case .use-case-content.start .row.even .image-col {
-  -webkit-animation: fade-in 0.4s ease;
-          animation: fade-in 0.4s ease;
+  -webkit-animation: fade-in 0.4s ease both;
+          animation: fade-in 0.4s ease both;
 }
 
 .single-use-case .use-case-content.even {
