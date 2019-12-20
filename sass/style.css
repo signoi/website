@@ -3855,6 +3855,13 @@ section.widget {
 
 .single-use-case .use-case-content.even {
   background: #ececec;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-use-case .use-case-content.even .signoi-logo-background {
+  position: absolute;
+  right: -300px;
 }
 
 .single-use-case #callback-cta {

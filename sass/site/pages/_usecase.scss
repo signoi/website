@@ -150,6 +150,12 @@
     }
     .use-case-content.even {
         background: $color__vlightgrey;
+        position: relative;
+        overflow: hidden;
+        .signoi-logo-background {
+            position: absolute;
+            right: -300px;
+        }
     }
     #callback-cta {
         background: $color__red;
