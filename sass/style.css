@@ -3768,10 +3768,6 @@ section.widget {
   padding-right: 0;
 }
 
-.single-use-case .use-case-content .col {
-  opacity: 0;
-}
-
 .single-use-case .use-case-content .row.odd h2, .single-use-case .use-case-content .row.odd p {
   max-width: 450px;
   margin-right: 0;
@@ -3788,20 +3784,17 @@ section.widget {
   color: #c05344;
   line-height: 1.2em;
   font-size: 32px;
-  -webkit-animation: none;
-          animation: none;
+  opacity: 0;
 }
 
 .single-use-case .use-case-content p {
   font-size: 19px;
-  -webkit-animation: none;
-          animation: none;
+  opacity: 0;
 }
 
 .single-use-case .use-case-content .image-col img {
   margin: auto;
-  -webkit-animation: none;
-          animation: none;
+  opacity: 0;
 }
 
 .single-use-case .use-case-content .image-col {
@@ -3822,24 +3815,42 @@ section.widget {
   margin-bottom: auto;
 }
 
-.single-use-case .use-case-content.start .row.odd .text-col {
-  -webkit-animation: fade-in-left 0.4s ease both;
-          animation: fade-in-left 0.4s ease both;
+.single-use-case .use-case-content.start .row.odd h2 {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
 }
 
-.single-use-case .use-case-content.start .row.odd .image-col {
-  -webkit-animation: fade-in 0.4s ease both 0.3s;
-          animation: fade-in 0.4s ease both 0.3s;
+.single-use-case .use-case-content.start .row.odd p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
-.single-use-case .use-case-content.start .row.even .text-col {
-  -webkit-animation: fade-in-right 0.4s ease both 0.3s;
-          animation: fade-in-right 0.4s ease both 0.3s;
+.single-use-case .use-case-content.start .row.odd .image-col img {
+  -webkit-animation: fade-in-right 1s ease both;
+          animation: fade-in-right 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
-.single-use-case .use-case-content.start .row.even .image-col {
-  -webkit-animation: fade-in 0.4s ease both;
-          animation: fade-in 0.4s ease both;
+.single-use-case .use-case-content.start .row.even h2 {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .3;
+          animation-delay: .3;
+}
+
+.single-use-case .use-case-content.start .row.even p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.single-use-case .use-case-content.start .row.even .image-col img {
+  -webkit-animation: fade-in-left 1s ease both;
+          animation: fade-in-left 1s ease both;
 }
 
 .single-use-case .use-case-content.even {

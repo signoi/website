@@ -83,9 +83,6 @@
             }
         }
     }
-    .use-case-content .col {
-        opacity: 0;
-    }
 
 .use-case-content {
     .row.odd h2, .row.odd p {
@@ -102,15 +99,15 @@
            color: $color__red; 
            line-height: 1.2em;
            font-size: 32px;
-           animation: none;
+           opacity: 0;
         }
         p {
             font-size: 19px;
-            animation: none;
+            opacity: 0;
         }
         .image-col img {
     margin: auto;
-    animation: none;
+    opacity: 0;
         }
         .image-col {
             display: flex;
@@ -124,20 +121,31 @@
     }
     .use-case-content.start {
         .row.odd {
-        .text-col {
-                animation: fade-in-left 0.4s ease both;
+        h2 {
+                animation: fade-in-bottom 1s ease both;
+               
             }
-            .image-col {
-                animation: fade-in 0.4s ease both 0.3s;
+            p {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .3s;
+            }
+            .image-col img {
+                animation: fade-in-right 1s ease both;
+                animation-delay: .6s;
             }
         }
         .row.even {
-            .text-col {
-                    animation: fade-in-right 0.4s ease both 0.3s;
-                }
-                .image-col {
-                    animation: fade-in 0.4s ease both;
-                }
+            h2 {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .3;
+            }
+            p {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .6s;
+            }
+            .image-col img {
+                animation: fade-in-left 1s ease both;
+            }
             }
     }
     .use-case-content.even {
