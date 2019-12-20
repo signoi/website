@@ -41,7 +41,6 @@ get_header();
 		while( have_rows('main_content') ): the_row(); 
 ?>
 
-<section id="use-case-content">
 	<?php if( have_rows('content_row') ): 
 				while( have_rows('content_row') ): the_row(); 
 				$title = get_sub_field('section_title');
@@ -60,21 +59,25 @@ get_header();
 				endif;
 				if( get_row_index() % 2 == 0 ){
 				?>
+				<section class="use-case-content even">
 				<div class="row even">
 				<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-		<div class="col half">
+		<div class="col half text-col">
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
 		</div>
 			</div>
+				</section>
 			<?php } else { ?>
+				<section class="use-case-content odd">
 			<div class="row odd">
-		<div class="col half">
+		<div class="col half text-col">
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $copy; ?></p>
 		</div>
 		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-			</div>			
+			</div>		
+			</section>	
 		<?php } endwhile; else : endif; ?>
 </section>
 <?php endwhile; else : endif; ?>

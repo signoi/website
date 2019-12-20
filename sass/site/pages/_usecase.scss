@@ -83,24 +83,26 @@
             }
         }
     }
-    #use-case-content {
-        padding: 50px 0;
-        .row {
-            padding: 30px 15px;
-        }
+.use-case-content {
         h2 {
            color: $color__red; 
            line-height: 1.2em;
+           font-size: 32px;
         }
         p {
             font-size: 19px;
         }
         .image-col img {
-            max-width: 80%;
     margin: auto;
         }
         .image-col {
             display: flex;
+        }
+        .col-half {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
     #callback-cta {
