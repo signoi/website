@@ -47,9 +47,10 @@ $subtitle = get_sub_field('subheading');
 			$size = 'large';
 			$fullimage = $image['sizes'][ $size ];
 		endif;
+		if( get_row_index() % 2 == 0 ){
 ?>	
 <section class="platform-section">
-<div class="row odd">
+<div class="row even">
 		<div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
 			<h2><?php echo $title; ?></h2>
@@ -58,7 +59,18 @@ $subtitle = get_sub_field('subheading');
 		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 			</div>	
 </section>
-<?php endwhile; else : endif; ?>
+<?php } else { ?>
+	<section class="platform-section">
+<div class="row odd">
+		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+		<div class="col half platform-text">
+		<p class="subheading"><?php echo $subtitle; ?></p>
+			<h2><?php echo $title; ?></h2>
+			<?php echo $copy; ?>
+		</div>
+</div>	
+</section>
+<?php } endwhile; else : endif; ?>
 <?php endwhile; else : endif; ?>
 <?php if( have_rows('cta_section') ): 
 		while( have_rows('cta_section') ): the_row(); 

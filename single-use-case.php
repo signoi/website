@@ -80,7 +80,6 @@ get_header();
 			</div>		
 			</section>	
 		<?php } endwhile; else : endif; ?>
-</section>
 <?php endwhile; else : endif; ?>
 
 <?php if( have_rows('cta_section') ): 
