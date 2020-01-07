@@ -51,23 +51,23 @@ $subtitle = get_sub_field('subheading');
 ?>	
 <section class="platform-section">
 <div class="row even">
+		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
 			<h2><?php echo $title; ?></h2>
 			<?php echo $copy; ?>
 		</div>
-		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-			</div>	
+</div>	
 </section>
 <?php } else { ?>
 	<section class="platform-section">
 <div class="row odd">
-		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-		<div class="col half platform-text">
+<div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
 			<h2><?php echo $title; ?></h2>
 			<?php echo $copy; ?>
 		</div>
+		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 </div>	
 </section>
 <?php } endwhile; else : endif; ?>
