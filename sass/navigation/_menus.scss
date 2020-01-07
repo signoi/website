@@ -31,12 +31,14 @@
 			top: 100%;
 			z-index: 99999;
 			background: #fff;
-			margin-top: 27px;
+			margin-top: 30px;
 			display: flex;
 			flex-wrap: wrap;
 			width: 400px;
 			right: -165px;
 			padding: 15px;
+			left: -999em;
+			top: 0;
 				li {
 					display: block;
 					margin-right: 0;
@@ -57,16 +59,12 @@
 				}
 
 		}
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
 			li {
 					float: none;
 					position: relative;
 					display: inline-block;
 					margin-right: 15px;
+					padding: 10px 0;
 				
 				&:hover > ul,
 				&.focus > ul {
