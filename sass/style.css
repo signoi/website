@@ -4395,7 +4395,8 @@ section.widget {
 .page-template-platform-page #above-fold {
   background: #566272;
   text-align: left;
-  padding: 80px 0;
+  padding: 0;
+  min-height: 0;
 }
 
 .page-template-platform-page #above-fold .row {
@@ -4422,14 +4423,7 @@ section.widget {
 }
 
 .page-template-platform-page #above-fold .col.twothird {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 80px 15px;
+  padding: 80px 10% 150px 15px;
 }
 
 .page-template-platform-page #above-fold .col.third {

@@ -2,7 +2,8 @@
     #above-fold { 
         background: $color__grey;
         text-align: left;
-        padding: 80px 0;
+        padding: 0;
+        min-height: 0;
         .row {
             min-height: 0;
         }
@@ -23,9 +24,7 @@
             color: #fff;
         }
         .col.twothird {
-            display: flex;
-            flex-direction: column;
-            padding: 80px 15px;
+            padding: 80px 10% 150px 15px;
         }
         .col.third {
             display: flex;
