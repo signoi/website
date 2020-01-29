@@ -40,10 +40,10 @@
             }
         }
     }
-    .platform-section.even {
+    .platform-section.odd {
         background: #454e5b;
     }
-    .platform-section.odd {
+    .platform-section.even {
         background: $color__grey;
     }
     .platform-section {
@@ -82,7 +82,7 @@
         }
     }
     #callback-cta {
-    background: #fff;
+    background:#e9c659;
     h3 {
         color:  $color__red;
     }

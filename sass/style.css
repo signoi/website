@@ -3910,6 +3910,10 @@ section.widget {
   background: #c05344;
 }
 
+.single-use-case #callback-cta h3 {
+  margin-bottom: 20px;
+}
+
 .single-use-case #recent-posts h2 {
   text-align: center;
   color: #c05344;
@@ -4445,11 +4449,11 @@ section.widget {
   margin-left: -25%;
 }
 
-.page-template-platform-page .platform-section.even {
+.page-template-platform-page .platform-section.odd {
   background: #454e5b;
 }
 
-.page-template-platform-page .platform-section.odd {
+.page-template-platform-page .platform-section.even {
   background: #566272;
 }
 
@@ -4504,7 +4508,7 @@ section.widget {
 }
 
 .page-template-platform-page #callback-cta {
-  background: #fff;
+  background: #e9c659;
 }
 
 .page-template-platform-page #callback-cta h3 {
