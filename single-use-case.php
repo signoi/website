@@ -92,12 +92,7 @@ get_header();
 		<div class="col full">
 			<h3><?php echo $title; ?></h3>	
 			<p><?php echo $copy; ?></p>
-			<div class="phone-form">
-				<form>
-					<input type="text" placeholder="email address" name="phonenumber">
-         			<input type="submit" class="button grey" value="subscribe">
-      			</form>
-			</div>
+			<button class="button white" onclick="window.location.href = '#opencallform';">Schedule A Call</button>
 		</div>
 	</div>
 </section>	
@@ -124,6 +119,8 @@ if ( $arr_posts->have_posts() ) :
 					$thumb_id = get_post_thumbnail_id();
 					$alt = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
 					$slug = get_post_field( 'post_name', get_post() );
+					$readingtime = types_render_field( 'reading-time', array() );
+					$author = types_render_field( 'author-name', array() );
 					?>
 
 <div class="col third">
@@ -132,10 +129,10 @@ if ( $arr_posts->have_posts() ) :
     <a class="blog-link" href="<?php the_permalink(); ?>"></a>
   <div class="blog-image"><img width="400" height="284" src="<?php echo $image[0]?>" alt="<?php echo $alt[0]?>"></div>
 	<div class="blog-text-area">
-  <div class="blog-category"><a href="http://new.signoi.com/category/discover-signoi/">Discover Signoi</a><span class="separator"> | </span><a href="http://new.signoi.com/category/discover-signoi/universal-energies/">Universal Energies</a></div>
-  <div class="reading-time"><i class="fal fa-clock" aria-hidden="true"></i> 2 min read</div>
+  <div class="blog-category"><?php the_category( ' | ' ); ?></div>
+  <div class="reading-time"><i class="fal fa-clock" aria-hidden="true"></i> <?php echo $readingtime ?> min read</div>
   <div class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-  <div class="blog-meta"><span class="blog-author">by Andy Dexter</span> <span class="blog-date">January 29, 2019</span></div>
+  <div class="blog-meta"><span class="blog-author">by <?php echo $author ?></span> <span class="blog-date"><?php the_date(); ?></span></div>
  </div>
     </div>
 </div>
