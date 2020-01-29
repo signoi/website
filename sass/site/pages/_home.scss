@@ -13,6 +13,16 @@
         margin: auto;
         min-height: calc(100vh - 104px);
         flex-direction: column;
+
+        .abovefoldcopy {
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-self: center;
+            margin: auto;
+            margin-bottom: 0;
+        }
     }
     h2 {
         font-size: 60px;
