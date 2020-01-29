@@ -91,7 +91,7 @@ get_header();
 	<div class="row">
 		<div class="col full">
 			<h3><?php echo $title; ?></h3>	
-><!--			<p><?php echo $copy; ?></p> -->
+<!--			<p><?php echo $copy; ?></p> -->
 			<button class="button yellow" onclick="window.location.href = '#opencallform';">Schedule A Call</button>
 		</div>
 	</div>
