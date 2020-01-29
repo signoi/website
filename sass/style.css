@@ -3781,6 +3781,7 @@ section.widget {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 10px;
+  font-size: 17px;
 }
 
 .single-use-case #use-cases-menu ul li a {
@@ -4416,7 +4417,11 @@ section.widget {
   color: #fff;
 }
 
-.page-template-platform-page .platform-section {
+.page-template-platform-page .platform-section.even {
+  background: #272c33;
+}
+
+.page-template-platform-page .platform-section.odd {
   background: #566272;
 }
 

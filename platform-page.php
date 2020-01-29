@@ -19,11 +19,12 @@ $subtitle = get_sub_field('subheading');
 ?>		
 <section id="above-fold">
 	<div class="row intro">
-		<div class="col half">
+		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
 		<p class="subheading"><?php echo $subtitle; ?></p>
 		<?php echo $copy; ?>
 		</div>
+		<div class="col third"><img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
@@ -49,7 +50,7 @@ $subtitle = get_sub_field('subheading');
 		endif;
 		if( get_row_index() % 2 == 0 ){
 ?>	
-<section class="platform-section">
+<section class="platform-section even">
 <div class="row even">
 		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half platform-text">
@@ -60,7 +61,7 @@ $subtitle = get_sub_field('subheading');
 </div>	
 </section>
 <?php } else { ?>
-	<section class="platform-section">
+	<section class="platform-section odd">
 <div class="row odd">
 <div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>

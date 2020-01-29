@@ -23,8 +23,14 @@
             color: #fff;
         }
     }
-    .platform-section {
+    .platform-section.even {
+        background: #272c33;
+    }
+    .platform-section.odd {
         background: $color__grey;
+    }
+    .platform-section {
+       
         h2, p, p.subtitle {
             color: #fff;
         }
