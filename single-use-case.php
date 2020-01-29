@@ -91,8 +91,8 @@ get_header();
 	<div class="row">
 		<div class="col full">
 			<h3><?php echo $title; ?></h3>	
-			<p><?php echo $copy; ?></p>
-			<button class="button white" onclick="window.location.href = '#opencallform';">Schedule A Call</button>
+><!--			<p><?php echo $copy; ?></p> -->
+			<button class="button yellow" onclick="window.location.href = '#opencallform';">Schedule A Call</button>
 		</div>
 	</div>
 </section>	
@@ -132,7 +132,10 @@ if ( $arr_posts->have_posts() ) :
   <div class="blog-category"><?php the_category( ' | ' ); ?></div>
   <div class="reading-time"><i class="fal fa-clock" aria-hidden="true"></i> <?php echo $readingtime ?> min read</div>
   <div class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-  <div class="blog-meta"><span class="blog-author">by <?php echo $author ?></span> <span class="blog-date"><?php the_date(); ?></span></div>
+  <div class="blog-meta">
+  <?php if(	(empty($author)) ) { ?><span class="blog-author">by <?php the_author(); } ?></span> 
+  <?php if(	(!empty($author)) ) {  ?><span class="blog-author">by <?php echo $author; } ?></span> 
+ <span class="blog-date"><?php the_date(); ?></span></div>
  </div>
     </div>
 </div>
