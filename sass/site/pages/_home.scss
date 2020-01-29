@@ -297,6 +297,18 @@
     .col.half {
         padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+        h3 {
+            align-self: flex-start;
+            margin: auto;
+            margin-top: 0;
+        }
+        button {
+            align-self: flex-end;
+    margin: auto;
+    margin-bottom: 0;
+        }
     }
 }
 
