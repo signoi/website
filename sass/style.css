@@ -476,7 +476,7 @@ p {
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 body {
@@ -1516,7 +1516,7 @@ a:hover, a:active {
           flex-direction: column;
 }
 
-#above-fold .col.full .abovefoldcopy {
+#above-fold .abovefoldcopy {
   min-height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2075,6 +2075,7 @@ a:hover, a:active {
 
 #use-cases .flipster__nav li {
   text-align: center;
+  font-size: 17px;
   min-width: 125px;
   vertical-align: middle;
   display: -webkit-box;
