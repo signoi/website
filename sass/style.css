@@ -4417,6 +4417,34 @@ section.widget {
   color: #fff;
 }
 
+.page-template-platform-page #above-fold .col.twothird {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 15px;
+}
+
+.page-template-platform-page #above-fold .col.third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-template-platform-page #above-fold .col.third img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto;
+  margin-bottom: 0;
+  max-height: none;
+  max-width: none;
+  width: 175%;
+  margin-left: -25%;
+}
+
 .page-template-platform-page .platform-section.even {
   background: #454e5b;
 }

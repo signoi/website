@@ -22,6 +22,23 @@
             margin-bottom: 1em;
             color: #fff;
         }
+        .col.twothird {
+            display: flex;
+            flex-direction: column;
+            padding: 80px 15px;
+        }
+        .col.third {
+            display: flex;
+            img {
+                align-self: flex-end;
+                margin: auto;
+                margin-bottom: 0;
+                max-height: none;
+                max-width: none;
+                width: 175%;
+                margin-left: -25%;
+            }
+        }
     }
     .platform-section.even {
         background: #454e5b;
