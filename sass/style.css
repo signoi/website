@@ -1040,6 +1040,8 @@ a:hover, a:active {
   padding: 20px;
   text-align: center;
   width: calc(50% - 30px);
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .main-navigation ul ul li a:before {
