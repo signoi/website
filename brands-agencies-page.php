@@ -45,7 +45,7 @@ get_header();
 			$fullimage = $image['sizes'][ $size ];
 		endif;
 		?>
-		<div class="col quarter">
+		<div class="col third">
 			<div class="blurb-inner">
 				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
 				<h3><?php echo $blurbtitle; ?></h3>
