@@ -942,7 +942,7 @@ textarea:focus {
 
 label {
   margin-bottom: 5px;
-  display: block;
+  display: inline-block;
   font-size: 1.2rem;
 }
 
@@ -4562,6 +4562,7 @@ section.widget {
   text-align: left;
   min-height: 0;
   padding: 80px 0;
+  padding-bottom: 15px;
 }
 
 .page-template-contact-page #above-fold .row {
@@ -4589,12 +4590,16 @@ section.widget {
   width: 100%;
 }
 
+.page-template-contact-page #contact {
+  padding-top: 15px;
+}
+
 .page-template-contact-page #contact .col.third {
   padding-left: 40px;
   border-left: 1px solid #bbc0c6;
 }
 
-.page-template-contact-page #contact .co.twothird {
+.page-template-contact-page #contact .col.twothird {
   padding-right: 40px;
 }
 
@@ -4631,9 +4636,12 @@ section.widget {
   text-decoration: none;
 }
 
+.page-template-contact-page #contact .address .addressarea, .page-template-contact-page #contact .address .maplink, .page-template-contact-page #contact .address .email {
+  margin-bottom: 15px;
+}
+
 .page-template-contact-page #contact .address .addressline {
   line-height: 19px;
-  margin-bottom: 15px;
 }
 
 .page-template-contact-page #contact .address .far, .page-template-contact-page #contact .address .fas {

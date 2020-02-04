@@ -25,6 +25,7 @@
         text-align: left;
         min-height: 0;
         padding: 80px 0;
+        padding-bottom: 15px;
         .row {
             min-height: 0;
         }
@@ -48,11 +49,12 @@
         }
     }
     #contact {
+        padding-top: 15px;
     .col.third {
         padding-left: 40px;
         border-left: 1px solid $color__lightgrey;
     }
-    .co.twothird {
+    .col.twothird {
         padding-right: 40px;
     }
     .meet-andy {
@@ -85,9 +87,12 @@
         text-decoration: none;
     }
     .address {
+        .addressarea, .maplink, .email {
+            margin-bottom: 15px; 
+        }
         .addressline {
                     line-height: 19px;
-        margin-bottom: 15px;        }
+              }
         .far, .fas {
             margin-right: 5px;
             width: 16px;
