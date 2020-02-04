@@ -74,12 +74,16 @@ get_header();
 <!-- Calendly link widget end --></div>
 	<div class="address">
 		<h3 class="widgettitle">Address</h3>
-		<?php if( have_rows('address') ): 
+		<?php if( have_rows('address') ): ?>
+			<div class="addressarea">
+				<?php
 				while( have_rows('address') ): the_row(); 
 				$addressline = get_sub_field('address_line');
 				?>
 			<div class="addressline"><?php echo $addressline; ?></div>
-		<?php endwhile; else : endif; ?>
+		<?php endwhile; ?>
+		</div>
+		<?php else : endif; ?>
 		<div class="maplink"><a target="_blank" href="<?php echo $map; ?>"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>  Open in Google Maps</a></div>
 		<div class="email"><a href="mailto:<?php echo $email; ?>"><i class="far fa-envelope" aria-hidden="true"></i> <?php echo $email; ?></a></div>
 	</div>

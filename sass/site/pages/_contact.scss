@@ -47,6 +47,14 @@
             width: 100%;
         }
     }
+    #contact {
+    .col.third {
+        padding-left: 40px;
+        border-left: 1px solid $color__lightgrey;
+    }
+    .co.twothird {
+        padding-right: 40px;
+    }
     .meet-andy {
         .name {
             font-size: 22px;
@@ -94,5 +102,6 @@
           }
           
       }
+    }
 
 }

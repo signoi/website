@@ -4589,55 +4589,64 @@ section.widget {
   width: 100%;
 }
 
-.page-template-contact-page .meet-andy .name {
+.page-template-contact-page #contact .col.third {
+  padding-left: 40px;
+  border-left: 1px solid #bbc0c6;
+}
+
+.page-template-contact-page #contact .co.twothird {
+  padding-right: 40px;
+}
+
+.page-template-contact-page #contact .meet-andy .name {
   font-size: 22px;
   font-weight: bold;
   color: #566272;
 }
 
-.page-template-contact-page .meet-andy .jobtitle {
+.page-template-contact-page #contact .meet-andy .jobtitle {
   font-size: 18px;
   color: #566272;
 }
 
-.page-template-contact-page .meet-andy .socials a {
+.page-template-contact-page #contact .meet-andy .socials a {
   color: #566272;
   font-size: 22px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
-.page-template-contact-page .meet-andy .socials a:hover {
+.page-template-contact-page #contact .meet-andy .socials a:hover {
   color: #c05344;
 }
 
-.page-template-contact-page .book-demo-button.onpage {
+.page-template-contact-page #contact .book-demo-button.onpage {
   display: block;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.page-template-contact-page .book-demo-button.onpage a:hover {
+.page-template-contact-page #contact .book-demo-button.onpage a:hover {
   text-decoration: none;
 }
 
-.page-template-contact-page .address .addressline {
+.page-template-contact-page #contact .address .addressline {
   line-height: 19px;
   margin-bottom: 15px;
 }
 
-.page-template-contact-page .address .far, .page-template-contact-page .address .fas {
+.page-template-contact-page #contact .address .far, .page-template-contact-page #contact .address .fas {
   margin-right: 5px;
   width: 16px;
 }
 
-.page-template-contact-page .address a {
+.page-template-contact-page #contact .address a {
   color: #566272;
   cursor: pointer;
 }
 
-.page-template-contact-page .address a:hover {
+.page-template-contact-page #contact .address a:hover {
   color: #c05344;
   text-decoration: none;
 }
