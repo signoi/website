@@ -191,7 +191,13 @@
         padding: 0 30px;
     }
     .comment p {
-        animation-delay: .6s;
+        animation-delay: .5s;
+    }
+    .attribution {
+        margin-top: 20px;
+    font-weight: 600;
+    text-align: right;
+    animation-delay: .7s;
     }
     .quote-after {
         content: " ";
@@ -555,13 +561,13 @@ margin: 80px 0 160px 0;
 /*--animations--*/ 
 
 .page-template section {
-    .flexslider.comments,  .quote-before, .quote-after, .report-featured-image, .round-image  {
+    .flexslider.comments,  .quote-before, .quote-after, .report-featured-image, .round-image, .attribution  {
         opacity: 0;
     }   
 }
 
 .page-template section.start {
-   .flexslider.comments, .quote-before, .quote-after, .report-featured-image {
+   .flexslider.comments, .quote-before, .quote-after, .report-featured-image, .attribution {
         animation: fade-in-bottom 1s ease both;
     }
     .round-image {

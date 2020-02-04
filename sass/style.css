@@ -1743,8 +1743,16 @@ a:hover, a:active {
 }
 
 #customer-comments .comment p {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#customer-comments .attribution {
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: right;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
 }
 
 #customer-comments .quote-after {
@@ -2213,11 +2221,11 @@ a:hover, a:active {
 }
 
 /*--animations--*/
-.page-template section .flexslider.comments, .page-template section .quote-before, .page-template section .quote-after, .page-template section .report-featured-image, .page-template section .round-image {
+.page-template section .flexslider.comments, .page-template section .quote-before, .page-template section .quote-after, .page-template section .report-featured-image, .page-template section .round-image, .page-template section .attribution {
   opacity: 0;
 }
 
-.page-template section.start .flexslider.comments, .page-template section.start .quote-before, .page-template section.start .quote-after, .page-template section.start .report-featured-image {
+.page-template section.start .flexslider.comments, .page-template section.start .quote-before, .page-template section.start .quote-after, .page-template section.start .report-featured-image, .page-template section.start .attribution {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
