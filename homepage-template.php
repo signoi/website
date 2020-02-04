@@ -103,8 +103,9 @@ wp_reset_postdata();
 			<div class="flexslider comments"><ul class="slides">	
 			<?php while( have_rows('comments') ): the_row(); 
 				$comment = get_sub_field('comment');
+				$attribution = get_sub_field('attribution');
 				?>
-				<li><div class="quote-before"></div><div class="comment"><?php echo $comment; ?></div><div class="quote-after"></div></li>
+				<li><div class="quote-before"></div><div class="comment"><?php echo $comment; ?></div><div class="attribution"><?php echo $attribution; ?></div><div class="quote-after"></div></li>
 		<?php endwhile; ?>	
 		</ul></div>	
 		<?php endif; ?>
