@@ -4516,6 +4516,79 @@ section.widget {
 }
 
 /*--------------------------------------------------------------
+##  Contact page
+--------------------------------------------------------------*/
+.page-template-contact-page #book-call-trigger {
+  position: fixed;
+  left: -70px;
+  top: 250px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background: #efc73e;
+  padding: 10px 15px;
+  border-radius: 0 0 5px 5px;
+  color: #546274;
+  font-size: 1.2rem;
+  letter-spacing: .2px;
+}
+
+.page-template-contact-page #book-call-trigger .mailing-list-text {
+  display: inline-block;
+  padding-right: 5px;
+  color: #546274;
+}
+
+.page-template-contact-page #book-call-trigger .fal {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.page-template-contact-page #above-fold {
+  background: #fff;
+  text-align: left;
+  min-height: 0;
+  padding: 80px 0;
+}
+
+.page-template-contact-page #above-fold .row {
+  min-height: 0;
+}
+
+.page-template-contact-page #above-fold .col {
+  text-align: left;
+}
+
+.page-template-contact-page #above-fold h1 {
+  color: #566272;
+  margin-top: auto;
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 72px;
+}
+
+.page-template-contact-page #above-fold p {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #566272;
+}
+
+.page-template-contact-page .address {
+  line-height: 19px;
+  margin-bottom: 15px;
+}
+
+.page-template-contact-page .address .far, .page-template-contact-page .address .fas {
+  margin-right: 5px;
+  width: 16px;
+}
+
+.page-template-contact-page .address a {
+  color: #768191;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */

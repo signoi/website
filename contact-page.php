@@ -62,11 +62,16 @@ get_header();
 <div class="col third"></div>
 	<div class="meet-andy">
 		<h3><?php echo $title; ?></h3>
-		<div class="person-image"><img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+		<div class="person-image"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="name"><?php echo $name; ?></div>
 		<div class="jobtitle"><?php echo $jobtitle; ?></div>
 		<div class="socials"><a target="_blank" href="<?php echo $twitter; ?>"><i class="fab fa-twitter" aria-hidden="true"></i></a><a target="_blank"  href="<?php echo $linkedin; ?>"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
 	</div>
+	<div class="book-demo-button onpage"><!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<a class="button red" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/signoi/demo'});return false;">Schedule a call</a>
+<!-- Calendly link widget end --></div>
 	<div class="address">
 		<h3>Address</h3>
 		<?php if( have_rows('address') ): 
