@@ -26,7 +26,7 @@ get_header();
 	<div class="row intro">
 		<div class="col full">
 		<h1><?php echo $title; ?></h1>	
-		<p><?php echo $copy; ?></p>
+		<?php echo $copy; ?>
 		</div>
 	</div>
 </section>

@@ -4554,8 +4554,9 @@ section.widget {
   min-height: 0;
 }
 
-.page-template-contact-page #above-fold .col {
+.page-template-contact-page #above-fold .col.full {
   text-align: left;
+  min-height: 0;
 }
 
 .page-template-contact-page #above-fold h1 {
@@ -4571,6 +4572,8 @@ section.widget {
   margin: 0;
   margin-bottom: 1em;
   color: #566272;
+  text-align: left;
+  width: 100%;
 }
 
 .page-template-contact-page .address {
@@ -4584,8 +4587,12 @@ section.widget {
 }
 
 .page-template-contact-page .address a {
-  color: #768191;
+  color: #566272;
   cursor: pointer;
+}
+
+.page-template-contact-page .address a:hover {
+  color: #c05344;
 }
 
 /*--------------------------------------------------------------
