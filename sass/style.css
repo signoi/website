@@ -1070,7 +1070,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul li a:after {
-  display: none;
+  display: none !important;
 }
 
 .main-navigation ul li {
