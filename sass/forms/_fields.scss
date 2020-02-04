@@ -16,12 +16,25 @@ input[type="color"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
-	border-radius: 3px;
-	padding: 3px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	padding-left: 10px;
+	width: 100%;
 
 	&:focus {
 		color: $color__text-input-focus;
+		border-left: 4px solid #cf4b3d;
 	}
+}
+
+label {
+	margin-bottom: 5px;
+    display: block;
+    font-size: 1.2rem;
+}
+
+._form_element {
+    margin-bottom: 15px;
 }
 
 select {

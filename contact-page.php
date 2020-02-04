@@ -61,7 +61,7 @@ get_header();
 ?>	
 <div class="col third">
 	<div class="meet-andy">
-		<h3><?php echo $title; ?></h3>
+		<h3 class="widgettitle"><?php echo $title; ?></h3>
 		<div class="person-image"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="name"><?php echo $name; ?></div>
 		<div class="jobtitle"><?php echo $jobtitle; ?></div>
@@ -73,7 +73,7 @@ get_header();
 <a class="button red" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/signoi/demo'});return false;">Schedule a call</a>
 <!-- Calendly link widget end --></div>
 	<div class="address">
-		<h3>Address</h3>
+		<h3 class="widgettitle">Address</h3>
 		<?php if( have_rows('address') ): 
 				while( have_rows('address') ): the_row(); 
 				$addressline = get_sub_field('address_line');
