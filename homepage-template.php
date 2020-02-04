@@ -105,7 +105,7 @@ wp_reset_postdata();
 				$comment = get_sub_field('comment');
 				$attribution = get_sub_field('attribution');
 				?>
-				<li><div class="quote-before"></div><div class="comment"><?php echo $comment; ?></div><div class="attribution"><?php echo $attribution; ?></div><div class="quote-after"></div></li>
+				<li><div class="quote-before"></div><div class="comment"><div class="commenttext"><?php echo $comment; ?></div><div class="attribution"><?php echo $attribution; ?></div></div><div class="quote-after"></div></li>
 		<?php endwhile; ?>	
 		</ul></div>	
 		<?php endif; ?>
