@@ -918,6 +918,8 @@ textarea {
   padding: 5px 10px;
   padding-left: 10px;
   width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 input[type="text"]:focus,
@@ -938,6 +940,10 @@ input[type="color"]:focus,
 textarea:focus {
   color: #111;
   border-left: 4px solid #cf4b3d;
+}
+
+input [type="checkbox"] {
+  margin-right: 10px;
 }
 
 label {
@@ -4628,8 +4634,8 @@ section.widget {
 .page-template-contact-page #contact .book-demo-button.onpage {
   display: block;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .page-template-contact-page #contact .book-demo-button.onpage a:hover {

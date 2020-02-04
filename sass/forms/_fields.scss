@@ -20,11 +20,16 @@ textarea {
 	padding: 5px 10px;
 	padding-left: 10px;
 	width: 100%;
+	transition: all 0.2s ease-in-out;
 
 	&:focus {
 		color: $color__text-input-focus;
 		border-left: 4px solid #cf4b3d;
 	}
+}
+
+input [type="checkbox"] {
+	margin-right: 10px;
 }
 
 label {
