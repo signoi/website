@@ -59,7 +59,7 @@ get_header();
 			$fullimage = $image['sizes'][ $size ];
 		endif;
 ?>	
-<div class="col third"></div>
+<div class="col third">
 	<div class="meet-andy">
 		<h3><?php echo $title; ?></h3>
 		<div class="person-image"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
