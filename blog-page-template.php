@@ -20,7 +20,7 @@ get_header();
 <section class="blog-page-header-area">
 <div class="row blog-header-inner">
 <div class="col half blog-search"><?php dynamic_sidebar( 'blog-search' ); ?></div>
-<div class="col half blog-categories"><?php dynamic_sidebar( 'blog-categories' ); ?></div>
+<div class="col half blog-categories"><?php dynamic_sidebar( 'blog-category' ); ?></div>
 </div>
 </section>
 <section class="no-sidebar">
