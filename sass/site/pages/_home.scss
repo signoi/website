@@ -477,6 +477,9 @@ margin: 80px 0 160px 0;
         .flipster__nav__item--current a {
             color: $color__yellow;
         }
+        .flipster__nav__link::after {
+            display: none;
+        }
         
         
 
@@ -574,8 +577,11 @@ margin: 80px 0 160px 0;
 } 
 
 #use-cases.start {
-    h2, .flipster__nav, .flipster__container {
-        animation: fade-in-bottom 1s ease both;
+    h2 {
+        animation: fade-in-bottom 1s ease both;   
+    }
+    .flipster__nav, .flipster__container {
+        animation: fade-in 1s ease both;
     }
     .flipster__nav {
         animation-delay: .3s;  
@@ -595,11 +601,17 @@ margin: 80px 0 160px 0;
     h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution  {
         animation: fade-in-bottom 1s ease both;
     }
+    .quote-before {
+        animation-delay: 3s;
+    }
     .commenttext {
         animation-delay: 5.5s;
     }
     .attribution {
         animation-delay: 6.5s;
+    }
+    .quote-after {
+        animation-delay: 9s;
     }
 }
 
@@ -628,7 +640,7 @@ img, col.half {
     opacity: 0;
 }
 .col.half:first-child:after {
-    height: 0;
+    max-height: 0;
 }
 }
 

@@ -162,8 +162,11 @@
 } 
 
 #use-cases.start {
-    h2, .flipster__nav, .flipster__container {
-        animation: fade-in-bottom 1s ease both;
+    .flipster__nav, .flipster__container {
+        animation: fade-in 1s ease both;
+    }
+    h2 {
+        animation: fade-in-bottom 1s ease both;  
     }
     .flipster__nav {
         animation-delay: .3s;  

@@ -125,11 +125,17 @@
     }
 }
 
-#contact .col.third {
+#contact .col.twothird, #contact .col.third {
     opacity: 0;
 }
 
-#contact.start .col.third {
+#contact.start {
+ .col.third {
     animation: fade-in-left 1s ease both;  
+    animation-delay: .3s;   
+}
+.col.twothird {
+    animation: fade-in 1s ease both;   
+}
 }
 }
