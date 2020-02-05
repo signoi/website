@@ -2312,21 +2312,26 @@ a:hover, a:active {
           animation-delay: .3s;
 }
 
-.page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta button {
+.page-template-homepage-template #about h2, .page-template-homepage-template #about p, .page-template-homepage-template #about .round-image img {
   opacity: 0;
 }
 
-.page-template-homepage-template #callback-cta.start h3, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start button {
+.page-template-homepage-template #about.start h2, .page-template-homepage-template #about.start p {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-homepage-template #callback-cta.start p {
+.page-template-homepage-template #about.start .round-image img {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
+.page-template-homepage-template #about.start h2 {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
 
-.page-template-homepage-template #callback-cta.start button {
+.page-template-homepage-template #about.start p {
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
 }
@@ -4030,7 +4035,7 @@ section.widget {
           animation-delay: .9s;
 }
 
-.single-use-case #above-fold.start h2, .single-use-case #above-fold.start p, .single-use-case #above-fold.start button {
+.single-use-case #above-fold.start h1, .single-use-case #above-fold.start p, .single-use-case #above-fold.start button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -4905,7 +4910,7 @@ section.widget {
           animation-delay: .6s;
 }
 
-.page-template-platform-page #above-fold.start h2, .page-template-platform-page #above-fold.start p {
+.page-template-platform-page #above-fold.start h1, .page-template-platform-page #above-fold.start p {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -4915,35 +4920,35 @@ section.widget {
           animation-delay: .3s;
 }
 
-.page-template-platform-page #platform-section p.subheading, .page-template-platform-page #platform-section h2, .page-template-platform-page #platform-section p, .page-template-platform-page #platform-section .image-col img {
+.page-template-platform-page .platform-section p.subheading, .page-template-platform-page .platform-section h2, .page-template-platform-page .platform-section p, .page-template-platform-page .platform-section .image-col img {
   opacity: 0;
 }
 
-.page-template-platform-page #platform-section.start h2, .page-template-platform-page #platform-section.start p.subheading {
+.page-template-platform-page .platform-section.start h2, .page-template-platform-page .platform-section.start p.subheading {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-platform-page #platform-section.start p.subeading {
+.page-template-platform-page .platform-section.start p.subeading {
   -webkit-animation-delay: .1s;
           animation-delay: .1s;
 }
 
-.page-template-platform-page #platform-section.start p {
+.page-template-platform-page .platform-section.start p {
   -webkit-animation: fade-in-top 1s ease both;
           animation: fade-in-top 1s ease both;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
 
-.page-template-platform-page #platform-section.odd.start .image-col img {
+.page-template-platform-page .platform-section.odd.start .image-col img {
   -webkit-animation: fade-in-left 1s ease both;
           animation: fade-in-left 1s ease both;
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
 }
 
-.page-template-platform-page #platform-section.even.start .image-col img {
+.page-template-platform-page .platform-section.even.start .image-col img {
   -webkit-animation: fade-in-right 1s ease both;
           animation: fade-in-right 1s ease both;
   -webkit-animation-delay: .6s;

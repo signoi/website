@@ -101,19 +101,19 @@
             animation: rise 1s ease both;
             animation-delay: .6s;
         }
-        h2, p {
+        h1, p {
             animation: fade-in-bottom 1s ease both;   
         }
         p {
             animation-delay: .3s;
         }
     }
-    #platform-section {
+    .platform-section {
         p.subheading, h2, p, .image-col img {
             opacity: 0;
         }
     }
-    #platform-section.start {
+    .platform-section.start {
         h2, p.subheading {
             animation: fade-in-bottom 1s ease both;       
         }
@@ -125,11 +125,11 @@
             animation-delay: .3s;       
         }
     }
-    #platform-section.odd.start .image-col img {
+    .platform-section.odd.start .image-col img {
         animation: fade-in-left 1s ease both;   
         animation-delay: .6s;    
     }
-    #platform-section.even.start .image-col img {
+    .platform-section.even.start .image-col img {
         animation: fade-in-right 1s ease both;  
         animation-delay: .6s;    
     }

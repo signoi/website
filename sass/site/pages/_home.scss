@@ -658,23 +658,24 @@ img, .col.half {
     }
 }
 
-#callback-cta {
-    h3, p, button {
-        opacity: 0; 
+#about {
+    h2, p, .round-image img {
+        opacity: 0;       
     }
 }
 
-#callback-cta.start {
-    h3, p, button {
-        animation: fade-in-bottom 1s ease both; 
+#about.start {
+    h2, p {
+        animation: fade-in-bottom 1s ease both;    
     }
-
+    .round-image img {
+        animation: fade-in 1s ease both;   
+    }
+    h2 {
+        animation-delay: .3s;
+    }
     p {
-        animation-delay: .3s;  
-    }
-
-    button {
-        animation-delay: .6s;  
+        animation-delay: .6s;
     }
 }
 
