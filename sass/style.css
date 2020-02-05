@@ -806,7 +806,7 @@ input[type="submit"]:hover, .button:hover {
   border-color: #c05344;
   background-color: #c05344;
   color: #fff;
-  padding: 10px 2.3em;
+  padding: 10px 2em;
 }
 
 button:hover a,
@@ -3731,6 +3731,7 @@ section.widget {
   margin-top: auto;
   font-size: 60px;
   margin-bottom: 30px;
+  line-height: 70px;
 }
 
 .single-use-case #above-fold p {
@@ -4604,10 +4605,12 @@ section.widget {
 --------------------------------------------------------------*/
 .page-template-contact-page #book-call-trigger {
   position: fixed;
-  left: -70px;
   top: 250px;
+  left: 0;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
   background: #e9c659;
   padding: 10px 15px;
   border-radius: 0 0 5px 5px;

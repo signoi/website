@@ -1,9 +1,10 @@
 .page-template-contact-page {
     #book-call-trigger {
         position: fixed;
-    left: -70px;
         top: 250px;
+        left: 0;
         transform: rotate(-90deg);
+        transform-origin: top left;
         background: $color__yellow;
         padding: 10px 15px;
         border-radius: 0 0 5px 5px;
