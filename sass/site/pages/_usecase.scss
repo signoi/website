@@ -220,13 +220,13 @@
             }
     }
     #callback-cta {
-        h3, p, button {
+        h3, p, .book-demo-button {
             opacity: 0; 
         }
     }
     
     #callback-cta.start {
-        h3, p, button {
+        h3, p, .book-demo-button {
             animation: fade-in-bottom 1s ease both; 
         }
     
@@ -249,13 +249,7 @@
         }
 
             .single-blog-item  {
-                animation-delay: .2s;
-            }
-            .single-blog-item:first-child {
                 animation-delay: .3s;
             }
-           .single-blog-item:last-child {
-                animation-delay: .4s;
-            } 
     }
 }

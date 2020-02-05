@@ -616,13 +616,13 @@ margin: 80px 0 160px 0;
 }
 
 #callback-cta {
-    h3, p, button {
+    h3, p, .book-demo-button {
         opacity: 0; 
     }
 }
 
 #callback-cta.start {
-    h3, p, button {
+    h3, p, .book-demo-button {
         animation: fade-in-bottom 1s ease both; 
     }
 
@@ -630,7 +630,7 @@ margin: 80px 0 160px 0;
         animation-delay: .3s;  
     }
 
-    button {
+    .book-demo-button {
         animation-delay: .6s;  
     }
 }
@@ -665,16 +665,16 @@ img, .col.half {
 }
 
 #about.start {
-    h2, p {
+    h2, p, button {
         animation: fade-in-bottom 1s ease both;    
     }
     .round-image img {
         animation: fade-in 1s ease both;   
     }
-    h2 {
+    p {
         animation-delay: .3s;
     }
-    p {
+    button {
         animation-delay: .6s;
     }
 }

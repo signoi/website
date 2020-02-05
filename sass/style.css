@@ -2266,11 +2266,11 @@ a:hover, a:active {
           animation-delay: .9s;
 }
 
-.page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta button {
+.page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta .book-demo-button {
   opacity: 0;
 }
 
-.page-template-homepage-template #callback-cta.start h3, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start button {
+.page-template-homepage-template #callback-cta.start h3, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start .book-demo-button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -2280,7 +2280,7 @@ a:hover, a:active {
           animation-delay: .3s;
 }
 
-.page-template-homepage-template #callback-cta.start button {
+.page-template-homepage-template #callback-cta.start .book-demo-button {
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
 }
@@ -2316,7 +2316,7 @@ a:hover, a:active {
   opacity: 0;
 }
 
-.page-template-homepage-template #about.start h2, .page-template-homepage-template #about.start p {
+.page-template-homepage-template #about.start h2, .page-template-homepage-template #about.start p, .page-template-homepage-template #about.start button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -2326,12 +2326,12 @@ a:hover, a:active {
           animation: fade-in 1s ease both;
 }
 
-.page-template-homepage-template #about.start h2 {
+.page-template-homepage-template #about.start p {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
 
-.page-template-homepage-template #about.start p {
+.page-template-homepage-template #about.start button {
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
 }
@@ -3815,6 +3815,49 @@ section.widget {
   margin-bottom: 15px;
 }
 
+/*animations*/
+.new-blog .single-blog-item {
+  opacity: 0;
+}
+
+.new-blog .single-blog-item.start {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up .mailing-list-icon, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-text, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-trigger {
+  opacity: 0;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-icon {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-text {
+  -webkit-animation: fade-in-left 1s ease both;
+          animation: fade-in-left 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-blog-page-template .no-sidebar .single-blog-item.featured {
+  opacity: 0;
+}
+
+.page-template-blog-page-template .no-sidebar.start .single-blog-item.featured {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
 /*--------------------------------------------------------------
 ## Blogpost
 --------------------------------------------------------------*/
@@ -4102,11 +4145,11 @@ section.widget {
           animation: fade-in-left 1s ease both;
 }
 
-.single-use-case #callback-cta h3, .single-use-case #callback-cta p, .single-use-case #callback-cta button {
+.single-use-case #callback-cta h3, .single-use-case #callback-cta p, .single-use-case #callback-cta .book-demo-button {
   opacity: 0;
 }
 
-.single-use-case #callback-cta.start h3, .single-use-case #callback-cta.start p, .single-use-case #callback-cta.start button {
+.single-use-case #callback-cta.start h3, .single-use-case #callback-cta.start p, .single-use-case #callback-cta.start .book-demo-button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -4131,18 +4174,8 @@ section.widget {
 }
 
 .single-use-case #recent-posts.start .single-blog-item {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-.single-use-case #recent-posts.start .single-blog-item:first-child {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
-}
-
-.single-use-case #recent-posts.start .single-blog-item:last-child {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
 }
 
 /*--------------------------------------------------------------

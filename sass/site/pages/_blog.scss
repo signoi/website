@@ -1299,3 +1299,46 @@ section.widget {
  .widget-small h2 {
 	margin-bottom: 15px;
 }
+
+
+/*animations*/ 
+.new-blog { .single-blog-item {
+    opacity: 0;
+}
+
+.single-blog-item.start {
+    animation: fade-in-bottom 1s ease both; 
+}
+}
+
+.page-template-blog-page-template {
+    .mailing-list-sign-up {
+        .mailing-list-icon, .mailing-list-text, .mailing-list-trigger {
+            opacity: 0;
+        }
+    }
+    .mailing-list-sign-up.start {
+        .mailing-list-icon {
+            animation: fade-in 1s ease both;    
+        }
+        .mailing-list-text {
+            animation: fade-in-left 1s ease both; 
+        }
+        .mailing-list-trigger {
+            animation: fade-in-bottom 1s ease both; 
+        }
+        .mailing-list-trigger {
+            animation-delay: .3s;
+        }
+    }
+    .no-sidebar {
+        .single-blog-item.featured {
+            opacity: 0;
+        }
+    }
+    .no-sidebar.start {
+        .single-blog-item.featured {
+            animation: fade-in 1s ease both;    
+        }
+    }
+}
