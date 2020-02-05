@@ -6,6 +6,16 @@ jQuery(window).load(function() {
       jQuery('body').toggleClass('menuisopen');
     });
 
+        //adding class to body when popup trigger is clicked
+        jQuery('.mailing-list-trigger').on('click', function () {
+          jQuery('body').toggleClass('popupisopen');
+        });
+
+        //removing class when close button is clicked
+        jQuery('.form-close').on('click', function () {
+          jQuery('body').toggleClass('popupisopen');
+        });
+
         //set a waypoint for all the page parts on the page
         var sectionwaypoint = jQuery('section').waypoint(function() {
             //check the direction
