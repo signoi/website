@@ -602,16 +602,16 @@ margin: 80px 0 160px 0;
         animation: fade-in-bottom 1s ease both;
     }
     .quote-before {
-        animation-delay: 3s;
+        animation-delay: .3s;
     }
     .commenttext {
-        animation-delay: 5.5s;
+        animation-delay: .55s;
     }
     .attribution {
-        animation-delay: 6.5s;
+        animation-delay: .65s;
     }
     .quote-after {
-        animation-delay: 9s;
+        animation-delay: .9s;
     }
 }
 
@@ -636,7 +636,7 @@ margin: 80px 0 160px 0;
 }
 
 #quantitative-semiotics  {
-img, col.half {
+img, .col.half {
     opacity: 0;
 }
 .col.half:first-child:after {
@@ -652,7 +652,7 @@ img, col.half {
     img {
         animation: fade-in-bottom 1s ease both;
     }
-    col.half {
+    .col.half {
         animation: fade-in 1s ease both;
         animation-delay: .3s;
     }

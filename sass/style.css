@@ -2247,23 +2247,23 @@ a:hover, a:active {
 }
 
 .page-template-homepage-template #customer-comments.start .quote-before {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .page-template-homepage-template #customer-comments.start .commenttext {
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
+  -webkit-animation-delay: .55s;
+          animation-delay: .55s;
 }
 
 .page-template-homepage-template #customer-comments.start .attribution {
-  -webkit-animation-delay: 6.5s;
-          animation-delay: 6.5s;
+  -webkit-animation-delay: .65s;
+          animation-delay: .65s;
 }
 
 .page-template-homepage-template #customer-comments.start .quote-after {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
 .page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta button {
@@ -2285,7 +2285,7 @@ a:hover, a:active {
           animation-delay: .6s;
 }
 
-.page-template-homepage-template #quantitative-semiotics img, .page-template-homepage-template #quantitative-semiotics col.half {
+.page-template-homepage-template #quantitative-semiotics img, .page-template-homepage-template #quantitative-semiotics .col.half {
   opacity: 0;
 }
 
@@ -2305,7 +2305,7 @@ a:hover, a:active {
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-homepage-template #quantitative-semiotics.start col.half {
+.page-template-homepage-template #quantitative-semiotics.start .col.half {
   -webkit-animation: fade-in 1s ease both;
           animation: fade-in 1s ease both;
   -webkit-animation-delay: .3s;
@@ -3816,6 +3816,10 @@ section.widget {
 /*--------------------------------------------------------------
 ## Use Cases
 --------------------------------------------------------------*/
+.single-use-case {
+  /*--animations--*/
+}
+
 .single-use-case #above-fold {
   background: #566272;
   text-align: left;
@@ -3975,44 +3979,6 @@ section.widget {
   margin-bottom: auto;
 }
 
-.single-use-case .use-case-content.start .row.odd h2 {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.single-use-case .use-case-content.start .row.odd p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.single-use-case .use-case-content.start .row.odd .image-col img {
-  -webkit-animation: fade-in-right 1s ease both;
-          animation: fade-in-right 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.single-use-case .use-case-content.start .row.even h2 {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .3;
-          animation-delay: .3;
-}
-
-.single-use-case .use-case-content.start .row.even p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.single-use-case .use-case-content.start .row.even .image-col img {
-  -webkit-animation: fade-in-left 1s ease both;
-          animation: fade-in-left 1s ease both;
-}
-
 .single-use-case .use-case-content.even {
   background: #ececec;
   position: relative;
@@ -4051,6 +4017,127 @@ section.widget {
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 10px;
+}
+
+.single-use-case #above-fold h1, .single-use-case #above-fold p, .single-use-case #above-fold button, .single-use-case #above-fold .abovefoldimage {
+  opacity: 0;
+}
+
+.single-use-case #above-fold.start .abovefoldimage {
+  -webkit-animation: rise 1s ease both;
+          animation: rise 1s ease both;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+.single-use-case #above-fold.start h2, .single-use-case #above-fold.start p, .single-use-case #above-fold.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.single-use-case #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.single-use-case #above-fold.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.single-use-case #use-cases-menu h2, .single-use-case #use-cases-menu .footermenu {
+  opacity: 0;
+}
+
+.single-use-case #use-cases-menu.start h2, .single-use-case #use-cases-menu.start .footermenu {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.single-use-case #use-cases-menu.start .footermenu {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.single-use-case .use-case-content.start .row.odd h2 {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.single-use-case .use-case-content.start .row.odd p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.single-use-case .use-case-content.start .row.odd .image-col img {
+  -webkit-animation: fade-in-right 1s ease both;
+          animation: fade-in-right 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.single-use-case .use-case-content.start .row.even h2 {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .3;
+          animation-delay: .3;
+}
+
+.single-use-case .use-case-content.start .row.even p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.single-use-case .use-case-content.start .row.even .image-col img {
+  -webkit-animation: fade-in-left 1s ease both;
+          animation: fade-in-left 1s ease both;
+}
+
+.single-use-case #callback-cta h3, .single-use-case #callback-cta p, .single-use-case #callback-cta button {
+  opacity: 0;
+}
+
+.single-use-case #callback-cta.start h3, .single-use-case #callback-cta.start p, .single-use-case #callback-cta.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.single-use-case #callback-cta.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.single-use-case #callback-cta.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.single-use-case #recent-posts h2, .single-use-case #recent-posts .single-blog-item {
+  opacity: 0;
+}
+
+.single-use-case #recent-posts.start h2, .single-use-case #recent-posts.start .single-blog-item {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.single-use-case #recent-posts.start .single-blog-item {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.single-use-case #recent-posts.start .single-blog-item:first-child {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.single-use-case #recent-posts.start .single-blog-item:last-child {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 /*--------------------------------------------------------------
@@ -4682,6 +4769,10 @@ section.widget {
 /*--------------------------------------------------------------
 ##  Platform page
 --------------------------------------------------------------*/
+.page-template-platform-page {
+  /*--animations--*/
+}
+
 .page-template-platform-page #above-fold {
   background: #566272;
   text-align: left;
@@ -4801,6 +4892,81 @@ section.widget {
 
 .page-template-platform-page #callback-cta p {
   color: #566272;
+}
+
+.page-template-platform-page #above-fold h1, .page-template-platform-page #above-fold p, .page-template-platform-page #above-fold .abovefoldimage {
+  opacity: 0;
+}
+
+.page-template-platform-page #above-fold.start .abovefoldimage {
+  -webkit-animation: rise 1s ease both;
+          animation: rise 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-platform-page #above-fold.start h2, .page-template-platform-page #above-fold.start p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-platform-page #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-platform-page #platform-section p.subheading, .page-template-platform-page #platform-section h2, .page-template-platform-page #platform-section p, .page-template-platform-page #platform-section .image-col img {
+  opacity: 0;
+}
+
+.page-template-platform-page #platform-section.start h2, .page-template-platform-page #platform-section.start p.subheading {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-platform-page #platform-section.start p.subeading {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.page-template-platform-page #platform-section.start p {
+  -webkit-animation: fade-in-top 1s ease both;
+          animation: fade-in-top 1s ease both;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-platform-page #platform-section.odd.start .image-col img {
+  -webkit-animation: fade-in-left 1s ease both;
+          animation: fade-in-left 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-platform-page #platform-section.even.start .image-col img {
+  -webkit-animation: fade-in-right 1s ease both;
+          animation: fade-in-right 1s ease both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-platform-page #callback-cta h3, .page-template-platform-page #callback-cta p, .page-template-platform-page #callback-cta button {
+  opacity: 0;
+}
+
+.page-template-platform-page #callback-cta.start h3, .page-template-platform-page #callback-cta.start p, .page-template-platform-page #callback-cta.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-platform-page #callback-cta.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-platform-page #callback-cta.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 /*--------------------------------------------------------------

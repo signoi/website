@@ -107,6 +107,7 @@ $args = array(
     'post_type' => 'post',
 	'post_status' => 'publish',
 	'posts_per_page' => 3,
+	'ignore_sticky_posts' => true,
 );
 $arr_posts = new WP_Query( $args );
  
