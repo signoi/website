@@ -2208,47 +2208,47 @@ a:hover, a:active {
 }
 
 /*--animations--*/
-.page-template section .flexslider.comments, .page-template section .quote-before, .page-template section .quote-after, .page-template section .report-featured-image, .page-template section .round-image, .page-template section .attribution {
+.page-template-homepage-template section .flexslider.comments, .page-template-homepage-template section .quote-before, .page-template-homepage-template section .quote-after, .page-template-homepage-template section .report-featured-image, .page-template-homepage-template section .round-image, .page-template-homepage-template section .attribution {
   opacity: 0;
 }
 
-.page-template section.start .flexslider.comments, .page-template section.start .quote-before, .page-template section.start .quote-after, .page-template section.start .report-featured-image, .page-template section.start .attribution {
+.page-template-homepage-template section.start .flexslider.comments, .page-template-homepage-template section.start .quote-before, .page-template-homepage-template section.start .quote-after, .page-template-homepage-template section.start .report-featured-image, .page-template-homepage-template section.start .attribution {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template section.start .round-image {
+.page-template-homepage-template section.start .round-image {
   -webkit-animation: fade-in 1s ease both;
           animation: fade-in 1s ease both;
 }
 
-.page-template section.start .report-featured-image {
+.page-template-homepage-template section.start .report-featured-image {
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
 
-#above-fold.start img {
+.page-template-homepage-template #above-fold.start img {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
 }
 
-#quantitative-semiotics h3, #quantitative-semiotics p {
+.page-template-homepage-template #quantitative-semiotics h3, .page-template-homepage-template #quantitative-semiotics p {
   -webkit-animation: none;
           animation: none;
   opacity: 1;
 }
 
-#quantitative-semiotics .row.start .col.half:first-child:after {
+.page-template-homepage-template #quantitative-semiotics .row.start .col.half:first-child:after {
   -webkit-animation: increase-height 1s ease 1.3s both;
           animation: increase-height 1s ease 1.3s both;
 }
 
-#callback-cta.start h2, #callback-cta.start p, #callback-cta.start form {
+.page-template-homepage-template #callback-cta.start h2, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start form {
   -webkit-animation: none;
           animation: none;
 }
 
-#callback-cta .row.start h2, #callback-cta .row.start p, #callback-cta .row.start form {
+.page-template-homepage-template #callback-cta .row.start h2, .page-template-homepage-template #callback-cta .row.start p, .page-template-homepage-template #callback-cta .row.start form {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -2372,7 +2372,7 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-## Blogpage & Article
+## Blogpage & archives
 --------------------------------------------------------------*/
 .mailing-list-trigger.fixed {
   position: fixed;
@@ -3714,6 +3714,9 @@ section.widget {
 }
 
 /*--------------------------------------------------------------
+## Blogpost
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 ## Use Cases
 --------------------------------------------------------------*/
 .single-use-case #above-fold {
@@ -3956,6 +3959,10 @@ section.widget {
 /*--------------------------------------------------------------
 ## Signoi for Brands / Agencies page
 --------------------------------------------------------------*/
+.page-template-brands-agencies-page {
+  /*--animations--*/
+}
+
 .page-template-brands-agencies-page #above-fold {
   background: #566272;
   text-align: left;
@@ -4010,7 +4017,7 @@ section.widget {
   width: 100%;
 }
 
-.page-template-brands-agencies-page #above-fold .row.blurbs .col.quarter {
+.page-template-brands-agencies-page #above-fold .row.blurbs .col.third {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4024,7 +4031,7 @@ section.widget {
   background: rgba(255, 255, 255, 0.05);
   text-align: center;
   height: 100%;
-  padding: 15px;
+  padding: 25px 20px;
 }
 
 .page-template-brands-agencies-page #above-fold .row.intro {
@@ -4122,6 +4129,68 @@ section.widget {
 
 .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
   padding: 0;
+}
+
+.page-template-brands-agencies-page #above-fold h1, .page-template-brands-agencies-page #above-fold p, .page-template-brands-agencies-page #above-fold .row.blurbs .col.third {
+  opacity: 0;
+}
+
+.page-template-brands-agencies-page #above-fold.start h1, .page-template-brands-agencies-page #above-fold.start p, .page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-brands-agencies-page #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+.page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third:first-child {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third:last-child {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.page-template-brands-agencies-page #use-cases h2, .page-template-brands-agencies-page #use-cases .flipster__nav, .page-template-brands-agencies-page #use-cases .flipster__container {
+  opacity: 0;
+}
+
+.page-template-brands-agencies-page #use-cases.start h2, .page-template-brands-agencies-page #use-cases.start .flipster__nav, .page-template-brands-agencies-page #use-cases.start .flipster__container {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-brands-agencies-page #use-cases.start .flipster__nav {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-brands-agencies-page #use-cases.start .flipster__container {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-brands-agencies-page #case-studies .header-with-image, .page-template-brands-agencies-page #case-studies .row.tabs {
+  opacity: 0;
+}
+
+.page-template-brands-agencies-page #case-studies.start .header-with-image, .page-template-brands-agencies-page #case-studies.start .row.tabs {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-brands-agencies-page #case-studies.start .row.tabs {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 /*--------------------------------------------------------------

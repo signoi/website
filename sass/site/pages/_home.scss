@@ -559,14 +559,14 @@ margin: 80px 0 160px 0;
 
   
 /*--animations--*/ 
-
-.page-template section {
+.page-template-homepage-template {
+section {
     .flexslider.comments,  .quote-before, .quote-after, .report-featured-image, .round-image, .attribution  {
         opacity: 0;
     }   
 }
 
-.page-template section.start {
+section.start {
    .flexslider.comments, .quote-before, .quote-after, .report-featured-image, .attribution {
         animation: fade-in-bottom 1s ease both;
     }
@@ -607,6 +607,7 @@ margin: 80px 0 160px 0;
     h2, p, form {
         animation: fade-in-bottom 1s ease both;
     }
+}
 }
 
 @media (max-width: 767.99px) {
