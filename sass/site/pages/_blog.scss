@@ -44,6 +44,7 @@ display: none;
 
 .is-form-style button.is-search-submit {
     border: 1px solid #cf4b3d;
+    height: 40px;
 }
 
 .is-search-icon svg path {
@@ -704,6 +705,7 @@ color: #cf4b3d;
     
     .blog-page-header-area .widget {
         padding-bottom: 0;
+        margin-bottom: 0;
     }
     
     .widgettitle, 
@@ -975,6 +977,10 @@ color: #9795a2;
 
 .post-content-header .post-category a {
 	    color: #9795a2;
+}
+
+.post-content-header .post-category a:hover {
+    text-decoration: none;
 }
 
 .post-content-header .reading-time {

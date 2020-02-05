@@ -2440,6 +2440,7 @@ a:hover, a:active {
 
 .is-form-style button.is-search-submit {
   border: 1px solid #cf4b3d;
+  height: 40px;
 }
 
 .is-search-icon svg path {
@@ -3128,6 +3129,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 
 .blog-page-header-area .widget {
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .widgettitle,
@@ -3403,6 +3405,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 
 .post-content-header .post-category a {
   color: #9795a2;
+}
+
+.post-content-header .post-category a:hover {
+  text-decoration: none;
 }
 
 .post-content-header .reading-time {
@@ -4680,6 +4686,10 @@ section.widget {
 .pop-up {
   z-index: -1;
   opacity: 0;
+}
+
+.mailing-list-trigger, .form-close {
+  cursor: pointer;
 }
 
 /*--active--*/
