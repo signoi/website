@@ -551,12 +551,12 @@ margin: 80px 0 160px 0;
 /*--animations--*/ 
 .page-template-homepage-template {
 #above-fold {
-    h2, p, button, .abovefoldimage img {
+    h2, p, button, .abovefoldimage {
         opacity: 0;
     }
 }
 #above-fold.start {
-    img {
+    .abovefoldimage {
         animation: rise 1s ease both;
         animation-delay: .9s;
     }

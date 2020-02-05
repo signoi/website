@@ -2187,11 +2187,11 @@ a:hover, a:active {
 }
 
 /*--animations--*/
-.page-template-homepage-template #above-fold h2, .page-template-homepage-template #above-fold p, .page-template-homepage-template #above-fold button, .page-template-homepage-template #above-fold .abovefoldimage img {
+.page-template-homepage-template #above-fold h2, .page-template-homepage-template #above-fold p, .page-template-homepage-template #above-fold button, .page-template-homepage-template #above-fold .abovefoldimage {
   opacity: 0;
 }
 
-.page-template-homepage-template #above-fold.start img {
+.page-template-homepage-template #above-fold.start .abovefoldimage {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
   -webkit-animation-delay: .9s;
