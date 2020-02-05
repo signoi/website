@@ -1548,8 +1548,6 @@ a:hover, a:active {
   line-height: 1.1em;
   max-width: 740px;
   margin: auto;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 80px;
@@ -1560,8 +1558,6 @@ a:hover, a:active {
   font-size: 22px;
   color: #fff;
   max-width: 580px;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1573,8 +1569,6 @@ a:hover, a:active {
 #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
   font-size: 30px;
   padding: 10px 1em;
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1583,7 +1577,7 @@ a:hover, a:active {
 }
 
 #above-fold .button:hover {
-  padding: 10px 1.3em;
+  padding: 10px 1em;
 }
 
 #above-fold .row {
@@ -1717,8 +1711,6 @@ a:hover, a:active {
   background-repeat: no-repeat;
   margin-left: auto;
   background-size: contain;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 #customer-comments .comment {
@@ -1729,17 +1721,10 @@ a:hover, a:active {
   padding: 0 30px;
 }
 
-#customer-comments .comment p {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
 #customer-comments .attribution {
   margin-top: 20px;
   font-weight: 600;
   text-align: right;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
 }
 
 #customer-comments .quote-after {
@@ -1751,8 +1736,6 @@ a:hover, a:active {
   background-position: center bottom;
   margin-right: auto;
   background-size: contain;
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
 }
 
 #customer-comments .flex-viewport {
@@ -1851,6 +1834,10 @@ a:hover, a:active {
   margin-bottom: 10px;
 }
 
+#callback-cta a:hover {
+  text-decoration: none;
+}
+
 #quantitative-semiotics {
   text-align: center;
 }
@@ -1927,14 +1914,10 @@ a:hover, a:active {
 
 #about h2 {
   color: #fff;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 #about p {
   color: #fff;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
 #about .row {
@@ -1962,15 +1945,7 @@ a:hover, a:active {
 
 #about button {
   font-size: 19px;
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
   margin-top: 15px;
-}
-
-#about .round-image img {
-  -webkit-animation: none;
-          animation: none;
-  opacity: 1;
 }
 
 #reports {
@@ -2208,49 +2183,152 @@ a:hover, a:active {
 }
 
 /*--animations--*/
-.page-template-homepage-template section .flexslider.comments, .page-template-homepage-template section .quote-before, .page-template-homepage-template section .quote-after, .page-template-homepage-template section .report-featured-image, .page-template-homepage-template section .round-image, .page-template-homepage-template section .attribution {
+.page-template-homepage-template #above-fold h2, .page-template-homepage-template #above-fold p, .page-template-homepage-template #above-fold button, .page-template-homepage-template #above-fold .abovefoldimage img {
   opacity: 0;
-}
-
-.page-template-homepage-template section.start .flexslider.comments, .page-template-homepage-template section.start .quote-before, .page-template-homepage-template section.start .quote-after, .page-template-homepage-template section.start .report-featured-image, .page-template-homepage-template section.start .attribution {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-homepage-template section.start .round-image {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-}
-
-.page-template-homepage-template section.start .report-featured-image {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 .page-template-homepage-template #above-fold.start img {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 
-.page-template-homepage-template #quantitative-semiotics h3, .page-template-homepage-template #quantitative-semiotics p {
-  -webkit-animation: none;
-          animation: none;
-  opacity: 1;
-}
-
-.page-template-homepage-template #quantitative-semiotics .row.start .col.half:first-child:after {
-  -webkit-animation: increase-height 1s ease 1.3s both;
-          animation: increase-height 1s ease 1.3s both;
-}
-
-.page-template-homepage-template #callback-cta.start h2, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start form {
-  -webkit-animation: none;
-          animation: none;
-}
-
-.page-template-homepage-template #callback-cta .row.start h2, .page-template-homepage-template #callback-cta .row.start p, .page-template-homepage-template #callback-cta .row.start form {
+.page-template-homepage-template #above-fold.start h2, .page-template-homepage-template #above-fold.start p, .page-template-homepage-template #above-fold.start button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-homepage-template #above-fold.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-homepage-template #use-cases h2, .page-template-homepage-template #use-cases .flipster__nav, .page-template-homepage-template #use-cases .flipster__container {
+  opacity: 0;
+}
+
+.page-template-homepage-template #use-cases.start h2, .page-template-homepage-template #use-cases.start .flipster__nav, .page-template-homepage-template #use-cases.start .flipster__container {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #use-cases.start .flipster__nav {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-homepage-template #use-cases.start .flipster__container {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-homepage-template #customer-comments h2, .page-template-homepage-template #customer-comments .flexslider.comments, .page-template-homepage-template #customer-comments .quote-before, .page-template-homepage-template #customer-comments .quote-after, .page-template-homepage-template #customer-comments .commenttext, .page-template-homepage-template #customer-comments .attribution {
+  opacity: 0;
+}
+
+.page-template-homepage-template #customer-comments.start h2, .page-template-homepage-template #customer-comments.start .flexslider.comments, .page-template-homepage-template #customer-comments.start .quote-before, .page-template-homepage-template #customer-comments.start .quote-after, .page-template-homepage-template #customer-comments.start .commenttext, .page-template-homepage-template #customer-comments.start .attribution {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #customer-comments.start .commenttext {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.page-template-homepage-template #customer-comments.start .attribution {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta button {
+  opacity: 0;
+}
+
+.page-template-homepage-template #callback-cta.start h3, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #callback-cta.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-homepage-template #callback-cta.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-homepage-template #quantitative-semiotics img, .page-template-homepage-template #quantitative-semiotics col.half {
+  opacity: 0;
+}
+
+.page-template-homepage-template #quantitative-semiotics .col.half:first-child:after {
+  height: 0;
+}
+
+.page-template-homepage-template #quantitative-semiotics.start .col.half:first-child:after {
+  -webkit-animation: increase-height 1s ease 1.3s both;
+          animation: increase-height 1s ease 1.3s both;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-homepage-template #quantitative-semiotics.start img {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #quantitative-semiotics.start col.half {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta button {
+  opacity: 0;
+}
+
+.page-template-homepage-template #callback-cta.start h3, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #callback-cta.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-homepage-template #callback-cta.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-homepage-template #reports .report-featured-image, .page-template-homepage-template #reports h4, .page-template-homepage-template #reports p {
+  opacity: 0;
+}
+
+.page-template-homepage-template #reports.start .report-featured-image, .page-template-homepage-template #reports.start h4, .page-template-homepage-template #reports.start p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-homepage-template #reports.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-homepage-template #reports.start .report-featured-image {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 @media (max-width: 767.99px) {
@@ -4381,6 +4459,10 @@ section.widget {
 /*--------------------------------------------------------------
 ##  Careers Page
 --------------------------------------------------------------*/
+.page-template-careers-page {
+  /*--animations--*/
+}
+
 .page-template-careers-page #above-fold {
   background: #e9c659;
   text-align: left;
@@ -4455,6 +4537,34 @@ section.widget {
   margin: auto;
   margin-bottom: 0;
   font-size: 14px;
+}
+
+.page-template-careers-page #above-fold h1, .page-template-careers-page #above-fold p, .page-template-careers-page #above-fold button {
+  opacity: 0;
+}
+
+.page-template-careers-page #above-fold.start h1, .page-template-careers-page #above-fold.start p, .page-template-careers-page #above-fold.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-careers-page #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-careers-page #above-fold.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-careers-page #positions .job-info {
+  opacity: 0;
+}
+
+.page-template-careers-page #positions .col.quarter.start .job-info {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
 }
 
 /*--------------------------------------------------------------
@@ -4672,6 +4782,10 @@ section.widget {
 /*--------------------------------------------------------------
 ##  Contact page
 --------------------------------------------------------------*/
+.page-template-contact-page {
+  /*--animations--*/
+}
+
 .page-template-contact-page #book-call-trigger {
   position: fixed;
   top: 250px;
@@ -4800,6 +4914,29 @@ section.widget {
 .page-template-contact-page #contact .address a:hover {
   color: #c05344;
   text-decoration: none;
+}
+
+.page-template-contact-page #above-fold h1, .page-template-contact-page #above-fold p {
+  opacity: 0;
+}
+
+.page-template-contact-page #above-fold.start h1, .page-template-contact-page #above-fold.start p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-contact-page #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-contact-page #contact .col.third {
+  opacity: 0;
+}
+
+.page-template-contact-page #contact.start .col.third {
+  -webkit-animation: fade-in-left 1s ease both;
+          animation: fade-in-left 1s ease both;
 }
 
 /*--------------------------------------------------------------

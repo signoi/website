@@ -37,7 +37,24 @@ jQuery(window).load(function() {
     //Set the offset
     offset: 'bottom-in-view'
 });
-
+        //set a waypoint for each of the jobs
+        var sectionwaypoint = jQuery('.jobs .col.quarter').waypoint(function() {
+          //check the direction
+              //add the class to start the animation
+              jQuery(this.element).addClass('start');
+      }, {
+          //Set the offset
+          offset: '90%'
+      });
+              //set a waypoint for each blog post
+              var sectionwaypoint = jQuery('.new-blog .single-blog-item').waypoint(function() {
+                //check the direction
+                    //add the class to start the animation
+                    jQuery(this.element).addClass('start');
+            }, {
+                //Set the offset
+                offset: '90%'
+            });
     });
 
 

@@ -30,7 +30,6 @@
         line-height: 1.1em;
         max-width: 740px;
         margin: auto;
-        animation-delay: .3s;
         align-self: flex-start;
         margin-top: 80px;
         margin-bottom: 0;
@@ -39,7 +38,6 @@
         font-size: 22px;
         color: #fff;
         max-width: 580px;
-        animation-delay: .6s;
         align-self: center;
         margin: auto;
         margin-top: 30px;
@@ -49,13 +47,12 @@
     button, input[type="button"], input[type="reset"], input[type="submit"] {
         font-size: 30px;
     padding: 10px 1em;
-        animation-delay: .9s;
         align-self: center;
         margin: auto;
         margin-top: 30px;
     }
     .button:hover {
-        padding: 10px 1.3em;
+        padding: 10px 1em;
     }
     .row {
         margin-top: 0;
@@ -181,7 +178,6 @@
         background-repeat: no-repeat;
         margin-left: auto;
         background-size: contain;
-        animation-delay: .3s;
     }
     .comment {
         display: block;
@@ -190,14 +186,10 @@
         text-align: left;
         padding: 0 30px;
     }
-    .comment p {
-        animation-delay: .5s;
-    }
     .attribution {
         margin-top: 20px;
     font-weight: 600;
     text-align: right;
-    animation-delay: .7s;
     }
     .quote-after {
         content: " ";
@@ -208,7 +200,6 @@
         background-position: center bottom;
         margin-right: auto;
         background-size: contain;
-        animation-delay: .9s;
     }
     .flex-viewport {
         margin-bottom: 30px;
@@ -274,6 +265,9 @@
     .phone-form {
         margin-bottom: 10px;
     }
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 #quantitative-semiotics {
@@ -334,11 +328,9 @@ margin-top: 115px;
     margin-bottom: 200px;
     h2 {
         color: #fff;
-        animation-delay: .3s;
     }
     p {
         color: #fff;
-        animation-delay: .6s;
     }
     .row {
         position: relative;
@@ -359,12 +351,7 @@ margin-top: 115px;
     }
     button {
         font-size: 19px;
-        animation-delay: .9s;
         margin-top: 15px;
-    }
-    .round-image img {
-        animation: none;
-        opacity: 1;
     }
 
 }
@@ -560,52 +547,140 @@ margin: 80px 0 160px 0;
   
 /*--animations--*/ 
 .page-template-homepage-template {
-section {
-    .flexslider.comments,  .quote-before, .quote-after, .report-featured-image, .round-image, .attribution  {
+#above-fold {
+    h2, p, button, .abovefoldimage img {
         opacity: 0;
-    }   
-}
-
-section.start {
-   .flexslider.comments, .quote-before, .quote-after, .report-featured-image, .attribution {
-        animation: fade-in-bottom 1s ease both;
-    }
-    .round-image {
-        animation: fade-in 1s ease both;
-    }
-    .report-featured-image {
-        animation-delay: .3s;
     }
 }
-
 #above-fold.start {
     img {
         animation: rise 1s ease both;
+        animation-delay: .9s;
+    }
+    h2, p, button {
+        animation: fade-in-bottom 1s ease both;   
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+}
+#use-cases {
+    h2, .flipster__nav, .flipster__container {
+        opacity: 0;   
+    }
+} 
+
+#use-cases.start {
+    h2, .flipster__nav, .flipster__container {
+        animation: fade-in-bottom 1s ease both;
+    }
+    .flipster__nav {
+        animation-delay: .3s;  
+    }
+    .flipster__container { 
+        animation-delay: .6s;  
+    }
+} 
+
+#customer-comments {
+    h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution {
+        opacity: 0;
     }
 }
 
-#quantitative-semiotics  {
-    h3, p {
-        animation: none;
-        opacity: 1;
+#customer-comments.start {
+    h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution  {
+        animation: fade-in-bottom 1s ease both;
+    }
+    .commenttext {
+        animation-delay: 5.5s;
+    }
+    .attribution {
+        animation-delay: 6.5s;
     }
 }
 
-#quantitative-semiotics .row.start {
-    .col.half:first-child:after {
-        animation: increase-height 1s ease 1.3s both;
+#callback-cta {
+    h3, p, button {
+        opacity: 0; 
     }
 }
 
 #callback-cta.start {
-    h2, p, form {
-        animation: none;
+    h3, p, button {
+        animation: fade-in-bottom 1s ease both; 
+    }
+
+    p {
+        animation-delay: .3s;  
+    }
+
+    button {
+        animation-delay: .6s;  
     }
 }
 
-#callback-cta .row.start {
-    h2, p, form {
+#quantitative-semiotics  {
+img, col.half {
+    opacity: 0;
+}
+.col.half:first-child:after {
+    height: 0;
+}
+}
+
+#quantitative-semiotics.start {
+    .col.half:first-child:after {
+        animation: increase-height 1s ease 1.3s both;
+        animation-delay: .6s;
+    }
+    img {
         animation: fade-in-bottom 1s ease both;
+    }
+    col.half {
+        animation: fade-in 1s ease both;
+        animation-delay: .3s;
+    }
+}
+
+#callback-cta {
+    h3, p, button {
+        opacity: 0; 
+    }
+}
+
+#callback-cta.start {
+    h3, p, button {
+        animation: fade-in-bottom 1s ease both; 
+    }
+
+    p {
+        animation-delay: .3s;  
+    }
+
+    button {
+        animation-delay: .6s;  
+    }
+}
+
+#reports {
+    .report-featured-image, h4, p {
+        opacity: 0;
+    }
+}
+
+#reports.start  {
+    .report-featured-image, h4, p {
+        animation: fade-in-bottom 1s ease both; 
+    }
+    p {
+        animation-delay: .3s;
+    }
+    .report-featured-image {
+        animation-delay: .6s;
     }
 }
 }
