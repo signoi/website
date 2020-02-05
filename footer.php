@@ -29,6 +29,7 @@
 </div><!-- #page -->
 
 <!-- mailing list sign-up --> 
+<div class="pop-up">
 <div class="sign-up-form">
 <div class="form-title"><h3>Sign Up</h3></div>
 <div class="form-content">
@@ -74,6 +75,7 @@
 		</script></p>
 </div>
 <button type="button yellow" class="form-close" aria-label="Close">CLOSE</button>
+</div>
 </div>
 
 <?php wp_footer(); ?>

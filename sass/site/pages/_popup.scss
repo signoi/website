@@ -1,14 +1,59 @@
+/*--inactive--*/ 
+.pop-up {
+    z-index: -1;
+    opacity: 0;
+}
+
+
+/*--active--*/ 
+
+.popupisopen .pop-up {
+    z-index: 999;
+    opacity: 1;
+}
+
+.popupisopen {
+    overflow: hidden;
+}
+
 /*--size--*/ 
+.popup {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    -webkit-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+    background: rgba( 63, 74, 87, 0.40 );
+}
 
+.sign-up-form {
+    align-self: center;
+    margin: auto;
+    max-width: 600px;
+    width: auto;
+    padding: 20px;
+    background: $color__vlightgrey;
+    max-height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+}
 
-
-
-/*--position--*/ 
-
-
-
-
-/*--style--*/ 
-
-
-/*--media queries--*/ 
+.form-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    color: $color__grey;
+    color: $color__yellow;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 0px;
+}
