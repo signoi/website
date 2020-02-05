@@ -608,32 +608,6 @@ table {
   width: 100%;
 }
 
-@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -652,29 +626,11 @@ table {
   }
 }
 
-@-webkit-keyframes increase-height {
+@-webkit-keyframes fade-in-bottom {
   0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 1000px;
-  }
-}
-
-@keyframes increase-height {
-  0% {
-    max-height: 0;
-  }
-  100% {
-    max-height: 1000px;
-  }
-}
-
-@-webkit-keyframes rise {
-  0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    opacity: 1;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -683,11 +639,11 @@ table {
   }
 }
 
-@keyframes rise {
+@keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    opacity: 1;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -770,6 +726,50 @@ table {
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes increase-height {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 1000px;
+  }
+}
+
+@keyframes increase-height {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 1000px;
+  }
+}
+
+@-webkit-keyframes rise {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -1492,19 +1492,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Page styling
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## General Page Styling
---------------------------------------------------------------*/
-/*--animations--*/
-.page-template section h2, .page-template section h3, .page-template section h4, .page-template section p, .page-template section button, .page-template section form, .page-template section img, .single-use-case section h2, .single-use-case section h3, .single-use-case section h4, .single-use-case section p, .single-use-case section button, .single-use-case section form, .single-use-case section img {
-  opacity: 0;
-}
-
-.page-template section.start h2, .page-template section.start h3, .page-template section.start h4, .page-template section.start p, .page-template section.start button, .page-template section.start form, .page-template section.start img, .single-use-case section.start h2, .single-use-case section.start h3, .single-use-case section.start h4, .single-use-case section.start p, .single-use-case section.start button, .single-use-case section.start form, .single-use-case section.start img {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
 /*--------------------------------------------------------------
 ## Homepage
 --------------------------------------------------------------*/
@@ -2231,8 +2218,8 @@ a:hover, a:active {
 }
 
 .page-template section.start .round-image {
-  -webkit-animation: fade-in-right 1s ease both;
-          animation: fade-in-right 1s ease both;
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
 }
 
 .page-template section.start .report-featured-image {
@@ -4139,6 +4126,10 @@ section.widget {
 /*--------------------------------------------------------------
 ##  About Page
 --------------------------------------------------------------*/
+.page-template-about-page {
+  /*--animations--*/
+}
+
 .page-template-about-page #above-fold {
   background: #e9c659;
   text-align: left;
@@ -4253,6 +4244,68 @@ section.widget {
 
 .page-template-about-page #callback-cta p {
   color: #566272;
+}
+
+.page-template-about-page #above-fold h1, .page-template-about-page #above-fold p, .page-template-about-page #above-fold button {
+  opacity: 0;
+}
+
+.page-template-about-page #above-fold.start h1, .page-template-about-page #above-fold.start p, .page-template-about-page #above-fold.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-about-page #above-fold.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-about-page #above-fold.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-about-page #about h2, .page-template-about-page #about p, .page-template-about-page #about .round-image img {
+  opacity: 0;
+}
+
+.page-template-about-page #about.start h2, .page-template-about-page #about.start p {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-about-page #about.start .round-image img {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
+.page-template-about-page #about.start h2 {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-about-page #about.start p {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.page-template-about-page #callback-cta h3, .page-template-about-page #callback-cta p, .page-template-about-page #callback-cta button {
+  opacity: 0;
+}
+
+.page-template-about-page #callback-cta.start h3, .page-template-about-page #callback-cta.start p, .page-template-about-page #callback-cta.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-about-page #callback-cta.start p {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-about-page #callback-cta.start button {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 /*--------------------------------------------------------------
