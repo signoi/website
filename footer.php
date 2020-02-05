@@ -41,27 +41,25 @@
 		</div>
 		<div class="_form_element _field21 _full_width ">
 		<div class="_row"><label class="_form-label">Please select all that apply*</label></div>
-		<p><input name="field[21][]" type="hidden" value="~|" data-name="email_options"></p>
+		<input name="field[21][]" type="hidden" value="~|" data-name="email_options">
 		<div class="_row _checkbox-radio"><input id="field_21The Signoi Blog" class="any" name="field[21][]" required="" type="checkbox" value="The Signoi Blog" data-name="email_options"><label for="field_21The Signoi Blog">The Signoi Blog</label></div>
 		<div class="_row _checkbox-radio"><input id="field_21Signoi Monthly Newsletter" name="field[21][]" type="checkbox" value="Signoi Monthly Newsletter" data-name="email_options"><label for="field_21Signoi Monthly Newsletter">Signoi Monthly Newsletter</label></div>
 		</div>
 		<div class="mailing-list-name-email">
-		<div class="_form_element _x09653339 _full_width "><label class="_form-label"><br>
-		Full Name<br>
-		</label>
+		<div class="_form_element _x09653339 _full_width ">
+		<label class="_form-label">Full Name</label>
 		<div class="_field-wrapper"><input name="fullname" type="text" placeholder="Type your name" data-name="fullname"></div>
 		</div>
-		<div class="_form_element _x99976564 _full_width"><label class="_form-label"><br>
-		Email*<br>
-		</label>
+		<div class="_form_element _x99976564 _full_width">
+		<label class="_form-label">Email*</label>
 		<div class="_field-wrapper"><input name="email" required="" type="text" placeholder="Type your email" data-name="email"></div>
 		</div>
 		</div>
 		<div class="_form_element _field3 _full_width ">
-		<div class="_row"><label class="_form-label"><br>
-		Please confirm that we may contact you via email:<br>
-		</label></div>
-		<p><input name="field[3][]" type="hidden" value="~|" data-name="marketing_permissions"></p>
+		<div class="_row">
+			<label class="_form-label">Please confirm that we may contact you via email:</label>
+		</div>
+		<input name="field[3][]" type="hidden" value="~|" data-name="marketing_permissions">
 		<div class="_row _checkbox-radio"><input id="field_3Email" name="field[3][]" required="" type="checkbox" value="Email" data-name="marketing_permissions"><label for="field_3Email">Email*</label></div>
 		</div>
 		<div class="_button-wrapper _full_width"><button id="_form_15_submit" class="_submit" type="submit">Sign Me Up</button></div>

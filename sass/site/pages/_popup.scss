@@ -17,7 +17,7 @@
 }
 
 /*--size--*/ 
-.popup {
+.pop-up {
     height: 100%;
     width: 100%;
     top: 0;
@@ -38,7 +38,7 @@
     max-width: 600px;
     width: auto;
     padding: 20px;
-    background: $color__vlightgrey;
+    background: #fff;
     max-height: 100vh;
     overflow-y: scroll;
     position: relative;
@@ -50,10 +50,17 @@
     top: 0px;
     padding: 10px;
     color: $color__grey;
-    color: $color__yellow;
+    background: $color__yellow;
     font-family: inherit;
     font-weight: 700;
     font-size: 12px;
     line-height: 12px;
     border-radius: 0px;
+    border: none;
+}
+
+.form-close:hover {
+    padding: 10px;
+    color: $color__grey;
+    background: $color__yellow; 
 }
