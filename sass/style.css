@@ -2797,12 +2797,6 @@ a:hover, a:active {
   font-weight: 500;
 }
 
-.blog-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 /*--NB: EVERYTHING BELOW HERE NEEDS PROPER SORTING--*/
 /*--single blog posts--*/
 blockquote {
