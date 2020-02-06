@@ -15,10 +15,13 @@
     display: block;
     content: " ";
 	}
-	.usecase-menu-item a:after {
+	.menu-item-has-children a:after {
 		content: "\f078";
 		font-family: 'FontAwesome';
 		margin-left: 5px;
+	}
+	.sub-menu a:after {
+		display: none;
 	}
 	ul {
 		display: none;
@@ -95,6 +98,9 @@
 	.main-navigation ul {
 		display: block;
 	}
+	ul.submenu {
+		display: flex;
+	}
 	.main-navigation ul {
 		ul {
 			box-shadow: 7px 7px 5px rgba(28,28,27,0.45);
@@ -142,6 +148,9 @@
 }
 .main-navigation ul {
     display: none;
+}
+ul.submenu {
+	display: block;
 }
 .menuisopen .main-navigation ul {
     display: block;

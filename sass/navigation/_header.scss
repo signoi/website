@@ -18,17 +18,20 @@
 @media (min-width: 767.1px) {
     .custom-logo, .scrolling .custom-logo {
         max-height: 60px;
+        width: auto;
     }
     }
 
 @media (max-width: 767px) {
     .custom-logo, .scrolling .custom-logo {
         max-height: 70px;
+        width: auto;
     }
     }
 
 @media (max-width: 575px) {
 .custom-logo, .scrolling .custom-logo {
     max-height: 50px;
+    width: auto;
 }
 }

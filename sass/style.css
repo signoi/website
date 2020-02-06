@@ -1056,10 +1056,14 @@ a:hover, a:active {
   content: " ";
 }
 
-.main-navigation .usecase-menu-item a:after {
+.main-navigation .menu-item-has-children a:after {
   content: "\f078";
   font-family: 'FontAwesome';
   margin-left: 5px;
+}
+
+.main-navigation .sub-menu a:after {
+  display: none;
 }
 
 .main-navigation ul {
@@ -1135,6 +1139,11 @@ a:hover, a:active {
   .main-navigation ul {
     display: block;
   }
+  ul.submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .main-navigation ul ul {
     -webkit-box-shadow: 7px 7px 5px rgba(28, 28, 27, 0.45);
             box-shadow: 7px 7px 5px rgba(28, 28, 27, 0.45);
@@ -1181,6 +1190,9 @@ a:hover, a:active {
   }
   .main-navigation ul {
     display: none;
+  }
+  ul.submenu {
+    display: block;
   }
   .menuisopen .main-navigation ul {
     display: block;
@@ -1262,18 +1274,21 @@ a:hover, a:active {
 @media (min-width: 767.1px) {
   .custom-logo, .scrolling .custom-logo {
     max-height: 60px;
+    width: auto;
   }
 }
 
 @media (max-width: 767px) {
   .custom-logo, .scrolling .custom-logo {
     max-height: 70px;
+    width: auto;
   }
 }
 
 @media (max-width: 575px) {
   .custom-logo, .scrolling .custom-logo {
     max-height: 50px;
+    width: auto;
   }
 }
 
