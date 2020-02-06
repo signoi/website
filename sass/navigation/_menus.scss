@@ -175,13 +175,35 @@ display: flex;
     top: 0;
 }
 .main-navigation ul li {
-    display: block;
+	display: block;
+	margin-right: 0;
 }
 .menu-toggle, .main-navigation.toggled ul {
     display: block;
     height: auto;
     margin: auto;
     text-align: center;
+}
+.main-navigation .menu-item-has-children a:after {
+	content: " ";
+    font-family: 'FontAwesome';
+    margin-left: 0;
+    width: 50%;
+    display: block;
+    height: 1px;
+    background: #c05344;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.menu-item-has-children a:hover {
+	color: #566272;
+}
+.main-navigation .current-menu-ancestor.menu-item-has-children > a{
+	color: #566272;
+}
+.menuisopen {
+	overflow: hidden;
 }
 }
 
