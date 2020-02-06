@@ -408,6 +408,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -435,6 +437,10 @@ h6 {
 }
 
 @media (max-width: 767.99px) {
+  h1 {
+    font-size: 45px;
+    line-height: 53px;
+  }
   h2 {
     font-size: 38px;
   }
@@ -453,6 +459,10 @@ h6 {
 }
 
 @media (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
   h2 {
     font-size: 35px;
   }
@@ -896,6 +906,12 @@ input[type="submit"]:focus a, .button:active a, .button:focus a {
   color: #fff;
 }
 
+@media (max-width: 767.99px) {
+  button {
+    font-size: 16px;
+  }
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -920,6 +936,7 @@ textarea {
   width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  font-size: 19px;
 }
 
 input[type="text"]:focus,
@@ -962,6 +979,27 @@ select {
 
 textarea {
   width: 100%;
+}
+
+@media (max-width: 767.99px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea {
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1541,8 +1579,7 @@ a:hover, a:active {
   margin-bottom: 0;
 }
 
-#above-fold h2 {
-  font-size: 60px;
+#above-fold h1 {
   font-weight: 700;
   color: #fff;
   line-height: 1.1em;
@@ -1790,50 +1827,6 @@ a:hover, a:active {
           animation-delay: .3s;
 }
 
-#callback-cta form {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-#callback-cta input[type="text"] {
-  padding: 10px 1em;
-  border-radius: 0;
-  border: none;
-  text-align: center;
-  font-size: 19px;
-  line-height: 1;
-  background: #fff;
-}
-
-#callback-cta input[type="text"]::-webkit-input-placeholder {
-  color: #bbc0c6;
-}
-
-#callback-cta input[type="text"]:-ms-input-placeholder {
-  color: #bbc0c6;
-}
-
-#callback-cta input[type="text"]::-ms-input-placeholder {
-  color: #bbc0c6;
-}
-
-#callback-cta input[type="text"]::placeholder {
-  color: #bbc0c6;
-}
-
-#callback-cta input[type="submit"] {
-  height: 43px;
-  margin-left: -5px;
-}
-
-#callback-cta input[type="submit"]:hover {
-  padding: 10px 2em;
-}
-
-#callback-cta .phone-form {
-  margin-bottom: 10px;
-}
-
 #callback-cta a:hover {
   text-decoration: none;
 }
@@ -1944,7 +1937,6 @@ a:hover, a:active {
 }
 
 #about button {
-  font-size: 19px;
   margin-top: 15px;
 }
 
@@ -2116,6 +2108,7 @@ a:hover, a:active {
 #use-cases .flipster .report-featured-image {
   max-width: 400px;
   margin: auto;
+  padding: 20px;
 }
 
 #use-cases .flipster h4 {
@@ -3881,9 +3874,7 @@ section.widget {
 .single-use-case #above-fold h1 {
   color: #fff;
   margin-top: auto;
-  font-size: 60px;
   margin-bottom: 30px;
-  line-height: 70px;
 }
 
 .single-use-case #above-fold p {
@@ -4000,7 +3991,6 @@ section.widget {
 }
 
 .single-use-case .use-case-content p {
-  font-size: 19px;
   opacity: 0;
 }
 
@@ -4199,7 +4189,6 @@ section.widget {
 .page-template-brands-agencies-page #above-fold h1 {
   color: #fff;
   margin-top: auto;
-  font-size: 60px;
   margin-bottom: 30px;
 }
 
@@ -4235,7 +4224,6 @@ section.widget {
       align-self: center;
   margin-bottom: auto;
   margin-left: 0;
-  font-size: 19px;
   width: 100%;
 }
 
@@ -4445,7 +4433,6 @@ section.widget {
 .page-template-about-page #above-fold h1 {
   color: #c05344;
   margin-top: auto;
-  font-size: 60px;
   margin-bottom: 30px;
 }
 
@@ -4630,7 +4617,6 @@ section.widget {
 .page-template-careers-page #above-fold h1 {
   color: #566272;
   margin-top: auto;
-  font-size: 60px;
   margin-bottom: 30px;
   line-height: 72px;
 }
@@ -4737,9 +4723,7 @@ section.widget {
 .page-template-thankyou-page #above-fold h1 {
   color: #c05344;
   margin-top: auto;
-  font-size: 60px;
   margin-bottom: 30px;
-  line-height: 72px;
 }
 
 .page-template-thankyou-page #above-fold p {
@@ -4829,9 +4813,7 @@ section.widget {
 .page-template-platform-page #above-fold h1 {
   color: #fff;
   margin-top: auto;
-  font-size: 60px;
   margin-bottom: 30px;
-  line-height: 72px;
 }
 
 .page-template-platform-page #above-fold p, .page-template-platform-page #above-fold .subtitle {
@@ -4889,7 +4871,6 @@ section.widget {
 
 .page-template-platform-page .platform-section p {
   margin-top: 0;
-  font-size: 19px;
 }
 
 .page-template-platform-page .platform-section .col.platform-text {

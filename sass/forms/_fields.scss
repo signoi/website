@@ -21,7 +21,7 @@ textarea {
 	padding-left: 10px;
 	width: 100%;
 	transition: all 0.2s ease-in-out;
-
+	font-size: 19px;
 	&:focus {
 		color: $color__text-input-focus;
 		border-left: 4px solid #cf4b3d;
@@ -48,4 +48,25 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+@media (max-width: 767.99px) {
+	input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+		font-size: 16px;
+	}
 }

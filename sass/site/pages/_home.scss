@@ -23,8 +23,7 @@
         margin: auto;
         margin-bottom: 0;
     }
-    h2 {
-        font-size: 60px;
+    h1 {
         font-weight: $fontweight__bold;
         color: #fff;
         line-height: 1.1em;
@@ -240,31 +239,6 @@
         margin-bottom: 1.5em;
         animation-delay: .3s;
     }
-    form {
-        animation-delay: .6s;
-    }
-    input[type="text"] {
-        padding: 10px 1em;
-        border-radius: 0;
-        border: none;
-        text-align: center;
-        font-size: 19px;
-        line-height: 1;
-        background: #fff;
-    }
-    input[type="text"]::placeholder {
-        color: $color__lightgrey;
-    }
-    input[type="submit"] {
-        height: 43px;
-        margin-left: -5px;
-        &:hover { 
-            padding: 10px 2em;
-        }
-    }
-    .phone-form {
-        margin-bottom: 10px;
-    }
     a:hover {
         text-decoration: none;
     }
@@ -350,7 +324,6 @@ margin-top: 115px;
     margin-left: 20px;
     }
     button {
-        font-size: 19px;
         margin-top: 15px;
     }
 
@@ -488,6 +461,7 @@ margin: 80px 0 160px 0;
         .report-featured-image {
             max-width: 400px;
             margin: auto;
+            padding: 20px;
         }
         h4 {
             font-size: 29px;

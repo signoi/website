@@ -9,6 +9,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 font-weight: $fontweight__bold;
+font-size: 60px;
+line-height: 72px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -37,6 +39,10 @@ h6 {
 	
 
 @media (max-width: 767.99px) {
+	h1 {
+		font-size: 45px;
+		line-height: 53px;
+	}
 	h2 {
 		font-size: 38px;
 	}
@@ -58,6 +64,10 @@ h6 {
 }
 
 @media (max-width: 450px) {
+	h1 {
+		font-size: 40px;
+		line-height: 45px;
+	}
 	h2 {
 		font-size: 35px;
 	}
