@@ -37,6 +37,7 @@ get_header();
 		</div>
 		</div>	
 </section>
+<div id="scrollto"></div>
 <?php if( have_rows('main_content') ): 
 		while( have_rows('main_content') ): the_row(); 
 ?>
