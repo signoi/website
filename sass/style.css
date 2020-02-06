@@ -1201,10 +1201,12 @@ a:hover, a:active {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    top: -100vh;
+    top: 0;
     left: 0;
-    -webkit-animation: all .6s ease-in-out both;
-            animation: all .6s ease-in-out both;
+    -webkit-transform: translatey(-100vh);
+            transform: translatey(-100vh);
+    -webkit-animation: transform .6s ease-in-out both;
+            animation: transform .6s ease-in-out both;
     background: #fff;
     z-index: 99;
     display: -webkit-box;
@@ -1218,7 +1220,8 @@ a:hover, a:active {
     position: relative;
   }
   .menuisopen .menu-primary-container {
-    top: 0;
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
   }
   .main-navigation ul li {
     display: block;

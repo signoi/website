@@ -159,9 +159,10 @@ ul.submenu {
 width: 100vw;
 height: 100vh;
 position: absolute;
-top: -100vh;
+top: 0;
 left: 0;
-animation: all .6s ease-in-out both;
+transform: translatey(-100vh);
+animation: transform .6s ease-in-out both;
 background: #fff;
 z-index: 99;
 display: flex;
@@ -172,7 +173,7 @@ display: flex;
 	position: relative;
 }
 .menuisopen .menu-primary-container {
-    top: 0;
+	transform: translatey(0);
 }
 .main-navigation ul li {
 	display: block;
