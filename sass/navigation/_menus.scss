@@ -148,7 +148,7 @@
 }
 .menu-primary-container {
 width: 100vw;
-height: calc(100vh - 96px);
+height: 100vh;
 position: absolute;
 top: -100vh;
 left: 0;
@@ -158,8 +158,12 @@ z-index: 99;
 display: flex;
     justify-content: space-around;
 }
+.menu-toggle, .site-branding {
+	z-index: 9999;
+	position: relative;
+}
 .menuisopen .menu-primary-container {
-    top: 96px;
+    top: 0;
 }
 .main-navigation ul li {
     display: block;
