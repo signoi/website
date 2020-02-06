@@ -141,13 +141,13 @@
 	}
 }
 
+.main-navigation ul {
+    display: block;
+}
 
 @media screen and (max-width: 767px) {
 .menu-toggle, .main-navigation.toggled ul {
     display: block;
-}
-.main-navigation ul {
-    display: none;
 }
 ul.submenu {
 	display: block;
@@ -162,7 +162,7 @@ position: absolute;
 top: 0;
 left: 0;
 transform: translatey(-100vh);
-animation: transform .6s ease-in-out both;
+transition: transform .6s ease-in-out;
 background: #fff;
 z-index: 99;
 display: flex;
@@ -179,7 +179,7 @@ display: flex;
 	display: block;
 	margin-right: 0;
 }
-.menu-toggle, .main-navigation.toggled ul {
+.menu-toggle, .main-navigation ul {
     display: block;
     height: auto;
     margin: auto;
@@ -205,6 +205,9 @@ display: flex;
 }
 .menuisopen {
 	overflow: hidden;
+}
+.main-navigation .sub-menu a:after {
+    display: none;
 }
 }
 

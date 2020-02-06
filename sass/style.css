@@ -1184,12 +1184,13 @@ a:hover, a:active {
   }
 }
 
+.main-navigation ul {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .menu-toggle, .main-navigation.toggled ul {
     display: block;
-  }
-  .main-navigation ul {
-    display: none;
   }
   ul.submenu {
     display: block;
@@ -1205,8 +1206,10 @@ a:hover, a:active {
     left: 0;
     -webkit-transform: translatey(-100vh);
             transform: translatey(-100vh);
-    -webkit-animation: transform .6s ease-in-out both;
-            animation: transform .6s ease-in-out both;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
     background: #fff;
     z-index: 99;
     display: -webkit-box;
@@ -1227,7 +1230,7 @@ a:hover, a:active {
     display: block;
     margin-right: 0;
   }
-  .menu-toggle, .main-navigation.toggled ul {
+  .menu-toggle, .main-navigation ul {
     display: block;
     height: auto;
     margin: auto;
@@ -1253,6 +1256,9 @@ a:hover, a:active {
   }
   .menuisopen {
     overflow: hidden;
+  }
+  .main-navigation .sub-menu a:after {
+    display: none;
   }
 }
 
