@@ -1192,11 +1192,15 @@ a:hover, a:active {
   .menu-toggle, .main-navigation.toggled ul {
     display: block;
   }
+  .menu-toggle {
+    background: #fff;
+  }
   ul.submenu {
     display: block;
   }
   .menuisopen .main-navigation ul {
     display: block;
+    margin: auto;
   }
   .menu-primary-container {
     width: 100vw;
@@ -1259,6 +1263,12 @@ a:hover, a:active {
   }
   .main-navigation .sub-menu a:after {
     display: none;
+  }
+  .current_page_item a:after {
+    display: none;
+  }
+  .main-navigation ul .current_page_item a, .main-navigation ul .current_page_item a:visited {
+    color: #c05344;
   }
 }
 
@@ -2603,6 +2613,10 @@ a:hover, a:active {
 /*--search form--*/
 .is-form-style-1.is-form-id-2572 .is-search-input:focus, .is-form-style-1.is-form-id-2572 .is-search-input:hover, .is-form-style-1.is-form-id-2572 .is-search-input, .is-form-style-2.is-form-id-2572 .is-search-input:focus, .is-form-style-2.is-form-id-2572 .is-search-input:hover, .is-form-style-2.is-form-id-2572 .is-search-input, .is-form-style-3.is-form-id-2572 .is-search-input:focus, .is-form-style-3.is-form-id-2572 .is-search-input:hover, .is-form-style-3.is-form-id-2572 .is-search-input, .is-form-id-2572 .is-search-input:focus, .is-form-id-2572 .is-search-input:hover, .is-form-id-2572 .is-search-input {
   background: rgba(0, 0, 0, 0);
+}
+
+.is-form-style input.is-search-input {
+  height: 40px;
 }
 
 .is-search-form {

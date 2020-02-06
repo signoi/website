@@ -32,6 +32,10 @@ display: none;
     background: rgba(0,0,0,0);
 }
 
+.is-form-style input.is-search-input {
+    height: 40px;
+}
+
 .is-search-form {
     display: flex;
     label, input[type="text"] {

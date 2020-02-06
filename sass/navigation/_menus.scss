@@ -149,11 +149,15 @@
 .menu-toggle, .main-navigation.toggled ul {
     display: block;
 }
+.menu-toggle {
+	background: #fff;
+}
 ul.submenu {
 	display: block;
 }
 .menuisopen .main-navigation ul {
-    display: block;
+	display: block;
+	margin: auto;
 }
 .menu-primary-container {
 width: 100vw;
@@ -208,6 +212,12 @@ display: flex;
 }
 .main-navigation .sub-menu a:after {
     display: none;
+}
+.current_page_item a:after {
+	display: none;
+}
+.main-navigation ul .current_page_item a, .main-navigation ul .current_page_item a:visited {
+color:	#c05344;
 }
 }
 
