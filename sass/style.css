@@ -3387,6 +3387,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   line-height: 1.1;
   margin-top: 20px;
   font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
 }
 
 .views-template-new-article-template- .subheading {
@@ -3974,6 +3976,8 @@ section.widget {
   color: #fff;
   margin-top: auto;
   margin-bottom: 30px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .single-use-case #above-fold p {
@@ -4099,21 +4103,15 @@ section.widget {
 }
 
 .single-use-case .use-case-content .image-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .single-use-case .use-case-content .text-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .single-use-case .use-case-content.even {
@@ -4124,8 +4122,8 @@ section.widget {
 
 .single-use-case .use-case-content.even .signoi-logo-background {
   position: absolute;
-  right: -25%;
-  opacity: 10%;
+  right: -33%;
+  opacity: .1;
   z-index: 0;
   top: 15%;
 }
@@ -4289,6 +4287,8 @@ section.widget {
   color: #fff;
   margin-top: auto;
   margin-bottom: 30px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .page-template-brands-agencies-page #above-fold p {
@@ -4533,6 +4533,8 @@ section.widget {
   color: #c05344;
   margin-top: auto;
   margin-bottom: 30px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .page-template-about-page #above-fold p {
@@ -4717,7 +4719,8 @@ section.widget {
   color: #566272;
   margin-top: auto;
   margin-bottom: 30px;
-  line-height: 72px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .page-template-careers-page #above-fold p {
@@ -4823,6 +4826,8 @@ section.widget {
   color: #c05344;
   margin-top: auto;
   margin-bottom: 30px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .page-template-thankyou-page #above-fold p {
@@ -4913,6 +4918,8 @@ section.widget {
   color: #fff;
   margin-top: auto;
   margin-bottom: 30px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .page-template-platform-page #above-fold p, .page-template-platform-page #above-fold .subtitle {
@@ -5144,6 +5151,8 @@ section.widget {
   font-size: 42px;
   margin-bottom: 30px;
   line-height: 50px;
+  max-width: none;
+  margin-left: 0;
 }
 
 .page-template-contact-page #above-fold p {

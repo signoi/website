@@ -10,6 +10,8 @@
             color: #fff;
             margin-top: auto;
             margin-bottom: 30px;
+            max-width: none;
+            margin-left: 0;
         }
         p {
             max-width: none;
@@ -109,13 +111,12 @@
     opacity: 0;
         }
         .image-col {
-            display: flex;
+            justify-content: space-around;
         }
         .text-col {
-            display: flex;
-            flex-direction: column;
             margin-top: auto;
             margin-bottom: auto;
+            justify-content: space-around;
         }
     }
     .use-case-content.even {
@@ -124,8 +125,8 @@
         overflow: hidden;
         .signoi-logo-background {
             position: absolute;
-            right: -25%;
-            opacity: 10%;
+            right: -33%;
+            opacity: .1;
             z-index: 0;
             top: 15%;
         }
