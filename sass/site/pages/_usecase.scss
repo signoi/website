@@ -21,7 +21,7 @@
         .col.twothird {
             display: flex;
             flex-direction: column;
-            padding: 80px 15px;
+            padding: 80px 15px 80px 80px;
         }
         .col.third {
             display: flex;
@@ -249,5 +249,70 @@
             .single-blog-item  {
                 animation-delay: .3s;
             }
+    }
+
+    /*--media queries--*/
+    @media (max-width: 980px) {
+        #above-fold .row {
+            display: block;
+        }
+        #above-fold .col {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+        #above-fold .col.twothird {
+            padding: 15px;
+            padding-top: 80px;
+        }
+        #above-fold .col.third img {
+            width: 100%;
+            margin-left: auto;
+        }
+        .use-case-content.odd.start .image-col img, .use-case-content.even.start .image-col img {
+            animation: fade-in-top 1s ease both;
+        }
+        .use-case-content.start p {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        .use-case-content .text-col {
+        margin: 0;
+        }
+       .use-case-content .row.odd h2, .use-case-content .row.odd p, .use-case-content .row.even h2, .use-case-content .row.even p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 500px;
+       }
+       .use-case-content.even .signoi-logo-background {
+           display: none;
+       }
+       #recent-posts .single-blog-item {
+        max-width: 420px;
+        margin: auto;
+       }
+    }
+    @media (max-width: 600px) {
+        #use-cases-menu ul li {
+            border: 1px solid $color__red;
+            border-top: 1px solid $color__red;
+            padding: 7px;
+            margin: 5px;
+        }
+        #use-cases-menu ul li:last-child {
+            border-right: 1px solid $color__red;
+            margin-right: 5px;
+            padding-right: 7px;
+        }
+      #use-cases-menu ul {
+            margin: 20px auto;
+        }
+    }
+    @media (max-width: 400px) {
+        #use-cases-menu ul li {
+            display: block;
+        }
+        #recent-posts h2 {
+            margin-bottom: 15px;
+        }
     }
 }
