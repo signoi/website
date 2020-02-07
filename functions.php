@@ -184,7 +184,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
 	add_image_size( 'square', 800, 800, true ); // (cropped)
-	add_image_size( 'blog', 400, 284, true ); // (cropped)
+	add_image_size( 'blog', 600, 400, true ); // (cropped)
 	add_image_size( 'square-small', 300, 300, true ); // (cropped)
 }
 

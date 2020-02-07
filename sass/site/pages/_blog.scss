@@ -1180,6 +1180,10 @@ section.widget {
 	.featured .blog-image img {
     display: block !important;
 }
+.single-blog-item.featured {
+    max-width: 400px;
+    margin: auto;
+}
   .blog-category {
   font-size: .8rem;
 		    margin-top: 0 !important;
@@ -1193,6 +1197,17 @@ section.widget {
 	.featured .blog-inner .blog-image, .featured .blog-inner .blog-image img, .featured .blog-inner:hover .blog-image, .featured .blog-inner:hover .blog-image img {
     border-radius: 5px 5px 0 0;
 }
+}
+
+@media (max-width: 650px) {
+    .new-blog {
+        display: block;
+    }
+    .new-blog .col-sm-4 {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
 }
 	
 	@media (max-width: 575px) {
