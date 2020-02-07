@@ -3290,30 +3290,6 @@ blockquote:before {
   padding: 20px;
 }
 
-.mailing-list-trigger.fixed {
-  position: fixed;
-  left: -50px;
-  top: 186.5px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  background: #efc73e;
-  padding: 10px 15px;
-  border-radius: 0 0 5px 5px;
-  color: #546274;
-  font-size: 1.2rem;
-  letter-spacing: .2px;
-}
-
-.mailing-list-trigger.fixed .mailing-list-text {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.mailing-list-trigger.fixed .far {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
 .single-blog-item.featured {
   padding-top: 0;
 }
