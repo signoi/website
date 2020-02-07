@@ -1225,7 +1225,7 @@ a:hover, a:active {
   }
   .menu-primary-container {
     width: 100vw;
-    margin-top: 80px;
+    margin-top: 75px;
     height: 100vh;
     overflow-y: scroll;
     position: absolute;
@@ -2549,7 +2549,7 @@ a:hover, a:active {
   }
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767px) {
   #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
     font-size: 24px;
   }
@@ -4042,6 +4042,12 @@ section.widget {
   }
 }
 
+@media (max-width: 800px) {
+  .single-post .row {
+    width: 95%;
+  }
+}
+
 @media (max-width: 767px) {
   .single-post .row {
     width: 95%;
@@ -4114,6 +4120,23 @@ section.widget {
 }
 
 @media (max-width: 575px) {
+  .single-blog-item.featured .category-area {
+    display: block;
+  }
+  .featured .blog-image, .featured .blog-text-area, .featured .blog-category, .featured .reading-time {
+    max-width: 100%;
+  }
+  .featured .reading-time {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .featured .blog-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .featured .blog-category {
+    margin-bottom: 10px;
+  }
   .views-template-new-article-template- .post-content {
     padding: 0 !important;
   }
@@ -4197,8 +4220,8 @@ section.widget {
     margin-bottom: 25px;
   }
   .views-template-new-article-template- h1 {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
@@ -4919,15 +4942,19 @@ section.widget {
     float: none;
     display: block;
   }
+  .page-template-brands-agencies-page #above-fold {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 550px) {
-  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li {
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li, .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li:first-child, .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li:last-child, .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li.ui-tabs-active {
     width: 100%;
     display: block;
     text-align: center;
     margin: 0;
     margin-bottom: 5px;
+    font-size: 20px;
   }
   .page-template-brands-agencies-page #case-studies .header-with-image h2 {
     font-size: 30px;
@@ -4935,6 +4962,12 @@ section.widget {
   }
   .page-template-brands-agencies-page #case-studies .header-with-image img {
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page-template-brands-agencies-page #above-fold {
+    padding: 25px 0;
   }
 }
 
@@ -4956,6 +4989,7 @@ section.widget {
 --------------------------------------------------------------*/
 .page-template-about-page {
   /*--animations--*/
+  /*--media queries--*/
 }
 
 .page-template-about-page #above-fold {
@@ -5137,11 +5171,24 @@ section.widget {
           animation-delay: .6s;
 }
 
+@media (max-width: 767px) {
+  .page-template-about-page #above-fold {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page-template-about-page #above-fold {
+    padding-top: 25px;
+  }
+}
+
 /*--------------------------------------------------------------
 ##  Careers Page
 --------------------------------------------------------------*/
 .page-template-careers-page {
   /*--animations--*/
+  /*--media queries--*/
 }
 
 .page-template-careers-page #above-fold {
@@ -5252,6 +5299,18 @@ section.widget {
 .page-template-careers-page #positions .col.quarter.start .job-info {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
+}
+
+@media (max-width: 767px) {
+  .page-template-careers-page #above-fold {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page-template-careers-page #above-fold {
+    padding-top: 25px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -5802,7 +5861,7 @@ section.widget {
 }
 
 @media (max-width: 450px) {
-  .page-template-contact-page .book-call-trigger.fixed {
+  .page-template-contact-page #book-call-trigger.fixed {
     display: none;
   }
   .page-template-contact-page #above-fold {

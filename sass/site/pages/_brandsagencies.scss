@@ -246,14 +246,18 @@
         float: none;
         display: block;
     }
+    #above-fold {
+        padding: 40px 0;
+    }
 }
 @media (max-width: 550px) {
-    #case-studies .ui-tabs .ui-tabs-nav li {
+    #case-studies .ui-tabs .ui-tabs-nav li, #case-studies .ui-tabs .ui-tabs-nav li:first-child, #case-studies .ui-tabs .ui-tabs-nav li:last-child, #case-studies .ui-tabs .ui-tabs-nav li.ui-tabs-active {
         width: 100%;
         display: block;
         text-align: center; 
         margin: 0;
         margin-bottom: 5px;
+        font-size: 20px;
     }
     #case-studies .header-with-image h2 {
         font-size: 30px;
@@ -261,6 +265,12 @@
     }
     #case-studies .header-with-image img {
         margin-right: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    #above-fold {
+        padding: 25px 0;
     }
 }
 @media (max-width: 400px) {

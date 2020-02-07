@@ -146,6 +146,18 @@
     }
 }
 
+/*--media queries--*/
+@media (max-width: 767px) {
+    #above-fold {
+        padding-top: 40px;
+    } 
+}
+@media (max-width: 450px) {
+    #above-fold {
+        padding-top: 25px;
+    }
+}
+
 }
 
 

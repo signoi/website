@@ -87,4 +87,17 @@
 #positions .col.quarter.start .job-info {
     animation: fade-in-bottom 1s ease both;
 }
+
+
+/*--media queries--*/
+@media (max-width: 767px) {
+    #above-fold {
+        padding-top: 40px;
+    } 
+}
+@media (max-width: 450px) {
+    #above-fold {
+        padding-top: 25px;
+    }
+}
 }
