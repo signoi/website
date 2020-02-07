@@ -159,10 +159,15 @@ ul.submenu {
 	display: block;
 	margin: auto;
 }
+#primary-menu {
+	padding-top: 20px;
+    padding-bottom: 40px;
+}
 .menu-primary-container {
 width: 100vw;
-padding-top: 80px;
-min-height: 100vh;
+margin-top: 80px;
+height: 100vh;
+overflow-y: scroll;
 position: absolute;
 top: 0;
 left: 0;
@@ -246,6 +251,6 @@ color:	#c05344;
 
 @media (max-width: 450px) {
 	#masthead .inner {
-        padding: 0;
+        padding: 0 !important;
     }
 }

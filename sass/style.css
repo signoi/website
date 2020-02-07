@@ -464,16 +464,16 @@ h6 {
     line-height: 45px;
   }
   h2 {
-    font-size: 35px;
-  }
-  h3 {
     font-size: 32px;
   }
-  h4 {
+  h3 {
     font-size: 28px;
   }
+  h4 {
+    font-size: 26px;
+  }
   h5 {
-    font-size: 25px;
+    font-size: 24px;
   }
   h6 {
     font-size: 22px;
@@ -1203,10 +1203,15 @@ a:hover, a:active {
     display: block;
     margin: auto;
   }
+  #primary-menu {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
   .menu-primary-container {
     width: 100vw;
-    padding-top: 80px;
-    min-height: 100vh;
+    margin-top: 80px;
+    height: 100vh;
+    overflow-y: scroll;
     position: absolute;
     top: 0;
     left: 0;
@@ -1298,7 +1303,7 @@ a:hover, a:active {
 
 @media (max-width: 450px) {
   #masthead .inner {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 
