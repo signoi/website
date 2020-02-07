@@ -543,6 +543,7 @@ big {
 @media (max-width: 767.99px) {
   p {
     font-size: 16px;
+    margin-bottom: 10px;
   }
 }
 
@@ -3988,16 +3989,6 @@ section.widget {
     padding-bottom: 20px;
     margin-top: 20px;
   }
-  h1 {
-    font-size: 2rem;
-  }
-  .custom-logo, .scrolling .custom-logo {
-    max-height: 50px;
-  }
-  .site-branding {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 }
 
 .textwidget ._form {
@@ -5247,6 +5238,10 @@ section.widget {
 @media (max-width: 767px) {
   .page-template-platform-page #above-fold .col.twothird {
     padding-top: 40px;
+  }
+  .page-template-platform-page .platform-section h2 {
+    margin-bottom: 15px;
+    line-height: 38px;
   }
 }
 
