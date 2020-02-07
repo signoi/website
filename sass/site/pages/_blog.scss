@@ -1,7 +1,8 @@
 .mailing-list-trigger.fixed {
     position: fixed;
-    left: -50px;
-    top: 186.5px;
+    left: 0;
+    transform-origin: top left;
+    top: 300px;
     transform: rotate(-90deg);
     background: #efc73e;
     padding: 10px 15px;
