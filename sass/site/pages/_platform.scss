@@ -184,10 +184,16 @@
             margin-bottom: 15px;
             line-height: 38px;
         }
+        #above-fold h1 {
+            margin-bottom: 20px;
+        }
     }
     @media (max-width: 450px) {
         #above-fold .col.twothird {
             padding-top: 25px;
+        }
+        #above-fold h1 {
+            margin-bottom: 15px;
         }
     }
 }

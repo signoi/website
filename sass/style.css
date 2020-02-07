@@ -5460,11 +5460,17 @@ section.widget {
     margin-bottom: 15px;
     line-height: 38px;
   }
+  .page-template-platform-page #above-fold h1 {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 450px) {
   .page-template-platform-page #above-fold .col.twothird {
     padding-top: 25px;
+  }
+  .page-template-platform-page #above-fold h1 {
+    margin-bottom: 15px;
   }
 }
 
