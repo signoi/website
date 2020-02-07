@@ -166,7 +166,7 @@ min-height: 100vh;
 position: absolute;
 top: 0;
 left: 0;
-transform: translatey(-100vh);
+transform: translatey(-100%);
 transition: transform .6s ease-in-out;
 background: #fff;
 z-index: 99;
