@@ -2544,6 +2544,9 @@ a:hover, a:active {
 }
 
 @media (max-width: 767.99px) {
+  #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
+    font-size: 22px;
+  }
   #above-fold h2 {
     font-size: 45px;
   }
@@ -4453,6 +4456,16 @@ section.widget {
     max-width: 420px;
     margin: auto;
   }
+  .single-use-case #above-fold button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-use-case #above-fold .col.twothird {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -4472,12 +4485,18 @@ section.widget {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .single-use-case #use-cases-menu ul li {
     display: block;
   }
   .single-use-case #recent-posts h2 {
     margin-bottom: 15px;
+  }
+  .single-use-case #above-fold .col.twothird {
+    padding-top: 25px;
+  }
+  .single-use-case #above-fold h1 {
+    font-size: 35px;
   }
 }
 
