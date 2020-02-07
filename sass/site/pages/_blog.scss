@@ -337,27 +337,7 @@ margin-bottom: 0;
     width: 100%;
 }
 
-@media (min-width: 475px) {
-.col-sm-4 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-    -moz-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-}
 
-@media (min-width: 850px) {
-.col-sm-4 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33333%;
-    -moz-box-flex: 0;
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-}
-}
 
 .single-blog-item {
     height: 100%;
@@ -1145,6 +1125,77 @@ section.widget {
 	box-shadow: none;
 }
 
+.textwidget ._form {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.textwidget ._form input, .textwidget ._form textarea {
+	border-radius: 0 !important;
+	background: #fff !important;
+}
+
+
+.textwidget ._form  ._form_element p {
+	color: #7a7c84;
+}
+
+
+
+
+.textwidget ._form ._submit, 
+.textwidget #_form_3_ ._submit, .textwidget  #_form_5_  ._submit {
+	border-radius: 0 !important;
+	background: #000 !important;
+}
+
+.textwidget ._form ._submit:hover, 
+.textwidget #_form_3_ ._submit:hover, .textwidget  #_form_5_  ._submit:hover {
+	background: #3e69dc !important;
+}
+
+
+ .widget-small h2 {
+	margin-bottom: 15px;
+}
+
+/*--media queries--*/
+
+@media (min-width: 900.1px) {
+    .new-blog .col-sm-4 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 33.33333%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    }
+
+@media (min-width: 650.1px) and (max-width: 900px) {
+    .new-blog .col-sm-4 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    }
+
+    @media (max-width: 650px) {
+        .new-blog {
+            display: block !important;
+        }
+        .new-blog .col-sm-4 {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+
 @media screen and (max-width: 895.9px) {
 	.sfsi_widget {
     top: 80px !important;
@@ -1180,10 +1231,6 @@ section.widget {
 	.featured .blog-image img {
     display: block !important;
 }
-.single-blog-item.featured {
-    max-width: 400px;
-    margin: auto;
-}
   .blog-category {
   font-size: .8rem;
 		    margin-top: 0 !important;
@@ -1199,16 +1246,7 @@ section.widget {
 }
 }
 
-@media (max-width: 650px) {
-    .new-blog {
-        display: block;
-    }
-    .new-blog .col-sm-4 {
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-    }
-}
+
 	
 	@media (max-width: 575px) {
 		.views-template-new-article-template- .sticky-social, .views-template-new-article-template- .post-content, .views-template-new-article-template- .post-sidebar, .post-content-header .reading-time, .post-content-header .post-category {
@@ -1271,43 +1309,6 @@ section.widget {
     margin-top: 20px;
 }
 	}
-
-
-.textwidget ._form {
-	width: 100%;
-	max-width: 100%;
-	padding: 0 !important;
-	margin: 0 !important;
-}
-
-.textwidget ._form input, .textwidget ._form textarea {
-	border-radius: 0 !important;
-	background: #fff !important;
-}
-
-
-.textwidget ._form  ._form_element p {
-	color: #7a7c84;
-}
-
-
-
-
-.textwidget ._form ._submit, 
-.textwidget #_form_3_ ._submit, .textwidget  #_form_5_  ._submit {
-	border-radius: 0 !important;
-	background: #000 !important;
-}
-
-.textwidget ._form ._submit:hover, 
-.textwidget #_form_3_ ._submit:hover, .textwidget  #_form_5_  ._submit:hover {
-	background: #3e69dc !important;
-}
-
-
- .widget-small h2 {
-	margin-bottom: 15px;
-}
 
 
 /*animations*/ 
