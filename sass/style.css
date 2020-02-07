@@ -3933,6 +3933,55 @@ section.widget {
   margin-bottom: 15px;
 }
 
+/*animations*/
+.new-blog .single-blog-item {
+  opacity: 0;
+}
+
+.new-blog .single-blog-item.start {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up .mailing-list-icon, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-text, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-trigger {
+  opacity: 0;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-icon {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-text {
+  -webkit-animation: fade-in-left 1s ease both;
+          animation: fade-in-left 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+.page-template-blog-page-template .no-sidebar .single-blog-item.featured {
+  opacity: 0;
+}
+
+.page-template-blog-page-template .no-sidebar.start .single-blog-item.featured {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
+.views-template-new-article-template- .post-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*--media queries--*/
 @media (min-width: 900.1px) {
   .new-blog .col-sm-4 {
@@ -3981,10 +4030,50 @@ section.widget {
   }
 }
 
-.views-template-new-article-template- .post-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 800px) {
+  .mailing-list-sign-up.blog-footer .mailing-list-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mailing-list-sign-up.blog-footer .mailing-list-icon {
+    min-width: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mailing-list-sign-up.blog-footer .mailing-list-inner {
+    display: block;
+    max-width: 100%;
+  }
+  .mailing-list-sign-up.blog-footer .mailing-list-icon {
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .mailing-list-sign-up.blog-footer .mailing-list-text {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .mailing-list-sign-up.blog-footer.start .mailing-list-icon {
+    -webkit-animation: fade-in-bottom 1s ease both;
+            animation: fade-in-bottom 1s ease both;
+  }
+  .mailing-list-sign-up.blog-footer.start .mailing-list-text {
+    -webkit-animation: fade-in-bottom 1s ease both;
+            animation: fade-in-bottom 1s ease both;
+  }
+  .mailing-list-sign-up.blog-footer.start .mailing-list-trigger {
+    -webkit-animation: fade-in-bottom 1s ease both;
+            animation: fade-in-bottom 1s ease both;
+  }
+  .mailing-list-sign-up.blog-footer.start .mailing-list-text {
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
+  }
+  .mailing-list-sign-up.blog-footer.start .mailing-list-trigger {
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+  }
 }
 
 @media (max-width: 700px) {
@@ -4075,47 +4164,10 @@ section.widget {
   }
 }
 
-/*animations*/
-.new-blog .single-blog-item {
-  opacity: 0;
-}
-
-.new-blog .single-blog-item.start {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up .mailing-list-icon, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-text, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-trigger {
-  opacity: 0;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-icon {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-text {
-  -webkit-animation: fade-in-left 1s ease both;
-          animation: fade-in-left 1s ease both;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-blog-page-template .no-sidebar .single-blog-item.featured {
-  opacity: 0;
-}
-
-.page-template-blog-page-template .no-sidebar.start .single-blog-item.featured {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
+@media (max-width: 450px) {
+  .mailing-list-trigger.fixed {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -1203,6 +1203,10 @@ section.widget {
     }
 }
 
+.views-template-new-article-template- .post-area {
+    display: flex;
+}
+
 /*--media queries--*/
 
 @media (min-width: 900.1px) {
@@ -1254,10 +1258,17 @@ section.widget {
     padding: 20px;
     }
 }
-	.views-template-new-article-template- .post-area {
-    display: flex;
+
+@media (max-width: 800px) {
+    .mailing-list-sign-up.blog-footer .mailing-list-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mailing-list-sign-up.blog-footer .mailing-list-icon {
+        min-width: 60px;
+    }
 }
-}
+
 
 @media (max-width: 767px) {
     .mailing-list-sign-up.blog-footer .mailing-list-inner {
