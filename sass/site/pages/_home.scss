@@ -396,6 +396,10 @@ margin: 80px 0 160px 0;
     }
 }
 
+#reports {
+    display: none;
+}
+
 #use-cases {
     background: #566273;
     position: relative;
@@ -485,10 +489,12 @@ margin: 80px 0 160px 0;
             visibility: hidden;
             transition: opacity 0.4s ease;
         }
+        /*--
         .flipster__item--past-1, .flipster__item--future-1 {
             opacity: 1;
             visibility: visible;
         }
+        --*/
         .flipster__button:hover, .flipster__button:focus {
             opacity: 1;
             border: none;

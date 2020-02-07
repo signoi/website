@@ -2129,6 +2129,10 @@ a:hover, a:active {
   bottom: -60px;
 }
 
+#reports {
+  display: none;
+}
+
 #use-cases {
   background: #566273;
   position: relative;
@@ -2214,6 +2218,15 @@ a:hover, a:active {
   display: none;
 }
 
+#use-cases .flipster {
+  /*--
+        .flipster__item--past-1, .flipster__item--future-1 {
+            opacity: 1;
+            visibility: visible;
+        }
+        --*/
+}
+
 #use-cases .flipster .report-featured-image {
   max-width: 400px;
   margin: auto;
@@ -2246,11 +2259,6 @@ a:hover, a:active {
   visibility: hidden;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
-}
-
-#use-cases .flipster .flipster__item--past-1, #use-cases .flipster .flipster__item--future-1 {
-  opacity: 1;
-  visibility: visible;
 }
 
 #use-cases .flipster .flipster__button:hover, #use-cases .flipster .flipster__button:focus {

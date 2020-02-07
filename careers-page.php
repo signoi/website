@@ -58,7 +58,8 @@ $terms = get_field('job_category');
 
 				</div>
 			</div>
-			<?php endwhile; ?>
+			<?php endwhile; else : ?>
+			<p>We have no current vacancies at present.</p>
 	</div>
 
 </section>
