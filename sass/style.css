@@ -3264,7 +3264,7 @@ blockquote:before {
 }
 
 .views-template-new-article-template- #content {
-  overflow-x: visible;
+  overflow: visible;
 }
 
 .blog-header-inner {
@@ -4041,6 +4041,9 @@ section.widget {
 }
 
 @media (max-width: 767px) {
+  .single-post .row {
+    width: 95%;
+  }
   .mailing-list-sign-up.blog-footer .mailing-list-inner {
     display: block;
     max-width: 100%;
@@ -4074,6 +4077,10 @@ section.widget {
     -webkit-animation-delay: .6s;
             animation-delay: .6s;
   }
+  .views-template-new-article-template- h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -4105,6 +4112,9 @@ section.widget {
 }
 
 @media (max-width: 575px) {
+  .views-template-new-article-template- .post-content {
+    padding: 0 !important;
+  }
   .views-template-new-article-template- .sticky-social, .views-template-new-article-template- .post-content, .views-template-new-article-template- .post-sidebar, .post-content-header .reading-time, .post-content-header .post-category {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -4117,6 +4127,8 @@ section.widget {
   }
   .sfsi_wicons {
     display: inline-block;
+    width: 30px !important;
+    height: 30px !important;
   }
   .post-content-header .reading-time, .post-content-header .post-category {
     padding: 0;
@@ -4151,6 +4163,7 @@ section.widget {
   }
   .mailing-list-sign-up.blog-footer .mailing-list-text {
     padding-left: 0;
+    padding-right: 0;
     margin-bottom: 20px;
   }
   .mailing-list-sign-up.blog-footer .mailing-list-button {
@@ -4162,11 +4175,37 @@ section.widget {
     padding-bottom: 20px;
     margin-top: 20px;
   }
+  .sticky-social {
+    display: block;
+    width: 100%;
+    position: relative;
+    min-width: 100%;
+    padding: 0;
+  }
+  .sfsi_shortcode_container {
+    float: none;
+  }
+  #secondary {
+    padding: 0;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .views-template-new-article-template- .widget {
+    margin-bottom: 25px;
+  }
+  .views-template-new-article-template- h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 450px) {
   .mailing-list-trigger.fixed {
     display: none;
+  }
+  #secondary {
+    padding: 0 20px;
   }
 }
 
