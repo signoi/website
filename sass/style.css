@@ -4009,7 +4009,7 @@ section.widget {
   }
   .new-blog .col-sm-4 {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     margin: auto;
     margin-top: 0;
   }
@@ -4109,7 +4109,7 @@ section.widget {
     display: block;
   }
   .featured .blog-inner .blog-image, .featured .blog-inner .blog-image img, .featured .blog-inner:hover .blog-image, .featured .blog-inner:hover .blog-image img {
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0 !important;
   }
 }
 
