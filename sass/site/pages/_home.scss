@@ -723,7 +723,7 @@ img, .col.half {
 
 @media (max-width: 767.99px) {
     #above-fold button,  #above-fold input[type="button"],  #above-fold input[type="reset"],  #above-fold input[type="submit"] {
-        font-size: 22px; 
+        font-size: 24px; 
     }
     #above-fold h2 {
         font-size: 45px;
@@ -732,9 +732,6 @@ img, .col.half {
         font-size: 18px;
     }
 
-    #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
-        font-size: 28px;
-    }
     .page-template-homepage-template #quantitative-semiotics .col.half:first-child:after {
         width: 80%;
         max-width: 80%;

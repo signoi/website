@@ -490,6 +490,12 @@ h6 {
   }
 }
 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
 p {
   margin-bottom: 1em;
   font-family: "Lato", sans-serif;
@@ -2545,16 +2551,13 @@ a:hover, a:active {
 
 @media (max-width: 767.99px) {
   #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
-    font-size: 22px;
+    font-size: 24px;
   }
   #above-fold h2 {
     font-size: 45px;
   }
   #above-fold p {
     font-size: 18px;
-  }
-  #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
-    font-size: 28px;
   }
   .page-template-homepage-template #quantitative-semiotics .col.half:first-child:after {
     width: 80%;
@@ -4433,7 +4436,7 @@ section.widget {
     width: 100%;
     margin-left: auto;
   }
-  .single-use-case .use-case-content.odd.start .image-col img, .single-use-case .use-case-content.even.start .image-col img {
+  .single-use-case .use-case-content.start .row.odd .image-col img, .single-use-case .use-case-content.start .row.even .image-col img {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
   }
@@ -4466,6 +4469,9 @@ section.widget {
   .single-use-case #above-fold .col.twothird {
     padding-top: 40px;
   }
+  .single-use-case #above-fold h1 {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -4497,6 +4503,7 @@ section.widget {
   }
   .single-use-case #above-fold h1 {
     font-size: 35px;
+    margin-bottom: 15px;
   }
 }
 

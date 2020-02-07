@@ -269,7 +269,7 @@
             width: 100%;
             margin-left: auto;
         }
-        .use-case-content.odd.start .image-col img, .use-case-content.even.start .image-col img {
+        .use-case-content.start .row.odd .image-col img, .use-case-content.start .row.even .image-col img {
             animation: fade-in-top 1s ease both;
         }
         .use-case-content.start p {
@@ -298,6 +298,9 @@
     @media (max-width: 767px) {
         #above-fold .col.twothird {
             padding-top: 40px;
+        }
+        #above-fold h1 {
+            margin-bottom: 20px;
         }
     }
     @media (max-width: 600px) {
@@ -328,6 +331,7 @@
         }
         #above-fold h1 {
             font-size: 35px;
+            margin-bottom: 15px;
         }
     }
 }
