@@ -4436,13 +4436,21 @@ section.widget {
     width: 100%;
     margin-left: auto;
   }
-  .single-use-case .use-case-content.start .row.odd .image-col img, .single-use-case .use-case-content.start .row.even .image-col img {
+  .single-use-case .use-case-content.start .row.odd .image-col img {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
   }
-  .single-use-case .use-case-content.start p {
+  .single-use-case .use-case-content.start .row.odd p, .single-use-case .use-case-content.start .row.odd h2 {
     -webkit-animation: fade-in-bottom 1s ease both;
             animation: fade-in-bottom 1s ease both;
+  }
+  .single-use-case .use-case-content.start .row.even .image-col img {
+    -webkit-animation: fade-in-bottom 1s ease both;
+            animation: fade-in-bottom 1s ease both;
+  }
+  .single-use-case .use-case-content.start .row.even p, .single-use-case .use-case-content.start .row.even h2 {
+    -webkit-animation: fade-in-top 1s ease both;
+            animation: fade-in-top 1s ease both;
   }
   .single-use-case .use-case-content .text-col {
     margin: 0;
@@ -5442,13 +5450,21 @@ section.widget {
     width: 100%;
     margin-left: auto;
   }
-  .page-template-platform-page .platform-section.odd.start .image-col img, .page-template-platform-page .platform-section.even.start .image-col img {
+  .page-template-platform-page .platform-section.odd.start .image-col img {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
   }
-  .page-template-platform-page .platform-section.start p {
+  .page-template-platform-page .platform-section.odd.start p, .page-template-platform-page .platform-section.odd.start h2, .page-template-platform-page .platform-section.odd.start p.subheading {
     -webkit-animation: fade-in-bottom 1s ease both;
             animation: fade-in-bottom 1s ease both;
+  }
+  .page-template-platform-page .platform-section.even.start .image-col img {
+    -webkit-animation: fade-in-bottom 1s ease both;
+            animation: fade-in-bottom 1s ease both;
+  }
+  .page-template-platform-page .platform-section.even.start p, .page-template-platform-page .platform-section.even.start h2, .page-template-platform-page .platform-section.even.start p.subheading {
+    -webkit-animation: fade-in-top 1s ease both;
+            animation: fade-in-top 1s ease both;
   }
 }
 
