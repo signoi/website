@@ -1,3 +1,8 @@
+.page-template-homepage-template .abovefoldcopy {
+    max-width: 600px;
+    text-align: center;
+}
+
 #above-fold {
     min-height: calc(100vh - 104px);
     display: flex;
@@ -27,7 +32,6 @@
         font-weight: $fontweight__bold;
         color: #fff;
         line-height: 1.1em;
-        max-width: 740px;
         margin: auto;
         align-self: flex-start;
         margin-top: 80px;
@@ -36,7 +40,6 @@
     p {
         font-size: 22px;
         color: #fff;
-        max-width: 580px;
         align-self: center;
         margin: auto;
         margin-top: 30px;
@@ -124,6 +127,7 @@
 		margin-top: -28%;
 	}
 }
+
 
 @media (max-width: 969px) {
 	.background-shape {
@@ -427,7 +431,7 @@ margin: 80px 0 160px 0;
         li {
             text-align: center;
             font-size: 17px;
-            min-width: 125px;
+            min-width: 135px;
             vertical-align: middle;
             display: flex;
             border-right: 1px solid  $color__yellow;
@@ -678,6 +682,38 @@ img, .col.half {
 }
 }
 
+@media (min-width: 969px) {
+    .page-template-homepage-template .abovefoldimage {
+        max-width: 80vh;
+    }
+}
+
+@media (max-width: 1300px) {
+    #use-cases .flipster .flipster__button--prev {
+        left: 5%;
+    }
+    #use-cases .flipster .flipster__button--next {
+        right: 5%; 
+    }
+}
+
+@media (max-width: 1021px) {
+    #use-cases .flipster .flipster__button--prev {
+        left: 0;
+    }
+    #use-cases .flipster .flipster__button--next {
+        right: 0; 
+    } 
+}
+
+@media (max-width: 969px) {
+    #use-cases  .flipster__container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+
 @media (max-width: 767.99px) {
     #above-fold h2 {
         font-size: 45px;
@@ -689,9 +725,10 @@ img, .col.half {
     #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
         font-size: 28px;
     }
-    #quantitative-semiotics .col.half:first-child:after {
-        width: 100%;
-        max-width: 100%;
+    .page-template-homepage-template #quantitative-semiotics .col.half:first-child:after {
+        width: 80%;
+        max-width: 80%;
+        left: 10%;
         height: 1px;
         max-height: 1px;
         bottom: 0;
@@ -738,6 +775,13 @@ img, .col.half {
     .flexslider {
         margin: 0 0 35px;
     }
+    #use-cases .flipster h4 {
+        font-size: 24px; 
+        line-height: 28px;
+    }
+   .page-template-homepage-template #callback-cta h3 {
+    font-size: 30px;
+   }
 }
 
 @media (max-width: 600px) {
@@ -760,7 +804,12 @@ img, .col.half {
         margin-bottom: 240px;
         margin-top: 0;
     }
+}
 
+@media (max-width: 575px) { 
+    #above-fold .col.full, #above-fold .row, #above-fold {
+        min-height: calc(100vh - 76px);
+    }
 }
 
 @media (max-width: 450px) {
