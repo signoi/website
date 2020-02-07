@@ -143,7 +143,7 @@
 /*--media queries--*/
 @media (max-width: 767px) {
     #above-fold {
-        padding: 40px 0;
+        padding-top: 40px;
     }
     #contact .col.third {
         padding-left: 15px;
@@ -167,5 +167,8 @@
     .book-call-trigger.fixed {
         display: none;
     } 
+    #above-fold {
+        padding-top: 25px;
+    }
 }
 }

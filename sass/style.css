@@ -5174,6 +5174,12 @@ section.widget {
   color: #566272;
 }
 
+.page-template-careers-page #positions .novacancies {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 .page-template-careers-page #positions .row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -5775,7 +5781,7 @@ section.widget {
 
 @media (max-width: 767px) {
   .page-template-contact-page #above-fold {
-    padding: 40px 0;
+    padding-top: 40px;
   }
   .page-template-contact-page #contact .col.third {
     padding-left: 15px;
@@ -5798,6 +5804,9 @@ section.widget {
 @media (max-width: 450px) {
   .page-template-contact-page .book-call-trigger.fixed {
     display: none;
+  }
+  .page-template-contact-page #above-fold {
+    padding-top: 25px;
   }
 }
 

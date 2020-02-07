@@ -25,6 +25,11 @@
         }
     }
     #positions {
+        .novacancies {
+            display: block;
+    width: 100%;
+    text-align: center;
+        }
         .row {
             flex-wrap: wrap;
         }

@@ -20,7 +20,7 @@ get_header();
 ?>		
 <section id="above-fold">
 	<div class="row intro">
-		<div class="col half">
+		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
 		<p><?php echo $copy; ?></p>
 		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
@@ -59,7 +59,7 @@ $terms = get_field('job_category');
 				</div>
 			</div>
 			<?php endwhile; else : ?>
-			<p>We have no current vacancies at present.</p>
+			<p class="novacancies">We have no current vacancies at present.</p>
 	</div>
 
 </section>
