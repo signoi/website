@@ -127,24 +127,14 @@ if ( $arr_posts->have_posts() ) :
 					$slug = get_post_field( 'post_name', get_post() );
 					$readingtime = types_render_field( 'reading-time', array() );
 					$author = types_render_field( 'author-name', array() );
-					if( $image ):
-		
-						// Image variables.
-						$url = $image['url'];
-						$imagetitle = $image['title'];
-						$alt = $image['alt'];
 					
-						// Thumbnail size attributes.
-						$size = 'blog';
-						$fullimage = $image['sizes'][ $size ];
-					endif;
 					?>
 
 <div class="col third">
 <div class="single-blog-item">
   <div class="blog-inner">
     <a class="blog-link" href="<?php the_permalink(); ?>"></a>
-  <div class="blog-image"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+  <div class="blog-image"><img src="<?php echo $image[0]?>" alt="<?php echo $alt[0]?>"></div>
 	<div class="blog-text-area">
   <div class="blog-category"><?php the_category( ' | ' ); ?></div>
   <div class="reading-time"><i class="fal fa-clock" aria-hidden="true"></i> <?php echo $readingtime ?> min read</div>
