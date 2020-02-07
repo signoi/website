@@ -3960,6 +3960,7 @@ section.widget {
     width: 100%;
     max-width: 400px;
     margin: auto;
+    margin-top: 0;
   }
 }
 
@@ -4160,7 +4161,7 @@ section.widget {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 80px 15px 80px 80px;
+  padding: 80px 80px 80px 15px;
 }
 
 .single-use-case #above-fold .col.third {
