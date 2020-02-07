@@ -151,4 +151,39 @@
             animation-delay: .6s;  
         }
     }
+    /*--media queries--*/
+    @media (max-width: 980px) {
+        #above-fold .row {
+            display: block;
+        }
+        #above-fold .col {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+        #above-fold .col.twothird {
+            padding: 15px;
+            padding-top: 80px;
+        }
+        #above-fold .col.third img {
+            width: 100%;
+            margin-left: auto;
+        }
+        .platform-section.odd.start .image-col img, .platform-section.even.start .image-col img {
+            animation: fade-in-top 1s ease both;
+        }
+        .platform-section.start p {
+            animation: fade-in-bottom 1s ease both;   
+        }
+    }
+    @media (max-width: 767px) {
+        #above-fold .col.twothird {
+            padding-top: 40px;
+        }
+    }
+    @media (max-width: 450px) {
+        #above-fold .col.twothird {
+            padding-top: 25px;
+        }
+    }
 }

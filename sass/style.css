@@ -1266,7 +1266,7 @@ a:hover, a:active {
     display: none;
   }
   .current_page_item a:after {
-    display: none;
+    display: none !important;
   }
   .main-navigation ul .current_page_item a, .main-navigation ul .current_page_item a:visited {
     color: #c05344;
@@ -5019,6 +5019,7 @@ section.widget {
 --------------------------------------------------------------*/
 .page-template-platform-page {
   /*--animations--*/
+  /*--media queries--*/
 }
 
 .page-template-platform-page #above-fold {
@@ -5214,6 +5215,45 @@ section.widget {
 .page-template-platform-page #callback-cta.start button {
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
+}
+
+@media (max-width: 980px) {
+  .page-template-platform-page #above-fold .row {
+    display: block;
+  }
+  .page-template-platform-page #above-fold .col {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  .page-template-platform-page #above-fold .col.twothird {
+    padding: 15px;
+    padding-top: 80px;
+  }
+  .page-template-platform-page #above-fold .col.third img {
+    width: 100%;
+    margin-left: auto;
+  }
+  .page-template-platform-page .platform-section.odd.start .image-col img, .page-template-platform-page .platform-section.even.start .image-col img {
+    -webkit-animation: fade-in-top 1s ease both;
+            animation: fade-in-top 1s ease both;
+  }
+  .page-template-platform-page .platform-section.start p {
+    -webkit-animation: fade-in-bottom 1s ease both;
+            animation: fade-in-bottom 1s ease both;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-template-platform-page #above-fold .col.twothird {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page-template-platform-page #above-fold .col.twothird {
+    padding-top: 25px;
+  }
 }
 
 /*--------------------------------------------------------------

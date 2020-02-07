@@ -215,7 +215,7 @@ display: flex;
     display: none;
 }
 .current_page_item a:after {
-	display: none;
+	display: none !important;
 }
 .main-navigation ul .current_page_item a, .main-navigation ul .current_page_item a:visited {
 color:	#c05344;
