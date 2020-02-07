@@ -875,8 +875,11 @@ img, .col.half {
     #use-cases .flipster__container {
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 60px;
     }
     .flipster__button {
-        top: 100% !important;
+        height: 40px;
+        margin-top: 0 !important;
+        top: calc(100% - 40px) !important;
     }
 }

@@ -2689,9 +2689,12 @@ a:hover, a:active {
   #use-cases .flipster__container {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 60px;
   }
   .flipster__button {
-    top: 100% !important;
+    height: 40px;
+    margin-top: 0 !important;
+    top: calc(100% - 40px) !important;
   }
 }
 
@@ -4632,12 +4635,18 @@ section.widget {
     margin: auto;
     margin-bottom: 30px;
   }
-  .page-template-brands-agencies-page .header-with-image img {
+  .page-template-brands-agencies-page #case-studies .row.intro {
+    margin-bottom: 15px;
+  }
+  .page-template-brands-agencies-page #case-studies .row.tabs {
+    padding-top: 15px;
+  }
+  .page-template-brands-agencies-page #case-studies .header-with-image img {
     height: 50px;
     width: auto;
     margin-right: 20px;
   }
-  .page-template-brands-agencies-page .header-with-image h2 {
+  .page-template-brands-agencies-page #case-studies .header-with-image h2 {
     line-height: 1.1em;
   }
   .page-template-brands-agencies-page #case-studies #tabs {
@@ -4648,9 +4657,9 @@ section.widget {
     max-width: 100%;
     display: block;
   }
-  .page-template-brands-agencies-page .ui-tabs .ui-tabs-nav {
-    border: 1px solid #566272;
-    border-right: 1px solid #566272;
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav {
+    border: none;
+    border-right: none;
     margin-bottom: 20px;
   }
   .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li {
@@ -4659,8 +4668,49 @@ section.widget {
     border: 1px solid #566272;
     margin: 5px;
   }
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 5px;
+  }
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li:first-child {
+    margin-left: 0;
+  }
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li:last-child {
+    margin-right: 0;
+  }
   .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-panel {
     padding: 0;
+  }
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li a {
+    float: none;
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .page-template-brands-agencies-page #case-studies .header-with-image h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .page-template-brands-agencies-page #case-studies .header-with-image img {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-template-brands-agencies-page #case-studies .header-with-image {
+    display: block;
+  }
+  .page-template-brands-agencies-page #case-studies .header-with-image img {
+    display: block;
+    margin: auto;
+  }
+  .page-template-brands-agencies-page .page-template-brands-agencies-page #case-studies .row.tabs {
+    padding-top: 0;
   }
 }
 

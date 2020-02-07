@@ -197,12 +197,18 @@
         margin: auto;
         margin-bottom: 30px;
     }
-    .header-with-image img {
+    #case-studies .row.intro {
+        margin-bottom: 15px;
+    }
+   #case-studies .row.tabs {
+        padding-top: 15px;
+    }
+    #case-studies .header-with-image img {
         height: 50px;
         width: auto;
         margin-right: 20px;
     }
-    .header-with-image h2 {
+    #case-studies .header-with-image h2 {
         line-height: 1.1em;
     }
     #case-studies #tabs {
@@ -213,9 +219,9 @@
     max-width: 100%;
     display: block;
     }
-    .ui-tabs .ui-tabs-nav {
-        border: 1px solid $color__grey;
-        border-right: 1px solid $color__grey;
+    #case-studies .ui-tabs .ui-tabs-nav {
+        border: none;
+        border-right: none;
         margin-bottom: 20px;
     }
     #case-studies .ui-tabs .ui-tabs-nav li {
@@ -224,8 +230,47 @@
         border: 1px solid $color__grey;
     margin: 5px;
     }
+    #case-studies .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+        margin: 5px;
+    }
+    #case-studies .ui-tabs .ui-tabs-nav li:first-child {
+        margin-left: 0;
+    }
+    #case-studies .ui-tabs .ui-tabs-nav li:last-child {
+        margin-right: 0;
+    }
     #case-studies .ui-tabs .ui-tabs-panel {
         padding: 0;
+    }
+    #case-studies .ui-tabs .ui-tabs-nav li a {
+        float: none;
+        display: block;
+    }
+}
+@media (max-width: 550px) {
+    #case-studies .ui-tabs .ui-tabs-nav li {
+        width: 100%;
+        display: block;
+        text-align: center; 
+    }
+    #case-studies .header-with-image h2 {
+        font-size: 30px;
+    line-height: 50px;
+    }
+    #case-studies .header-with-image img {
+        margin-right: 15px;
+    }
+}
+@media (max-width: 400px) {
+    #case-studies .header-with-image {
+        display: block;
+    }
+    #case-studies .header-with-image img {
+        display: block;
+        margin: auto;
+    }
+    .page-template-brands-agencies-page #case-studies .row.tabs {
+        padding-top: 0;
     }
 }
 }
