@@ -4540,6 +4540,19 @@ section.widget {
     width: 100%;
     margin-left: auto;
   }
+  .single-use-case #above-fold button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-use-case #above-fold .col.twothird {
+    padding-top: 40px;
+  }
+  .single-use-case #above-fold h1 {
+    margin-bottom: 20px;
+  }
   .single-use-case .use-case-content.start .row.odd .image-col img {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
@@ -4570,19 +4583,6 @@ section.widget {
   .single-use-case #recent-posts .single-blog-item {
     max-width: 420px;
     margin: auto;
-  }
-  .single-use-case #above-fold button {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .single-use-case #above-fold .col.twothird {
-    padding-top: 40px;
-  }
-  .single-use-case #above-fold h1 {
-    margin-bottom: 20px;
   }
 }
 
@@ -5569,6 +5569,12 @@ section.widget {
   .page-template-platform-page .platform-section.even.start p, .page-template-platform-page .platform-section.even.start h2, .page-template-platform-page .platform-section.even.start p.subheading {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
+  }
+  .page-template-platform-page .platform-section .row {
+    display: block;
+  }
+  .page-template-platform-page .platform-section .col {
+    width: 100%;
   }
 }
 

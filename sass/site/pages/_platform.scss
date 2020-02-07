@@ -182,6 +182,12 @@
         .platform-section.even.start p, .platform-section.even.start h2, .platform-section.even.start p.subheading {
             animation: fade-in-top 1s ease both;   
         }
+        .platform-section .row {
+            display: block;
+        }
+        .platform-section .col {
+            width: 100%;
+        }
 
     }
     @media (max-width: 767px) {
