@@ -1204,7 +1204,8 @@ a:hover, a:active {
   }
   .menu-primary-container {
     width: 100vw;
-    height: 100vh;
+    padding-top: 80px;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -1294,6 +1295,12 @@ a:hover, a:active {
   width: 50%;
 }
 
+@media (max-width: 450px) {
+  #masthead .inner {
+    padding: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -1330,6 +1337,10 @@ a:hover, a:active {
   .custom-logo, .scrolling .custom-logo {
     max-height: 50px;
     width: auto;
+  }
+  .site-branding {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1625,6 +1636,13 @@ a:hover, a:active {
   }
 }
 
+@media (max-width: 450px) {
+  .row {
+    width: 95%;
+    padding: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -1700,7 +1718,6 @@ a:hover, a:active {
   margin: auto;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 80px;
   margin-bottom: 0;
 }
 
@@ -2497,6 +2514,9 @@ a:hover, a:active {
     margin-left: 40px;
     margin-right: 40px;
   }
+  #use-cases .flipster .flipster__item__content {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 767.99px) {
@@ -2568,6 +2588,7 @@ a:hover, a:active {
   }
   .page-template-homepage-template #callback-cta h3 {
     font-size: 30px;
+    line-height: 37px;
   }
 }
 
@@ -2591,11 +2612,29 @@ a:hover, a:active {
     margin-bottom: 240px;
     margin-top: 0;
   }
+  #above-fold .abovefoldcopy {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: auto;
+    margin-bottom: auto;
+  }
 }
 
 @media (max-width: 575px) {
   #above-fold .col.full, #above-fold .row, #above-fold {
     min-height: calc(100vh - 76px);
+  }
+  #use-cases .flipster__nav li {
+    border: 1px solid #e9c659;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  #use-cases .flipster__nav {
+    margin-bottom: 10px;
+  }
+  #use-cases .flipster__nav li:last-child {
+    border-right: 1px solid #e9c659;
   }
 }
 
@@ -2613,10 +2652,6 @@ a:hover, a:active {
   #callback-cta input[type="text"] {
     margin-bottom: 20px;
   }
-  .row {
-    width: 95%;
-    padding: 0;
-  }
   #customer-comments .quote-after, #customer-comments .quote-before {
     display: none;
   }
@@ -2628,6 +2663,9 @@ a:hover, a:active {
   }
   #quantitative-semiotics .col.full img {
     max-width: 200px;
+  }
+  #customer-comments h2 {
+    margin-bottom: .2em;
   }
 }
 

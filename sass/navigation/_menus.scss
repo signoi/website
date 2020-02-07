@@ -161,7 +161,8 @@ ul.submenu {
 }
 .menu-primary-container {
 width: 100vw;
-height: 100vh;
+padding-top: 80px;
+min-height: 100vh;
 position: absolute;
 top: 0;
 left: 0;
@@ -240,4 +241,11 @@ color:	#c05344;
 		text-align: right;
 		width: 50%;
 	}
+}
+
+
+@media (max-width: 450px) {
+	#masthead .inner {
+        padding: 0;
+    }
 }

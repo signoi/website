@@ -34,7 +34,6 @@
         line-height: 1.1em;
         margin: auto;
         align-self: flex-start;
-        margin-top: 80px;
         margin-bottom: 0;
     }
     p {
@@ -711,6 +710,9 @@ img, .col.half {
         margin-left: 40px;
         margin-right: 40px;
     }
+    #use-cases .flipster .flipster__item__content {
+        padding: 20px;
+    }
 }
 
 
@@ -781,6 +783,7 @@ img, .col.half {
     }
    .page-template-homepage-template #callback-cta h3 {
     font-size: 30px;
+    line-height: 37px;
    }
 }
 
@@ -804,12 +807,29 @@ img, .col.half {
         margin-bottom: 240px;
         margin-top: 0;
     }
+    #above-fold .abovefoldcopy {
+        align-self: flex-start;
+        margin: auto;
+        margin-bottom: auto;
+    }
 }
 
 @media (max-width: 575px) { 
     #above-fold .col.full, #above-fold .row, #above-fold {
         min-height: calc(100vh - 76px);
     }
+    #use-cases .flipster__nav li {
+        border: 1px solid $color__yellow;
+        margin: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+       }
+       #use-cases .flipster__nav {
+           margin-bottom: 10px;
+       }
+       #use-cases .flipster__nav li:last-child {
+           border-right: 1px solid $color__yellow;
+       }
 }
 
 @media (max-width: 450px) {
@@ -826,10 +846,6 @@ img, .col.half {
     #callback-cta input[type="text"] {
         margin-bottom: 20px;
     }
-    .row {
-        width: 95%; 
-        padding: 0;
-    }
     #customer-comments .quote-after, #customer-comments .quote-before {
         display: none;
     }
@@ -841,5 +857,8 @@ img, .col.half {
     }
     #quantitative-semiotics .col.full img {
         max-width: 200px;
+    }
+    #customer-comments h2 {
+        margin-bottom: .2em;
     }
 }
