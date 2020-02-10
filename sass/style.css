@@ -1339,14 +1339,12 @@ a:hover, a:active {
     content: "\f077";
   }
   .menuisopen .main-navigation .menu-item-has-children ul.sub-menu {
-    display: none;
     opacity: 0;
     max-height: 0;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   .menuisopen .main-navigation .menu-item-has-children.open ul.sub-menu {
-    display: block;
     opacity: 1;
     max-height: 200px;
   }
