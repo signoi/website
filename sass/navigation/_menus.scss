@@ -161,7 +161,9 @@ ul.submenu {
 }
 #primary-menu {
 	padding-top: 20px;
-    padding-bottom: 40px;
+	padding-bottom: 40px;
+	opacity: 0;
+	transition: opacity .4s ease-in-out;
 }
 .menu-primary-container {
 width: 100vw;
@@ -171,12 +173,12 @@ overflow-y: scroll;
 position: absolute;
 top: 0;
 left: 0;
-transform: translatey(-100%);
+transform: translatey(calc(-100vh - 75px));
 transition: transform .6s ease-in-out;
 background: #fff;
 z-index: 99;
 display: flex;
-    justify-content: space-around;
+justify-content: space-around;
 }
 .menu-toggle, .site-branding {
 	z-index: 9999;
@@ -184,6 +186,9 @@ display: flex;
 }
 .menuisopen .menu-primary-container {
 	transform: translatey(0);
+}
+.menuisopen #primary-menu {
+	opacity: 0;
 }
 .main-navigation ul li {
 	display: block;

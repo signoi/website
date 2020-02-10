@@ -1,5 +1,5 @@
 .page-template-homepage-template .abovefoldcopy {
-    max-width: 720px;
+    max-width: 750px;
     text-align: center;
 }
 
@@ -30,7 +30,8 @@
         justify-content: space-around;
         align-self: center;
         margin: auto;
-        margin-bottom: 0;
+        padding: 40px 0;
+
     }
     h1 {
         font-weight: $fontweight__bold;
@@ -874,14 +875,17 @@ img, .col.half {
 
 @media (max-width: 450px) {
     #about .round-image {
-        height: 100%;
-        width: 100%;
+        height: 90vw;
+        width: 90vw;
         max-height: 400px;
         max-width: 400px;
-    margin-bottom: -50%;
+    margin-bottom: -55vw;
+    }
+    #about .col.half:last-child {
+        padding: 0;
     }
     #about {
-        margin-bottom: 200px;
+        margin-bottom: 55vw;
     }
     #callback-cta input[type="text"] {
         margin-bottom: 20px;
@@ -891,6 +895,9 @@ img, .col.half {
     }
     #above-fold h2 {
         font-size: 40px;
+    }
+    .abovefoldcopy {
+        padding: 20px 0;
     }
     #quantitative-semiotics .col.full {
         padding-bottom: 0;
