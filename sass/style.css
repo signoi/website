@@ -1250,7 +1250,7 @@ a:hover, a:active {
             transform-origin: left center;
   }
   #nav-icon span:nth-child(3) {
-    top: 20px;
+    top: 25px;
     -webkit-transform-origin: left center;
             transform-origin: left center;
   }
@@ -1292,7 +1292,7 @@ a:hover, a:active {
   .menu-primary-container {
     width: 100vw;
     margin-top: 75px;
-    height: 100vh;
+    height: calc(100vh - 75px);
     overflow-y: scroll;
     position: absolute;
     top: 0;

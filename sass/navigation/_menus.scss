@@ -184,7 +184,7 @@
 	transform-origin: left center;
 }
 #nav-icon span:nth-child(3) {
-	top: 20px;
+	top: 25px;
 	transform-origin: left center;
 }
 .menuisopen #nav-icon span:nth-child(1) {
@@ -221,7 +221,7 @@ ul.submenu {
 .menu-primary-container {
 width: 100vw;
 margin-top: 75px;
-height: 100vh;
+height: calc(100vh - 75px);
 overflow-y: scroll;
 position: absolute;
 top: 0;
