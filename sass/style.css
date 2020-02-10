@@ -852,6 +852,7 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus, .button:active, .button:focus {
   border-color: #e9c659;
+  outline-color: #e9c659;
 }
 
 button:active a, button:focus a,

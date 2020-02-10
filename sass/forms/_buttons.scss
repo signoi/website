@@ -28,6 +28,7 @@ input[type="submit"], .button {
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
+		outline-color: $color__border-button-focus;
 
 		a {
 			text-decoration: none;
