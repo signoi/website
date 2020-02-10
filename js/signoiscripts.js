@@ -9,6 +9,7 @@ jQuery(window).load(function() {
     jQuery('.menu-item-has-children a').on('click', function () {
   
       jQuery('.menu-item-has-children ul').toggleClass('open');
+      jQuery('.menu-item-has-children a').toggleClass('open');
     });    
 
         //adding class to body when popup trigger is clicked

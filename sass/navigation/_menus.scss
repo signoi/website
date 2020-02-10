@@ -257,11 +257,20 @@ justify-content: space-around;
 .menu-item-has-children a:hover {
 	color: #566272;
 }
-.sub-menu {
-	display: none;
+.menu-item-has-children.open a:after {
+	content: "\f077";
 }
-.sub-menu.open {
+.menuisopen .main-navigation .menu-item-has-children ul.sub-menu {
+	display: none;
+	opacity: 0;
+	max-height: 0;
+	transition: all 0.2s ease-in-out;
+}
+.menuisopen .main-navigation .menu-item-has-children ul.sub-menu.open {
 	display: block;
+	opacity: 1;
+	max-height: 200px;
+
 }
 .main-navigation .current-menu-ancestor.menu-item-has-children > a{
 	color: #566272;
