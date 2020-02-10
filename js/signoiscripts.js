@@ -8,7 +8,7 @@ jQuery(window).load(function() {
     //adding class to submenu when header item is clicked
     jQuery('.menu-item-has-children a').on('click', function () {
   
-      jQuery(this).parent.toggleClass('open');
+      jQuery(this).parent().toggleClass('open');
     });    
 
         //adding class to body when popup trigger is clicked
