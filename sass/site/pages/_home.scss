@@ -874,6 +874,9 @@ img, .col.half {
 }
 
 @media (max-width: 450px) {
+    #use-cases .flipster__nav li {
+        display: block;
+    }
     #about .round-image {
         height: 90vw;
         width: 90vw;

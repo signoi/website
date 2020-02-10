@@ -1543,7 +1543,7 @@ a:hover, a:active {
 
 /* Do not show the outline if the user is not using a device which needs to highlight focus */
 :focus {
-  outline: #e9c659;
+  outline-color: #e9c659;
 }
 
 button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus-visible) {
@@ -2775,6 +2775,9 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
 }
 
 @media (max-width: 450px) {
+  #use-cases .flipster__nav li {
+    display: block;
+  }
   #about .round-image {
     height: 90vw;
     width: 90vw;
