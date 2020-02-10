@@ -5,6 +5,11 @@ jQuery(window).load(function() {
       jQuery('.menu-toggle').toggleClass('open');
       jQuery('body').toggleClass('menuisopen');
     });
+    //adding class to submenu when header item is clicked
+    jQuery('.menu-item-has-children a').on('click', function () {
+  
+      jQuery('.menu-item-has-children ul').toggleClass('open');
+    });    
 
         //adding class to body when popup trigger is clicked
         jQuery('.mailing-list-trigger').on('click', function () {
