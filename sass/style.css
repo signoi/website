@@ -1542,6 +1542,10 @@ a:hover, a:active {
 }
 
 /* Do not show the outline if the user is not using a device which needs to highlight focus */
+:focus {
+  outline: #e9c659;
+}
+
 button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus-visible) {
   outline: none;
 }
@@ -4859,6 +4863,10 @@ section.widget {
 
 .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li a {
   color: #566272;
+}
+
+.page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li a:focus {
+  outline: none;
 }
 
 .page-template-brands-agencies-page #case-studies .ui-tabs .ui-tabs-nav li.ui-tabs-active {

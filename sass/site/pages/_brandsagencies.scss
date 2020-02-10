@@ -107,6 +107,9 @@
                     a {
                         color: $color__grey;
                     }
+                    a:focus {
+                        outline: none;
+                    }
                 }
                 li.ui-tabs-active {
                     padding-bottom: 15px;
