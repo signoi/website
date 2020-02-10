@@ -63,7 +63,7 @@
                 padding-top: 7px;
                 padding-bottom: 7px;
                 margin-bottom: 10px;
-                font-size: 17px;       
+                font-size: 18px;       
                 a {
                     color: $color__grey;
                 }
@@ -87,6 +87,12 @@
     }
 
 .use-case-content {
+    .col.half:first-child {
+        padding-right: 30px;
+        }
+        .col.half:last-child {
+            padding-left: 30px;
+        }
     .row.odd h2, .row.odd p {
         max-width: 450px;
         margin-right: 0;
@@ -281,6 +287,12 @@
         #above-fold h1 {
             margin-bottom: 20px;
         }
+        .use-case-content .col.half:first-child {
+            padding-right: 15px;
+            }
+            .use-case-content    .col.half:last-child {
+                padding-left: 15px;
+            }
         .use-case-content.start .row.odd .image-col img {
             animation: fade-in-top 1s ease both;
         }

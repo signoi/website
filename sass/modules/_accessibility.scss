@@ -36,3 +36,7 @@
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
+
+/* Do not show the outline if the user is not using a device which needs to highlight focus */
+
+button:focus:not(:focus-visible), a:focus:not(:focus-visible) { outline: none }

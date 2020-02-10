@@ -1472,6 +1472,11 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* Do not show the outline if the user is not using a device which needs to highlight focus */
+button:focus:not(:focus-visible), a:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -1687,8 +1692,12 @@ a:hover, a:active {
 ## Homepage
 --------------------------------------------------------------*/
 .page-template-homepage-template .abovefoldcopy {
-  max-width: 600px;
+  max-width: 720px;
   text-align: center;
+}
+
+.page-template-homepage-template .abovefoldcopy p {
+  max-width: 600px;
 }
 
 #above-fold {
@@ -2192,9 +2201,6 @@ a:hover, a:active {
 }
 
 #use-cases .flipster__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -2205,7 +2211,6 @@ a:hover, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 900px;
   margin: auto;
   margin-bottom: 30px;
   -ms-flex-wrap: wrap;
@@ -2218,22 +2223,19 @@ a:hover, a:active {
 
 #use-cases .flipster__nav li {
   text-align: center;
-  font-size: 17px;
-  min-width: 135px;
+  font-size: 18px;
   vertical-align: middle;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  margin-right: 15px;
+  padding-right: 15px;
   border-right: 1px solid #e9c659;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
-  margin-bottom: 15px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 #use-cases .flipster__nav li:last-child {
@@ -4306,7 +4308,7 @@ section.widget {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .single-use-case #use-cases-menu ul li a {
@@ -4330,6 +4332,14 @@ section.widget {
   border-right: none;
   margin-right: 0;
   padding-right: 0;
+}
+
+.single-use-case .use-case-content .col.half:first-child {
+  padding-right: 30px;
+}
+
+.single-use-case .use-case-content .col.half:last-child {
+  padding-left: 30px;
 }
 
 .single-use-case .use-case-content .row.odd h2, .single-use-case .use-case-content .row.odd p {
@@ -4552,6 +4562,12 @@ section.widget {
   }
   .single-use-case #above-fold h1 {
     margin-bottom: 20px;
+  }
+  .single-use-case .use-case-content .col.half:first-child {
+    padding-right: 15px;
+  }
+  .single-use-case .use-case-content .col.half:last-child {
+    padding-left: 15px;
   }
   .single-use-case .use-case-content.start .row.odd .image-col img {
     -webkit-animation: fade-in-top 1s ease both;
@@ -5493,6 +5509,14 @@ section.widget {
   margin: auto;
 }
 
+.page-template-platform-page .platform-section .col.half:first-child {
+  padding-right: 30px;
+}
+
+.page-template-platform-page .platform-section .col.half:last-child {
+  padding-left: 30px;
+}
+
 .page-template-platform-page #callback-cta {
   background: #e9c659;
 }
@@ -5596,6 +5620,12 @@ section.widget {
   .page-template-platform-page #above-fold .col.third img {
     width: 100%;
     margin-left: auto;
+  }
+  .page-template-platform-page .platform-section .col.half:first-child {
+    padding-right: 15px;
+  }
+  .page-template-platform-page .platform-section .col.half:last-child {
+    padding-left: 15px;
   }
   .page-template-platform-page .platform-section.odd.start .image-col img {
     -webkit-animation: fade-in-top 1s ease both;

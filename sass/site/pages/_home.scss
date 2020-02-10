@@ -1,6 +1,10 @@
 .page-template-homepage-template .abovefoldcopy {
-    max-width: 600px;
+    max-width: 720px;
     text-align: center;
+}
+
+.page-template-homepage-template .abovefoldcopy p {
+    max-width: 600px;
 }
 
 #above-fold {
@@ -413,13 +417,12 @@ margin: 80px 0 160px 0;
         text-align: center;
     }
    .flipster__nav {
-        display: flex;
+
         margin: 0;
         padding: 0;
         text-align: center;
         flex-direction: row;
         justify-content: center;
-        max-width: 900px;
         margin: auto;
         margin-bottom: 30px;
         flex-wrap: wrap;
@@ -429,15 +432,16 @@ margin: 80px 0 160px 0;
         }
         li {
             text-align: center;
-            font-size: 17px;
-            min-width: 135px;
+            font-size: 18px;
             vertical-align: middle;
-            display: flex;
+            display: inline-block;
+            margin-right: 15px;
+    padding-right: 15px;
             border-right: 1px solid  $color__yellow;
             flex-direction: column;
-            margin: 0;
-            margin-bottom: 15px;
-            flex: 1;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-bottom: 10px;
         }
         li:last-child {
             border-right: 0;

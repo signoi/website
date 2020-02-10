@@ -78,6 +78,12 @@
             align-items: center;
             margin: auto;
         }
+        .col.half:first-child {
+        padding-right: 30px;
+        }
+        .col.half:last-child {
+            padding-left: 30px;
+        }
     }
     #callback-cta {
     background:#e9c659;
@@ -169,6 +175,12 @@
             width: 100%;
             margin-left: auto;
         }
+        .platform-section .col.half:first-child {
+            padding-right: 15px;
+            }
+        .platform-section   .col.half:last-child {
+                padding-left: 15px;
+            }
         .platform-section.odd.start .image-col img {
             animation: fade-in-top 1s ease both; 
         }
