@@ -1661,6 +1661,10 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
   padding-right: 15px;
 }
 
+#conversations-app .widget_icon_container {
+  background: #e9c659;
+}
+
 @media (min-width: 767.1px) {
   .col.full {
     -webkit-box-flex: 0;

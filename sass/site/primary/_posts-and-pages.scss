@@ -41,6 +41,10 @@
 	padding-right: 15px;
 }
 
+#conversations-app .widget_icon_container {
+	background: $color__yellow;
+}
+
 @media (min-width: 767.1px) {
 	.col.full {
 		flex: 0 0 100%;
