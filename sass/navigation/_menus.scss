@@ -149,9 +149,14 @@
 .menu-toggle, .main-navigation.toggled ul {
     display: block;
 }
+.menu-toggle, .menu-toggle:hover {
+	border: none;
+	padding: 10px;
+	background: #fff;
+}
 #nav-icon {
     width: 30px;
-    height: 20px;
+    height: 30px;
     position: relative;
     margin: 0;
     -webkit-transform: rotate(0deg);
@@ -165,7 +170,7 @@
     cursor: pointer;
 }
 #nav-icon span {
-	height: 1.5px;
+	height: 2px;
 	background: $color__red;
 	display: block;
 	width: 30px;
@@ -181,7 +186,8 @@
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+	position: absolute;
 }
 #nav-icon span:nth-child(1) {
 	top: 0px;
@@ -217,9 +223,6 @@ opacity: 0;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-}
-.menu-toggle {
-	background: #fff;
 }
 ul.submenu {
 	display: block;
