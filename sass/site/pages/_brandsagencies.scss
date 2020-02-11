@@ -136,63 +136,17 @@
 
  /*--animations--*/
  #above-fold { 
-    h1, p, .row.blurbs .col.third {
+    .row.blurbs .col.third {
     opacity: 0;
     }
 }
 
 #above-fold.start { 
-    h1, p, .row.blurbs .col.third {
+    .row.blurbs .col.third {
         animation: fade-in-bottom 1s ease both;
     }
-    p {
-        animation-delay: .3s;
-    }
-    .row.blurbs .col.third {
-        animation-delay: .7s;
-    }
-    .row.blurbs .col.third:first-child {
-        animation-delay: .6s;
-    }
-    .row.blurbs .col.third:last-child {
-        animation-delay: .8s;
-    }
 }   
-#use-cases {
-    h2, .flipster__nav, .flipster__container {
-        opacity: 0;   
-    }
-} 
 
-#use-cases.start {
-    .flipster__nav, .flipster__container {
-        animation: fade-in 1s ease both;
-    }
-    h2 {
-        animation: fade-in-bottom 1s ease both;  
-    }
-    .flipster__nav {
-        animation-delay: .3s;  
-    }
-    .flipster__container { 
-        animation-delay: .6s;  
-    }
-} 
-
-#case-studies {
-    .header-with-image, .row.tabs {
-        opacity: 0;   
-    }
-}
-
-#case-studies.start {
-    .header-with-image, .row.tabs {
-        animation: fade-in-bottom 1s ease both;  
-    }
-    .row.tabs {
-        animation-delay: .3s;  
-    }
-}
 /*--media queries--*/
 @media (max-width: 767px) {
     #above-fold .row.blurbs .blurb-inner {

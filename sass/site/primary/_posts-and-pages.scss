@@ -41,8 +41,50 @@
 	padding-right: 15px;
 }
 
-#conversations-app .widget_icon_container {
-	background: $color__yellow;
+
+/*--site-wide animations--*/ 
+#callback-cta {
+    .book-demo-button, button {
+        opacity: 0; 
+    }
+}
+
+#callback-cta.start {
+    .book-demo-button, button {
+        animation: fade-in-bottom 1s ease both; 
+    }
+}
+
+#above-fold {
+   button, .abovefoldimage {
+        opacity: 0;
+    }
+}
+#above-fold.start {
+    .abovefoldimage {
+        animation: rise 1s ease both;
+    }
+  	button {
+		animation: fade-in-bottom 1s ease both;   
+		animation-delay: .2s;
+    }
+}
+#about {
+    .round-image img, button {
+        opacity: 0;       
+    }
+}
+
+#about.start {
+    button {
+        animation: fade-in-bottom 1s ease both;    
+    }
+    .round-image img {
+        animation: fade-in 1s ease both;   
+    }
+    button {
+        animation-delay: .2s;
+    }
 }
 
 @media (min-width: 767.1px) {
@@ -110,3 +152,460 @@
 		padding: 25px 0;
 	}
 }
+
+/*--old animations--
+#use-cases {
+    h2, .flipster__nav, .flipster__container {
+        opacity: 0;   
+    }
+} 
+
+#use-cases.start {
+    h2 {
+        animation: fade-in-bottom 1s ease both;   
+    }
+    .flipster__nav, .flipster__container {
+        animation: fade-in 1s ease both;
+    }
+    .flipster__nav {
+        animation-delay: .3s;  
+    }
+    .flipster__container { 
+        animation-delay: .6s;  
+    }
+} 
+#customer-comments.start {
+    h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution  {
+        animation: fade-in-bottom 1s ease both;
+    }
+    .quote-before {
+        animation-delay: .3s;
+    }
+    .commenttext {
+        animation-delay: .55s;
+    }
+    .attribution {
+        animation-delay: .65s;
+    }
+    .quote-after {
+        animation-delay: .9s;
+    }
+}
+
+#quantitative-semiotics  {
+img, .col.half {
+    opacity: 0;
+}
+.col.half:first-child:after {
+    max-height: 0;
+}
+}
+
+#quantitative-semiotics.start {
+    .col.half:first-child:after {
+        animation: increase-height 1s ease 1.3s both;
+        animation-delay: .6s;
+    }
+    img {
+        animation: fade-in-bottom 1s ease both;
+    }
+    .col.half {
+        animation: fade-in 1s ease both;
+        animation-delay: .3s;
+    }
+}
+
+#about {
+    h2, p, .round-image img {
+        opacity: 0;       
+    }
+}
+
+#about.start {
+    h2, p, button {
+        animation: fade-in-bottom 1s ease both;    
+    }
+    .round-image img {
+        animation: fade-in 1s ease both;   
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+    #reports {
+    .report-featured-image, h4, p {
+        opacity: 0;
+    }
+}
+
+#reports.start  {
+    .report-featured-image, h4, p {
+        animation: fade-in-bottom 1s ease both; 
+    }
+    p {
+        animation-delay: .3s;
+    }
+    .report-featured-image {
+        animation-delay: .6s;
+    }
+}
+}
+
+--about page--
+
+#above-fold { 
+    h1, p, button {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p, button {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+}
+
+#about {
+    h2, p, .round-image img {
+        opacity: 0;       
+    }
+}
+
+#about.start {
+    h2, p {
+        animation: fade-in-bottom 1s ease both;    
+    }
+    .round-image img {
+        animation: fade-in 1s ease both;   
+    }
+    h2 {
+        animation-delay: .3s;
+    }
+    p {
+        animation-delay: .6s;
+    }
+}
+
+#callback-cta {
+    h3, p, button {
+        opacity: 0; 
+    }
+}
+
+#callback-cta.start {
+    h3, p, button {
+        animation: fade-in-bottom 1s ease both; 
+    }
+
+    p {
+        animation-delay: .3s;  
+    }
+
+    button {
+        animation-delay: .6s;  
+    }
+}
+
+--blog page--
+    .no-sidebar {
+        .single-blog-item.featured {
+            opacity: 0;
+        }
+    }
+    .no-sidebar.start {
+        .single-blog-item.featured {
+            animation: fade-in 1s ease both;    
+        }
+	}
+	
+	.page-template-blog-page-template {
+    .mailing-list-sign-up {
+        .mailing-list-icon, .mailing-list-text, .mailing-list-trigger {
+            opacity: 0;
+        }
+    }
+    .mailing-list-sign-up.start {
+        .mailing-list-icon {
+            animation: fade-in 1s ease both;    
+        }
+        .mailing-list-text {
+            animation: fade-in-left 1s ease both; 
+        }
+        .mailing-list-trigger {
+            animation: fade-in-bottom 1s ease both; 
+        }
+        .mailing-list-trigger {
+            animation-delay: .3s;
+        }
+	}
+
+	--brands agencies--
+
+	#above-fold { 
+    h1, p, .row.blurbs .col.third {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p, .row.blurbs .col.third {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+    .row.blurbs .col.third {
+        animation-delay: .7s;
+    }
+    .row.blurbs .col.third:first-child {
+        animation-delay: .6s;
+    }
+    .row.blurbs .col.third:last-child {
+        animation-delay: .8s;
+    }
+}   
+
+#case-studies {
+    .header-with-image, .row.tabs {
+        opacity: 0;   
+    }
+}
+
+#case-studies.start {
+    .header-with-image, .row.tabs {
+        animation: fade-in-bottom 1s ease both;  
+    }
+    .row.tabs {
+        animation-delay: .3s;  
+    }
+}
+}
+
+--careers--
+#above-fold { 
+    h1, p, button {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p, button {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+}
+#positions .job-info {
+    opacity: 0;
+}
+#positions .col.quarter.start .job-info {
+    animation: fade-in-bottom 1s ease both;
+}
+	
+
+
+--contact--
+
+#above-fold { 
+    h1, p {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+}
+
+#contact .col.twothird, #contact .col.third {
+    opacity: 0;
+}
+
+#contact.start {
+ .col.third {
+    animation: fade-in-left 1s ease both;  
+    animation-delay: .3s;   
+}
+.col.twothird {
+    animation: fade-in 1s ease both;   
+}
+}
+
+--platform--
+   #above-fold {
+        h1, p, .abovefoldimage {
+            opacity: 0;
+        }
+    }
+    #above-fold.start {
+        .abovefoldimage {
+            animation: rise 1s ease both;
+            animation-delay: .6s;
+        }
+        h1, p {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        p {
+            animation-delay: .3s;
+        }
+    }
+    .platform-section {
+        p.subheading, h2, p, .image-col img {
+            opacity: 0;
+        }
+    }
+    .platform-section.start {
+        h2, p.subheading {
+            animation: fade-in-bottom 1s ease both;       
+        }
+        p.subeading {
+            animation-delay: .1s;
+        }
+        p {
+            animation: fade-in-top 1s ease both;    
+            animation-delay: .3s;       
+        }
+    }
+    .platform-section.odd.start .image-col img {
+        animation: fade-in-left 1s ease both;   
+        animation-delay: .6s;    
+    }
+    .platform-section.even.start .image-col img {
+        animation: fade-in-right 1s ease both;  
+        animation-delay: .6s;    
+    }
+    #callback-cta {
+        h3, p, button {
+            opacity: 0; 
+        }
+    }
+    
+    #callback-cta.start {
+        h3, p, button {
+            animation: fade-in-bottom 1s ease both; 
+        }
+    
+        p {
+            animation-delay: .3s;  
+        }
+    
+        button {
+            animation-delay: .6s;  
+        }
+	}
+	
+	--use cases--
+	#above-fold {
+        h1, p, button, .abovefoldimage {
+            opacity: 0;
+        }
+    }
+    #above-fold.start {
+        .abovefoldimage {
+            animation: rise 1s ease both;
+            animation-delay: .9s;
+        }
+        h1, p, button {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        p {
+            animation-delay: .3s;
+        }
+        button {
+            animation-delay: .6s;
+        }
+    }
+    #use-cases-menu {
+        h2, .footermenu {
+            opacity: 0;
+        }
+    }
+    #use-cases-menu.start {
+        h2, .footermenu {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        .footermenu {
+            animation-delay: .3s;
+        }
+    }
+    .use-case-content.start {
+        .row.odd {
+        h2 {
+                animation: fade-in-bottom 1s ease both;
+               
+            }
+            p {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .3s;
+            }
+            .image-col img {
+                animation: fade-in-right 1s ease both;
+                animation-delay: .6s;
+            }
+        }
+        .row.even {
+            h2 {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .3;
+            }
+            p {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .6s;
+            }
+            .image-col img {
+                animation: fade-in-left 1s ease both;
+            }
+            }
+    }
+    #callback-cta {
+        h3, p, .book-demo-button {
+            opacity: 0; 
+        }
+    }
+    
+    #callback-cta.start {
+        h3, p, .book-demo-button {
+            animation: fade-in-bottom 1s ease both; 
+        }
+    
+        p {
+            animation-delay: .3s;  
+        }
+    
+        button {
+            animation-delay: .6s;  
+        }
+    }
+    #recent-posts {
+        h2, .single-blog-item {
+            opacity: 0;
+        }
+    }
+    #recent-posts.start {
+        h2, .single-blog-item {
+            animation: fade-in-bottom 1s ease both; 
+        }
+
+            .single-blog-item  {
+                animation-delay: .3s;
+            }
+    }
+
+
+--*/

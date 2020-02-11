@@ -112,34 +112,8 @@
       }
     }
 /*--animations--*/ 
-#above-fold { 
-    h1, p {
-    opacity: 0;
-    }
-}
 
-#above-fold.start { 
-    h1, p {
-        animation: fade-in-bottom 1s ease both;
-    }
-    p {
-        animation-delay: .3s;
-    }
-}
 
-#contact .col.twothird, #contact .col.third {
-    opacity: 0;
-}
-
-#contact.start {
- .col.third {
-    animation: fade-in-left 1s ease both;  
-    animation-delay: .3s;   
-}
-.col.twothird {
-    animation: fade-in 1s ease both;   
-}
-}
 /*--media queries--*/
 @media (max-width: 767px) {
     #above-fold {

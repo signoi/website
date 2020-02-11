@@ -546,65 +546,31 @@ margin: 80px 0 160px 0;
 #above-fold.start {
     .abovefoldimage {
         animation: rise 1s ease both;
-        animation-delay: .9s;
+        animation-delay: .4s;
     }
-    h2, p, button {
+   p, button {
         animation: fade-in-bottom 1s ease both;   
-    }
-    p {
-        animation-delay: .3s;
     }
     button {
-        animation-delay: .6s;
+        animation-delay: .2s;
     }
 }
-#use-cases {
-    h2, .flipster__nav, .flipster__container {
-        opacity: 0;   
-    }
-} 
 
-#use-cases.start {
-    h2 {
-        animation: fade-in-bottom 1s ease both;   
-    }
-    .flipster__nav, .flipster__container {
-        animation: fade-in 1s ease both;
-    }
-    .flipster__nav {
-        animation-delay: .3s;  
-    }
-    .flipster__container { 
-        animation-delay: .6s;  
-    }
-} 
 
 #customer-comments {
-    h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution {
+    .flexslider.comments {
         opacity: 0;
     }
 }
 
 #customer-comments.start {
-    h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution  {
+    .flexslider.comments  {
         animation: fade-in-bottom 1s ease both;
-    }
-    .quote-before {
-        animation-delay: .3s;
-    }
-    .commenttext {
-        animation-delay: .55s;
-    }
-    .attribution {
-        animation-delay: .65s;
-    }
-    .quote-after {
-        animation-delay: .9s;
     }
 }
 
 #callback-cta {
-    h3, p, .book-demo-button {
+    .book-demo-button {
         opacity: 0; 
     }
     .book-demo-button {
@@ -613,21 +579,13 @@ margin: 80px 0 160px 0;
 }
 
 #callback-cta.start {
-    h3, p, .book-demo-button {
-        animation: fade-in-bottom 1s ease both; 
-    }
-
-    p {
-        animation-delay: .3s;  
-    }
-
     .book-demo-button {
-        animation-delay: .6s;  
+        animation: fade-in-bottom 1s ease both; 
     }
 }
 
 #quantitative-semiotics  {
-img, .col.half {
+img {
     opacity: 0;
 }
 .col.half:first-child:after {
@@ -638,53 +596,28 @@ img, .col.half {
 #quantitative-semiotics.start {
     .col.half:first-child:after {
         animation: increase-height 1s ease 1.3s both;
-        animation-delay: .6s;
+        animation-delay: .2s;
     }
     img {
         animation: fade-in-bottom 1s ease both;
     }
-    .col.half {
-        animation: fade-in 1s ease both;
-        animation-delay: .3s;
-    }
 }
 
 #about {
-    h2, p, .round-image img {
+    .round-image img, button {
         opacity: 0;       
     }
 }
 
 #about.start {
-    h2, p, button {
+    button {
         animation: fade-in-bottom 1s ease both;    
     }
     .round-image img {
         animation: fade-in 1s ease both;   
     }
-    p {
-        animation-delay: .3s;
-    }
     button {
-        animation-delay: .6s;
-    }
-}
-
-#reports {
-    .report-featured-image, h4, p {
-        opacity: 0;
-    }
-}
-
-#reports.start  {
-    .report-featured-image, h4, p {
-        animation: fade-in-bottom 1s ease both; 
-    }
-    p {
-        animation-delay: .3s;
-    }
-    .report-featured-image {
-        animation-delay: .6s;
+        animation-delay: .2s;
     }
 }
 }
@@ -912,3 +845,4 @@ img, .col.half {
         margin-bottom: .2em;
     }
 }
+

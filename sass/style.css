@@ -1343,6 +1343,7 @@ a:hover, a:active {
     max-height: 0;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    overflow: hidden;
   }
   .menuisopen .main-navigation .menu-item-has-children.open ul.sub-menu {
     opacity: 1;
@@ -1662,8 +1663,49 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
   padding-right: 15px;
 }
 
-#conversations-app .widget_icon_container {
-  background: #e9c659;
+/*--site-wide animations--*/
+#callback-cta .book-demo-button, #callback-cta button {
+  opacity: 0;
+}
+
+#callback-cta.start .book-demo-button, #callback-cta.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+#above-fold button, #above-fold .abovefoldimage {
+  opacity: 0;
+}
+
+#above-fold.start .abovefoldimage {
+  -webkit-animation: rise 1s ease both;
+          animation: rise 1s ease both;
+}
+
+#above-fold.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+#about .round-image img, #about button {
+  opacity: 0;
+}
+
+#about.start button {
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
+}
+
+#about.start .round-image img {
+  -webkit-animation: fade-in 1s ease both;
+          animation: fade-in 1s ease both;
+}
+
+#about.start button {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 @media (min-width: 767.1px) {
@@ -1752,6 +1794,462 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
   }
 }
 
+/*--old animations--
+#use-cases {
+    h2, .flipster__nav, .flipster__container {
+        opacity: 0;   
+    }
+} 
+
+#use-cases.start {
+    h2 {
+        animation: fade-in-bottom 1s ease both;   
+    }
+    .flipster__nav, .flipster__container {
+        animation: fade-in 1s ease both;
+    }
+    .flipster__nav {
+        animation-delay: .3s;  
+    }
+    .flipster__container { 
+        animation-delay: .6s;  
+    }
+} 
+#customer-comments.start {
+    h2, .flexslider.comments, .quote-before, .quote-after, .commenttext, .attribution  {
+        animation: fade-in-bottom 1s ease both;
+    }
+    .quote-before {
+        animation-delay: .3s;
+    }
+    .commenttext {
+        animation-delay: .55s;
+    }
+    .attribution {
+        animation-delay: .65s;
+    }
+    .quote-after {
+        animation-delay: .9s;
+    }
+}
+
+#quantitative-semiotics  {
+img, .col.half {
+    opacity: 0;
+}
+.col.half:first-child:after {
+    max-height: 0;
+}
+}
+
+#quantitative-semiotics.start {
+    .col.half:first-child:after {
+        animation: increase-height 1s ease 1.3s both;
+        animation-delay: .6s;
+    }
+    img {
+        animation: fade-in-bottom 1s ease both;
+    }
+    .col.half {
+        animation: fade-in 1s ease both;
+        animation-delay: .3s;
+    }
+}
+
+#about {
+    h2, p, .round-image img {
+        opacity: 0;       
+    }
+}
+
+#about.start {
+    h2, p, button {
+        animation: fade-in-bottom 1s ease both;    
+    }
+    .round-image img {
+        animation: fade-in 1s ease both;   
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+    #reports {
+    .report-featured-image, h4, p {
+        opacity: 0;
+    }
+}
+
+#reports.start  {
+    .report-featured-image, h4, p {
+        animation: fade-in-bottom 1s ease both; 
+    }
+    p {
+        animation-delay: .3s;
+    }
+    .report-featured-image {
+        animation-delay: .6s;
+    }
+}
+}
+
+--about page--
+
+#above-fold { 
+    h1, p, button {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p, button {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+}
+
+#about {
+    h2, p, .round-image img {
+        opacity: 0;       
+    }
+}
+
+#about.start {
+    h2, p {
+        animation: fade-in-bottom 1s ease both;    
+    }
+    .round-image img {
+        animation: fade-in 1s ease both;   
+    }
+    h2 {
+        animation-delay: .3s;
+    }
+    p {
+        animation-delay: .6s;
+    }
+}
+
+#callback-cta {
+    h3, p, button {
+        opacity: 0; 
+    }
+}
+
+#callback-cta.start {
+    h3, p, button {
+        animation: fade-in-bottom 1s ease both; 
+    }
+
+    p {
+        animation-delay: .3s;  
+    }
+
+    button {
+        animation-delay: .6s;  
+    }
+}
+
+--blog page--
+    .no-sidebar {
+        .single-blog-item.featured {
+            opacity: 0;
+        }
+    }
+    .no-sidebar.start {
+        .single-blog-item.featured {
+            animation: fade-in 1s ease both;    
+        }
+	}
+	
+	.page-template-blog-page-template {
+    .mailing-list-sign-up {
+        .mailing-list-icon, .mailing-list-text, .mailing-list-trigger {
+            opacity: 0;
+        }
+    }
+    .mailing-list-sign-up.start {
+        .mailing-list-icon {
+            animation: fade-in 1s ease both;    
+        }
+        .mailing-list-text {
+            animation: fade-in-left 1s ease both; 
+        }
+        .mailing-list-trigger {
+            animation: fade-in-bottom 1s ease both; 
+        }
+        .mailing-list-trigger {
+            animation-delay: .3s;
+        }
+	}
+
+	--brands agencies--
+
+	#above-fold { 
+    h1, p, .row.blurbs .col.third {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p, .row.blurbs .col.third {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+    .row.blurbs .col.third {
+        animation-delay: .7s;
+    }
+    .row.blurbs .col.third:first-child {
+        animation-delay: .6s;
+    }
+    .row.blurbs .col.third:last-child {
+        animation-delay: .8s;
+    }
+}   
+
+#case-studies {
+    .header-with-image, .row.tabs {
+        opacity: 0;   
+    }
+}
+
+#case-studies.start {
+    .header-with-image, .row.tabs {
+        animation: fade-in-bottom 1s ease both;  
+    }
+    .row.tabs {
+        animation-delay: .3s;  
+    }
+}
+}
+
+--careers--
+#above-fold { 
+    h1, p, button {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p, button {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+    button {
+        animation-delay: .6s;
+    }
+}
+#positions .job-info {
+    opacity: 0;
+}
+#positions .col.quarter.start .job-info {
+    animation: fade-in-bottom 1s ease both;
+}
+	
+
+
+--contact--
+
+#above-fold { 
+    h1, p {
+    opacity: 0;
+    }
+}
+
+#above-fold.start { 
+    h1, p {
+        animation: fade-in-bottom 1s ease both;
+    }
+    p {
+        animation-delay: .3s;
+    }
+}
+
+#contact .col.twothird, #contact .col.third {
+    opacity: 0;
+}
+
+#contact.start {
+ .col.third {
+    animation: fade-in-left 1s ease both;  
+    animation-delay: .3s;   
+}
+.col.twothird {
+    animation: fade-in 1s ease both;   
+}
+}
+
+--platform--
+   #above-fold {
+        h1, p, .abovefoldimage {
+            opacity: 0;
+        }
+    }
+    #above-fold.start {
+        .abovefoldimage {
+            animation: rise 1s ease both;
+            animation-delay: .6s;
+        }
+        h1, p {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        p {
+            animation-delay: .3s;
+        }
+    }
+    .platform-section {
+        p.subheading, h2, p, .image-col img {
+            opacity: 0;
+        }
+    }
+    .platform-section.start {
+        h2, p.subheading {
+            animation: fade-in-bottom 1s ease both;       
+        }
+        p.subeading {
+            animation-delay: .1s;
+        }
+        p {
+            animation: fade-in-top 1s ease both;    
+            animation-delay: .3s;       
+        }
+    }
+    .platform-section.odd.start .image-col img {
+        animation: fade-in-left 1s ease both;   
+        animation-delay: .6s;    
+    }
+    .platform-section.even.start .image-col img {
+        animation: fade-in-right 1s ease both;  
+        animation-delay: .6s;    
+    }
+    #callback-cta {
+        h3, p, button {
+            opacity: 0; 
+        }
+    }
+    
+    #callback-cta.start {
+        h3, p, button {
+            animation: fade-in-bottom 1s ease both; 
+        }
+    
+        p {
+            animation-delay: .3s;  
+        }
+    
+        button {
+            animation-delay: .6s;  
+        }
+	}
+	
+	--use cases--
+	#above-fold {
+        h1, p, button, .abovefoldimage {
+            opacity: 0;
+        }
+    }
+    #above-fold.start {
+        .abovefoldimage {
+            animation: rise 1s ease both;
+            animation-delay: .9s;
+        }
+        h1, p, button {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        p {
+            animation-delay: .3s;
+        }
+        button {
+            animation-delay: .6s;
+        }
+    }
+    #use-cases-menu {
+        h2, .footermenu {
+            opacity: 0;
+        }
+    }
+    #use-cases-menu.start {
+        h2, .footermenu {
+            animation: fade-in-bottom 1s ease both;   
+        }
+        .footermenu {
+            animation-delay: .3s;
+        }
+    }
+    .use-case-content.start {
+        .row.odd {
+        h2 {
+                animation: fade-in-bottom 1s ease both;
+               
+            }
+            p {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .3s;
+            }
+            .image-col img {
+                animation: fade-in-right 1s ease both;
+                animation-delay: .6s;
+            }
+        }
+        .row.even {
+            h2 {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .3;
+            }
+            p {
+                animation: fade-in-bottom 1s ease both;
+                animation-delay: .6s;
+            }
+            .image-col img {
+                animation: fade-in-left 1s ease both;
+            }
+            }
+    }
+    #callback-cta {
+        h3, p, .book-demo-button {
+            opacity: 0; 
+        }
+    }
+    
+    #callback-cta.start {
+        h3, p, .book-demo-button {
+            animation: fade-in-bottom 1s ease both; 
+        }
+    
+        p {
+            animation-delay: .3s;  
+        }
+    
+        button {
+            animation-delay: .6s;  
+        }
+    }
+    #recent-posts {
+        h2, .single-blog-item {
+            opacity: 0;
+        }
+    }
+    #recent-posts.start {
+        h2, .single-blog-item {
+            animation: fade-in-bottom 1s ease both; 
+        }
+
+            .single-blog-item  {
+                animation-delay: .3s;
+            }
+    }
+
+
+--*/
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -2430,79 +2928,30 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
 .page-template-homepage-template #above-fold.start .abovefoldimage {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
-.page-template-homepage-template #above-fold.start h2, .page-template-homepage-template #above-fold.start p, .page-template-homepage-template #above-fold.start button {
+.page-template-homepage-template #above-fold.start p, .page-template-homepage-template #above-fold.start button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-homepage-template #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 .page-template-homepage-template #above-fold.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
-.page-template-homepage-template #use-cases h2, .page-template-homepage-template #use-cases .flipster__nav, .page-template-homepage-template #use-cases .flipster__container {
+.page-template-homepage-template #customer-comments .flexslider.comments {
   opacity: 0;
 }
 
-.page-template-homepage-template #use-cases.start h2 {
+.page-template-homepage-template #customer-comments.start .flexslider.comments {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-homepage-template #use-cases.start .flipster__nav, .page-template-homepage-template #use-cases.start .flipster__container {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-}
-
-.page-template-homepage-template #use-cases.start .flipster__nav {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-homepage-template #use-cases.start .flipster__container {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-homepage-template #customer-comments h2, .page-template-homepage-template #customer-comments .flexslider.comments, .page-template-homepage-template #customer-comments .quote-before, .page-template-homepage-template #customer-comments .quote-after, .page-template-homepage-template #customer-comments .commenttext, .page-template-homepage-template #customer-comments .attribution {
-  opacity: 0;
-}
-
-.page-template-homepage-template #customer-comments.start h2, .page-template-homepage-template #customer-comments.start .flexslider.comments, .page-template-homepage-template #customer-comments.start .quote-before, .page-template-homepage-template #customer-comments.start .quote-after, .page-template-homepage-template #customer-comments.start .commenttext, .page-template-homepage-template #customer-comments.start .attribution {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-homepage-template #customer-comments.start .quote-before {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-homepage-template #customer-comments.start .commenttext {
-  -webkit-animation-delay: .55s;
-          animation-delay: .55s;
-}
-
-.page-template-homepage-template #customer-comments.start .attribution {
-  -webkit-animation-delay: .65s;
-          animation-delay: .65s;
-}
-
-.page-template-homepage-template #customer-comments.start .quote-after {
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
-}
-
-.page-template-homepage-template #callback-cta h3, .page-template-homepage-template #callback-cta p, .page-template-homepage-template #callback-cta .book-demo-button {
+.page-template-homepage-template #callback-cta .book-demo-button {
   opacity: 0;
 }
 
@@ -2510,22 +2959,12 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
   height: 45px;
 }
 
-.page-template-homepage-template #callback-cta.start h3, .page-template-homepage-template #callback-cta.start p, .page-template-homepage-template #callback-cta.start .book-demo-button {
+.page-template-homepage-template #callback-cta.start .book-demo-button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-homepage-template #callback-cta.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-homepage-template #callback-cta.start .book-demo-button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-homepage-template #quantitative-semiotics img, .page-template-homepage-template #quantitative-semiotics .col.half {
+.page-template-homepage-template #quantitative-semiotics img {
   opacity: 0;
 }
 
@@ -2536,8 +2975,8 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
 .page-template-homepage-template #quantitative-semiotics.start .col.half:first-child:after {
   -webkit-animation: increase-height 1s ease 1.3s both;
           animation: increase-height 1s ease 1.3s both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 .page-template-homepage-template #quantitative-semiotics.start img {
@@ -2545,18 +2984,11 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-homepage-template #quantitative-semiotics.start .col.half {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-homepage-template #about h2, .page-template-homepage-template #about p, .page-template-homepage-template #about .round-image img {
+.page-template-homepage-template #about .round-image img, .page-template-homepage-template #about button {
   opacity: 0;
 }
 
-.page-template-homepage-template #about.start h2, .page-template-homepage-template #about.start p, .page-template-homepage-template #about.start button {
+.page-template-homepage-template #about.start button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
 }
@@ -2566,33 +2998,9 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
           animation: fade-in 1s ease both;
 }
 
-.page-template-homepage-template #about.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
 .page-template-homepage-template #about.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-homepage-template #reports .report-featured-image, .page-template-homepage-template #reports h4, .page-template-homepage-template #reports p {
-  opacity: 0;
-}
-
-.page-template-homepage-template #reports.start .report-featured-image, .page-template-homepage-template #reports.start h4, .page-template-homepage-template #reports.start p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-homepage-template #reports.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-homepage-template #reports.start .report-featured-image {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 @media (max-width: 1300px) {
@@ -4010,37 +4418,13 @@ section.widget {
           animation: fade-in-bottom 1s ease both;
 }
 
-.page-template-blog-page-template .mailing-list-sign-up .mailing-list-icon, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-text, .page-template-blog-page-template .mailing-list-sign-up .mailing-list-trigger {
+.page-template-blog-page-template .mailing-list-trigger {
   opacity: 0;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-icon {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-text {
-  -webkit-animation: fade-in-left 1s ease both;
-          animation: fade-in-left 1s ease both;
 }
 
 .page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-blog-page-template .mailing-list-sign-up.start .mailing-list-trigger {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-blog-page-template .no-sidebar .single-blog-item.featured {
-  opacity: 0;
-}
-
-.page-template-blog-page-template .no-sidebar.start .single-blog-item.featured {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
 }
 
 .views-template-new-article-template- .post-area {
@@ -4509,77 +4893,13 @@ section.widget {
   margin-bottom: 10px;
 }
 
-.single-use-case #above-fold h1, .single-use-case #above-fold p, .single-use-case #above-fold button, .single-use-case #above-fold .abovefoldimage {
+.single-use-case .use-case-content .image-col img {
   opacity: 0;
-}
-
-.single-use-case #above-fold.start .abovefoldimage {
-  -webkit-animation: rise 1s ease both;
-          animation: rise 1s ease both;
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
-}
-
-.single-use-case #above-fold.start h1, .single-use-case #above-fold.start p, .single-use-case #above-fold.start button {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.single-use-case #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.single-use-case #above-fold.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.single-use-case #use-cases-menu h2, .single-use-case #use-cases-menu .footermenu {
-  opacity: 0;
-}
-
-.single-use-case #use-cases-menu.start h2, .single-use-case #use-cases-menu.start .footermenu {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.single-use-case #use-cases-menu.start .footermenu {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.single-use-case .use-case-content.start .row.odd h2 {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.single-use-case .use-case-content.start .row.odd p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 .single-use-case .use-case-content.start .row.odd .image-col img {
   -webkit-animation: fade-in-right 1s ease both;
           animation: fade-in-right 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.single-use-case .use-case-content.start .row.even h2 {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .3;
-          animation-delay: .3;
-}
-
-.single-use-case .use-case-content.start .row.even p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
 .single-use-case .use-case-content.start .row.even .image-col img {
@@ -4587,37 +4907,13 @@ section.widget {
           animation: fade-in-left 1s ease both;
 }
 
-.single-use-case #callback-cta h3, .single-use-case #callback-cta p, .single-use-case #callback-cta .book-demo-button {
+.single-use-case #recent-posts .single-blog-item {
   opacity: 0;
-}
-
-.single-use-case #callback-cta.start h3, .single-use-case #callback-cta.start p, .single-use-case #callback-cta.start .book-demo-button {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.single-use-case #callback-cta.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.single-use-case #callback-cta.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.single-use-case #recent-posts h2, .single-use-case #recent-posts .single-blog-item {
-  opacity: 0;
-}
-
-.single-use-case #recent-posts.start h2, .single-use-case #recent-posts.start .single-blog-item {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
 }
 
 .single-use-case #recent-posts.start .single-blog-item {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation: fade-in-bottom 1s ease both;
+          animation: fade-in-bottom 1s ease both;
 }
 
 @media (max-width: 980px) {
@@ -4644,6 +4940,17 @@ section.widget {
 }
 
 @media (max-width: 767px) {
+  .single-use-case {
+    /*--
+        .use-case-content.start .row.odd  p,  .use-case-content.start .row.odd  h2 {
+            animation: fade-in-bottom 1s ease both;   
+        }
+
+        .use-case-content.start .row.even  p,  .use-case-content.start .row.even  h2 {
+            animation: fade-in-top 1s ease both;   
+        }
+        --*/
+  }
   .single-use-case #above-fold .col.twothird {
     padding-top: 40px;
   }
@@ -4660,17 +4967,9 @@ section.widget {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
   }
-  .single-use-case .use-case-content.start .row.odd p, .single-use-case .use-case-content.start .row.odd h2 {
-    -webkit-animation: fade-in-bottom 1s ease both;
-            animation: fade-in-bottom 1s ease both;
-  }
   .single-use-case .use-case-content.start .row.even .image-col img {
     -webkit-animation: fade-in-bottom 1s ease both;
             animation: fade-in-bottom 1s ease both;
-  }
-  .single-use-case .use-case-content.start .row.even p, .single-use-case .use-case-content.start .row.even h2 {
-    -webkit-animation: fade-in-top 1s ease both;
-            animation: fade-in-top 1s ease both;
   }
   .single-use-case .use-case-content .text-col {
     margin: 0;
@@ -4902,71 +5201,13 @@ section.widget {
   padding: 0;
 }
 
-.page-template-brands-agencies-page #above-fold h1, .page-template-brands-agencies-page #above-fold p, .page-template-brands-agencies-page #above-fold .row.blurbs .col.third {
+.page-template-brands-agencies-page #above-fold .row.blurbs .col.third {
   opacity: 0;
-}
-
-.page-template-brands-agencies-page #above-fold.start h1, .page-template-brands-agencies-page #above-fold.start p, .page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-brands-agencies-page #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 .page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third {
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
-}
-
-.page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third:first-child {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-brands-agencies-page #above-fold.start .row.blurbs .col.third:last-child {
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
-}
-
-.page-template-brands-agencies-page #use-cases h2, .page-template-brands-agencies-page #use-cases .flipster__nav, .page-template-brands-agencies-page #use-cases .flipster__container {
-  opacity: 0;
-}
-
-.page-template-brands-agencies-page #use-cases.start .flipster__nav, .page-template-brands-agencies-page #use-cases.start .flipster__container {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-}
-
-.page-template-brands-agencies-page #use-cases.start h2 {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-brands-agencies-page #use-cases.start .flipster__nav {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-brands-agencies-page #use-cases.start .flipster__container {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-brands-agencies-page #case-studies .header-with-image, .page-template-brands-agencies-page #case-studies .row.tabs {
-  opacity: 0;
-}
-
-.page-template-brands-agencies-page #case-studies.start .header-with-image, .page-template-brands-agencies-page #case-studies.start .row.tabs {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-brands-agencies-page #case-studies.start .row.tabs {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 @media (max-width: 767px) {
@@ -5071,7 +5312,6 @@ section.widget {
 ##  About Page
 --------------------------------------------------------------*/
 .page-template-about-page {
-  /*--animations--*/
   /*--media queries--*/
 }
 
@@ -5192,68 +5432,6 @@ section.widget {
   color: #566272;
 }
 
-.page-template-about-page #above-fold h1, .page-template-about-page #above-fold p, .page-template-about-page #above-fold button {
-  opacity: 0;
-}
-
-.page-template-about-page #above-fold.start h1, .page-template-about-page #above-fold.start p, .page-template-about-page #above-fold.start button {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-about-page #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-about-page #above-fold.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-about-page #about h2, .page-template-about-page #about p, .page-template-about-page #about .round-image img {
-  opacity: 0;
-}
-
-.page-template-about-page #about.start h2, .page-template-about-page #about.start p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-about-page #about.start .round-image img {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
-}
-
-.page-template-about-page #about.start h2 {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-about-page #about.start p {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-about-page #callback-cta h3, .page-template-about-page #callback-cta p, .page-template-about-page #callback-cta button {
-  opacity: 0;
-}
-
-.page-template-about-page #callback-cta.start h3, .page-template-about-page #callback-cta.start p, .page-template-about-page #callback-cta.start button {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-about-page #callback-cta.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-about-page #callback-cta.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
 @media (max-width: 767px) {
   .page-template-about-page #above-fold {
     padding-top: 40px;
@@ -5354,25 +5532,6 @@ section.widget {
   margin: auto;
   margin-bottom: 0;
   font-size: 14px;
-}
-
-.page-template-careers-page #above-fold h1, .page-template-careers-page #above-fold p, .page-template-careers-page #above-fold button {
-  opacity: 0;
-}
-
-.page-template-careers-page #above-fold.start h1, .page-template-careers-page #above-fold.start p, .page-template-careers-page #above-fold.start button {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-careers-page #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-careers-page #above-fold.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
 .page-template-careers-page #positions .job-info {
@@ -5620,82 +5779,40 @@ section.widget {
   color: #566272;
 }
 
-.page-template-platform-page #above-fold h1, .page-template-platform-page #above-fold p, .page-template-platform-page #above-fold .abovefoldimage {
+.page-template-platform-page #above-fold .abovefoldimage {
   opacity: 0;
 }
 
 .page-template-platform-page #above-fold.start .abovefoldimage {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
-.page-template-platform-page #above-fold.start h1, .page-template-platform-page #above-fold.start p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-platform-page #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-platform-page .platform-section p.subheading, .page-template-platform-page .platform-section h2, .page-template-platform-page .platform-section p, .page-template-platform-page .platform-section .image-col img {
+.page-template-platform-page .platform-section .image-col img {
   opacity: 0;
-}
-
-.page-template-platform-page .platform-section.start h2, .page-template-platform-page .platform-section.start p.subheading {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-platform-page .platform-section.start p.subeading {
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s;
-}
-
-.page-template-platform-page .platform-section.start p {
-  -webkit-animation: fade-in-top 1s ease both;
-          animation: fade-in-top 1s ease both;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
 }
 
 .page-template-platform-page .platform-section.odd.start .image-col img {
   -webkit-animation: fade-in-left 1s ease both;
           animation: fade-in-left 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
 .page-template-platform-page .platform-section.even.start .image-col img {
   -webkit-animation: fade-in-right 1s ease both;
           animation: fade-in-right 1s ease both;
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
-.page-template-platform-page #callback-cta h3, .page-template-platform-page #callback-cta p, .page-template-platform-page #callback-cta button {
-  opacity: 0;
-}
-
-.page-template-platform-page #callback-cta.start h3, .page-template-platform-page #callback-cta.start p, .page-template-platform-page #callback-cta.start button {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-platform-page #callback-cta.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-platform-page #callback-cta.start button {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
 }
 
 @media (max-width: 980px) {
+  .page-template-platform-page {
+    /*--
+        .platform-section.odd.start p, .platform-section.odd.start h2, .platform-section.odd.start p.subheading {
+            animation: fade-in-bottom 1s ease both;   
+        }
+                .platform-section.even.start p, .platform-section.even.start h2, .platform-section.even.start p.subheading {
+            animation: fade-in-top 1s ease both;   
+        }
+        --*/
+  }
   .page-template-platform-page #above-fold .row {
     display: block;
   }
@@ -5722,17 +5839,9 @@ section.widget {
     -webkit-animation: fade-in-top 1s ease both;
             animation: fade-in-top 1s ease both;
   }
-  .page-template-platform-page .platform-section.odd.start p, .page-template-platform-page .platform-section.odd.start h2, .page-template-platform-page .platform-section.odd.start p.subheading {
-    -webkit-animation: fade-in-bottom 1s ease both;
-            animation: fade-in-bottom 1s ease both;
-  }
   .page-template-platform-page .platform-section.even.start .image-col img {
     -webkit-animation: fade-in-bottom 1s ease both;
             animation: fade-in-bottom 1s ease both;
-  }
-  .page-template-platform-page .platform-section.even.start p, .page-template-platform-page .platform-section.even.start h2, .page-template-platform-page .platform-section.even.start p.subheading {
-    -webkit-animation: fade-in-top 1s ease both;
-            animation: fade-in-top 1s ease both;
   }
   .page-template-platform-page .platform-section .row {
     display: block;
@@ -5903,36 +6012,6 @@ section.widget {
 .page-template-contact-page #contact .address a:hover {
   color: #c05344;
   text-decoration: none;
-}
-
-.page-template-contact-page #above-fold h1, .page-template-contact-page #above-fold p {
-  opacity: 0;
-}
-
-.page-template-contact-page #above-fold.start h1, .page-template-contact-page #above-fold.start p {
-  -webkit-animation: fade-in-bottom 1s ease both;
-          animation: fade-in-bottom 1s ease both;
-}
-
-.page-template-contact-page #above-fold.start p {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-contact-page #contact .col.twothird, .page-template-contact-page #contact .col.third {
-  opacity: 0;
-}
-
-.page-template-contact-page #contact.start .col.third {
-  -webkit-animation: fade-in-left 1s ease both;
-          animation: fade-in-left 1s ease both;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-.page-template-contact-page #contact.start .col.twothird {
-  -webkit-animation: fade-in 1s ease both;
-          animation: fade-in 1s ease both;
 }
 
 @media (max-width: 767px) {

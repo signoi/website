@@ -64,23 +64,7 @@
     }
 }
 /*--animations--*/
-#above-fold { 
-    h1, p, button {
-    opacity: 0;
-    }
-}
 
-#above-fold.start { 
-    h1, p, button {
-        animation: fade-in-bottom 1s ease both;
-    }
-    p {
-        animation-delay: .3s;
-    }
-    button {
-        animation-delay: .6s;
-    }
-}
 #positions .job-info {
     opacity: 0;
 }

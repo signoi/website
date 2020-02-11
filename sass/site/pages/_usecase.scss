@@ -161,100 +161,35 @@
         }
     }
     /*--animations--*/
-    #above-fold {
-        h1, p, button, .abovefoldimage {
+
+    .use-case-content {
+        .image-col img {
             opacity: 0;
         }
     }
-    #above-fold.start {
-        .abovefoldimage {
-            animation: rise 1s ease both;
-            animation-delay: .9s;
-        }
-        h1, p, button {
-            animation: fade-in-bottom 1s ease both;   
-        }
-        p {
-            animation-delay: .3s;
-        }
-        button {
-            animation-delay: .6s;
-        }
-    }
-    #use-cases-menu {
-        h2, .footermenu {
-            opacity: 0;
-        }
-    }
-    #use-cases-menu.start {
-        h2, .footermenu {
-            animation: fade-in-bottom 1s ease both;   
-        }
-        .footermenu {
-            animation-delay: .3s;
-        }
-    }
+
     .use-case-content.start {
         .row.odd {
-        h2 {
-                animation: fade-in-bottom 1s ease both;
-               
-            }
-            p {
-                animation: fade-in-bottom 1s ease both;
-                animation-delay: .3s;
-            }
             .image-col img {
                 animation: fade-in-right 1s ease both;
-                animation-delay: .6s;
             }
         }
         .row.even {
-            h2 {
-                animation: fade-in-bottom 1s ease both;
-                animation-delay: .3;
-            }
-            p {
-                animation: fade-in-bottom 1s ease both;
-                animation-delay: .6s;
-            }
             .image-col img {
                 animation: fade-in-left 1s ease both;
             }
             }
     }
-    #callback-cta {
-        h3, p, .book-demo-button {
-            opacity: 0; 
-        }
-    }
-    
-    #callback-cta.start {
-        h3, p, .book-demo-button {
-            animation: fade-in-bottom 1s ease both; 
-        }
-    
-        p {
-            animation-delay: .3s;  
-        }
-    
-        button {
-            animation-delay: .6s;  
-        }
-    }
+ 
     #recent-posts {
-        h2, .single-blog-item {
+    .single-blog-item {
             opacity: 0;
         }
     }
     #recent-posts.start {
-        h2, .single-blog-item {
+     .single-blog-item {
             animation: fade-in-bottom 1s ease both; 
         }
-
-            .single-blog-item  {
-                animation-delay: .3s;
-            }
     }
 
     /*--media queries--*/
@@ -296,16 +231,18 @@
         .use-case-content.start .row.odd .image-col img {
             animation: fade-in-top 1s ease both;
         }
-        .use-case-content.start .row.odd  p,  .use-case-content.start .row.odd  h2 {
-            animation: fade-in-bottom 1s ease both;   
-        }
         .use-case-content.start .row.even .image-col img {
             animation: fade-in-bottom 1s ease both;     
         }
+        /*--
+        .use-case-content.start .row.odd  p,  .use-case-content.start .row.odd  h2 {
+            animation: fade-in-bottom 1s ease both;   
+        }
+
         .use-case-content.start .row.even  p,  .use-case-content.start .row.even  h2 {
             animation: fade-in-top 1s ease both;   
         }
-
+        --*/
         .use-case-content .text-col {
         margin: 0;
         }

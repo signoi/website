@@ -97,66 +97,27 @@
 
     /*--animations--*/
     #above-fold {
-        h1, p, .abovefoldimage {
+       .abovefoldimage {
             opacity: 0;
         }
     }
     #above-fold.start {
         .abovefoldimage {
             animation: rise 1s ease both;
-            animation-delay: .6s;
-        }
-        h1, p {
-            animation: fade-in-bottom 1s ease both;   
-        }
-        p {
-            animation-delay: .3s;
         }
     }
     .platform-section {
-        p.subheading, h2, p, .image-col img {
+        .image-col img {
             opacity: 0;
         }
     }
-    .platform-section.start {
-        h2, p.subheading {
-            animation: fade-in-bottom 1s ease both;       
-        }
-        p.subeading {
-            animation-delay: .1s;
-        }
-        p {
-            animation: fade-in-top 1s ease both;    
-            animation-delay: .3s;       
-        }
-    }
     .platform-section.odd.start .image-col img {
-        animation: fade-in-left 1s ease both;   
-        animation-delay: .6s;    
+        animation: fade-in-left 1s ease both;     
     }
     .platform-section.even.start .image-col img {
         animation: fade-in-right 1s ease both;  
-        animation-delay: .6s;    
     }
-    #callback-cta {
-        h3, p, button {
-            opacity: 0; 
-        }
-    }
-    
-    #callback-cta.start {
-        h3, p, button {
-            animation: fade-in-bottom 1s ease both; 
-        }
-    
-        p {
-            animation-delay: .3s;  
-        }
-    
-        button {
-            animation-delay: .6s;  
-        }
-    }
+
     /*--media queries--*/
     @media (max-width: 980px) {
         #above-fold .row {
@@ -184,16 +145,19 @@
         .platform-section.odd.start .image-col img {
             animation: fade-in-top 1s ease both; 
         }
+        .platform-section.even.start .image-col img {
+            animation: fade-in-bottom 1s ease both;
+        }
+        /*--
         .platform-section.odd.start p, .platform-section.odd.start h2, .platform-section.odd.start p.subheading {
             animation: fade-in-bottom 1s ease both;   
         }
-
-       .platform-section.even.start .image-col img {
-            animation: fade-in-bottom 1s ease both;
-        }
-        .platform-section.even.start p, .platform-section.even.start h2, .platform-section.even.start p.subheading {
+                .platform-section.even.start p, .platform-section.even.start h2, .platform-section.even.start p.subheading {
             animation: fade-in-top 1s ease both;   
         }
+        --*/
+
+
         .platform-section .row {
             display: block;
         }
