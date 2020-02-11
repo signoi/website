@@ -61,7 +61,7 @@ $subtitle = get_sub_field('subheading');
 </div>	
 </section>
 <?php } else { ?>
-	<section class="platform-section odd stick">
+	<section class="platform-section odd">
 <div class="row odd">
 <div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
@@ -80,7 +80,7 @@ $subtitle = get_sub_field('subheading');
 		$cta = get_sub_field('cta_text'); 
 		$link = get_sub_field('cta_link'); 
 ?>
-<section id="callback-cta" class="stick">
+<section id="callback-cta">
 	<div class="row">
 		<div class="col full">
 			<h3><?php echo $title; ?></h3>	
