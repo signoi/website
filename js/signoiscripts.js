@@ -164,7 +164,7 @@ function scrollToAnchor(hash) {
       headerHeight = jQuery(".site-header").height() + 5; // Get fixed header height
     jQuery('html,body').animate({
           scrollTop: target.offset().top - headerHeight
-      }, 100);
+      }, 800);
       return false;
 }
 
@@ -172,15 +172,6 @@ if(window.location.hash) {
   scrollToAnchor(window.location.hash);
 }
 
-jQuery('.page-template-homepage-template #above-fold button').click(function(event){
-  scrollToAnchor(use-cases);
-  event.preventDefault();
-});
-
-jQuery('.single-use-case #above-fold .button').click(function(event){
-  scrollToAnchor(scrollto);
-  event.preventDefault();
-});
 
 jQuery("a[href*=\\#]:not([href=\\#])").click(function()
 {

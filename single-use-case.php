@@ -22,7 +22,7 @@ get_header();
 		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
 		<div class="intro-copy"><?php echo $copy; ?></div>
-		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button>
+		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><a class="anchor" href="<?php echo $link; ?>"><?php echo $cta; ?></a></button>
 		</div>
 		<div class="col third"><img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
 	</div>
