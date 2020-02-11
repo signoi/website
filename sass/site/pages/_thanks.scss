@@ -69,4 +69,21 @@
             }
         }
     }
+    #recent-posts {
+        h2 {
+            text-align: center;
+            color:  $color__red; 
+            margin-bottom: 30px;
+        }
+        .col.third {
+            padding: 0;
+        }
+        .reading-time {
+            font-size: .6rem;
+            color: #9795a2;
+            text-transform: uppercase;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
 }

@@ -5739,6 +5739,24 @@ section.widget {
   display: inline-block;
 }
 
+.page-template-thankyou-page #recent-posts h2 {
+  text-align: center;
+  color: #c05344;
+  margin-bottom: 30px;
+}
+
+.page-template-thankyou-page #recent-posts .col.third {
+  padding: 0;
+}
+
+.page-template-thankyou-page #recent-posts .reading-time {
+  font-size: .6rem;
+  color: #9795a2;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
 /*--------------------------------------------------------------
 ##  Platform page
 --------------------------------------------------------------*/
