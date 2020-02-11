@@ -1417,6 +1417,17 @@ a:hover, a:active {
     max-height: 70px;
     width: auto;
   }
+  /*--sticky header--*/
+  .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+  }
+  .site-content {
+    margin-top: 95px;
+  }
 }
 
 @media (max-width: 767px) {
