@@ -1737,6 +1737,25 @@ html, body {
 	scroll-behavior: smooth;
 }
 --*/
+/*--privacy page--*/
+.page-id-2864 h2 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.page-id-2864 h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.page-id-2864 h3 strong {
+  font-weight: normal;
+}
+
+.page-id-2864 ul {
+  font-size: 17px;
+}
+
 /*--site-wide animations--*/
 #callback-cta .book-demo-button, #callback-cta button {
   opacity: 0;
