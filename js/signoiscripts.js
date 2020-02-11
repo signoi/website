@@ -178,6 +178,15 @@ if(window.location.hash) {
   scrollToAnchor(window.location.hash);
 }
 
+jQuery('.page-template-homepage-template #above-fold button').click(function(event){
+  scrollToAnchor(this.hash);
+  event.preventDefault();
+});
+
+jQuery('.single-use-case #above-fold .button').click(function(event){
+  scrollToAnchor(this.hash);
+  event.preventDefault();
+});
 
 jQuery("a[href*=\\#]:not([href=\\#])").click(function()
 {
