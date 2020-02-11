@@ -1,5 +1,6 @@
 .page-template-platform-page {
     section.stick {
+        display: flex;
         height: 650px;
         width: 100%;
         position: relative;
@@ -14,6 +15,7 @@
         min-height: 0;
         .row {
             min-height: 0;
+            z-index: 0;
         }
         .col {
             text-align: left;

@@ -1455,6 +1455,7 @@ a:hover, a:active {
   background: #566272;
   padding: 80px 0;
   text-align: center;
+  position: relative;
 }
 
 #colophon .site-info {
@@ -5666,6 +5667,9 @@ section.widget {
 }
 
 .page-template-platform-page section.stick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 650px;
   width: 100%;
   position: relative;
@@ -5684,6 +5688,7 @@ section.widget {
 
 .page-template-platform-page #above-fold .row {
   min-height: 0;
+  z-index: 0;
 }
 
 .page-template-platform-page #above-fold .col {
