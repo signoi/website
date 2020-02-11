@@ -159,8 +159,7 @@ jQuery('.flipster').flipster({
 
 // scroll magic for platform parallax
 
-var width = window.innerWidth,
-height = window.innerHeight;
+
 
 var controller = new ScrollMagic.Controller({
 
@@ -174,7 +173,8 @@ var controller = new ScrollMagic.Controller({
 
 // get all slides
 var slides = document.querySelectorAll("section.stick:not(.section-3)");
-
+var width = window.innerWidth;
+var height = window.innerHeight;
 // create scene for every slide
 for (var i=0; i<slides.length; i++) {
   if (width >= 981) {
@@ -183,7 +183,6 @@ for (var i=0; i<slides.length; i++) {
       offset: -95,
     })
     .setPin(slides[i], {pushFollowers: false})
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 }
 }
