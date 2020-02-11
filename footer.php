@@ -84,6 +84,6 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flipster.min.js"></script> <!-- use cases slider --> 
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery-ui.min.js"></script> <!-- vertical tabs --> 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> <!-- scrollmagic for platform parallax --> 
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> <!-- scrollmagic for platform parallax --> 
+<!-- <script <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> indicators for scrollmagic --> 
 </body>
 </html>
