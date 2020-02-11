@@ -5667,15 +5667,6 @@ section.widget {
   /*--media queries--*/
 }
 
-.page-template-platform-page section.stick {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 650px;
-  width: 100%;
-  position: relative;
-}
-
 .page-template-platform-page section {
   z-index: 1;
 }
@@ -5832,7 +5823,18 @@ section.widget {
           animation: fade-in-right 1s ease both;
 }
 
-@media (max-width: 980px) {
+@media (min-width: 981px) {
+  .page-template-platform-page section.stick {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 650px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 980.9px) {
   .page-template-platform-page {
     /*--
         .platform-section.odd.start p, .platform-section.odd.start h2, .platform-section.odd.start p.subheading {
