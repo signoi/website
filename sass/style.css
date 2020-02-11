@@ -1503,6 +1503,14 @@ a:hover, a:active {
   z-index: 1;
 }
 
+#colophon a {
+  color: #fff;
+}
+
+#colophon a:hover {
+  color: #e9c659;
+}
+
 #colophon .site-info {
   color: #bbc0c6;
   font-size: .8rem;

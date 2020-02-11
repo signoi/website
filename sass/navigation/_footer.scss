@@ -1,4 +1,10 @@
 #colophon {
+    a {
+        color: #fff; 
+    }
+    a:hover {
+        color: $color__yellow;
+    }
     background: $color__grey;
     padding: 80px 0;
     text-align: center;
