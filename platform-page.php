@@ -17,7 +17,7 @@ while( have_rows('above_fold') ): the_row();
 $copy = get_sub_field('section_copy'); 
 $subtitle = get_sub_field('subheading'); 
 ?>		
-<section id="above-fold">
+<section class="stick" id="above-fold">
 	<div class="row intro">
 		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
@@ -50,7 +50,7 @@ $subtitle = get_sub_field('subheading');
 		endif;
 		if( get_row_index() % 2 == 0 ){
 ?>	
-<section class="platform-section even">
+<section class="platform-section even stick">
 <div class="row even">
 		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half platform-text">
@@ -61,7 +61,7 @@ $subtitle = get_sub_field('subheading');
 </div>	
 </section>
 <?php } else { ?>
-	<section class="platform-section odd">
+	<section class="platform-section odd stick">
 <div class="row odd">
 <div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
@@ -80,7 +80,7 @@ $subtitle = get_sub_field('subheading');
 		$cta = get_sub_field('cta_text'); 
 		$link = get_sub_field('cta_link'); 
 ?>
-<section id="callback-cta">
+<section id="callback-cta" class="stick">
 	<div class="row">
 		<div class="col full">
 			<h3><?php echo $title; ?></h3>	

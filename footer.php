@@ -80,8 +80,10 @@
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flexslider-min.js"></script> <!-- customer comment and report sliders on homepage -->
 <!--  <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/materialize.min.js"></script> not currently using -->
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.waypoints.js"></script>
-<!-- not  <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> currently using -->
+<!-- <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/inview.js"></script> not  currently using -->
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flipster.min.js"></script> <!-- use cases slider --> 
 <script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery-ui.min.js"></script> <!-- vertical tabs --> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> <!-- scrollmagic for platform parallax --> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> <!-- scrollmagic for platform parallax --> 
 </body>
 </html>
