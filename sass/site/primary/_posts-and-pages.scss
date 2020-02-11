@@ -62,11 +62,11 @@
 }
 #above-fold.start {
     .abovefoldimage {
-        animation: rise 1s ease both;
+		animation: rise 1s ease both;
+		animation-delay: .2s;
     }
   	button {
 		animation: fade-in-bottom 1s ease both;   
-		animation-delay: .2s;
     }
 }
 #about {

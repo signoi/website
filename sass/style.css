@@ -1691,13 +1691,13 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
 #above-fold.start .abovefoldimage {
   -webkit-animation: rise 1s ease both;
           animation: rise 1s ease both;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 #above-fold.start button {
   -webkit-animation: fade-in-bottom 1s ease both;
           animation: fade-in-bottom 1s ease both;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
 }
 
 #about .round-image img, #about button {
@@ -4840,16 +4840,10 @@ section.widget {
   color: #c05344;
   line-height: 1.2em;
   font-size: 32px;
-  opacity: 0;
-}
-
-.single-use-case .use-case-content p {
-  opacity: 0;
 }
 
 .single-use-case .use-case-content .image-col img {
   margin: auto;
-  opacity: 0;
 }
 
 .single-use-case .use-case-content .image-col {
