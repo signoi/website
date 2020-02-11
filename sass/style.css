@@ -5665,6 +5665,12 @@ section.widget {
   /*--media queries--*/
 }
 
+.page-template-platform-page section.stick {
+  height: 650px;
+  width: 100%;
+  position: relative;
+}
+
 .page-template-platform-page #above-fold {
   background: #566272;
   text-align: left;

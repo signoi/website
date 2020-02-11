@@ -1,4 +1,9 @@
 .page-template-platform-page {
+    section.stick {
+        height: 650px;
+        width: 100%;
+        position: relative;
+    }
     #above-fold { 
         background: $color__grey;
         text-align: left;
