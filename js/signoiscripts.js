@@ -158,7 +158,12 @@ jQuery('.flipster').flipster({
         .addClass('ui-tabs-vertical ui-helper-clearfix');     
 
 // scroll magic for platform parallax
+
+var width = window.innerWidth,
+height = window.innerHeight;
+
 var controller = new ScrollMagic.Controller({
+
   globalSceneOptions: {
     triggerHook: 'onLeave',
     duration: "650" // this works just fine with duration 0 as well
@@ -172,6 +177,7 @@ var slides = document.querySelectorAll("section.stick:not(.section-3)");
 
 // create scene for every slide
 for (var i=0; i<slides.length; i++) {
+  if (width >= 981) {
   new ScrollMagic.Scene({
       triggerElement: slides[i],
       offset: -95,
@@ -179,6 +185,7 @@ for (var i=0; i<slides.length; i++) {
     .setPin(slides[i], {pushFollowers: false})
     .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
+}
 }
         
 });
