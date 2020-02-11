@@ -25,6 +25,7 @@
         }
     }
     #report-overview {
+        display: none;
         background: $color__yellow;
         padding: 0;
         .report-content {
@@ -50,6 +51,7 @@
         }
 }
     #report-detail {
+        display: none;
         h2 {
             color:  $color__red;
             margin-bottom: 30px;

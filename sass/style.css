@@ -5680,6 +5680,7 @@ section.widget {
 }
 
 .page-template-thankyou-page #report-overview {
+  display: none;
   background: #e9c659;
   padding: 0;
 }
@@ -5712,6 +5713,10 @@ section.widget {
 
 .page-template-thankyou-page #report-overview .report-image {
   text-align: center;
+}
+
+.page-template-thankyou-page #report-detail {
+  display: none;
 }
 
 .page-template-thankyou-page #report-detail h2 {
