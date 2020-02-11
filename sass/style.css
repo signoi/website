@@ -1674,6 +1674,11 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
   padding-right: 15px;
 }
 
+/*--smooth scroll--*/
+html, body {
+  scroll-behavior: smooth;
+}
+
 /*--site-wide animations--*/
 #callback-cta .book-demo-button, #callback-cta button {
   opacity: 0;
