@@ -1000,6 +1000,50 @@ textarea {
   width: 100%;
 }
 
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-ms-input-placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
+}
+
+textarea::-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea::placeholder {
+  color: transparent;
+}
+
 @media (max-width: 767.99px) {
   input[type="text"],
   input[type="email"],
