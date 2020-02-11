@@ -1669,6 +1669,10 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible), :focus:not(:focus
   margin: auto;
 }
 
+section {
+  position: relative;
+}
+
 .col {
   padding-left: 15px;
   padding-right: 15px;
