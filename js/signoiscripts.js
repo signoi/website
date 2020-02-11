@@ -164,7 +164,7 @@ function scrollToAnchor(hash) {
       headerHeight = jQuery(".site-header").height() + 5; // Get fixed header height
     jQuery('html,body').animate({
           scrollTop: target.offset().top - headerHeight
-      }, 800);
+      }, 500);
       return false;
 }
 
