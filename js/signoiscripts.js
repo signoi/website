@@ -159,29 +159,32 @@ jQuery('.flipster').flipster({
         
 });
 
-jQuery(document).ready(function(){
-  // Add smooth scrolling to all links
-  jQuery("a").on('click', function(event) {
+function scrollToAnchor(hash) {
+  var target = $(hash),
+      headerHeight = $(".site-header").height() + 5; // Get fixed header height
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  target = target.length ? target : $('[name=' + hash.slice(1) +']');
 
-      // Store hash
-      var target =   jQuery(this.hash),
-      headerHeight =   jQuery(".site-header").height() + 5; // Get fixed header height
-            
-      target = target.length ? target :   jQuery('[name=' + this.hash.slice(1) +']');
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      jQuery('html, body').animate({
-        scrollTop: jQuery(target).offset().top - headerHeight
-      }, 800, function(){
+  if (target.length)
+  {
+      $('html,body').animate({
+          scrollTop: target.offset().top - headerHeight
+      }, 100);
+      return false;
+  }
+}
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+if(window.location.hash) {
+  scrollToAnchor(window.location.hash);
+}
+
+
+$("a[href*=\\#]:not([href=\\#])").click(function()
+{
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      || location.hostname == this.hostname)
+  {
+
+      scrollToAnchor(this.hash);
+  }
 });
