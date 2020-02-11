@@ -61,7 +61,7 @@ $subtitle = get_sub_field('subheading');
 </div>	
 </section>
 <?php } else { ?>
-	<section class="platform-section odd">
+	<section class="platform-section odd stick">
 <div class="row odd">
 <div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>

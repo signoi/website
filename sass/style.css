@@ -5671,6 +5671,10 @@ section.widget {
   position: relative;
 }
 
+.page-template-platform-page section {
+  z-index: 1;
+}
+
 .page-template-platform-page #above-fold {
   background: #566272;
   text-align: left;

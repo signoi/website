@@ -4,6 +4,9 @@
         width: 100%;
         position: relative;
     }
+    section {
+        z-index: 1;
+    }
     #above-fold { 
         background: $color__grey;
         text-align: left;
