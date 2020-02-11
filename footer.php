@@ -22,7 +22,7 @@
 		</div>
 			<nav class="footermenu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-menu' ) ); ?></nav>
 				<div class="site-info">
-				(c) 2019 Signoi Ltd. Registered office: 20-22 Wenlock Road, London, N1 7GU, Company number: 10978985
+				(c) 2019 Signoi Ltd. Registered office: 20-22 Wenlock Road, London, N1 7GU, Company number: 10978985 | <a href="/privacy-policy/">Privacy and Cookies</a>
 				</div><!-- .site-info -->
 		</div></div><!-- .row and column-->
 	</footer><!-- #colophon -->
