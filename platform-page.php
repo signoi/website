@@ -60,8 +60,19 @@ $subtitle = get_sub_field('subheading');
 		</div>
 </div>	
 </section>
+<?php } if( get_row_index() == 3 ){ ?>
+	<section class="platform-section odd final stick">
+<div class="row odd">
+<div class="col half platform-text">
+		<p class="subheading"><?php echo $subtitle; ?></p>
+			<h2><?php echo $title; ?></h2>
+			<?php echo $copy; ?>
+		</div>
+		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
+</div>	
+</section>
 <?php } else { ?>
-	<section class="platform-section odd stick">
+	<section class="platform-section odd first stick">
 <div class="row odd">
 <div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
