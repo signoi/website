@@ -169,12 +169,14 @@ jQuery(document).ready(function(){
       event.preventDefault();
 
       // Store hash
-      var hash = this.hash;
-
+      var target =   jQuery(this.hash),
+      headerHeight =   jQuery(".site-header").height() + 5; // Get fixed header height
+            
+      target = target.length ? target :   jQuery('[name=' + this.hash.slice(1) +']');
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       jQuery('html, body').animate({
-        scrollTop: jQuery(hash).offset().top
+        scrollTop: jQuery(target).offset().top - headerHeight
       }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
