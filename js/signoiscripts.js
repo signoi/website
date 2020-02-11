@@ -168,7 +168,7 @@ var controller = new ScrollMagic.Controller({
 });
 
 // get all slides
-var slides = document.querySelectorAll("section.stick");
+var slides = document.querySelectorAll("section.stick:not(.section-3)");
 
 // create scene for every slide
 for (var i=0; i<slides.length; i++) {
