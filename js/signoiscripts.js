@@ -162,16 +162,10 @@ jQuery('.flipster').flipster({
 function scrollToAnchor(hash) {
   var target = jQuery(hash),
       headerHeight = jQuery(".site-header").height() + 5; // Get fixed header height
-
-  target = target.length ? target : jQuery('[name=' + hash.slice(1) +']');
-
-  if (target.length)
-  {
     jQuery('html,body').animate({
           scrollTop: target.offset().top - headerHeight
       }, 100);
       return false;
-  }
 }
 
 if(window.location.hash) {
@@ -179,12 +173,12 @@ if(window.location.hash) {
 }
 
 jQuery('.page-template-homepage-template #above-fold button').click(function(event){
-  scrollToAnchor(this.hash);
+  scrollToAnchor(use-cases);
   event.preventDefault();
 });
 
 jQuery('.single-use-case #above-fold .button').click(function(event){
-  scrollToAnchor(this.hash);
+  scrollToAnchor(scrollto);
   event.preventDefault();
 });
 

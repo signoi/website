@@ -43,7 +43,7 @@ get_header();
 		<div class="col full">
 		<div class="abovefoldcopy"><h1><?php echo $title; ?></h1>	
 		<p><?php echo $copy; ?></p>
-		<button class="button yellow" onclick="window.location.href = '<?php echo $link; ?>';"><?php echo $cta; ?></button></div>
+		<button class="button yellow" onclick="window.location.href = '<?php echo $link; ?>';"><a class="anchor" href="<?php echo $link; ?>"><?php echo $cta; ?></a></button></div>
 		<img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg">
 		</div>
 	</div>
