@@ -50,7 +50,7 @@ $subtitle = get_sub_field('subheading');
 		endif;
 		if( get_row_index() % 2 == 0 ){
 ?>	
-<section class="platform-section even stick">
+<section class="platform-section even stick section-<?php echo get_row_index(); ?>">
 <div class="row even">
 		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half platform-text">
@@ -60,19 +60,8 @@ $subtitle = get_sub_field('subheading');
 		</div>
 </div>	
 </section>
-<?php } if( get_row_index() == 3 ){ ?>
-	<section class="platform-section odd final stick">
-<div class="row odd">
-<div class="col half platform-text">
-		<p class="subheading"><?php echo $subtitle; ?></p>
-			<h2><?php echo $title; ?></h2>
-			<?php echo $copy; ?>
-		</div>
-		<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
-</div>	
-</section>
 <?php } else { ?>
-	<section class="platform-section odd first stick">
+	<section class="platform-section odd stick section-<?php echo get_row_index(); ?>">
 <div class="row odd">
 <div class="col half platform-text">
 		<p class="subheading"><?php echo $subtitle; ?></p>
