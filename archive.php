@@ -51,7 +51,7 @@ get_header();
 <section class="mailing-list-sign-up blog-footer">
 <div class="row">
 <div class="col full mailing-list-inner">
-<div class="mailing-list-icon"><img class="alignnone wp-image-1640" src="http://new.signoi.com/wp-content/uploads/2019/10/signoi-logo-01-150x150.png" alt="" width="55" height="55" srcset="http://new.signoi.com/wp-content/uploads/2019/10/signoi-logo-01-150x150.png 150w, http://new.signoi.com/wp-content/uploads/2019/10/signoi-logo-01.png 300w" sizes="(max-width: 55px) 100vw, 55px"></div>
+<div class="mailing-list-icon"><img class="alignnone wp-image-1640" src="/wp-content/uploads/2019/10/signoi-logo-01-150x150.png" alt="" width="55" height="55"></div>
 <div class="mailing-list-text">Subscribe to our newsletter and get all this great content sent directly to your inbox.</div>
 <div class="mailing-list-trigger pum-trigger" style="cursor: pointer;">
 <div class="button red">Sign Me Up</div>

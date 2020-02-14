@@ -2476,7 +2476,7 @@ img, .col.half {
 }
 
 .page-id-2521 #above-fold {
-  background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/barth-bailey-5_bAKRGvkq8-unsplash-scaled.jpg);
+  background-image: url(/wp-content/uploads/2019/12/barth-bailey-5_bAKRGvkq8-unsplash-scaled.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2579,7 +2579,7 @@ img, .col.half {
 #customer-comments .quote-before {
   content: " ";
   display: block;
-  background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  background: url(/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
   width: 50px;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2604,7 +2604,7 @@ img, .col.half {
 #customer-comments .quote-after {
   content: " ";
   display: block;
-  background: url(http://new.signoi.com/wp-content/uploads/2019/12/quote-right.svg);
+  background: url(/wp-content/uploads/2019/12/quote-right.svg);
   width: 50px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3582,7 +3582,7 @@ blockquote p {
 
 blockquote:before {
   content: "";
-  background: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  background: url(/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
   background-position: center center;
   background-repeat: no-repeat;
   display: inline-block;
@@ -5725,7 +5725,7 @@ section.widget {
 }
 
 .page-template-thankyou-page #report-detail ul {
-  list-style-image: url("http://new.signoi.com/wp-content/uploads/2019/12/lightbulb-01-1.svg");
+  list-style-image: url("/wp-content/uploads/2019/12/lightbulb-01-1.svg");
   font-size: 19px;
 }
 

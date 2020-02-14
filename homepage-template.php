@@ -38,13 +38,13 @@ get_header();
 ?>		
 <section id="above-fold" style="background-color: <?php echo $backgroundcolor; ?>;">
 <div class="background-shape"></div>
-<!--  <div class="background-image"  style="background-image: url(http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-03.svg);"></div> -->
+<!--  <div class="background-image"  style="background-image: url(/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-03.svg);"></div> -->
 	<div class="row">
 		<div class="col full">
 		<div class="abovefoldcopy"><h1><?php echo $title; ?></h1>	
 		<p><?php echo $copy; ?></p>
 		<button class="button yellow" onclick="window.location.href = '<?php echo $link; ?>';"><a class="anchor" href="<?php echo $link; ?>"><?php echo $cta; ?></a></button></div>
-		<img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg">
+		<img class="abovefoldimage" src="/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg">
 		</div>
 	</div>
 </section>
