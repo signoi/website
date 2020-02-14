@@ -127,11 +127,11 @@ jQuery('.flipster').flipster({
   // If true, Flipster will insert Previous / Next buttons with SVG arrows
   // If 'custom', Flipster will not insert the arrows and will instead use the values of `buttonPrev` and `buttonNext`
 
-  buttonPrev: '<img src="http://new.signoi.com/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg">',
+  buttonPrev: '<img src="/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-04.svg">',
   // [text|html]
   // Changes the text for the Previous button
 
-  buttonNext: '<img src="http://new.signoi.com/wp-content/uploads/2019/12/pagination-arrow-right.svg">',
+  buttonNext: '<img src="/wp-content/uploads/2019/12/pagination-arrow-right.svg">',
   // [text|html]
   // Changes the text for the Next button
 
