@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - develop
+      - develop
 name: Publish Website to Development Sandpit
 jobs:
   FTP-Deploy-Action:
