@@ -1238,7 +1238,7 @@ a:hover, a:active {
     font-weight: 600;
   }
   .main-navigation ul ul li a:before {
-    content: url(/wp-content/uploads/2019/12/signoi-logo-icon-01.svg);
+    content: url(/images/signoi-logo-icon-01.svg);
     display: block;
     margin-bottom: 10px;
   }
@@ -2470,94 +2470,94 @@ img, .col.half {
   max-height: 36vh;
 }
 
-/*--alternative homepage--*/
+/*--alternative homepage
 .page-id-2489 .background-shape {
-  display: none;
+	display: none;
 }
 
-.page-id-2521 #above-fold {
-  background-image: url(/wp-content/uploads/2019/12/barth-bailey-5_bAKRGvkq8-unsplash-scaled.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.page-id-2521 {
+     #above-fold {
+	background-image: url(/wp-content/uploads/2019/12/barth-bailey-5_bAKRGvkq8-unsplash-scaled.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#above-fold .col.full {
+    padding: 80px 0;
+}
+#above-fold h2 {
+    margin-top: 0;
 }
 
-.page-id-2521 #above-fold .col.full {
-  padding: 80px 0;
+#above-fold img {
+	display: none;
 }
 
-.page-id-2521 #above-fold h2 {
-  margin-top: 0;
+#above-fold button {
+	border-color: #c05344;
+    background: #c05344;
+    color: #fff;
 }
-
-.page-id-2521 #above-fold img {
-  display: none;
 }
-
-.page-id-2521 #above-fold button {
-  border-color: #c05344;
-  background: #c05344;
-  color: #fff;
-}
-
 .background-shape {
-  width: 100%;
-  height: 100%;
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
+	width: 100%;
+	height: 100%;
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .background-shape:after {
-  width: 90vw;
-  height: 90vw;
-  max-width: 1080px;
-  max-height: 1080px;
-  margin: auto;
-  content: " ";
-  display: block;
-  margin-top: -33%;
-  border-radius: 50%;
-  background: rgba(86, 98, 114, 0.8);
+	width: 90vw;
+	height: 90vw;
+	max-width: 1080px;
+	max-height: 1080px;
+	margin: auto;
+	content: " ";
+	display: block;
+	    margin-top: -33%;
+	border-radius: 50%;
+	background: rgba(86, 98, 114, .8);
 }
 
 @media (min-width: 1400px) {
-  .background-shape:after {
-    margin-top: -28%;
-  }
+	.background-shape:after {
+		margin-top: -28%;
+	}
 }
 
+
 @media (max-width: 969px) {
-  .background-shape {
-    height: 900px;
-    width: 900px;
-    position: absolute;
-    left: 50%;
-    margin: auto;
-    margin-left: -450px;
+	.background-shape {
+        height: 900px;
+        width: 900px;
+        position: absolute;
+        left: 50%;
+        margin: auto;
+        margin-left: -450px;
     max-width: none;
     max-width: none;
-  }
+	}
 }
 
 @media (max-width: 767.99px) {
-  .background-shape {
-    top: 0;
-    margin-top: -350px;
-  }
-  .page-id-2521 #above-fold .col.full {
-    padding: 40px 0;
-  }
+    .background-shape { 
+        top: 0;
+        margin-top: -350px;
+    }
+    .page-id-2521 #above-fold .col.full {
+        padding: 40px 0;
+    }
 }
 
 @media (max-width: 550px) {
-  .background-shape {
-    top: 0;
-    margin-top: -200px;
-  }
+    .background-shape { 
+        top: 0;
+        margin-top: -200px;
+    }
 }
-
+--*/
 #customer-comments {
   text-align: center;
 }
@@ -2579,7 +2579,7 @@ img, .col.half {
 #customer-comments .quote-before {
   content: " ";
   display: block;
-  background: url(/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  background: url(/images/Signoi-Website-HOME-template-3d-CS6-05.svg);
   width: 50px;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2604,7 +2604,7 @@ img, .col.half {
 #customer-comments .quote-after {
   content: " ";
   display: block;
-  background: url(/wp-content/uploads/2019/12/quote-right.svg);
+  background: url(/images/quote-right.svg);
   width: 50px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3582,7 +3582,7 @@ blockquote p {
 
 blockquote:before {
   content: "";
-  background: url(/wp-content/uploads/2019/12/Signoi-Website-HOME-template-3d-CS6-05.svg);
+  background: url(/images/Signoi-Website-HOME-template-3d-CS6-05.svg);
   background-position: center center;
   background-repeat: no-repeat;
   display: inline-block;
@@ -5731,7 +5731,7 @@ section.widget {
 }
 
 .page-template-thankyou-page #report-detail ul {
-  list-style-image: url("/wp-content/uploads/2019/12/lightbulb-01-1.svg");
+  list-style-image: url("/lightbulb-01-1.svg");
   font-size: 19px;
 }
 
