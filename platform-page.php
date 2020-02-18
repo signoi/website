@@ -24,7 +24,7 @@ $subtitle = get_sub_field('subheading');
 		<p class="subheading"><?php echo $subtitle; ?></p>
 		<?php echo $copy; ?>
 		</div>
-		<div class="col third"><img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
+		<div class="col third"><img class="abovefoldimage" src="/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
 	</div>
 </section>
 <?php endwhile; else : endif; ?>

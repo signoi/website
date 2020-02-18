@@ -24,7 +24,7 @@ get_header();
 		<div class="intro-copy"><?php echo $copy; ?></div>
 		<button class="button red" onclick="window.location.href = '<?php echo $link; ?>';"><a class="anchor" href="<?php echo $link; ?>"><?php echo $cta; ?></a></button>
 		</div>
-		<div class="col third"><img class="abovefoldimage" src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
+		<div class="col third"><img class="abovefoldimage" src="/wp-content/uploads/2019/12/signoi-logo-cropped-07.svg"></div>
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
@@ -61,7 +61,7 @@ get_header();
 				if( get_row_index() % 2 == 0 ){
 				?>
 				<section class="use-case-content even">
-					<div class="signoi-logo-background"><img src="http://new.signoi.com/wp-content/uploads/2019/12/signoi-logo-grey-full-04.svg"></div>
+					<div class="signoi-logo-background"><img src="/wp-content/uploads/2019/12/signoi-logo-grey-full-04.svg"></div>
 				<div class="row even">
 				<div class="col half image-col"><img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>
 		<div class="col half text-col">
