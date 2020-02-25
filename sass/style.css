@@ -5933,7 +5933,7 @@ section.widget {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 650px;
+    height: 750px;
     width: 100%;
     position: relative;
   }
