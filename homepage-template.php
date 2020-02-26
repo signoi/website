@@ -66,6 +66,8 @@ get_header();
 ?>
 
 	<div class="row blurbs">
+	<div class="arrow-1"><img src="/wp-content/themes/signoi-theme/sass/images/signoi-arrow-1.svg"></div>
+	<div class="arrow-2"><img src="/wp-content/themes/signoi-theme/sass/images/signoi-arrow-2.svg"></div>
 	<?php while( have_rows('section_blurbs') ): the_row(); 
 		$copy = get_sub_field('blurb_copy'); 
 		$image = get_sub_field('blurb_image'); 

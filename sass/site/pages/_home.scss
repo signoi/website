@@ -88,6 +88,20 @@
         margin-right: auto;
         margin-bottom: 30px;
     }
+    .blurb-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            align-self: center;
+            margin: auto;
+        }
+        p {
+            align-self: flex-end;
+            margin: auto;
+        }
+    }
 }
 
 /*--alternative homepage--*/
