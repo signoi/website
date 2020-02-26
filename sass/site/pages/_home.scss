@@ -722,7 +722,7 @@ img {
     }
 }
 
-@media (max-width: 767.1px) {
+@media (min-width: 767.1px) {
     #how-we-work .blurb-inner img.mobile, #how-we-work .blurb-inner .step {
         display: none;
     }
