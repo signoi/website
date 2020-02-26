@@ -3210,6 +3210,15 @@ img, .col.half {
     text-align: center;
     margin-bottom: 40px;
   }
+  #how-we-work .blurb-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #how-we-work .blurb-inner p {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

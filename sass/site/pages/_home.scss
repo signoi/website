@@ -731,6 +731,10 @@ img {
         text-align: center;
         margin-bottom: 40px;
     }
+    #how-we-work .blurb-inner {
+        flex-direction: column;
+        display: flex;
+    }
 
     #how-we-work .blurb-inner p {
         order: 1;
