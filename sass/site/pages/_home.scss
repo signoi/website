@@ -773,6 +773,12 @@ margin-bottom: 20px;
         background: $color__red;
         margin: auto;
     }
+    #how-we-work .col.third:last-child:after {
+        display: none;
+    }
+    #how-we-work .col.third:last-child {
+        margin-bottom: 0;
+    }
     #above-fold button,  #above-fold input[type="button"],  #above-fold input[type="reset"],  #above-fold input[type="submit"] {
         font-size: 24px; 
     }
