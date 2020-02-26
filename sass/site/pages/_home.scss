@@ -83,18 +83,31 @@
     h2 {
         color: $color__red;
     }
-    p {
-        max-width: 500px;
+    .intro p {
+        max-width: 550px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
     }
     .row.blurbs {
         position: relative;
+        .col-third:first-child img {
+            margin-top: 60px;
+            margin-bottom: -40px;
+        }
     }
     .arrow-1, .arrow-2 {
         position: absolute;
     }
+    .arrow-1 {
+        top: -120px;
+    left: 140px;
+    }
+    .arrow-2 {
+        right: 19%;
+        bottom: 50px;
+    }
+
 
     .blurb-inner {
         img {
@@ -656,6 +669,15 @@ img {
 
 
 @media (max-width: 1300px) {
+    .arrow-1, .arrow-2 {
+        transform: scale(0.8);
+    }
+    .arrow-1 {
+        left: 100px;
+    }
+    .arrow-2 {
+        right: 17%;
+    }
     #use-cases .flipster .flipster__button--prev {
         left: 5%;
     }
@@ -667,6 +689,15 @@ img {
 @media (min-width: 1050px) {
     .page-template-homepage-template .abovefoldimage {
         max-width: 80vh;
+    }
+    .arrow-1 {
+        transform: scale(0.6);
+        left: 30px;
+    }
+    .arrow-2 {
+        right: 13%;
+        bottom: 75px;
+        transform: scale(0.6);
     }
 }
 
@@ -684,6 +715,9 @@ img {
         margin-left: 40px;
         margin-right: 40px;
     }
+    .arrow-2 {
+        right: 10%;
+    }
     #use-cases .flipster .flipster__item__content {
         padding: 20px;
     }
@@ -691,6 +725,16 @@ img {
 
 
 @media (max-width: 767px) {
+    .arrow-1, .arrow-2 {
+        display: none;
+    }
+    #how-we-work .col.third {
+        text-align: center;
+    }
+        #how-we-work    .col-third:first-child img {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
     #above-fold button,  #above-fold input[type="button"],  #above-fold input[type="reset"],  #above-fold input[type="submit"] {
         font-size: 24px; 
     }
