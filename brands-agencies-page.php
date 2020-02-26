@@ -133,6 +133,18 @@ wp_reset_postdata();
 		<?php endif; ?>
 	</div>
 </section>
+<section id="callback-cta">
+	<div class="row">
+		<div class="col full">
+			<h3>Get in Touch</h3>	
+<div class="book-demo-button onpage"><!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<a class="button yellow" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/signoi/demo'});return false;">Schedule a call</a>
+<!-- Calendly link widget end --></div>
+		</div>
+	</div>
+</section>	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
