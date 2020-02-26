@@ -686,10 +686,7 @@ img {
     }
 }
 
-@media (min-width: 1050px) {
-    .page-template-homepage-template .abovefoldimage {
-        max-width: 80vh;
-    }
+@media (max-width: 1080px) {
     #how-we-work .arrow-1 {
         transform: scale(0.6);
         left: 30px;
@@ -698,6 +695,12 @@ img {
         right: 13%;
         bottom: 75px;
         transform: scale(0.6);
+    }
+}
+
+@media (min-width: 1050px) {
+    .page-template-homepage-template .abovefoldimage {
+        max-width: 80vh;
     }
 }
 
@@ -715,7 +718,7 @@ img {
         margin-left: 40px;
         margin-right: 40px;
     }
-    .arrow-2 {
+    #how-we-work .arrow-2 {
         right: 10%;
     }
     #use-cases .flipster .flipster__item__content {

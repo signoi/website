@@ -3165,10 +3165,7 @@ img, .col.half {
   }
 }
 
-@media (min-width: 1050px) {
-  .page-template-homepage-template .abovefoldimage {
-    max-width: 80vh;
-  }
+@media (max-width: 1080px) {
   #how-we-work .arrow-1 {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
@@ -3179,6 +3176,12 @@ img, .col.half {
     bottom: 75px;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+}
+
+@media (min-width: 1050px) {
+  .page-template-homepage-template .abovefoldimage {
+    max-width: 80vh;
   }
 }
 
@@ -3196,7 +3199,7 @@ img, .col.half {
     margin-left: 40px;
     margin-right: 40px;
   }
-  .arrow-2 {
+  #how-we-work .arrow-2 {
     right: 10%;
   }
   #use-cases .flipster .flipster__item__content {
