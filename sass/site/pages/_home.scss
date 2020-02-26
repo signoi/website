@@ -76,6 +76,7 @@
 }
 
 #how-we-work {
+
     h2, p {
         text-align: center;
     }
@@ -88,18 +89,19 @@
         margin-right: auto;
         margin-bottom: 30px;
     }
-    .blurb-inner {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    .row.blurbs {
+        position: relative;
+    }
+    .arrow-1, .arrow-2 {
+        position: absolute;
+    }
 
+    .blurb-inner {
         img {
-            align-self: center;
-            margin: auto;
+    margin-bottom: 20px;
         }
         p {
-            align-self: flex-end;
-            margin: auto;
+            text-align: center;
         }
     }
 }
