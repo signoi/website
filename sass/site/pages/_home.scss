@@ -75,6 +75,46 @@
     }
 }
 
+#how-we-work {
+
+    h2, p {
+        text-align: center;
+    }
+    h2 {
+        color: $color__red;
+    }
+    .intro p {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .row.blurbs {
+        position: relative;
+    }
+    .arrow-1, .arrow-2 {
+        position: absolute;
+    }
+    .arrow-1 {
+        top: -120px;
+    left: 140px;
+    }
+    .arrow-2 {
+        right: 19%;
+        bottom: 50px;
+    }
+
+
+    .blurb-inner {
+        img {
+    margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
 /*--alternative homepage
 .page-id-2489 .background-shape {
 	display: none;
@@ -626,11 +666,32 @@ img {
 
 
 @media (max-width: 1300px) {
+   #how-we-work .arrow-1, #how-we-work .arrow-2 {
+        transform: scale(0.8);
+    }
+    #how-we-work .arrow-1 {
+        left: 100px;
+    }
+    #how-we-work .arrow-2 {
+        right: 17%;
+    }
     #use-cases .flipster .flipster__button--prev {
         left: 5%;
     }
     #use-cases .flipster .flipster__button--next {
         right: 5%; 
+    }
+}
+
+@media (max-width: 1080px) {
+    #how-we-work .arrow-1 {
+        transform: scale(0.6);
+        left: 30px;
+    }
+    #how-we-work .arrow-2 {
+        right: 13%;
+        bottom: 75px;
+        transform: scale(0.6);
     }
 }
 
@@ -654,13 +715,71 @@ img {
         margin-left: 40px;
         margin-right: 40px;
     }
+    #how-we-work .arrow-2 {
+        right: 10%;
+    }
     #use-cases .flipster .flipster__item__content {
         padding: 20px;
     }
 }
 
-
+@media (min-width: 767.1px) {
+    #how-we-work .blurb-inner img.mobile, #how-we-work .blurb-inner .step {
+        display: none;
+    }
+}
 @media (max-width: 767px) {
+    #how-we-work .arrow-1, #how-we-work .arrow-2 {
+        display: none;
+    }
+    #how-we-work .col.third {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #how-we-work .blurb-inner {
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    #how-we-work .blurb-inner .step {
+        color: $color__red;
+        font-size: 1.2rem;
+        margin-right: 5px;
+    }
+
+    #how-we-work .blurb-inner p {
+        order: 1;
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 20px;
+        
+    }
+    #how-we-work .blurb-inner img {
+        order: 2;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+    }
+    #how-we-work .blurb-inner img.desktop {
+        display: none;
+    }
+    #how-we-work .col.third:after {
+        width: 80%;
+        height: 1px;
+        content: " ";
+        display: block;
+        background: $color__red;
+        margin: auto;
+    }
+    #how-we-work .col.third.blurb-3:after {
+        display: none;
+    }
+    #how-we-work .col.third.blurb-3 {
+        margin-bottom: 0;
+    }
     #above-fold button,  #above-fold input[type="button"],  #above-fold input[type="reset"],  #above-fold input[type="submit"] {
         font-size: 24px; 
     }

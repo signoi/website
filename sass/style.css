@@ -2470,6 +2470,47 @@ img, .col.half {
   max-height: 36vh;
 }
 
+#how-we-work h2, #how-we-work p {
+  text-align: center;
+}
+
+#how-we-work h2 {
+  color: #c05344;
+}
+
+#how-we-work .intro p {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#how-we-work .row.blurbs {
+  position: relative;
+}
+
+#how-we-work .arrow-1, #how-we-work .arrow-2 {
+  position: absolute;
+}
+
+#how-we-work .arrow-1 {
+  top: -120px;
+  left: 140px;
+}
+
+#how-we-work .arrow-2 {
+  right: 19%;
+  bottom: 50px;
+}
+
+#how-we-work .blurb-inner img {
+  margin-bottom: 20px;
+}
+
+#how-we-work .blurb-inner p {
+  text-align: center;
+}
+
 /*--alternative homepage
 .page-id-2489 .background-shape {
 	display: none;
@@ -3101,11 +3142,35 @@ img, .col.half {
 }
 
 @media (max-width: 1300px) {
+  #how-we-work .arrow-1, #how-we-work .arrow-2 {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #how-we-work .arrow-1 {
+    left: 100px;
+  }
+  #how-we-work .arrow-2 {
+    right: 17%;
+  }
   #use-cases .flipster .flipster__button--prev {
     left: 5%;
   }
   #use-cases .flipster .flipster__button--next {
     right: 5%;
+  }
+}
+
+@media (max-width: 1080px) {
+  #how-we-work .arrow-1 {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    left: 30px;
+  }
+  #how-we-work .arrow-2 {
+    right: 13%;
+    bottom: 75px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 
@@ -3129,12 +3194,79 @@ img, .col.half {
     margin-left: 40px;
     margin-right: 40px;
   }
+  #how-we-work .arrow-2 {
+    right: 10%;
+  }
   #use-cases .flipster .flipster__item__content {
     padding: 20px;
   }
 }
 
+@media (min-width: 767.1px) {
+  #how-we-work .blurb-inner img.mobile, #how-we-work .blurb-inner .step {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
+  #how-we-work .arrow-1, #how-we-work .arrow-2 {
+    display: none;
+  }
+  #how-we-work .col.third {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #how-we-work .blurb-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  #how-we-work .blurb-inner .step {
+    color: #c05344;
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  #how-we-work .blurb-inner p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #how-we-work .blurb-inner img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #how-we-work .blurb-inner img.desktop {
+    display: none;
+  }
+  #how-we-work .col.third:after {
+    width: 80%;
+    height: 1px;
+    content: " ";
+    display: block;
+    background: #c05344;
+    margin: auto;
+  }
+  #how-we-work .col.third.blurb-3:after {
+    display: none;
+  }
+  #how-we-work .col.third.blurb-3 {
+    margin-bottom: 0;
+  }
   #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
     font-size: 24px;
   }
