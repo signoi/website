@@ -86,7 +86,7 @@ get_header();
 		<div class="col third blurb-<?php echo get_row_index(); ?>">
 			<div class="blurb-inner">
 				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
-				<p><span class="step"><?php echo get_row_index(); ?></span><?php echo $copy; ?></p>	
+				<p><span class="step"><?php echo get_row_index(); ?>.</span><?php echo $copy; ?></p>	
 			</div>
 		</div>
 	<?php	endwhile; ?>	

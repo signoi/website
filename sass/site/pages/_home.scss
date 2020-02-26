@@ -735,12 +735,19 @@ img {
         flex-direction: column;
         display: flex;
     }
+    #how-we-work .blurb-inner .step {
+        color: $color__red;
+        font-size: 1.2rem;
+        margin-right: 5px;
+    }
 
     #how-we-work .blurb-inner p {
         order: 1;
+        
     }
     #how-we-work .blurb-inner img {
         order: 2;
+        margin-bottom: 0;
     }
 
     #above-fold button,  #above-fold input[type="button"],  #above-fold input[type="reset"],  #above-fold input[type="submit"] {
