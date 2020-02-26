@@ -49,6 +49,49 @@ get_header();
 	</div>
 </section>
 <?php endwhile; else : endif; ?>
+<?php if( have_rows('how_we_work') ): 
+		while( have_rows('how_we_work') ): the_row(); 
+		$title = get_sub_field('section_title'); 
+		$copy = get_sub_field('section_copy'); 
+		$endcopy = get_sub_field('final_copy'); 
+?>		
+<section id="how-we-work">
+	<div class="row">
+		<div class="col full">
+		<h2><?php echo $title; ?></h2>	
+		<p><?php echo $copy; ?></p>
+		</div>
+	</div>
+	<?php if( have_rows('section_blurbs') ): 
+?>
+
+	<div class="row">
+	<?php while( have_rows('section_blurbs') ): the_row(); 
+		$copy = get_sub_field('blurb_copy'); 
+		$image = get_sub_field('blurb_image'); 
+		if( $image ):
+
+			// Image variables.
+			$url = $image['url'];
+			$imagetitle = $image['title'];
+			$alt = $image['alt'];
+		
+			// Thumbnail size attributes.
+			$size = 'large';
+			$fullimage = $image['sizes'][ $size ];
+		endif;
+		?>
+		<div class="col third">
+			<div class="blurb-inner">
+				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
+				<p><?php echo $blurbcopy; ?></p>	
+			</div>
+		</div>
+	<?php	endwhile; ?>	
+	</div>
+	<?php endif; ?>
+</section>
+<?php endwhile; else : endif; ?>
 <?php
 $args = array(
     'post_type' => 'use-case',
