@@ -669,13 +669,13 @@ img {
 
 
 @media (max-width: 1300px) {
-    .arrow-1, .arrow-2 {
+   #how-we-work .arrow-1, #how-we-work .arrow-2 {
         transform: scale(0.8);
     }
-    .arrow-1 {
+    #how-we-work .arrow-1 {
         left: 100px;
     }
-    .arrow-2 {
+    #how-we-work .arrow-2 {
         right: 17%;
     }
     #use-cases .flipster .flipster__button--prev {
@@ -690,11 +690,11 @@ img {
     .page-template-homepage-template .abovefoldimage {
         max-width: 80vh;
     }
-    .arrow-1 {
+    #how-we-work .arrow-1 {
         transform: scale(0.6);
         left: 30px;
     }
-    .arrow-2 {
+    #how-we-work .arrow-2 {
         right: 13%;
         bottom: 75px;
         transform: scale(0.6);
@@ -725,7 +725,7 @@ img {
 
 
 @media (max-width: 767px) {
-    .arrow-1, .arrow-2 {
+    #how-we-work .arrow-1, #how-we-work .arrow-2 {
         display: none;
     }
     #how-we-work .col.third {
