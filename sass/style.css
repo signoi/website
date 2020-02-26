@@ -2470,6 +2470,21 @@ img, .col.half {
   max-height: 36vh;
 }
 
+#how-we-work h2, #how-we-work p {
+  text-align: center;
+}
+
+#how-we-work h2 {
+  color: #c05344;
+}
+
+#how-we-work p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
 /*--alternative homepage--*/
 .page-id-2489 .background-shape {
   display: none;

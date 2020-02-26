@@ -56,7 +56,7 @@ get_header();
 		$endcopy = get_sub_field('final_copy'); 
 ?>		
 <section id="how-we-work">
-	<div class="row">
+	<div class="row intro">
 		<div class="col full">
 		<h2><?php echo $title; ?></h2>	
 		<p><?php echo $copy; ?></p>
@@ -65,7 +65,7 @@ get_header();
 	<?php if( have_rows('section_blurbs') ): 
 ?>
 
-	<div class="row">
+	<div class="row blurbs">
 	<?php while( have_rows('section_blurbs') ): the_row(); 
 		$copy = get_sub_field('blurb_copy'); 
 		$image = get_sub_field('blurb_image'); 
@@ -84,7 +84,7 @@ get_header();
 		<div class="col third">
 			<div class="blurb-inner">
 				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
-				<p><?php echo $blurbcopy; ?></p>	
+				<p><?php echo $copy; ?></p>	
 			</div>
 		</div>
 	<?php	endwhile; ?>	
