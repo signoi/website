@@ -91,10 +91,6 @@
     }
     .row.blurbs {
         position: relative;
-        .col.third:first-child .blurb-inner img {
-            margin-top: 60px;
-            margin-bottom: -40px;
-        }
     }
     .arrow-1, .arrow-2 {
         position: absolute;
@@ -733,11 +729,16 @@ img {
     }
     #how-we-work .col.third {
         text-align: center;
+        margin-bottom: 40px;
     }
-        #how-we-work    .col.third:first-child .blurb-inner img {
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
+
+    #how-we-work .blurb-inner p {
+        order: 1;
+    }
+    #how-we-work .blurb-inner img {
+        order: 2;
+    }
+
     #above-fold button,  #above-fold input[type="button"],  #above-fold input[type="reset"],  #above-fold input[type="submit"] {
         font-size: 24px; 
     }

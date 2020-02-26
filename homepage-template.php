@@ -83,7 +83,7 @@ get_header();
 			$fullimage = $image['sizes'][ $size ];
 		endif;
 		?>
-		<div class="col third">
+		<div class="col third blurb-<?php echo get_row_index(); ?>">
 			<div class="blurb-inner">
 				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
 				<p><?php echo $copy; ?></p>	

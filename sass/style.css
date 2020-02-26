@@ -2489,11 +2489,6 @@ img, .col.half {
   position: relative;
 }
 
-#how-we-work .row.blurbs .col.third:first-child .blurb-inner img {
-  margin-top: 60px;
-  margin-bottom: -40px;
-}
-
 #how-we-work .arrow-1, #how-we-work .arrow-2 {
   position: absolute;
 }
@@ -3213,10 +3208,17 @@ img, .col.half {
   }
   #how-we-work .col.third {
     text-align: center;
+    margin-bottom: 40px;
   }
-  #how-we-work .col.third:first-child .blurb-inner img {
-    margin-top: 0;
-    margin-bottom: 20px;
+  #how-we-work .blurb-inner p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #how-we-work .blurb-inner img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
     font-size: 24px;
