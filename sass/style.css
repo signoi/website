@@ -2489,7 +2489,7 @@ img, .col.half {
   position: relative;
 }
 
-#how-we-work .row.blurbs .col-third:first-child img {
+#how-we-work .row.blurbs .col.third:first-child .blurb-inner img {
   margin-top: 60px;
   margin-bottom: -40px;
 }
@@ -3211,7 +3211,7 @@ img, .col.half {
   #how-we-work .col.third {
     text-align: center;
   }
-  #how-we-work .col-third:first-child img {
+  #how-we-work .col.third:first-child .blurb-inner img {
     margin-top: 0;
     margin-bottom: 20px;
   }

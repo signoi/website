@@ -91,7 +91,7 @@
     }
     .row.blurbs {
         position: relative;
-        .col-third:first-child img {
+        .col.third:first-child .blurb-inner img {
             margin-top: 60px;
             margin-bottom: -40px;
         }
@@ -731,7 +731,7 @@ img {
     #how-we-work .col.third {
         text-align: center;
     }
-        #how-we-work    .col-third:first-child img {
+        #how-we-work    .col.third:first-child .blurb-inner img {
             margin-top: 0;
             margin-bottom: 20px;
         }
