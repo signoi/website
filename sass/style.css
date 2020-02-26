@@ -3202,6 +3202,12 @@ img, .col.half {
   }
 }
 
+@media (max-width: 767.1px) {
+  #how-we-work .blurb-inner img.mobile, #how-we-work .blurb-inner .step {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   #how-we-work .arrow-1, #how-we-work .arrow-2 {
     display: none;
@@ -3218,6 +3224,7 @@ img, .col.half {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 40px;
   }
   #how-we-work .blurb-inner .step {
     color: #c05344;
@@ -3228,12 +3235,31 @@ img, .col.half {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 20px;
   }
   #how-we-work .blurb-inner img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin-bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #how-we-work .blurb-inner img.desktop {
+    display: none;
+  }
+  #how-we-work .col.third:after {
+    width: 80%;
+    height: 1px;
+    content: " ";
+    display: block;
+    background: #c05344;
+    margin: auto;
   }
   #above-fold button, #above-fold input[type="button"], #above-fold input[type="reset"], #above-fold input[type="submit"] {
     font-size: 24px;

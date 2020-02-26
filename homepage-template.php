@@ -82,11 +82,24 @@ get_header();
 			$size = 'large';
 			$fullimage = $image['sizes'][ $size ];
 		endif;
+		$imagemobile = get_sub_field('blurb_image_mobile'); 
+		if( $imagemobile ):
+
+			// Image variables.
+			$urlmobile = $imagemobile['url'];
+			$imagetitle = $imagemobile['title'];
+			$altmobile = $imagemobile['alt'];
+		
+			// Thumbnail size attributes.
+			$sizemobile = 'large';
+			$fullimagemobile = $imagemobile['sizes'][ $size ];
+		endif;
 		?>
 		<div class="col third blurb-<?php echo get_row_index(); ?>">
 			<div class="blurb-inner">
-				<img src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />	
+				<img class="desktop" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />
 				<p><span class="step"><?php echo get_row_index(); ?>.</span><?php echo $copy; ?></p>	
+				<img class="mobile" src="<?php echo esc_url($fullimagemobile); ?>" alt="<?php echo esc_attr($altmobile); ?>" />	
 			</div>
 		</div>
 	<?php	endwhile; ?>	
