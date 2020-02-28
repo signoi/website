@@ -24,7 +24,7 @@ get_header();
 	<div class="row intro">
 		<div class="col twothird">
 		<h1><?php the_title(); ?></h1>	
-		<p><?php echo $copy; ?></p>
+		<div><?php echo $copy; ?></div>
 		</div>
 	</div>
 	<div class="row blurbs">
