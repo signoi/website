@@ -105,7 +105,7 @@ get_header();
 	<?php	endwhile; ?>	
 	</div>
 	<?php endif; ?>
-	<div class="row intro">
+	<div class="row">
 		<div class="col full">
 		<p><?php echo $endcopy; ?></p>
 		</div>
