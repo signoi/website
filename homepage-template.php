@@ -105,6 +105,11 @@ get_header();
 	<?php	endwhile; ?>	
 	</div>
 	<?php endif; ?>
+	<div class="row intro">
+		<div class="col full">
+		<p><?php echo $endcopy; ?></p>
+		</div>
+	</div>
 </section>
 <?php endwhile; else : endif; ?>
 <?php
